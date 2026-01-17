@@ -1,0 +1,21 @@
+{
+  "name": "Health Analytics - Complete Health Data Control",
+  "short_name": "Health Analytics - Complete Health Data Control",
+  "description": "Unlock the full potential of your Apple Health data. Visualize, analyze, and export your health metrics with professional-grade tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/assets/images/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
