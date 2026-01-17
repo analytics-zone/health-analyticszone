@@ -32,81 +32,197 @@
     <meta name="twitter:image" content="https://health.analytics.zone/assets/images/og-image.jpg">
     
 
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <meta name="theme-color" content="#FF2D55"> <!-- Health App Pink-ish redo -->
+    <link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/main.min.css">
+    </noscript>
+
+    <meta name="theme-color" content="#E11D48">
 </head>
 
-<body class="font-sans antialiased text-gray-900 bg-white">
+<body class="is-home">
 
-    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300"
-        id="header">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="/en/"
-                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-rose-600">
-                        Health Analytics - Complete Health Data Control
-                    </a>
-                </div>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="header-logo">
+                <a href="/en/">
+                    Health Analytics - Complete Health Data Control
+                </a>
+            </div>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex space-x-8">
-                    
-                    <a href="/#features"
-                        class="text-gray-600 hover:text-rose-600 transition-colors duration-200 font-medium">
-                        Features
-                    </a>
-                    
-                </nav>
+            <nav class="header-nav" id="headerNav">
+                
+                <a href="/#features" class="nav-link ">
+                    Features
+                </a>
+                
+            </nav>
 
-                <!-- CTA Button -->
-                <div class="hidden md:flex items-center">
-                    <a href="https://apps.apple.com/app/health-analytics/id123456789"
-                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all">
-                        Download on the App Store
-                    </a>
-                </div>
+            <div class="header-cta">
+                <a href="https://apps.apple.com/app/health-analytics/id123456789" class="btn btn-primary btn-small">
+                    Download on the App Store
+                </a>
             </div>
         </div>
     </header>
 
-    <main class="pt-16">
-        
+    <main id="main-content">
+        <section class="app-hero">
+    <div class="container">
+        <div class="app-hero-content">
+            <div class="app-hero-text">
+                <div class="app-hero-badge">
+                    <span>❤️</span>
+                    <span>Complete Health Control</span>
+                </div>
+                <h1>Your Complete Health Data Hub</h1>
+                <p class="app-hero-subtitle">
+                    The ultimate companion to Apple Health. Access, visualize, and control your health and fitness data
+                    like never before. All processed locally on your iPhone with complete data privacy.
+                </p>
+                <div class="app-hero-cta store-badges">
+                    <a href="https://apps.apple.com/app/health-analytics/id123456789" class="store-badge" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="140"
+                            height="47">
+                    </a>
+                </div>
+                <div class="app-hero-secondary">
+                    <a href="#features" class="btn btn-large btn-secondary">
+                        Explore Features
+                    </a>
+                </div>
+            </div>
+            <div class="app-hero-mockup">
+                <div class="mockup-phone">
+                    <img src="/assets/images/screenshot-1.png" alt="Health Analytics Dashboard" width="400"
+                        height="auto" loading="eager" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="app-features">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Why Health Analytics?</div>
+            <h2 class="section-title">Bridging the Gap</h2>
+            <p class="section-subtitle">Apple Health collects the data. We give you the power to manage it.</p>
+        </div>
+        <div class="app-features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Visualise Everything</h3>
+                <p>See <strong>all</strong> your registered health data in one comprehensive dashboard. From daily steps
+                    to complex metrics like HRV and sleep stages.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📤</div>
+                <h3>Powerful Export</h3>
+                <p>Your data belongs to you. Export in CSV, JSON, or PDF. Flexible options to share specific metrics
+                    with your doctor or trainer.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏥</div>
+                <h3>For Professionals</h3>
+                <p>Generate clear, readable PDF reports for doctors or simplified activity data for coaches and
+                    trainers.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🕒</div>
+                <h3>Complete History</h3>
+                <p>Access your historical data easily. Track trends over weeks, months, or years, not just a snapshot
+                    of today.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Privacy First</h3>
+                <p>Built with deep HealthKit integration. Your data stays on your device and is only exported when you
+                    choose to.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>User-Friendly</h3>
+                <p>Turns complex databases into easy-to-read charts and lists. Making health metrics accessible to
+                    everyone.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="health-screenshots">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Gallery</div>
+            <h2 class="section-title">See it in Action</h2>
+            <p class="section-subtitle">Beautiful, clean, and intuitive interface.</p>
+        </div>
+        <div class="screenshots-scroll">
+            <div class="screenshot-card">
+                <img src="/assets/images/screenshot-1.png" alt="Dashboard Overview">
+            </div>
+            <div class="screenshot-card">
+                <img src="/assets/images/screenshot-2.png" alt="Metric Details">
+            </div>
+            <div class="screenshot-card">
+                <img src="/assets/images/screenshot-3.png" alt="Export Options">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-alt">
+    <div class="container container-narrow text-center">
+        <blockquote class="testimonial">
+            <p class="text-2xl italic text-gray-700">
+                "It shows everything you have registered for health and exercise in your account, and allows you to
+                export
+                it in many formats, to view it, share it with your doctor, and other users."
+            </p>
+        </blockquote>
+    </div>
+</section>
+
+<section class="app-cta-final">
+    <div class="container text-center">
+        <h2>Take Control of Your Health Narrative</h2>
+        <p>Get the most out of your Apple Health data with professional-grade analysis and export tools.</p>
+        <div class="app-hero-cta store-badges justify-center">
+            <a href="https://apps.apple.com/app/health-analytics/id123456789" class="store-badge" target="_blank" rel="noopener">
+                <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="140" height="47">
+            </a>
+        </div>
+    </div>
+</section>
     </main>
 
-    <footer class="bg-gray-50 border-t border-gray-200 mt-20">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="col-span-1">
-                    <span class="text-xl font-bold text-gray-900">Health Analytics - Complete Health Data Control</span>
-                    <p class="mt-4 text-gray-500 text-sm">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">Health Analytics - Complete Health Data Control</span>
+                    <p class="footer-description">
                         Unlock the full potential of your Apple Health data. Visualize, analyze, and export your health metrics with professional-grade tools.
                     </p>
                 </div>
-                <div class="col-span-1">
+                <div class="footer-links">
                     <!-- Links -->
                 </div>
-                <div class="col-span-1">
-                    <!-- Download again -->
-                </div>
             </div>
-            <div class="mt-8 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-base text-gray-400">
+            <div class="footer-bottom">
+                <p class="footer-copyright">
                     © 2026 Health Analytics. All rights reserved.
                 </p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="/privacy/" class="text-gray-400 hover:text-gray-500">
-                        Privacy Policy
-                    </a>
-                    <a href="/terms/" class="text-gray-400 hover:text-gray-500">
-                        Terms of Service
-                    </a>
+                <div class="footer-legal">
+                    <a href="/privacy/">Privacy Policy</a>
+                    <a href="/terms/">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="/assets/js/core.min.js" defer></script>
 </body>
 
 </html>
