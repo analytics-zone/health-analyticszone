@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://health.analytics.zone/sitemap.xml
+Sitemap: https://health.analyticszone.app/sitemap.xml

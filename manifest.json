@@ -1,7 +1,7 @@
 {
-  "name": "Health Analytics - Complete Health Data Control",
-  "short_name": "Health Analytics - Complete Health Data Control",
-  "description": "Unlock the full potential of your Apple Health data. Visualize, analyze, and export your health metrics with professional-grade tools.",
+  "name": "Health Analytics - Complete Health Data Control for iOS",
+  "short_name": "Health Analytics - Complete Health Data Control for iOS",
+  "description": "Visualize, manage, and export all your Apple Health data with Health Analytics. Create professional PDF reports and analyze every metric.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
