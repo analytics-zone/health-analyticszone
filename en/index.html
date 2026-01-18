@@ -42,10 +42,7 @@
     <meta name="robots" content="index, follow">
 
     
-    <link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="/assets/css/main.min.css">
-    </noscript>
+    <link rel="stylesheet" href="/assets/css/main.min.css">
 
     
     <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -64,7 +61,7 @@
             <a href="/en/" class="site-logo">
                 <picture>
                     <source srcset="/assets/images/logo-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
-                    <img src="/assets/images/logo.png" alt="Health Analytics - Complete Health Data Control for iOS" width="56" height="56">
+                    <img src="/assets/images/logo.png" alt="Health Analytics - Your HealthKit Data, Clear and Portable" width="56" height="56">
                 </picture>
                 <span class="logo-text">Health Analytics</span>
             </a>
@@ -178,12 +175,13 @@
             <div class="app-hero-text">
                 <div class="app-hero-badge">
                     <span>❤️</span>
-                    <span>Complete Health Control</span>
+                    <span>Your HealthKit Data, Organized</span>
                 </div>
-                <h1>Your Complete Health Data Hub</h1>
+                <h1>Your HealthKit Data, Clear and Portable</h1>
                 <p class="app-hero-subtitle">
-                    The ultimate companion to Apple Health. Access, visualize, and control your health and fitness data
-                    like never before. All processed locally on your iPhone with complete data privacy.
+                    The professional companion to Apple Health. Turn raw HealthKit data into clear dashboards
+                    and export-ready reports so you can understand your health, share it with confidence,
+                    and keep full ownership of your data.
                 </p>
                 <div class="app-hero-cta store-badges">
                     <a href="https://apps.apple.com/app/health-analytics/id123456789" class="store-badge" target="_blank" rel="noopener"
@@ -198,13 +196,14 @@
                     </a>
                 </div>
                 <p class="mt-6 text-sm-muted">
-                    ✓ No account required &nbsp;&nbsp; ✓ 100% local data &nbsp;&nbsp; ✓ Privacy first
+                    ✓ 7-day free trial &nbsp;&nbsp; ✓ No account required &nbsp;&nbsp; ✓ 100% local data
                 </p>
             </div>
             <div class="app-hero-mockup">
                 <div class="mockup-phone">
-                    <img src="/assets/images/screenshot-1.png" alt="Health Analytics iOS app dashboard" width="400"
-                        height="auto" loading="eager" />
+                    <img src="/assets/images/screenshot-1.png"
+                        alt="Health Analytics iOS app dashboard showing health metrics and data visualization"
+                        width="400" height="auto" loading="eager" />
                 </div>
             </div>
         </div>
@@ -216,8 +215,9 @@
     <div class="container">
         <div class="section-header">
             <div class="section-badge">Features</div>
-            <h2 class="section-title">Everything You Need to Improve</h2>
-            <p class="section-subtitle">Professional-grade analytics designed for taking control of your health data</p>
+            <h2 class="section-title">Everything You Need to Take Control</h2>
+            <p class="section-subtitle">Professional-grade analytics designed for understanding and exporting your
+                health data</p>
         </div>
         <div class="app-features-grid">
             <div class="feature-card">
@@ -226,9 +226,19 @@
                         <use href="/assets/images/icons-sprite.svg#icon-chart"></use>
                     </svg>
                 </div>
-                <h3>Visualise Everything</h3>
-                <p>See <strong>all</strong> your registered health data in comprehensive dashboards. From daily steps to
-                    complex metrics like HRV and sleep stages.</p>
+                <h3>Unified Dashboard</h3>
+                <p>See your most important metrics at a glance, with simple visualizations and clear summary
+                    stats—totals, minimums, and maximums across all health categories.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="/assets/images/icons-sprite.svg#icon-zones"></use>
+                    </svg>
+                </div>
+                <h3>Deep HealthKit Coverage</h3>
+                <p>Activity, vitals, sleep, and body metrics—all in one place. Steps, heart rate, blood pressure, sleep
+                    stages, weight, BMI, and more.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
@@ -236,9 +246,9 @@
                         <use href="/assets/images/icons-sprite.svg#icon-export"></use>
                     </svg>
                 </div>
-                <h3>Powerful Export</h3>
-                <p>Your data belongs to you. Export in CSV, JSON, or PDF formats. Seamlessly share metrics with your
-                    doctor, trainer, or medical coach.</p>
+                <h3>Flexible Export Engine</h3>
+                <p>Export only the data you need, for the time period you choose. CSV, JSON, PDF, HTML, Markdown, and
+                    plain text formats supported.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
@@ -246,9 +256,9 @@
                         <use href="/assets/images/icons-sprite.svg#icon-calendar"></use>
                     </svg>
                 </div>
-                <h3>Historical History</h3>
-                <p>Access your lifetime historical data easily. Track trends over weeks, months, or years with automatic
-                    trend detection for all metrics.</p>
+                <h3>Export History</h3>
+                <p>Keep a record of what you exported and when, so you can quickly resend or verify past reports without
+                    recreating them.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
@@ -257,18 +267,8 @@
                     </svg>
                 </div>
                 <h3>Complete Privacy</h3>
-                <p>All data processed locally on your device. No servers, no cloud storage, no tracking. You own your
-                    health history completely.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-zones"></use>
-                    </svg>
-                </div>
-                <h3>Professional PDF Reports</h3>
-                <p>Generate clear, readable PDF reports for medical consultations or simplified activity data for
-                    physical therapists and sports coaches.</p>
+                <p>No accounts, no cloud lock-in, no hidden sync. Health Analytics uses HealthKit permissions and keeps
+                    data on your device. You decide what to export.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
@@ -276,76 +276,187 @@
                         <use href="/assets/images/icons-sprite.svg#icon-lightning"></use>
                     </svg>
                 </div>
-                <h3>User-Friendly Interface</h3>
-                <p>Turns complex HealthKit databases into easy-to-read lists and charts instantly. Professional tools
-                    designed for the modern user.</p>
+                <h3>Professional Reports</h3>
+                <p>Generate clear, readable PDF reports for medical consultations. Share doctor-ready summaries with
+                    physicians, coaches, or family members.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Screenshots Section -->
+<!-- Screenshots Carousel -->
 <section class="app-screenshots">
     <div class="container">
         <div class="section-header">
-            <div class="section-badge">Gallery</div>
+            <div class="section-badge">Screenshots</div>
             <h2 class="section-title">See Health Analytics in Action</h2>
-            <p class="section-subtitle">Beautiful, clean, and intuitive interface designed for clarity</p>
+            <p class="section-subtitle">Beautiful, intuitive interface designed for clarity</p>
         </div>
         <div class="carousel-wrapper">
-            <div class="screenshots-carousel">
+            <button class="carousel-btn carousel-btn-prev" aria-label="Previous screenshot">
+                <svg aria-hidden="true">
+                    <use href="/assets/images/icons-sprite.svg#icon-arrow-left"></use>
+                </svg>
+            </button>
+            <div class="screenshots-carousel" id="screenshotsCarousel">
                 <div class="screenshot-item">
-                    <img src="/assets/images/screenshot-1.png" alt="Health Analytics Dashboard" loading="lazy">
-                    <p class="screenshot-caption">Data Dashboard</p>
+                    <img src="/assets/images/screenshot-1.png"
+                        alt="Health Analytics dashboard with summary cards and charts" loading="lazy" width="300"
+                        height="auto">
+                    <p class="screenshot-caption">Dashboard Overview</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="/assets/images/screenshot-2.png" alt="Metric Details" loading="lazy">
-                    <p class="screenshot-caption">Detailed Metrics</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="/assets/images/screenshot-3.png" alt="Export Options" loading="lazy">
+                    <img src="/assets/images/screenshot-2.png"
+                        alt="Export screen with format options and time period selection" loading="lazy" width="300"
+                        height="auto">
                     <p class="screenshot-caption">Export Options</p>
                 </div>
+                <div class="screenshot-item">
+                    <img src="/assets/images/screenshot-3.png" alt="History view showing past exports" loading="lazy"
+                        width="300" height="auto">
+                    <p class="screenshot-caption">Export History</p>
+                </div>
             </div>
+            <button class="carousel-btn carousel-btn-next" aria-label="Next screenshot">
+                <svg aria-hidden="true">
+                    <use href="/assets/images/icons-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Screenshot navigation"></div>
         </div>
     </div>
 </section>
 
-<!-- Scientific Metrics Section -->
+<!-- HealthKit Categories Section -->
 <section class="app-metrics">
     <div class="container">
         <div class="section-header">
-            <div class="section-badge">Data Control</div>
-            <h2 class="section-title text-white">Advanced Metrics That Matter</h2>
+            <div class="section-badge">HealthKit Coverage</div>
+            <h2 class="section-title text-white">All Your Health Data, One Place</h2>
             <p class="section-subtitle text-white-90">
-                Health Analytics transforms raw health data into actionable intelligence
-                using professional-grade visualization tools
+                Health Analytics brings together the full breadth of HealthKit data in clean, readable dashboards
             </p>
         </div>
         <div class="metrics-grid">
             <div class="metric-card">
-                <div class="metric-icon">📉</div>
-                <div class="metric-label">Efficiency</div>
-                <h3 class="metric-name">Trends</h3>
-                <p class="metric-description">Automatic trend detection for every health metric</p>
+                <div class="metric-icon">🏃</div>
+                <div class="metric-label">Movement</div>
+                <h3 class="metric-name">Activity</h3>
+                <p class="metric-description">Steps, distance, flights climbed, energy burned</p>
             </div>
             <div class="metric-card">
-                <div class="metric-icon">📑</div>
-                <div class="metric-label">Reporting</div>
-                <h3 class="metric-name">PDFs</h3>
-                <p class="metric-description">Generate clinical-grade health summaries for doctors</p>
+                <div class="metric-icon">❤️</div>
+                <div class="metric-label">Heart</div>
+                <h3 class="metric-name">Vitals</h3>
+                <p class="metric-description">Heart rate, blood pressure, respiratory rate</p>
             </div>
             <div class="metric-card">
-                <div class="metric-icon">📅</div>
-                <div class="metric-label">History</div>
-                <h3 class="metric-name">Lifetime</h3>
-                <p class="metric-description">Access your complete history from day one</p>
+                <div class="metric-icon">😴</div>
+                <div class="metric-label">Rest</div>
+                <h3 class="metric-name">Sleep</h3>
+                <p class="metric-description">Sleep stages and duration tracking</p>
             </div>
             <div class="metric-card">
-                <div class="metric-icon">🛡️</div>
-                <div class="metric-label">Privacy</div>
-                <h3 class="metric-name">100% Local</h3>
-                <p class="metric-description">Your raw health data never leaves your iPhone</p>
+                <div class="metric-icon">⚖️</div>
+                <div class="metric-label">Composition</div>
+                <h3 class="metric-name">Body</h3>
+                <p class="metric-description">Weight, BMI, body fat percentage</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="app-pricing">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Pricing</div>
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Start with a 7-day free trial. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="pricing-name">Monthly</h3>
+                    <div class="pricing-price">
+                        <span class="pricing-currency">€</span>
+                        <span class="pricing-amount">3.99</span>
+                        <span class="pricing-period">/month</span>
+                    </div>
+                    <p class="pricing-trial">7-day free trial</p>
+                </div>
+                <ul class="pricing-features">
+                    <li>Complete HealthKit access</li>
+                    <li>Unified dashboard with all metrics</li>
+                    <li>Export in CSV, JSON, PDF, HTML, MD, TXT</li>
+                    <li>Export history tracking</li>
+                    <li>Professional PDF reports</li>
+                    <li>100% privacy, local data</li>
+                    <li>All future updates</li>
+                </ul>
+            </div>
+            <div class="pricing-card featured">
+                <span class="pricing-badge">Recommended</span>
+                <div class="pricing-header">
+                    <h3 class="pricing-name">Annual</h3>
+                    <div class="pricing-price">
+                        <span class="pricing-currency">€</span>
+                        <span class="pricing-amount">39.99</span>
+                        <span class="pricing-period">/year</span>
+                    </div>
+                    <p class="pricing-trial">Save €7.89/year (16% off)</p>
+                </div>
+                <ul class="pricing-features">
+                    <li>Everything in Monthly</li>
+                    <li>Best value for committed users</li>
+                    <li>Priority support</li>
+                    <li>Early access to new features</li>
+                    <li>Export in all formats</li>
+                    <li>100% privacy, local data</li>
+                    <li>All future updates</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who It's For Section -->
+<section class="app-benefits">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Who It's For</div>
+            <h2 class="section-title">Built for People Who Need Their Data</h2>
+            <p class="section-subtitle">Health Analytics serves anyone who needs more than daily snapshots</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">🏥</div>
+                <div class="benefit-content">
+                    <h3>Patients</h3>
+                    <p>Preparing for medical appointments and follow-ups. Share organized health reports with your
+                        doctor.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🏅</div>
+                <div class="benefit-content">
+                    <h3>Athletes & Coaches</h3>
+                    <p>Consistent training metrics and trend analysis. Export data for training platforms.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                <div class="benefit-content">
+                    <h3>Families</h3>
+                    <p>Helping track and organize health information for loved ones. Keep records accessible.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">💻</div>
+                <div class="benefit-content">
+                    <h3>Developers & Researchers</h3>
+                    <p>Structured exports in JSON and CSV for analysis, research, and integration with other tools.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -354,15 +465,15 @@
 <!-- Final CTA Section -->
 <section class="app-cta-final">
     <div class="container">
-        <h2>Take Control of Your Health Narrative</h2>
-        <p>Join thousands of users who use professional tools to manage their medical history. Download today.</p>
-        <div class="store-badges">
+        <h2>Start Your Free Trial</h2>
+        <p>Turn your health history into insights you can use. Your data, clear and portable.</p>
+        <div class="store-badges cta-spacing">
             <a href="https://apps.apple.com/app/health-analytics/id123456789" class="store-badge" target="_blank" rel="noopener">
                 <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="140" height="47">
             </a>
         </div>
         <p class="section-footer">
-            No account required • Your data stays on your device
+            7-day free trial • No account required • Your data stays on your device
         </p>
     </div>
 </section>
@@ -375,7 +486,7 @@
         <div class="footer-top">
             <div class="footer-brand-section">
                 <h2>Health Analytics</h2>
-                <p>Visualize, manage, and export all your Apple Health data with Health Analytics. Create professional PDF reports and analyze every metric.</p>
+                <p>Turn your HealthKit history into clear dashboards and export-ready reports. Share health data with doctors or coaches in formats they actually use. CSV, JSON, PDF, and more.</p>
             </div>
             <div class="footer-download">
                 <h3 class="footer-heading">Download</h3>

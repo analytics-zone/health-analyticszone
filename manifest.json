@@ -1,7 +1,7 @@
 {
-  "name": "Health Analytics - Complete Health Data Control for iOS",
-  "short_name": "Health Analytics - Complete Health Data Control for iOS",
-  "description": "Visualize, manage, and export all your Apple Health data with Health Analytics. Create professional PDF reports and analyze every metric.",
+  "name": "Health Analytics - Your HealthKit Data, Clear and Portable",
+  "short_name": "Health Analytics - Your HealthKit Data, Clear and Portable",
+  "description": "Turn your HealthKit history into clear dashboards and export-ready reports. Share health data with doctors or coaches in formats they actually use. CSV, JSON, PDF, and more.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
