@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Insulin Delivery</title>
+  <meta name="description" content="| Type | Onset | Peak | Duration | |------|-------|------|----------| | Rapid-acting | 15 min | 1-2 hr | 3-4 hr | | Short-acting | 30 min | 2-3 hr | 5-6 hr |...">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="Insulin Delivery, metabolic-labs, health metrics, healthkit">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-01-21T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/">
+  <meta property="og:title" content="Insulin Delivery">
+  <meta property="og:description" content="| Type | Onset | Peak | Duration | |------|-------|------|----------| | Rapid-acting | 15 min | 1-2 hr | 3-4 hr | | Short-acting | 30 min | 2-3 hr | 5-6 hr |...">
+  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/">
+  <meta name="twitter:title" content="Insulin Delivery">
+  <meta name="twitter:description" content="| Type | Onset | Peak | Duration | |------|-------|------|----------| | Rapid-acting | 15 min | 1-2 hr | 3-4 hr | | Short-acting | 30 min | 2-3 hr | 5-6 hr |...">
+  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=123456789">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+  </noscript>
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Turn your HealthKit history into clear dashboards and export-ready reports. Share health data with doctors or coaches in formats they actually use. CSV, JSON, PDF, and more.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/app/health-analytics/id123456789"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Turn your HealthKit history into clear dashboards and export-ready reports. Share health data with doctors or coaches in formats they actually use. CSV, JSON, PDF, and more.",
+  "inLanguage": "en"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Turn your HealthKit history into clear dashboards and export-ready reports. Share health data with doctors or coaches in formats they actually use. CSV, JSON, PDF, and more.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/app/health-analytics/id123456789"
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Insulin Delivery",
+  "description": "| Type | Onset | Peak | Duration | |------|-------|------|----------| | Rapid-acting | 15 min | 1-2 hr | 3-4 hr | | Short-acting | 30 min | 2-3 hr | 5-6 hr |...",
+  "url": "https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Insulin Delivery",
+  "description": "| Type | Onset | Peak | Duration | |------|-------|------|----------| | Rapid-acting | 15 min | 1-2 hr | 3-4 hr | | Short-acting | 30 min | 2-3 hr | 5-6 hr |...",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-01-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/en/metrics/metabolic-labs/insulin-delivery/"
+  }
+}
+</script>
+
+
+  
+  
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/en/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="Health Analytics - Your HealthKit Data, Clear and Portable" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/en/features//" 
+                                aria-current="">
+                                Features
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/en/metrics//" 
+                                aria-current="">
+                                Metrics Library
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/en/pricing//" 
+                                aria-current="">
+                                Pricing
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/en/about//" 
+                                aria-current="">
+                                About Us
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Select language">
+                        
+                        <option value="en" selected>
+                            English
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"
+                        title="Toggle dark/light mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/app/health-analytics/id123456789" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    
+<article class="metric-article">
+  
+  <nav class="metric-breadcrumb" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/en/metrics/">
+          <span itemprop="name">Metrics Library</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <span>/</span>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/en/metrics/metabolic-labs/">
+          <span itemprop="name">Metabolic Labs</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <span>/</span>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" aria-current="page">Insulin Delivery</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </nav>
+
+
+  <header class="metric-article-header">
+    <span class="metric-category-badge">
+      <span>🧪</span> Metabolic Labs
+    </span>
+    <!-- Title is in the content usually, or we can explicit it here -->
+  </header>
+
+  
+  <nav class="article-toc">
+    <h4>On This Page</h4>
+    <div class="toc">
+<ul>
+<li><a href="#insulin-delivery">Insulin Delivery</a><ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#why-it-matters">Why It Matters</a></li>
+<li><a href="#how-its-tracked">How It's Tracked</a></li>
+<li><a href="#insulin-types">Insulin Types</a></li>
+<li><a href="#key-metrics">Key Metrics</a><ul>
+<li><a href="#basal-insulin">Basal Insulin</a></li>
+<li><a href="#bolus-insulin">Bolus Insulin</a></li>
+<li><a href="#total-daily-dose-tdd">Total Daily Dose (TDD)</a></li>
+</ul>
+</li>
+<li><a href="#confounders-limitations">Confounders &amp; Limitations</a></li>
+<li><a href="#use-cases">Use Cases</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+  </nav>
+
+
+  <div class="metric-content">
+    <h1 id="insulin-delivery">Insulin Delivery</h1>
+<h2 id="definition">Definition</h2>
+<p>The cumulative amount of insulin delivered, measured in International Units (IU or U). Tracked for people using insulin pumps or smart insulin pens.</p>
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>Insulin tracking is essential for diabetes management:
+- <strong>Dosing records</strong> - Complete insulin history
+- <strong>Pattern analysis</strong> - Understanding insulin needs
+- <strong>Basal vs bolus</strong> - Different insulin types serve different purposes
+- <strong>Treatment optimization</strong> - Adjusting doses based on patterns
+- <strong>Safety auditing</strong> - Preventing errors, tracking usage</p>
+<h2 id="how-its-tracked">How It's Tracked</h2>
+<ul>
+<li><strong>Insulin pumps</strong> - Automated logging (Omnipod, Tandem, Medtronic, etc.)</li>
+<li><strong>Smart pens</strong> - Connected insulin pens (InPen, NovoPen Echo, etc.)</li>
+<li><strong>CGM integration</strong> - Automated insulin delivery systems</li>
+<li><strong>Manual logging</strong> - User-entered injections</li>
+</ul>
+<h2 id="insulin-types">Insulin Types</h2>
+<table class="clinical-table">
+<thead>
+<tr>
+<th>Type</th>
+<th>Onset</th>
+<th>Peak</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rapid-acting</td>
+<td>15 min</td>
+<td>1-2 hr</td>
+<td>3-4 hr</td>
+</tr>
+<tr>
+<td>Short-acting</td>
+<td>30 min</td>
+<td>2-3 hr</td>
+<td>5-6 hr</td>
+</tr>
+<tr>
+<td>Intermediate</td>
+<td>2-4 hr</td>
+<td>4-12 hr</td>
+<td>12-18 hr</td>
+</tr>
+<tr>
+<td>Long-acting</td>
+<td>1-2 hr</td>
+<td>Minimal</td>
+<td>24+ hr</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-metrics">Key Metrics</h2>
+<h3 id="basal-insulin">Basal Insulin</h3>
+<ul>
+<li>Background insulin for fasting glucose control</li>
+<li>Delivered continuously (pump) or as long-acting injection</li>
+<li>Typically 40-50% of total daily insulin</li>
+</ul>
+<h3 id="bolus-insulin">Bolus Insulin</h3>
+<ul>
+<li>Covers meals and corrects high glucose</li>
+<li>Rapid/short-acting insulin</li>
+<li>Dosed based on carbs and correction factor</li>
+</ul>
+<h3 id="total-daily-dose-tdd">Total Daily Dose (TDD)</h3>
+<ul>
+<li>Sum of all insulin delivered in 24 hours</li>
+<li>Used to calculate pump settings</li>
+<li>Varies by individual, typically 0.5-1.0 U/kg/day</li>
+</ul>
+<h2 id="confounders-limitations">Confounders &amp; Limitations</h2>
+<ul>
+<li><strong>Incomplete logging</strong> - Manual entries may be missed</li>
+<li><strong>Absorption variability</strong> - Same dose, different effect</li>
+<li><strong>Site issues</strong> - Lipohypertrophy, infusion set problems</li>
+<li><strong>Device sync</strong> - Some devices don't connect to HealthKit</li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li><strong>Diabetes management</strong> - Daily insulin tracking</li>
+<li><strong>Pattern recognition</strong> - Identifying insulin needs</li>
+<li><strong>Healthcare visits</strong> - Share complete insulin history</li>
+<li><strong>Pump settings</strong> - Optimizing basal rates, ratios</li>
+<li><strong>Closed-loop systems</strong> - Automated insulin delivery</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://diabetes.org/healthy-living/medication-treatments/insulin-other-injectables">ADA - Insulin Management</a></li>
+</ul>
+  </div>
+
+  <aside class="medical-disclaimer">
+    <div class="disclaimer-icon">⚠️ <strong>Medical Information</strong></div>
+    <p>This content is for educational purposes only and should not replace
+    professional medical advice. Always consult a healthcare provider for
+    medical decisions.</p>
+  </aside>
+
+  <div class="metric-footer">
+    <hr>
+    <p><em>Last updated: January 2026</em></p>
+  </div>
+</article>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                <h2>Health Analytics</h2>
+                <p>Turn your HealthKit history into clear dashboards and export-ready reports. Share health data with doctors or coaches in formats they actually use. CSV, JSON, PDF, and more.</p>
+            </div>
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/app/health-analytics/id123456789" target="_blank" rel="noopener" aria-label="Download on the App Store">
+                        <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="135" height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/"
+                   class="lang-link active"
+                   hreflang="en"
+                   >
+                    English
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. All rights reserved
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/en/privacy/">Privacy</a></li>
+                <li><a href="/en/terms/">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>This website uses cookies to improve your experience.</p>
+            <a href="/en/privacy/" class="text-sm">Learn more</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Decline</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Accept</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="/assets/js/core.min.js" defer></script>
+  <script src="/assets/js/search.min.js" defer></script>
+  
+
+  
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js') }</script>
+</body>
+
+</html>

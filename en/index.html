@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,9 +47,11 @@
 
   
   
-  <link rel="alternate" hreflang="en" href="https://health.analyticszone.app/en/">
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/">
   
-  <link rel="alternate" hreflang="x-default" href="https://health.analyticszone.app/en/">
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/">
 
   
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
@@ -332,7 +335,9 @@ img[width][height] {
 
   
   <link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/assets/css/main.min.css"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+  </noscript>
 
   
   
@@ -423,6 +428,7 @@ img[width][height] {
   
   
 </head>
+
 <body>
   
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -447,16 +453,7 @@ img[width][height] {
                         
                         <li>
                             
-                            <a href="/en/" 
-                                aria-current="">
-                                Home
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/en/#features/" 
+                            <a href="/en/features//" 
                                 aria-current="">
                                 Features
                             </a>
@@ -465,9 +462,27 @@ img[width][height] {
                             
                         <li>
                             
-                            <a href="/en/privacy/" 
+                            <a href="/en/metrics//" 
                                 aria-current="">
-                                Privacy
+                                Metrics Library
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/en/pricing//" 
+                                aria-current="">
+                                Pricing
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/en/about//" 
+                                aria-current="">
+                                About Us
                             </a>
                             
                             </li>
@@ -625,317 +640,129 @@ img[width][height] {
   
   <main id="main-content" class="main-content">
     
-    <!-- Health Analytics App Landing Page - Homepage -->
-
-<!-- Hero Section with App Introduction -->
-<section class="app-hero">
+    <section class="page-hero">
     <div class="container">
-        <div class="app-hero-content">
-            <div class="app-hero-text">
-                <div class="app-hero-badge">
-                    <span>❤️</span>
-                    <span>Your HealthKit Data, Organized</span>
-                </div>
-                <h1>Your HealthKit Data, Clear and Portable</h1>
-                <p class="app-hero-subtitle">
-                    The professional companion to Apple Health. Turn raw HealthKit data into clear dashboards
-                    and export-ready reports so you can understand your health, share it with confidence,
-                    and keep full ownership of your data.
-                </p>
-                <div class="app-hero-cta store-badges">
-                    <a href="https://apps.apple.com/app/health-analytics/id123456789" class="store-badge" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="140"
-                            height="47">
-                    </a>
-                </div>
-                <div class="app-hero-secondary">
-                    <a href="#features" class="btn btn-large btn-secondary">
-                        Explore Features
-                    </a>
-                </div>
-                <p class="mt-6 text-sm-muted">
-                    ✓ 7-day free trial &nbsp;&nbsp; ✓ No account required &nbsp;&nbsp; ✓ 100% local data
-                </p>
-            </div>
-            <div class="app-hero-mockup">
-                <div class="mockup-phone">
-                    <img src="/assets/images/screenshot-1.png"
-                        alt="Health Analytics iOS app dashboard showing health metrics and data visualization"
-                        width="400" height="auto" loading="eager" />
-                </div>
-            </div>
+        <h1>Clinical-Grade Health Intelligence</h1>
+        <p class="lead">Turn raw HealthKit data into biomarkers for longevity, recovery, and functional health. 100% Local. Science-Backed.</p>
+        <div class="mt-md">
+             <a href="https://apps.apple.com/app/health-analytics/id123456789" class="btn btn-primary">Download Free</a>
+             <a href="#science" class="btn btn-text">View the Science ↓</a>
         </div>
     </div>
 </section>
 
-<!-- Key Features Section -->
-<section id="features" class="app-features">
+<section id="science" class="section section-light">
     <div class="container">
-        <div class="section-header">
-            <div class="section-badge">Features</div>
-            <h2 class="section-title">Everything You Need to Take Control</h2>
-            <p class="section-subtitle">Professional-grade analytics designed for understanding and exporting your
-                health data</p>
+        <div class="text-center mb-xl">
+            <h2>The Science of Your Health</h2>
+            <p class="lead">We don't just display data. We interpret your biometrics based on clinical research and peer-reviewed studies.</p>
         </div>
-        <div class="app-features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-chart"></use>
-                    </svg>
-                </div>
-                <h3>Unified Dashboard</h3>
-                <p>See your most important metrics at a glance, with simple visualizations and clear summary
-                    stats—totals, minimums, and maximums across all health categories.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-zones"></use>
-                    </svg>
-                </div>
-                <h3>Deep HealthKit Coverage</h3>
-                <p>Activity, vitals, sleep, and body metrics—all in one place. Steps, heart rate, blood pressure, sleep
-                    stages, weight, BMI, and more.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-export"></use>
-                    </svg>
-                </div>
-                <h3>Flexible Export Engine</h3>
-                <p>Export only the data you need, for the time period you choose. CSV, JSON, PDF, HTML, Markdown, and
-                    plain text formats supported.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-calendar"></use>
-                    </svg>
-                </div>
-                <h3>Export History</h3>
-                <p>Keep a record of what you exported and when, so you can quickly resend or verify past reports without
-                    recreating them.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-shield"></use>
-                    </svg>
-                </div>
-                <h3>Complete Privacy</h3>
-                <p>No accounts, no cloud lock-in, no hidden sync. Health Analytics uses HealthKit permissions and keeps
-                    data on your device. You decide what to export.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use href="/assets/images/icons-sprite.svg#icon-lightning"></use>
-                    </svg>
-                </div>
-                <h3>Professional Reports</h3>
-                <p>Generate clear, readable PDF reports for medical consultations. Share doctor-ready summaries with
-                    physicians, coaches, or family members.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Screenshots Carousel -->
-<section class="app-screenshots">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">Screenshots</div>
-            <h2 class="section-title">See Health Analytics in Action</h2>
-            <p class="section-subtitle">Beautiful, intuitive interface designed for clarity</p>
-        </div>
-        <div class="carousel-wrapper">
-            <button class="carousel-btn carousel-btn-prev" aria-label="Previous screenshot">
-                <svg aria-hidden="true">
-                    <use href="/assets/images/icons-sprite.svg#icon-arrow-left"></use>
-                </svg>
-            </button>
-            <div class="screenshots-carousel" id="screenshotsCarousel">
-                <div class="screenshot-item">
-                    <img src="/assets/images/screenshot-1.png"
-                        alt="Health Analytics dashboard with summary cards and charts" loading="lazy" width="300"
-                        height="auto">
-                    <p class="screenshot-caption">Dashboard Overview</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="/assets/images/screenshot-2.png"
-                        alt="Export screen with format options and time period selection" loading="lazy" width="300"
-                        height="auto">
-                    <p class="screenshot-caption">Export Options</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="/assets/images/screenshot-3.png" alt="History view showing past exports" loading="lazy"
-                        width="300" height="auto">
-                    <p class="screenshot-caption">Export History</p>
-                </div>
-            </div>
-            <button class="carousel-btn carousel-btn-next" aria-label="Next screenshot">
-                <svg aria-hidden="true">
-                    <use href="/assets/images/icons-sprite.svg#icon-arrow-right"></use>
-                </svg>
-            </button>
-            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Screenshot navigation"></div>
-        </div>
-    </div>
-</section>
-
-<!-- HealthKit Categories Section -->
-<section class="app-metrics">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">HealthKit Coverage</div>
-            <h2 class="section-title text-white">All Your Health Data, One Place</h2>
-            <p class="section-subtitle text-white-90">
-                Health Analytics brings together the full breadth of HealthKit data in clean, readable dashboards
-            </p>
-        </div>
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <div class="metric-icon">🏃</div>
-                <div class="metric-label">Movement</div>
-                <h3 class="metric-name">Activity</h3>
-                <p class="metric-description">Steps, distance, flights climbed, energy burned</p>
-            </div>
-            <div class="metric-card">
-                <div class="metric-icon">❤️</div>
-                <div class="metric-label">Heart</div>
-                <h3 class="metric-name">Vitals</h3>
-                <p class="metric-description">Heart rate, blood pressure, respiratory rate</p>
-            </div>
-            <div class="metric-card">
-                <div class="metric-icon">😴</div>
-                <div class="metric-label">Rest</div>
-                <h3 class="metric-name">Sleep</h3>
-                <p class="metric-description">Sleep stages and duration tracking</p>
-            </div>
-            <div class="metric-card">
-                <div class="metric-icon">⚖️</div>
-                <div class="metric-label">Composition</div>
-                <h3 class="metric-name">Body</h3>
-                <p class="metric-description">Weight, BMI, body fat percentage</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Pricing Section -->
-<section class="app-pricing">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">Pricing</div>
-            <h2 class="section-title">Simple, Transparent Pricing</h2>
-            <p class="section-subtitle">Start with a 7-day free trial. Cancel anytime.</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <div class="pricing-header">
-                    <h3 class="pricing-name">Monthly</h3>
-                    <div class="pricing-price">
-                        <span class="pricing-currency">€</span>
-                        <span class="pricing-amount">3.99</span>
-                        <span class="pricing-period">/month</span>
+        <div class="grid grid-2">
+            <div class="card">
+                <h3 class="card-title">Cardiorespiratory Fitness (VO₂ Max)</h3>
+                <div class="card-content">
+                    <p>Often considered the single strongest predictor of lifespan. Our analytics evaluate your estimated VO₂ Max against population norms to assess your physiological age and long-term mortality risk.</p>
+                    <div class="callout callout-tip mt-md">
+                        <strong>Why it matters:</strong> A landmark study of 122,007 patients found that "elite" cardiorespiratory fitness was associated with an 80% reduction in mortality risk compared to low fitness.
                     </div>
-                    <p class="pricing-trial">7-day free trial</p>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Source:</strong> Mandsager K, et al. (JAMA Network Open, 2018).
+                    </p>
                 </div>
-                <ul class="pricing-features">
-                    <li>Complete HealthKit access</li>
-                    <li>Unified dashboard with all metrics</li>
-                    <li>Export in CSV, JSON, PDF, HTML, MD, TXT</li>
-                    <li>Export history tracking</li>
-                    <li>Professional PDF reports</li>
-                    <li>100% privacy, local data</li>
-                    <li>All future updates</li>
-                </ul>
             </div>
-            <div class="pricing-card featured">
-                <span class="pricing-badge">Recommended</span>
-                <div class="pricing-header">
-                    <h3 class="pricing-name">Annual</h3>
-                    <div class="pricing-price">
-                        <span class="pricing-currency">€</span>
-                        <span class="pricing-amount">39.99</span>
-                        <span class="pricing-period">/year</span>
+
+            <div class="card">
+                <h3 class="card-title">Autonomic Balance (HRV)</h3>
+                <div class="card-content">
+                    <p>We analyze Heart Rate Variability (specifically rMSSD) to measure the balance between your sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) nervous systems.</p>
+                    <div class="callout callout-info mt-md">
+                        <strong>The Science:</strong> Higher HRV is generally linked to better cardiovascular health and stress resilience. It serves as a sensitive marker for systemic inflammation and recovery status.
                     </div>
-                    <p class="pricing-trial">Save €7.89/year (16% off)</p>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Source:</strong> Task Force of the European Society of Cardiology (1996); Shaffer & Ginsberg (2017).
+                    </p>
                 </div>
-                <ul class="pricing-features">
-                    <li>Everything in Monthly</li>
-                    <li>Best value for committed users</li>
-                    <li>Priority support</li>
-                    <li>Early access to new features</li>
-                    <li>Export in all formats</li>
-                    <li>100% privacy, local data</li>
-                    <li>All future updates</li>
-                </ul>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Who It's For Section -->
-<section class="app-benefits">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">Who It's For</div>
-            <h2 class="section-title">Built for People Who Need Their Data</h2>
-            <p class="section-subtitle">Health Analytics serves anyone who needs more than daily snapshots</p>
-        </div>
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <div class="benefit-icon">🏥</div>
-                <div class="benefit-content">
-                    <h3>Patients</h3>
-                    <p>Preparing for medical appointments and follow-ups. Share organized health reports with your
-                        doctor.</p>
+            <div class="card">
+                <h3 class="card-title">Functional Mobility (Gait Speed)</h3>
+                <div class="card-content">
+                    <p>Walking speed is often called "the sixth vital sign" in clinical settings. We track your gait speed trends to detect early signs of functional decline or neurological changes.</p>
+                    <div class="callout callout-warning mt-md">
+                        <strong>Clinical Relevance:</strong> Analysis of 34,485 older adults demonstrated that gait speed is directly associated with 5-year and 10-year survival rates across all age groups.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Source:</strong> Studenski S, et al. (JAMA, 2011).
+                    </p>
                 </div>
             </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">🏅</div>
-                <div class="benefit-content">
-                    <h3>Athletes & Coaches</h3>
-                    <p>Consistent training metrics and trend analysis. Export data for training platforms.</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">👨‍👩‍👧‍👦</div>
-                <div class="benefit-content">
-                    <h3>Families</h3>
-                    <p>Helping track and organize health information for loved ones. Keep records accessible.</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">💻</div>
-                <div class="benefit-content">
-                    <h3>Developers & Researchers</h3>
-                    <p>Structured exports in JSON and CSV for analysis, research, and integration with other tools.</p>
+
+            <div class="card">
+                <h3 class="card-title">Sleep & Glymphatic Clearance</h3>
+                <div class="card-content">
+                    <p>We don't just track hours slept; we analyze Deep Sleep (NREM Stage 3) duration. This is critical for the "glymphatic system," the brain's waste clearance mechanism.</p>
+                    <div class="callout callout-tip mt-md">
+                        <strong>Mechanism:</strong> During deep sleep, the glymphatic system becomes active, clearing neurotoxic waste products like beta-amyloid that accumulate during wakefulness.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Source:</strong> Xie L, et al. (Science, 2013); Reddy & van der Werf (2020).
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Final CTA Section -->
-<section class="app-cta-final">
-    <div class="container">
-        <h2>Start Your Free Trial</h2>
-        <p>Turn your health history into insights you can use. Your data, clear and portable.</p>
-        <div class="store-badges cta-spacing">
-            <a href="https://apps.apple.com/app/health-analytics/id123456789" class="store-badge" target="_blank" rel="noopener">
-                <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="140" height="47">
-            </a>
-        </div>
-        <p class="section-footer">
-            7-day free trial • No account required • Your data stays on your device
-        </p>
-    </div>
-</section>
+---
+
+## Why Health Analytics?
+
+- **7-day free trial** - Try before you commit
+- **No account required** - Start immediately
+- **100% local processing** - Your data never leaves your device
+
+---
+
+## At a Glance
+
+### Unified Dashboard
+See your most important metrics at a glance with clean visualizations and summary statistics.
+
+### Deep HealthKit Coverage
+Activity, vitals, sleep, body composition, nutrition, and more—organized by category and searchable.
+
+### Scientific Context
+For each metric, understand what it measures, why it matters, and typical reference ranges with citations.
+
+### Flexible Export
+Export only what you need, in the format you prefer: CSV, JSON, PDF, HTML, Markdown, or plain text.
+
+### Complete Privacy
+No accounts, no cloud lock-in, no tracking. Processing happens entirely on your device.
+
+---
+
+## HealthKit Coverage
+
+Health Analytics organizes HealthKit into practical domains:
+
+- **Movement & Fitness**: steps, distance, energy, workouts, cardio fitness
+- **Heart & Vitals**: heart rate, HRV, ECG (when available), blood pressure, respiratory rate
+- **Sleep & Recovery**: sleep duration/stages, breathing metrics (when available)
+- **Body & Composition**: weight, BMI, body fat %, waist circumference
+- **Nutrition & Hydration**: energy intake, macros/micros, water
+- **Mindfulness & Mental Wellbeing**: mindful minutes, mood/state-of-mind (when available)
+
+---
+
+## Start Your Free Trial
+
+Turn your health history into insights you can use.
+
+[Download on the App Store](https://apps.apple.com/app/health-analytics/id123456789)
+
+7-day free trial | No account required | Your data stays on your device
     
   </main>
 
@@ -1014,6 +841,7 @@ img[width][height] {
   
 
   
-  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}</script>
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js') }</script>
 </body>
+
 </html>
