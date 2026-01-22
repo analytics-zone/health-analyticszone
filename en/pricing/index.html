@@ -338,10 +338,7 @@ img[width][height] {
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
   
-  <link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="/assets/css/main.min.css">
-  </noscript>
+  <link rel="stylesheet" href="/assets/css/main.min.css?v=2026.01.21.05">
 
   
   
@@ -715,65 +712,98 @@ img[width][height] {
   
   <main id="main-content" class="main-content">
     
-    
-<div class="page-content container">
-  <div class="page-header text-center mb-xl">
+    <div class="page-content container">
+  <div class="pricing-header text-center mb-xl">
     <h1>Pricing</h1>
+    <p class="lead">Simple, transparent pricing with a free trial to get started.</p>
   </div>
-  <div class="content-body" style="max-width: 70ch; margin: 0 auto;">
-    <h1 id="pricing">Pricing</h1>
-<p>Simple, transparent pricing with a free trial to get started.</p>
-<hr />
-<h2 id="monthly-plan">Monthly Plan</h2>
-<p><strong>€3.99 / month</strong></p>
-<p>7-day free trial included</p>
-<h3 id="whats-included">What's included:</h3>
-<ul>
-<li>Complete HealthKit access</li>
-<li>Unified dashboard</li>
-<li>Export in CSV, JSON, PDF, HTML, MD, TXT</li>
-<li>Export history</li>
-<li>Professional PDF reports</li>
-<li>100% privacy, local processing</li>
-<li>All future updates</li>
-</ul>
-<hr />
-<h2 id="annual-plan">Annual Plan</h2>
-<p><strong>€39.99 / year</strong></p>
-<p>Save €7.89/year (16% off)</p>
-<h3 id="everything-in-monthly-plus">Everything in Monthly, plus:</h3>
-<ul>
-<li>Best value for committed users</li>
-<li>Priority support</li>
-<li>Early access to new features</li>
-</ul>
-<hr />
-<h2 id="free-trial">Free Trial</h2>
-<p>Not sure yet? Start with a 7-day free trial.</p>
-<ul>
-<li>Full access to all features</li>
-<li>No credit card required upfront</li>
-<li>Cancel anytime</li>
-<li>No commitment</li>
-</ul>
-<hr />
-<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<h3 id="is-there-a-free-version">Is there a free version?</h3>
-<p>The 7-day free trial gives you full access to evaluate the app. After the trial, a subscription is required to continue using all features.</p>
-<h3 id="can-i-cancel-anytime">Can I cancel anytime?</h3>
-<p>Yes. You can cancel your subscription at any time through the App Store. Your access continues until the end of your current billing period.</p>
-<h3 id="do-you-offer-refunds">Do you offer refunds?</h3>
-<p>Refunds are handled through Apple according to their App Store policies.</p>
-<h3 id="is-my-data-safe-if-i-cancel">Is my data safe if I cancel?</h3>
-<p>Your health data remains in Apple Health regardless of your subscription status. Health Analytics only reads your data—it doesn't store it separately.</p>
-<h3 id="do-you-offer-family-or-team-plans">Do you offer family or team plans?</h3>
-<p>Not currently. Each subscription is for individual use.</p>
-<h3 id="are-there-any-hidden-fees">Are there any hidden fees?</h3>
-<p>No. The prices shown are the complete prices. No additional fees, no in-app purchases for extra features.</p>
-<hr />
-<h2 id="start-your-free-trial">Start Your Free Trial</h2>
-<p><a href="https://apps.apple.com/app/health-analytics/id123456789">Download on the App Store</a></p>
-<p>7-day free trial | No account required | Your data stays on your device</p>
+
+  <div class="pricing-grid">
+    <!-- Monthly Plan -->
+    <div class="pricing-card">
+      <h2 class="pricing-title">Monthly Plan</h2>
+      <div class="pricing-price">
+        €3.99 <span class="pricing-period">/ month</span>
+      </div>
+      <div class="pricing-trial">7-day free trial included</div>
+
+      <div class="pricing-features">
+        <ul>
+          <li>Complete HealthKit access</li>
+          <li>Unified dashboard</li>
+          <li>Export in CSV, JSON, PDF, HTML, MD, TXT</li>
+          <li>Export history</li>
+          <li>Professional PDF reports</li>
+          <li>100% privacy, local processing</li>
+          <li>All future updates</li>
+        </ul>
+      </div>
+
+      <div class="text-center mt-md">
+        <a href="https://apps.apple.com/app/health-analytics/id123456789" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+      </div>
+    </div>
+
+    <!-- Annual Plan -->
+    <div class="pricing-card featured">
+      <h2 class="pricing-title">Annual Plan</h2>
+      <div class="pricing-price">
+        €39.99 <span class="pricing-period">/ year</span>
+      </div>
+      <div class="pricing-trial">Save €7.89/year (16% off)</div>
+
+      <div class="pricing-features">
+        <ul>
+          <li><strong>Everything in Monthly, plus:</strong></li>
+          <li>Best value for committed users</li>
+          <li>Priority support</li>
+          <li>Early access to new features</li>
+        </ul>
+      </div>
+
+      <div class="text-center mt-md">
+        <a href="https://apps.apple.com/app/health-analytics/id123456789" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-footer">
+    <h2 class="mb-xl">Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>Is there a free version?</h3>
+        <p>The 7-day free trial gives you full access to evaluate the app. After the trial, a subscription is required
+          to continue using all features.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I cancel anytime?</h3>
+        <p>Yes. You can cancel your subscription at any time through the App Store. Your access continues until the end
+          of your current billing period.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer refunds?</h3>
+        <p>Refunds are handled through Apple according to their App Store policies.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my data safe if I cancel?</h3>
+        <p>Your health data remains in Apple Health regardless of your subscription status. Health Analytics only reads
+          your data—it doesn't store it separately.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer family or team plans?</h3>
+        <p>Not currently. Each subscription is for individual use.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are there any hidden fees?</h3>
+        <p>No. The prices shown are the complete prices. No additional fees, no in-app purchases for extra features.</p>
+      </div>
+    </div>
+
+    <div class="mt-xl text-center">
+      <a href="https://apps.apple.com/app/health-analytics/id123456789" class="btn btn-secondary">Download on the App Store</a>
+      <p class="text-sm text-secondary mt-sm">7-day free trial | No account required | Your data stays on your device
+      </p>
+    </div>
   </div>
 </div>
     
