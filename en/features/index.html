@@ -722,97 +722,117 @@ img[width][height] {
   
   <main id="main-content" class="main-content">
     
-    <div class="page-content container">
-  <div class="page-header text-center mb-xl">
+    <section class="page-hero">
+  <div class="container">
     <h1>Features</h1>
+    <p class="lead">Health Analytics transforms your Apple Health data into actionable insights with powerful
+      visualization, scientific context, and flexible export options.</p>
   </div>
-  <div class="content-body">
-    <h1 id="features">Features</h1>
-    <p>Health Analytics transforms your Apple Health data into actionable insights with powerful visualization,
-      scientific context, and flexible export options.</p>
-    <hr />
-    <h2 id="unified-dashboard">Unified Dashboard</h2>
-    <p>See your most important metrics at a glance with clean visualizations and summary statistics (totals, minima,
-      maxima, and trends).</p>
-    <p><strong>What you get:</strong>
-      - Customizable metric cards
-      - Trend indicators (7-day, 30-day, 90-day)
-      - Summary statistics at a glance
-      - Quick access to detailed views</p>
-    <hr />
-    <h2 id="deep-healthkit-coverage">Deep HealthKit Coverage</h2>
-    <p>Activity, vitals, sleep, body composition, nutrition, and more—organized by category and searchable.</p>
-    <p><strong>Categories covered:</strong>
-      - Movement &amp; Fitness
-      - Heart &amp; Circulation
-      - Respiratory Health
-      - Sleep &amp; Recovery
-      - Body Measurements
-      - Nutrition &amp; Hydration
-      - Mindfulness &amp; Mental Wellbeing
-      - Environmental Factors</p>
-    <hr />
-    <h2 id="scientific-context-not-just-numbers">Scientific Context (Not Just Numbers)</h2>
-    <p>For each metric, Health Analytics can show:</p>
-    <ul>
-      <li><strong>What it measures</strong> - Clear definitions in plain language</li>
-      <li><strong>Why it matters clinically</strong> - Physiological and health relevance</li>
-      <li><strong>How devices estimate it</strong> - Sensor technology and methods</li>
-      <li><strong>Typical adult reference ranges</strong> - With scientific citations</li>
-      <li><strong>Common confounders and limitations</strong> - What can affect accuracy</li>
-    </ul>
-    <p>This context helps you interpret your data intelligently and know when to seek professional advice.</p>
-    <hr />
-    <h2 id="flexible-export-engine">Flexible Export Engine</h2>
-    <p>Export only what you need, for the time period you choose.</p>
-    <p><strong>Supported formats:</strong>
-      - <strong>CSV</strong> - For spreadsheets and data analysis
-      - <strong>JSON</strong> - For developers and integrations
-      - <strong>PDF</strong> - Professional reports for medical consultations
-      - <strong>HTML</strong> - Web-friendly summaries
-      - <strong>Markdown</strong> - Documentation and notes
-      - <strong>Plain text</strong> - Universal compatibility</p>
-    <p><strong>Export options:</strong>
-      - Select specific metrics or categories
-      - Choose custom date ranges
-      - Include or exclude scientific context
-      - Generate summary or detailed reports</p>
-    <hr />
-    <h2 id="export-history">Export History</h2>
-    <p>Keep a record of what you exported and when. Useful for:
-      - Tracking what you've shared with healthcare providers
-      - Maintaining a personal audit trail
-      - Quickly re-exporting similar datasets</p>
-    <hr />
-    <h2 id="professional-reports">Professional Reports</h2>
-    <p>Generate readable PDF summaries suitable for medical consultations.</p>
-    <p><strong>Report features:</strong>
-      - Clean, professional formatting
-      - Key metrics highlighted
-      - Trend visualizations
-      - Reference ranges included
-      - Date and time stamped</p>
-    <hr />
-    <h2 id="complete-privacy">Complete Privacy</h2>
-    <p>No accounts, no cloud lock-in, no tracking. Health Analytics uses HealthKit permissions and keeps processing
-      on-device.</p>
-    <p><strong>Privacy guarantees:</strong>
-      - No user accounts required
-      - No data transmitted to servers
-      - No analytics or tracking SDKs
-      - No advertising
-      - Full GDPR compliance
-      - You control your data completely</p>
-    <hr />
-    <h2 id="data-provenance">Data Provenance</h2>
-    <p>Know exactly where your data comes from:
-      - Apple Watch measurements
-      - iPhone sensor data
-      - Third-party connected devices
-      - Manual entries</p>
-    <p>This transparency reduces confusion and improves trust in your health data.</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="category-grid">
+
+      <div class="category-card">
+        <div class="category-icon">📊</div>
+        <h3>Unified Dashboard</h3>
+        <p>See your most important metrics at a glance with clean visualizations and summary statistics.</p>
+        <ul>
+          <li>Customizable metric cards</li>
+          <li>Trend indicators (7, 30, 90-day)</li>
+          <li>Summary statistics at a glance</li>
+          <li>Quick access to detailed views</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🩺</div>
+        <h3>Deep HealthKit Coverage</h3>
+        <p>Activity, vitals, sleep, body composition, nutrition, and more—organized by category and searchable.</p>
+        <ul>
+          <li>Movement &amp; Fitness</li>
+          <li>Heart &amp; Circulation</li>
+          <li>Sleep &amp; Recovery</li>
+          <li>Body Measurements</li>
+          <li>Nutrition &amp; Hydration</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🔬</div>
+        <h3>Scientific Context</h3>
+        <p>Not just numbers—understand what each metric means with evidence-based explanations.</p>
+        <ul>
+          <li>Clear definitions in plain language</li>
+          <li>Clinical relevance explained</li>
+          <li>Typical reference ranges</li>
+          <li>Limitations and confounders</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">📤</div>
+        <h3>Flexible Export Engine</h3>
+        <p>Export only what you need, for the time period you choose.</p>
+        <ul>
+          <li><strong>CSV</strong> — Spreadsheets &amp; analysis</li>
+          <li><strong>JSON</strong> — Developers &amp; integrations</li>
+          <li><strong>PDF</strong> — Medical consultations</li>
+          <li><strong>Markdown</strong> — Documentation</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">📋</div>
+        <h3>Professional Reports</h3>
+        <p>Generate readable PDF summaries suitable for medical consultations.</p>
+        <ul>
+          <li>Clean, professional formatting</li>
+          <li>Key metrics highlighted</li>
+          <li>Trend visualizations</li>
+          <li>Reference ranges included</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🔒</div>
+        <h3>Complete Privacy</h3>
+        <p>No accounts, no cloud lock-in, no tracking. Your data stays on your device.</p>
+        <ul>
+          <li>No user accounts required</li>
+          <li>No data transmitted to servers</li>
+          <li>No analytics or tracking SDKs</li>
+          <li>Full GDPR compliance</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">📜</div>
+        <h3>Export History</h3>
+        <p>Keep a record of what you exported and when.</p>
+        <ul>
+          <li>Track shared data with providers</li>
+          <li>Personal audit trail</li>
+          <li>Quick re-export similar datasets</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🔍</div>
+        <h3>Data Provenance</h3>
+        <p>Know exactly where your data comes from.</p>
+        <ul>
+          <li>Apple Watch measurements</li>
+          <li>iPhone sensor data</li>
+          <li>Third-party connected devices</li>
+          <li>Manual entries</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
-</div>
+</section>
     
   </main>
 
