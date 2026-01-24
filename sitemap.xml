@@ -19,6 +19,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://health.analyticszone.app/en/faq/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://health.analyticszone.app/en/features/</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -50,6 +55,11 @@
   <url>
     <loc>https://health.analyticszone.app/en/terms/</loc>
     <lastmod>2026-01-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://health.analyticszone.app/en/use-cases/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
