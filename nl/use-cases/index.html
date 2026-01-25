@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Hoe Health Analytics te gebruiken - Export Apple Health Data to...</title>
+  <meta name="description" content="Scenario&#39;s uit de praktijk waarin Health Analytics u helpt het meeste uit uw Apple Health-gegevens te halen">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="Hoe, Health, Analytics, te, gebruiken, Export, Apple, Data, to, Scenario">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/nl/use-cases/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-01-25T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/nl/use-cases/">
+  <meta property="og:title" content="Hoe Health Analytics te gebruiken - Export Apple Health Data to...">
+  <meta property="og:description" content="Scenario&#39;s uit de praktijk waarin Health Analytics u helpt het meeste uit uw Apple Health-gegevens te halen">
+  <meta property="og:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/nl/use-cases/">
+  <meta name="twitter:title" content="Hoe Health Analytics te gebruiken - Export Apple Health Data to...">
+  <meta name="twitter:description" content="Scenario&#39;s uit de praktijk waarin Health Analytics u helpt het meeste uit uw Apple Health-gegevens te halen">
+  <meta name="twitter:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/use-cases/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/use-cases/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/use-cases/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/use-cases/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/use-cases/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/use-cases/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/use-cases/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/use-cases/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/use-cases/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/use-cases/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/use-cases/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/use-cases/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/use-cases/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/use-cases/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../assets/css/main.min.css?v=2026.01.21.05">
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "nl"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hoe Health Analytics te gebruiken - Export Apple Health Data to...",
+  "description": "Scenario&#39;s uit de praktijk waarin Health Analytics u helpt het meeste uit uw Apple Health-gegevens te halen",
+  "url": "https://health.analyticszone.app/nl/use-cases/"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hoe Health Analytics te gebruiken - Export Apple Health Data to...",
+  "description": "Scenario&#39;s uit de praktijk waarin Health Analytics u helpt het meeste uit uw Apple Health-gegevens te halen",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-01-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/nl/use-cases/"
+  }
+}
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Naar de inhoud springen</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/nl/" class="site-logo">
+                <picture>
+                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/nl/features/" 
+                                aria-current="">
+                                Functies
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/nl/metrics/" 
+                                aria-current="">
+                                Statistiekenbibliotheek
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/nl/pricing/" 
+                                aria-current="">
+                                Tarieven
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/nl/about/" 
+                                aria-current="">
+                                Over Ons
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Selecteer taal">
+                        
+                        <option value="ca" >
+                            Català
+                        </option>
+                        
+                        <option value="da" >
+                            Dansk
+                        </option>
+                        
+                        <option value="de" >
+                            Deutsch
+                        </option>
+                        
+                        <option value="en" >
+                            English
+                        </option>
+                        
+                        <option value="es" >
+                            Español
+                        </option>
+                        
+                        <option value="fi" >
+                            Suomi
+                        </option>
+                        
+                        <option value="fr" >
+                            Français
+                        </option>
+                        
+                        <option value="it" >
+                            Italiano
+                        </option>
+                        
+                        <option value="km" >
+                            Khmer
+                        </option>
+                        
+                        <option value="nb" >
+                            Norsk
+                        </option>
+                        
+                        <option value="nl" selected>
+                            Nederlands
+                        </option>
+                        
+                        <option value="pt" >
+                            Português
+                        </option>
+                        
+                        <option value="sv" >
+                            Svenska
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu in-/uitschakelen"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <section class="page-hero">
+    <div class="container">
+        <h1>Hoe Health Analytics te gebruiken</h1>
+        <p class="lead">Scenario's uit de praktijk waarin Health Analytics u helpt het meeste uit uw Apple
+            Health-gegevens te halen</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="use-case mb-xl">
+            <div class="grid grid-2">
+                <div>
+                    <h2>📋 Bereid gezondheidsgegevens voor op doktersafspraken</h2>
+                    <p class="lead">Genereer professionele medische rapporten die zorgverleners daadwerkelijk kunnen
+                        gebruiken.</p>
+
+                    <h3 class="mt-md">Het probleem</h3>
+                    <p>U wilt uw gezondheidsgegevens delen met uw arts, maar het is niet praktisch om tijdens een
+                        afspraak uw telefoonscherm te laten zien. De standaard XML-export van Apple is te technisch voor
+                        medische professionals.</p>
+
+                    <h3 class="mt-md">Het oplossing</h3>
+                    <p>Health Analytics creëert overzichtelijke, professionele PDF-rapporten met:</p>
+                    <ul>
+                        <li>Geselecteerde statistieken die relevant zijn voor uw consult</li>
+                        <li>Trendgrafieken die veranderingen in de loop van de tijd laten zien</li>
+                        <li>Klinische referentiebereiken voor context</li>
+                        <li>Informatie over de gegevensbron (herkomst van het apparaat)</li>
+                    </ul>
+
+                    <h3 class="mt-md">Veelvoorkomende scenario's</h3>
+                    <ul>
+                        <li><strong>Cardiologie:</strong> Exporteer hartslag, HRV, bloeddruk en ECG-gegevens voor een
+                            beoordeling van de gezondheid van het hart</li>
+                        <li><strong>Slaapgeneeskunde:</strong> Deel slaapfasen, duur en ademhalingsstatistieken</li>
+                        <li><strong>Endocrinologie:</strong> Verstrek gegevens over bloedglucose, insuline en voeding
+                            voor het beheer van diabetes</li>
+                        <li><strong>Sportgeneeskunde:</strong> Toon VO₂ Max, trainingstijd en herstelstatistieken</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Snelle stappen</h3>
+                    <div class="card-content">
+                        <ol>
+                            <li>Open Health Analytics</li>
+                            <li>Selecteer de relevante gezondheidsstatistieken</li>
+                            <li>Kies het datumbereik (bijv. de afgelopen 3 maanden)</li>
+                            <li>Exporteer als PDF</li>
+                            <li>E-mail naar de arts of neem een geprinte kopie mee</li>
+                        </ol>
+                        <p class="mt-md text-sm"><strong>Pro-tip:</strong> Stuur het rapport voorafgaand aan uw
+                            afspraak, zodat uw arts het alvast kan bekijken.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="use-case mb-xl">
+            <div class="grid grid-2">
+                <div>
+                    <h2>📊 Analyseer Apple Health-trends in spreadsheets</h2>
+                    <p class="lead">Exporteer uw HealthKit-gegevens naar CSV voor aangepaste analyse en visualisatie.
+                    </p>
+
+                    <h3 class="mt-md">Het probleem</h3>
+                    <p>Apple Health toont basisgrafieken, maar u wilt een diepere analyse maken: correlaties tussen
+                        statistieken, aangepaste tijdsperioden of combineren met andere gegevensbronnen.</p>
+
+                    <h3 class="mt-md">De oplossing</h3>
+                    <p>Exporteer naar CSV en open in Excel, Google Sheets of Numbers om:</p>
+                    <ul>
+                        <li>Aangepaste grafieken en draaitabellen te maken</li>
+                        <li>Correlaties te berekenen (bijv. slaapkwaliteit versus HRV)</li>
+                        <li>Te combineren met voedings- of trainingslogs</li>
+                        <li>Voortgang naar gezondheidsdoelen bij te houden</li>
+                    </ul>
+
+                    <h3 class="mt-md">Populaire analyse-toepassingen</h3>
+                    <ul>
+                        <li><strong>Gewichtsverlies bijhouden:</strong> Leg een verband tussen gewicht, activiteit en
+                            voeding in de loop van de tijd</li>
+                        <li><strong>Trainingsoptimalisatie:</strong> Analyseer de intensiteit van de training, herstel-
+                            en prestatietrends</li>
+                        <li><strong>Slaapverbetering:</strong> Identificeer patronen tussen slaapkwaliteit, HRV en
+                            dagelijkse gewoonten</li>
+                        <li><strong>Beheer van chronische aandoeningen:</strong> Houd symptomen bij naast vitale
+                            functies en medicatie</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Wat u kunt exporteren</h3>
+                    <div class="card-content">
+                        <ul>
+                            <li>Stappen, afstand, beklommen trappen</li>
+                            <li>Hartslag, HRV, bloeddruk</li>
+                            <li>Slaapfasen en -duur</li>
+                            <li>Gewicht, BMI, lichaamssamenstelling</li>
+                            <li>Voeding en hydratatie</li>
+                            <li>Trainingen en actieve energie</li>
+                            <li>VO₂ Max en cardiofitness</li>
+                            <li>Bloedglucose en insuline</li>
+                        </ul>
+                        <p class="mt-md text-sm"><strong>Formaat:</strong> Overzichtelijk CSV-bestand met tijdstempels,
+                            waarden en eenheden, klaar voor analyse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="use-case mb-xl">
+            <div class="grid grid-2">
+                <div>
+                    <h2>💾 Maak een back-up van uw Apple Health-gegevens</h2>
+                    <p class="lead">Maak veilige, draagbare back-ups van uw gezondheidsgeschiedenis in bruikbare
+                        formaten.</p>
+
+                    <h3 class="mt-md">Het probleem</h3>
+                    <p>Uw gezondheidsgegevens zijn waardevol en onvervangbaar. Als u uw iPhone verliest of van apparaat
+                        wisselt, wilt u er zeker van zijn dat uw gezondheidsgeschiedenis bewaard blijft in een formaat
+                        waartoe u daadwerkelijk toegang hebt.</p>
+
+                    <h3 class="mt-md">De oplossing</h3>
+                    <p>Regelmatige exports creëren back-ups die:</p>
+                    <ul>
+                        <li><strong>Draagbaar zijn:</strong> CSV en JSON werken op elk platform</li>
+                        <li><strong>Toekomstbestendig zijn:</strong> Niet gebonden aan het ecosysteem van Apple</li>
+                        <li><strong>Leesbaar zijn:</strong> Geen speciale software vereist</li>
+                        <li><strong>Selectief zijn:</strong> Exporteer alleen wat voor u belangrijk is</li>
+                    </ul>
+
+                    <h3 class="mt-md">Back-upstrategieën</h3>
+                    <ul>
+                        <li><strong>Maandelijkse volledige back-up:</strong> Exporteer alle statistieken als CSV naar
+                            cloudopslag</li>
+                        <li><strong>Driemaandelijkse PDF-samenvattingen:</strong> Maak leesbare rapporten voor uw
+                            persoonlijke administratie</li>
+                        <li><strong>Voorafgaand aan device-upgrade:</strong> Volledige export voordat u van telefoon
+                            wisselt</li>
+                        <li><strong>Jaarlijks JSON-archief:</strong> Ontwikkelaarsvriendelijk formaat voor
+                            langetermijnopslag</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Waarom een back-up belangrijk is</h3>
+                    <div class="card-content">
+                        <ul>
+                            <li>Jaren aan gezondheidsgeschiedenis op één plek</li>
+                            <li>Bescherming tegen verlies of defect raken van het apparaat</li>
+                            <li>Vrijheid om van platform te wisselen</li>
+                            <li>Delen met toekomstige zorgverleners</li>
+                            <li>Persoonlijk gezondheidsonderzoek en monitoring</li>
+                        </ul>
+                        <p class="mt-md text-sm"><strong>Privacy-opmerking:</strong> Alle exports worden lokaal op uw
+                            apparaat uitgevoerd. U bepaalt zelf waar de back-ups worden opgeslagen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="use-case mb-xl">
+            <div class="grid grid-2">
+                <div>
+                    <h2>🔬 Gezondheidsgegevens voor onderzoek en zelfmonitoring</h2>
+                    <p class="lead">Exporteer gestructureerde gegevens voor persoonlijk onderzoek, academische studies
+                        of 'quantified self'-projecten.</p>
+
+                    <h3 class="mt-md">Het probleem</h3>
+                    <p>U neemt deel aan een gezondheidsstudie, verricht persoonlijk onderzoek of wilt uw gegevens
+                        analyseren met gespecialiseerde tools. U hebt zuivere, gestructureerde gegevens nodig in een
+                        formaat dat onderzoekers kunnen gebruiken.</p>
+
+                    <h3 class="mt-md">De oplossing</h3>
+                    <p>Health Analytics biedt exports van onderzoeksgegevens:</p>
+                    <ul>
+                        <li><strong>JSON-formaat:</strong> Gestructureerde gegevens voor Python, R of statistische
+                            software</li>
+                        <li><strong>CSV-formaat:</strong> Importeren in SPSS, SAS of Excel voor analyse</li>
+                        <li><strong>Herkomst van gegevens:</strong> Weet welk apparaat elke meting heeft geregistreerd
+                        </li>
+                        <li><strong>Nauwkeurige tijdstempels:</strong> Tot op de seconde nauwkeurig voor
+                            tijdreeksanalyse</li>
+                    </ul>
+
+                    <h3 class="mt-md">Onderzoekstoepassingen</h3>
+                    <ul>
+                        <li><strong>Academische studies:</strong> Draag uw gegevens bij aan
+                            gezondheidsonderzoeksprojecten</li>
+                        <li><strong>N-of-1 trials:</strong> Persoonlijke experimenten met interventies en uitkomsten
+                        </li>
+                        <li><strong>Quantified self:</strong> Diepgaande analyses van persoonlijke gezondheidspatronen
+                        </li>
+                        <li><strong>Machine learning:</strong> Train modellen op uw eigen gezondheidsgegevens</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Kenmerken van gegevenskwaliteit</h3>
+                    <div class="card-content">
+                        <ul>
+                            <li>Identificatie van het bronapparaat</li>
+                            <li>Metadata over de nauwkeurigheid van de meting</li>
+                            <li>Detectie en afhandeling van duplicaten</li>
+                            <li>Aangepaste selectie van datumbereik</li>
+                            <li>Statistiekspecifieke filtering</li>
+                            <li>Inclusief eenheden en conversies</li>
+                        </ul>
+                        <p class="mt-md text-sm"><strong>Voor ontwikkelaars:</strong> JSON-exports bevatten volledige
+                            HealthKit-metadata voor geavanceerde analyse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Klaar om te beginnen?</h2>
+            <p class="lead">Probeer Health Analytics 7 dagen gratis en ontdek hoe eenvoudig het is om uw
+                gezondheidsgegevens te exporteren en te analyseren.</p>
+            <div class="mt-md">
+                <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary btn-large">Downloaden in de App Store</a>
+            </div>
+            <p class="text-sm text-secondary mt-md">Geen account nodig | Uw gegevens blijven op uw apparaat | Op elk
+                moment opzegbaar</p>
+        </div>
+    </div>
+</section>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a>
+                
+                <a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a>
+                
+                <a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a>
+                
+                <a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a>
+                
+                <a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a>
+                
+                <a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a>
+                
+                <a href="/it/" class="lang-link"
+                    hreflang="it" >
+                    Italiano
+                </a>
+                
+                <a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a>
+                
+                <a href="/nl/" class="lang-link active"
+                    hreflang="nl" >
+                    Nederlands
+                </a>
+                
+                <a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a>
+                
+                <a href="/da/" class="lang-link"
+                    hreflang="da" >
+                    Dansk
+                </a>
+                
+                <a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a>
+                
+                <a href="/nb/" class="lang-link"
+                    hreflang="nb" >
+                    Norsk
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. Alle rechten voorbehouden
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/nl/privacy/">Privacy</a></li>
+                <li><a href="/nl/terms/">Voorwaarden</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Deze website maakt gebruik van cookies om uw ervaring te verbeteren.</p>
+            <a href="/nl/privacy/" class="text-sm">Meer informatie</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Weigeren</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Accepteren</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../assets/js/core.min.js?v=2026.01.22.01" defer></script>
+  <script src="../../assets/js/search.min.js?v=2026.01.22.01" defer></script>
+  
+
+  
+  
+  <script src="../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
+</body>
+
+</html>

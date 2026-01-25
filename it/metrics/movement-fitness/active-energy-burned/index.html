@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Energia Attiva - Export Apple Health Data to CSV, PDF &amp; JSON |...</title>
+  <meta name="description" content="L&#39;energia attiva (chiamata anche calorie attive) rappresenta l&#39;energia spesa attraverso l&#39;attività fisica oltre il tuo tasso metabolico a riposo.">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="Energia Attiva, movimento-fitness, metriche salute, healthkit">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-01-25T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/">
+  <meta property="og:title" content="Energia Attiva - Export Apple Health Data to CSV, PDF &amp; JSON |...">
+  <meta property="og:description" content="L&#39;energia attiva (chiamata anche calorie attive) rappresenta l&#39;energia spesa attraverso l&#39;attività fisica oltre il tuo tasso metabolico a riposo.">
+  <meta property="og:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/">
+  <meta name="twitter:title" content="Energia Attiva - Export Apple Health Data to CSV, PDF &amp; JSON |...">
+  <meta name="twitter:description" content="L&#39;energia attiva (chiamata anche calorie attive) rappresenta l&#39;energia spesa attraverso l&#39;attività fisica oltre il tuo tasso metabolico a riposo.">
+  <meta name="twitter:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=2026.01.21.05">
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "it"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Energia Attiva - Export Apple Health Data to CSV, PDF &amp; JSON |...",
+  "description": "L&#39;energia attiva (chiamata anche calorie attive) rappresenta l&#39;energia spesa attraverso l&#39;attività fisica oltre il tuo tasso metabolico a riposo.",
+  "url": "https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Energia Attiva - Export Apple Health Data to CSV, PDF &amp; JSON |...",
+  "description": "L&#39;energia attiva (chiamata anche calorie attive) rappresenta l&#39;energia spesa attraverso l&#39;attività fisica oltre il tuo tasso metabolico a riposo.",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-01-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/"
+  }
+}
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Passa al contenuto</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/it/" class="site-logo">
+                <picture>
+                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/it/features/" 
+                                aria-current="">
+                                Caratteristiche
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/it/metrics/" 
+                                aria-current="">
+                                Libreria Metriche
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/it/pricing/" 
+                                aria-current="">
+                                Prezzi
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/it/about/" 
+                                aria-current="">
+                                Chi Siamo
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Seleziona lingua">
+                        
+                        <option value="ca" >
+                            Català
+                        </option>
+                        
+                        <option value="da" >
+                            Dansk
+                        </option>
+                        
+                        <option value="de" >
+                            Deutsch
+                        </option>
+                        
+                        <option value="en" >
+                            English
+                        </option>
+                        
+                        <option value="es" >
+                            Español
+                        </option>
+                        
+                        <option value="fi" >
+                            Suomi
+                        </option>
+                        
+                        <option value="fr" >
+                            Français
+                        </option>
+                        
+                        <option value="it" selected>
+                            Italiano
+                        </option>
+                        
+                        <option value="km" >
+                            Khmer
+                        </option>
+                        
+                        <option value="nb" >
+                            Norsk
+                        </option>
+                        
+                        <option value="nl" >
+                            Nederlands
+                        </option>
+                        
+                        <option value="pt" >
+                            Português
+                        </option>
+                        
+                        <option value="sv" >
+                            Svenska
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Attiva menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <article class="metric-article">
+
+  <nav class="metric-breadcrumb" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList"
+      style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
+
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/it/metrics/">
+          <span itemprop="name">Libreria Metriche</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <span>/</span>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/it/metrics/movement-fitness/">
+          <span itemprop="name">Movimento e Fitness</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <span>/</span>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" aria-current="page">Energia Attiva</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </nav>
+
+
+  <header class="metric-article-header">
+    <span class="metric-category-badge">
+      <span>🏃</span> Movimento e Fitness
+    </span>
+  </header>
+
+
+  <nav class="article-toc">
+    <h4>In Questa Pagina</h4>
+    <div class="toc">
+      <ul>
+        <li><a href="#active-energy">Energia Attiva</a>
+          <ul>
+            <li><a href="#what-is-active-energy">Cos'è l'Energia Attiva?</a>
+              <ul>
+                <li><a href="#how-healthkit-measures-active-energy">Come HealthKit Misura l'Energia Attiva</a></li>
+              </ul>
+            </li>
+            <li><a href="#scientific-background">Inquadramento Scientifico</a>
+              <ul>
+                <li><a href="#the-energy-balance-debate">Il Dibattito sul Bilancio Energetico</a>
+                  <ul>
+                    <li><a href="#the-constrained-energy-model">Il Modello Energetico Vincolato (Constrained)</a></li>
+                    <li><a href="#recent-research-exercise-does-increase-energy-expenditure">Ricerche Recenti:
+                        L'Esercizio AUMENTA il Dispendio Energetico</a></li>
+                    <li><a href="#practical-implications">Implicazioni Pratiche</a></li>
+                  </ul>
+                </li>
+                <li><a href="#exercise-and-mortality-beyond-calories">Esercizio e Mortalità: Oltre le Calorie</a></li>
+              </ul>
+            </li>
+            <li><a href="#clinical-significance">Significato Clinico</a>
+              <ul>
+                <li><a href="#why-track-active-energy">Perché Monitorare l'Energia Attiva?</a></li>
+                <li><a href="#understanding-your-numbers">Capire i Propri Numeri</a></li>
+                <li><a href="#limitations-of-calorie-tracking">Limitazioni del Tracciamento delle Calorie</a></li>
+              </ul>
+            </li>
+            <li><a href="#recommendations">Raccomandazioni</a>
+              <ul>
+                <li><a href="#activity-guidelines">Linee Guida sull'Attività</a></li>
+                <li><a href="#using-active-energy-effectively">Usare l'Energia Attiva in Modo Efficace</a></li>
+                <li><a href="#healthy-relationship-with-numbers">Un Rapporto Sano con i Numeri</a></li>
+              </ul>
+            </li>
+            <li><a href="#when-to-seek-medical-attention">Quando Consultare un Medico</a></li>
+            <li><a href="#references">Riferimenti</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <div class="metric-content">
+    <h1 id="active-energy">Energia Attiva</h1>
+    <h2 id="what-is-active-energy">Cos'è l'Energia Attiva?</h2>
+    <p>L'energia attiva (chiamata anche calorie attive o calorie da esercizio) rappresenta l'energia spesa attraverso
+      l'attività fisica al di sopra del metabolismo basale a riposo. Viene misurata in chilocalorie (comunemente
+      chiamate "calorie") o chilojoule.</p>
+    <p>Il <strong>Dispendio Energetico Giornaliero Totale (TDEE)</strong> si suddivide in:</p>
+    <table class="clinical-table">
+      <thead>
+        <tr>
+          <th>Componente</th>
+          <th>Abbreviazione</th>
+          <th>% del TDEE</th>
+          <th>Descrizione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Metabolismo Basale</td>
+          <td>BMR</td>
+          <td>60-75%</td>
+          <td>Energia per le funzioni vitali di base in completo riposo</td>
+        </tr>
+        <tr>
+          <td>Effetto Termico del Cibo</td>
+          <td>TEF</td>
+          <td>8-12%</td>
+          <td>Energia per digerire, assorbire e processare il cibo</td>
+        </tr>
+        <tr>
+          <td>Termogenesi da Attività Non Correlata all'Esercizio</td>
+          <td>NEAT</td>
+          <td>10-15%</td>
+          <td>Piccoli movimenti, stare in piedi, camminare per casa</td>
+        </tr>
+        <tr>
+          <td>Termogenesi da Attività Fisica (Esercizio)</td>
+          <td>EAT</td>
+          <td>5-10%</td>
+          <td>Esercizio intenzionale e allenamenti</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="how-healthkit-measures-active-energy">Come HealthKit Misura l'Energia Attiva</h3>
+    <p>I dispositivi Apple calcolano l'energia attiva utilizzando:</p>
+    <ul>
+      <li><strong>Sensori di movimento:</strong> Accelerometro e giroscopio tracciano l'intensità del movimento</li>
+      <li><strong>Frequenza cardiaca:</strong> Una frequenza cardiaca più alta indica un maggiore dispendio energetico
+      </li>
+      <li><strong>Dati GPS:</strong> Distanza percorsa durante le attività all'aperto</li>
+      <li><strong>Metriche personali:</strong> Età, peso, altezza e sesso influiscono sui calcoli delle calorie</li>
+      <li><strong>Machine learning:</strong> Modelli addestrati su dati di dispendio energetico di laboratorio</li>
+    </ul>
+    <p>HealthKit distingue:
+      - <strong>Energia Attiva:</strong> Calorie derivanti dal movimento e dall'esercizio
+      - <strong>Energia a Riposo:</strong> Metabolismo basale stimato
+      - <strong>Energia Totale:</strong> Somma di attiva + a riposo</p>
+    <h2 id="scientific-background">Inquadramento Scientifico</h2>
+    <h3 id="the-energy-balance-debate">Il Dibattito sul Bilancio Energetico</h3>
+    <p>Un importante dibattito scientifico verte sulla questione se l'esercizio fisico aumenti effettivamente il
+      dispendio energetico giornaliero totale o se il corpo compensi riducendo il dispendio energetico altrove.</p>
+    <h4 id="the-constrained-energy-model">Il Modello Energetico Vincolato (Constrained)</h4>
+    <p>L'antropologo evoluzionista <strong>Herman Pontzer</strong> ha proposto nel 2016 che gli esseri umani si siano
+      evoluti per mantenere il dispendio energetico totale entro un range ristretto, indipendentemente dal livello di
+      attività:</p>
+    <p><strong>Affermazione Chiave:</strong>
+      - Il corpo si adatta all'aumento dell'esercizio riducendo l'energia spesa per altri processi
+      - Questo modello "vincolato" suggerisce che l'esercizio potrebbe non aumentare il dispendio energetico totale come
+      previsto
+      - Le prove provengono da studi su popolazioni di cacciatori-raccoglitori</p>
+    <h4 id="recent-research-exercise-does-increase-energy-expenditure">Ricerche Recenti: L'Esercizio AUMENTA il
+      Dispendio Energetico</h4>
+    <p>Uno studio del <strong>2025 di Virginia Tech</strong> pubblicato su <em>PNAS</em> ha testato direttamente questa
+      ipotesi attraverso studi controllati:</p>
+    <p><strong>Risultati Chiave:</strong>
+      - L'attività fisica <strong>aumenta effettivamente</strong> il dispendio energetico giornaliero totale
+      - La compensazione esiste ma è <strong>parziale</strong>, non completa
+      - Il modello vincolato ha semplificato eccessivamente la relazione</p>
+    <blockquote>
+      <p>"Questa ricerca mostra chiaramente che l'attività fisica aumenta il numero di calorie bruciate ogni giorno. È
+        importante notare che gli aumenti del dispendio energetico giornaliero non sono sempre stati grandi quanto
+        previsto, ma un aumento modesto è ben lontano dalle affermazioni secondo cui l'esercizio non aumenta affatto il
+        dispendio energetico giornaliero."
+        — Studio Virginia Tech, 2025</p>
+    </blockquote>
+    <h4 id="practical-implications">Implicazioni Pratiche</h4>
+    <ul>
+      <li><strong>L'esercizio brucia effettivamente calorie extra</strong>, ma forse il 50-80% della quantità teorica
+      </li>
+      <li><strong>La perdita di peso solo attraverso l'esercizio</strong> è difficile perché si verifica una
+        compensazione</li>
+      <li><strong>La combinazione di dieta ed esercizio</strong> rimane la più efficace per la gestione del peso</li>
+      <li><strong>I benefici dell'esercizio vanno ben oltre le calorie:</strong> salute cardiovascolare, salute mentale,
+        conservazione dei muscoli, salute metabolica</li>
+    </ul>
+    <h3 id="exercise-and-mortality-beyond-calories">Esercizio e Mortalità: Oltre le Calorie</h3>
+    <p>Indipendentemente dagli effetti sulla perdita di peso, l'attività fisica riduce autonomamente la mortalità:</p>
+    <p><strong>Dalle meta-analisi:</strong>
+      - <strong>150 min/settimana di attività moderata:</strong> 22% in meno di mortalità per tutte le cause
+      - <strong>300 min/settimana di attività moderata:</strong> 35% in meno di mortalità per tutte le cause
+      - I benefici raggiungono un plateau ma non si invertono a livelli di attività molto elevati</p>
+    <p><strong>L'attività fisica riduce:</strong>
+      - Rischio di malattie cardiovascolari
+      - Rischio di diabete di tipo 2
+      - Diversi tipi di cancro
+      - Depressione e ansia
+      - Declino cognitivo
+      - Mortalità per tutte le cause</p>
+    <h2 id="clinical-significance">Significato Clinico</h2>
+    <h3 id="why-track-active-energy">Perché Monitorare l'Energia Attiva?</h3>
+    <p>Sebbene il conteggio delle calorie presenti dei limiti, il monitoraggio dell'energia attiva fornisce:</p>
+    <ol>
+      <li><strong>Consapevolezza dell'attività:</strong> Misura obiettiva del movimento quotidiano</li>
+      <li><strong>Monitoraggio dei trend:</strong> Variazioni settimanali del livello di attività</li>
+      <li><strong>Definizione degli obiettivi:</strong> Target per aumentare l'attività fisica</li>
+      <li><strong>Intensità dell'allenamento:</strong> Un consumo calorico più elevato indica uno sforzo maggiore</li>
+      <li><strong>Contesto di recupero:</strong> Un dispendio molto elevato può indicare la necessità di riposo</li>
+    </ol>
+    <h3 id="understanding-your-numbers">Capire i Propri Numeri</h3>
+    <p><strong>Range tipici di energia attiva:</strong></p>
+    <table class="clinical-table">
+      <thead>
+        <tr>
+          <th>Livello di Attività</th>
+          <th>Calorie Attive/Giorno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sedentario</td>
+          <td>100-200 kcal</td>
+        </tr>
+        <tr>
+          <td>Leggermente attivo</td>
+          <td>200-400 kcal</td>
+        </tr>
+        <tr>
+          <td>Moderatamente attivo</td>
+          <td>400-700 kcal</td>
+        </tr>
+        <tr>
+          <td>Molto attivo</td>
+          <td>700-1000 kcal</td>
+        </tr>
+        <tr>
+          <td>Estremamente attivo</td>
+          <td>1000+ kcal</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><em>I valori variano significativamente in base alla taglia corporea, all'età e al tipo di attività.</em></p>
+    <h3 id="limitations-of-calorie-tracking">Limitazioni del Tracciamento delle Calorie</h3>
+    <p>Le stime dell'energia attiva presentano imprecisioni intrinseche:</p>
+    <ul>
+      <li><strong>Dispositivi wearable:</strong> Tipicamente errore del ±20-30% per le singole attività</li>
+      <li><strong>Allenamento della forza:</strong> Scarsamente rilevato rispetto al cardio</li>
+      <li><strong>Variazione individuale:</strong> La stessa attività brucia calorie diverse per persone diverse</li>
+      <li><strong>Variazione del NEAT:</strong> Il movimento quotidiano non legato all'esercizio varia
+        significativamente</li>
+      <li><strong>Limitazioni degli algoritmi:</strong> I modelli non tengono conto di tutte le variabili</li>
+    </ul>
+    <p><strong>Best Practice:</strong> Concentrati sui <strong>trend relativi</strong> (sono più attivo questa settimana
+      rispetto alla scorsa?) piuttosto che sui numeri assoluti.</p>
+    <h2 id="recommendations">Raccomandazioni</h2>
+    <h3 id="activity-guidelines">Linee Guida sull'Attività</h3>
+    <p>L'<strong>American Heart Association</strong> e l'<strong>OMS</strong> raccomandano:</p>
+    <table class="clinical-table">
+      <thead>
+        <tr>
+          <th>Linea Guida</th>
+          <th>Quantità</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Attività aerobica moderata</td>
+          <td>150-300 min/settimana</td>
+        </tr>
+        <tr>
+          <td>Attività aerobica intensa</td>
+          <td>75-150 min/settimana</td>
+        </tr>
+        <tr>
+          <td>Rafforzamento muscolare</td>
+          <td>2+ giorni/settimana</td>
+        </tr>
+        <tr>
+          <td>Ridurre il tempo sedentario</td>
+          <td>Qualsiasi aumento è benefico</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="using-active-energy-effectively">Usare l'Energia Attiva in Modo Efficace</h3>
+    <ol>
+      <li><strong>Stabilisci la tua baseline:</strong> Traccia per 2 settimane senza cambiare comportamento</li>
+      <li><strong>Imposta obiettivi progressivi:</strong> Aumenta del 10-20% a settimana</li>
+      <li><strong>Punta sulla costanza:</strong> Il movimento quotidiano conta più degli allenamenti intensi occasionali
+      </li>
+      <li><strong>Usala come feedback, non come dogma:</strong> I trend contano più dei numeri giornalieri</li>
+      <li><strong>Combinala con altre metriche:</strong> Passi, minuti di esercizio, zone di frequenza cardiaca</li>
+    </ol>
+    <h3 id="healthy-relationship-with-numbers">Un Rapporto Sano con i Numeri</h3>
+    <p>Per evitare un tracciamento ossessivo:</p>
+    <ul>
+      <li><strong>Non mangiare in base alle calorie bruciate:</strong> La fame indotta dall'esercizio è normale e sana
+      </li>
+      <li><strong>Riposa quando necessario:</strong> Il recupero fa parte del fitness</li>
+      <li><strong>Qualità rispetto alla quantità:</strong> L'intensità e il tipo di attività contano</li>
+      <li><strong>Ascolta il tuo corpo:</strong> I numeri sono strumenti, non ordini</li>
+    </ul>
+    <h2 id="when-to-seek-medical-attention">Quando Consultare un Medico</h2>
+    <p>Consulta un medico se riscontri:</p>
+    <ul>
+      <li>Cambiamenti inspiegabili e significativi nella capacità di attività</li>
+      <li>Stanchezza estrema non spiegata dal livello di attività</li>
+      <li>Intolleranza all'esercizio (difficoltà a eseguire attività precedentemente facili)</li>
+      <li>Dolore, mancanza di respiro o vertigini durante l'attività</li>
+      <li>Pensieri ossessivi riguardo al bruciare calorie o all'esercizio fisico</li>
+    </ul>
+    <h2 id="references">Riferimenti</h2>
+    <ol>
+      <li>Pontzer H, et al. (2016) Constrained Total Energy Expenditure and Metabolic Adaptation to Physical Activity in
+        Adult Humans.</li>
+      <li>Thomas DM, et al. (2012) Why do individuals not lose more weight from an exercise intervention at a defined
+        dose?</li>
+      <li>Melanson EL, et al. (2013) Resistance to exercise-induced weight loss: compensatory behavioral adaptations.
+      </li>
+      <li>Hall KD, et al. (2012) Energy balance and its components: implications for body weight regulation.</li>
+      <li>Westerterp KR. (2017) Control of energy expenditure in humans.</li>
+      <li>Willis EA, et al. (2014) Nonexercise energy expenditure and physical activity in the Midwestern Exercise Trial
+        2.</li>
+    </ol>
+  </div>
+
+  <aside class="medical-disclaimer">
+    <div class="disclaimer-icon">⚠️ <strong>Informazioni Mediche</strong></div>
+    <p>Questo contenuto è solo a scopo educativo e non dovrebbe sostituire
+      il parere medico professionale. Consulta sempre un fornitore di assistenza sanitaria per
+      decisioni mediche.</p>
+  </aside>
+
+  <div class="metric-footer">
+    <hr>
+    <p><em>Ultimo aggiornamento: Gennaio 2026</em></p>
+  </div>
+</article>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../../../../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a>
+                
+                <a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a>
+                
+                <a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a>
+                
+                <a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a>
+                
+                <a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a>
+                
+                <a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a>
+                
+                <a href="/it/" class="lang-link active"
+                    hreflang="it" >
+                    Italiano
+                </a>
+                
+                <a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a>
+                
+                <a href="/nl/" class="lang-link"
+                    hreflang="nl" >
+                    Nederlands
+                </a>
+                
+                <a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a>
+                
+                <a href="/da/" class="lang-link"
+                    hreflang="da" >
+                    Dansk
+                </a>
+                
+                <a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a>
+                
+                <a href="/nb/" class="lang-link"
+                    hreflang="nb" >
+                    Norsk
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. Tutti i diritti riservati
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/it/privacy/">Privacy</a></li>
+                <li><a href="/it/terms/">Termini</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Questo sito web utilizza i cookie per migliorare la tua esperienza.</p>
+            <a href="/it/privacy/" class="text-sm">Scopri di più</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Rifiuta</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Accetta</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../../../assets/js/core.min.js?v=2026.01.22.01" defer></script>
+  <script src="../../../../assets/js/search.min.js?v=2026.01.22.01" defer></script>
+  
+
+  
+  
+  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
+</body>
+
+</html>

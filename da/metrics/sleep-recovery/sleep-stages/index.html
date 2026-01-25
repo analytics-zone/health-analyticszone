@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Søvnstadier - Export Apple Health Data to CSV, PDF &amp; JSON | Health...</title>
+  <meta name="description" content="Søvn er ikke en ensartet tilstand, men gennemgår forskellige stadier med forskellige hjernebølgemønstre, fysiologiske egenskaber og funktioner. Moderne søvnvidenskab...">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="Søvnstadier, Export, Apple, Health, Data, to, CSV, PDF, JSON, Søvn">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/da/metrics/sleep-recovery/sleep-stages/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-01-25T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/da/metrics/sleep-recovery/sleep-stages/">
+  <meta property="og:title" content="Søvnstadier - Export Apple Health Data to CSV, PDF &amp; JSON | Health...">
+  <meta property="og:description" content="Søvn er ikke en ensartet tilstand, men gennemgår forskellige stadier med forskellige hjernebølgemønstre, fysiologiske egenskaber og funktioner. Moderne søvnvidenskab...">
+  <meta property="og:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/da/metrics/sleep-recovery/sleep-stages/">
+  <meta name="twitter:title" content="Søvnstadier - Export Apple Health Data to CSV, PDF &amp; JSON | Health...">
+  <meta name="twitter:description" content="Søvn er ikke en ensartet tilstand, men gennemgår forskellige stadier med forskellige hjernebølgemønstre, fysiologiske egenskaber og funktioner. Moderne søvnvidenskab...">
+  <meta name="twitter:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/sleep-recovery/sleep-stages/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/sleep-recovery/sleep-stages/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=2026.01.21.05">
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "da"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Søvnstadier - Export Apple Health Data to CSV, PDF &amp; JSON | Health...",
+  "description": "Søvn er ikke en ensartet tilstand, men gennemgår forskellige stadier med forskellige hjernebølgemønstre, fysiologiske egenskaber og funktioner. Moderne søvnvidenskab...",
+  "url": "https://health.analyticszone.app/da/metrics/sleep-recovery/sleep-stages/"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Søvnstadier - Export Apple Health Data to CSV, PDF &amp; JSON | Health...",
+  "description": "Søvn er ikke en ensartet tilstand, men gennemgår forskellige stadier med forskellige hjernebølgemønstre, fysiologiske egenskaber og funktioner. Moderne søvnvidenskab...",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-01-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/da/metrics/sleep-recovery/sleep-stages/"
+  }
+}
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Gå til indhold</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/da/" class="site-logo">
+                <picture>
+                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/da/features/" 
+                                aria-current="">
+                                Funktioner
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/da/metrics/" 
+                                aria-current="">
+                                Målingsbibliotek
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/da/pricing/" 
+                                aria-current="">
+                                Priser
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/da/about/" 
+                                aria-current="">
+                                Om os
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Vælg sprog">
+                        
+                        <option value="ca" >
+                            Català
+                        </option>
+                        
+                        <option value="da" selected>
+                            Dansk
+                        </option>
+                        
+                        <option value="de" >
+                            Deutsch
+                        </option>
+                        
+                        <option value="en" >
+                            English
+                        </option>
+                        
+                        <option value="es" >
+                            Español
+                        </option>
+                        
+                        <option value="fi" >
+                            Suomi
+                        </option>
+                        
+                        <option value="fr" >
+                            Français
+                        </option>
+                        
+                        <option value="it" >
+                            Italiano
+                        </option>
+                        
+                        <option value="km" >
+                            Khmer
+                        </option>
+                        
+                        <option value="nb" >
+                            Norsk
+                        </option>
+                        
+                        <option value="nl" >
+                            Nederlands
+                        </option>
+                        
+                        <option value="pt" >
+                            Português
+                        </option>
+                        
+                        <option value="sv" >
+                            Svenska
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Skift menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <article class="metric-article">
+
+    <nav class="metric-breadcrumb" aria-label="Brødkrumme">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/da/metrics/">
+                    <span itemprop="name">Målingsbibliotek</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <span>/</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/da/metrics/sleep-recovery/">
+                    <span itemprop="name">Søvn og restitution</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <span>/</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name" aria-current="page">Søvnstadier</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
+
+
+    <header class="metric-article-header">
+        <span class="metric-category-badge">
+            <span>😴</span> Søvn og restitution
+        </span>
+    </header>
+
+
+    <nav class="article-toc">
+        <h4>På denne side</h4>
+        <div class="toc">
+            <ul>
+                <li><a href="#sleep-stages">Søvnstadier</a>
+                    <ul>
+                        <li><a href="#what-are-sleep-stages">Hvad er søvnstadier?</a>
+                            <ul>
+                                <li><a href="#how-healthkit-measures-sleep-stages">Sådan måler HealthKit søvnstadier</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#scientific-background">Videnskabelig baggrund</a>
+                            <ul>
+                                <li><a href="#why-sleep-architecture-matters">Hvorfor søvnarkitektur er vigtig</a></li>
+                                <li><a href="#landmark-research-findings">Vigtige forskningsresultater</a>
+                                    <ul>
+                                        <li><a href="#all-of-us-research-program-nature-medicine-2024">All of Us
+                                                Research Program (Nature Medicine, 2024)</a></li>
+                                        <li><a href="#jama-neurology-rem-sleep-and-mortality-2020">JAMA Neurology:
+                                                REM-søvn og dødelighed (2020)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#clinical-significance">Klinisk betydning</a>
+                            <ul>
+                                <li><a href="#age-related-changes">Aldersrelaterede ændringer</a></li>
+                                <li><a href="#factors-that-affect-sleep-stages">Faktorer der påvirker søvnstadier</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#recommendations">Anbefalinger</a>
+                            <ul>
+                                <li><a href="#optimizing-sleep-architecture">Optimering af søvnarkitektur</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#references">Referencer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="metric-content">
+        <h1 id="sleep-stages">Søvnstadier</h1>
+        <h2 id="what-are-sleep-stages">Hvad er søvnstadier?</h2>
+        <p>Søvn er ikke en ensartet tilstand, men gennemgår forskellige stadier med forskellige hjernebølgemønstre,
+            fysiologiske egenskaber og funktioner. Moderne søvnvidenskab anerkender fire stadier:</p>
+        <table class="clinical-table">
+            <thead>
+                <tr>
+                    <th>Stadie</th>
+                    <th>Navn</th>
+                    <th>Karakteristika</th>
+                    <th>Funktion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>N1</strong></td>
+                    <td>Let søvn</td>
+                    <td>Overgang fra vågen tilstand, let at vække</td>
+                    <td>Indledende afslapning</td>
+                </tr>
+                <tr>
+                    <td><strong>N2</strong></td>
+                    <td>Let søvn</td>
+                    <td>Dybere afslapning, søvnspindler</td>
+                    <td>Hukommelseskonsolidering begynder</td>
+                </tr>
+                <tr>
+                    <td><strong>N3</strong></td>
+                    <td>Dyb søvn (SWS)</td>
+                    <td>Langsomme deltabølger, svær at vække</td>
+                    <td>Fysisk restitution, væksthormon</td>
+                </tr>
+                <tr>
+                    <td><strong>REM</strong></td>
+                    <td>Rapid Eye Movement</td>
+                    <td>Drømme, muskelparalyse</td>
+                    <td>Hukommelseskonsolidering, følelsesmæssig bearbejdning</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="how-healthkit-measures-sleep-stages">Sådan måler HealthKit søvnstadier</h3>
+        <p>Apple Watch bruger flere signaler til at detektere og klassificere søvn:</p>
+        <ul>
+            <li><strong>Accelerometer:</strong> Registrerer kropsbevægelse og stilstand.</li>
+            <li><strong>Pulsmåler:</strong> Sporer mønstre i pulsvariabilitet karakteristisk for forskellige stadier.
+            </li>
+            <li><strong>Vejrtrækningsmønstre:</strong> Ændringer i vejrtrækningsfrekvens på tværs af søvnstadier.</li>
+            <li><strong>Maskinlæring:</strong> Algoritmer trænet på data fra polysomnografi (søvnlaboratorier).</li>
+        </ul>
+        <h2 id="scientific-background">Videnskabelig baggrund</h2>
+        <h3 id="why-sleep-architecture-matters">Hvorfor søvnarkitektur er vigtig</h3>
+        <p>Søvn handler ikke kun om varighed – søvnens <strong>struktur</strong> betyder noget for sundheden. Hvert
+            stadie tjener forskellige biologiske funktioner:</p>
+        <p><strong>N3 (Dyb søvn):</strong>
+            - Udskillelse af væksthormon (80% sker under N3)
+            - Vævsreparation og immunfunktion
+            - Hukommelseskonsolidering (deklarativ hukommelse)
+            - Metabolisk regulering</p>
+        <p><strong>REM-søvn:</strong>
+            - Følelsesmæssig bearbejdning og regulering
+            - Proceduremæssig og rumlig hukommelseskonsolidering
+            - Hjerneudvikling
+            - Kreativitet og problemløsning</p>
+        <h3 id="landmark-research-findings">Vigtige forskningsresultater</h3>
+        <h4 id="all-of-us-research-program-nature-medicine-2024">All of Us Research Program (Nature Medicine, 2024)</h4>
+        <p>Et banebrydende studie, der brugte <strong>bærbare data fra den virkelige verden</strong> fra NIH's All of Us
+            Research Program, fulgte <strong>6.785 deltagere</strong> over en median på <strong>4,5 år</strong>.</p>
+        <p><strong>Hovedkonklusioner:</strong></p>
+        <ul>
+            <li><strong>Dyb søvn (N3):</strong> Lavere procentdel dyb søvn var forbundet med højere risiko for at
+                udvikle <strong>atrieflimren</strong> og <strong>fedme</strong>.</li>
+            <li><strong>REM-søvn:</strong> Lavere procentdel REM-søvn var forbundet med øget risiko for at udvikle
+                <strong>depression</strong> og <strong>angsttilstande</strong>.</li>
+            <li><strong>Søvnuregelmæssighed:</strong> Variabel søvntiming forudsagde <strong>hjerte-kar-sygdom</strong>.
+            </li>
+        </ul>
+        <blockquote>
+            <p>"Søvnstadier og regelmæssighed var, ud over blot varighed, forbundet med forekomsten af fedme og en række
+                kardiovaskulære og psykologiske lidelser."
+                — Brittain et al., Nature Medicine, 2024</p>
+        </blockquote>
+        <h4 id="jama-neurology-rem-sleep-and-mortality-2020">JAMA Neurology: REM-søvn og dødelighed (2020)</h4>
+        <p>Et studie af <strong>2.675 ældre mænd</strong> undersøgte REM-søvn og dødelighed.</p>
+        <p><strong>Hovedkonklusioner:</strong>
+            - Hver <strong>5% reduktion i REM-søvn</strong> var forbundet med <strong>13% højere dødelighed af alle
+                årsager</strong>.
+            - Sammenhængen forblev signifikant efter justering for søvnvarighed.</p>
+        <h2 id="clinical-significance">Klinisk betydning</h2>
+        <h3 id="age-related-changes">Aldersrelaterede ændringer</h3>
+        <p>Søvnarkitekturen ændrer sig naturligt med alderen:</p>
+        <table class="clinical-table">
+            <thead>
+                <tr>
+                    <th>Aldersgruppe</th>
+                    <th>Dyb søvn %</th>
+                    <th>REM %</th>
+                    <th>Samlet søvn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ung voksen (20-30)</td>
+                    <td>20-25%</td>
+                    <td>20-25%</td>
+                    <td>7-9 timer</td>
+                </tr>
+                <tr>
+                    <td>Midaldrende (40-60)</td>
+                    <td>10-15%</td>
+                    <td>18-22%</td>
+                    <td>7-8 timer</td>
+                </tr>
+                <tr>
+                    <td>Ældre voksen (65+)</td>
+                    <td>5-10%</td>
+                    <td>15-20%</td>
+                    <td>6-7 timer</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Bemærk:</strong> Nedsat dyb søvn hos ældre voksne bidrager til lettere og mere fragmenteret søvn.</p>
+        <h3 id="factors-that-affect-sleep-stages">Faktorer der påvirker søvnstadier</h3>
+        <p><strong>Reducerer dyb søvn:</strong>
+            - Alkohol (selv moderate mængder)
+            - Koffein (især sent på dagen)
+            - Søvnforstyrrelser (apnø)
+            - Alder
+            - Kronisk stress</p>
+        <p><strong>Reducerer REM-søvn:</strong>
+            - Alkohol
+            - Cannabis
+            - Visse antidepressiva (SSRI)
+            - Søvnunderskud (forårsager "REM-rebound" senere)
+            - Vækkeure, der afbryder naturlige cyklusser</p>
+        <h2 id="recommendations">Anbefalinger</h2>
+        <h3 id="optimizing-sleep-architecture">Optimering af søvnarkitektur</h3>
+        <ol>
+            <li><strong>Konsistens:</strong> Samme sengetider og stå-op-tider, selv i weekender (±30 minutter).</li>
+            <li><strong>Morgenlys:</strong> 10-30 minutters skarpt lys inden for 1 time efter opvågning.</li>
+            <li><strong>Aftendæmpning:</strong> Reducer lyseksponering 2-3 timer før sengetid.</li>
+            <li><strong>Temperatur:</strong> Køligt soveværelse (18-20°C er optimalt).</li>
+            <li><strong>Begræns forstyrrelser:</strong> Alkohol og koffein forringer søvnkvaliteten betydeligt, selv
+                hvis varigheden ikke påvirkes.</li>
+        </ol>
+        <h2 id="references">Referencer</h2>
+        <ol>
+            <li>Brittain EL, et al. (2024) Sleep patterns and risk of chronic disease as measured by long-term
+                monitoring with commercial wearable devices. <em>Nature Medicine</em>, 30, 2648–2656.</li>
+            <li>Leary EB, et al. (2020) Association of Rapid Eye Movement Sleep With Mortality in Middle-aged and Older
+                Adults. <em>JAMA Neurology</em>, 77(10), 1241-1251.</li>
+            <li>National Institute of Neurological Disorders and Stroke. (2023) Brain Basics: Understanding Sleep.</li>
+        </ol>
+    </div>
+
+    <aside class="medical-disclaimer">
+        <div class="disclaimer-icon">⚠️ <strong>Medicinsk information</strong></div>
+        <p>Dette indhold er kun til uddannelsesformål og bør ikke erstatte
+            professionel medicinsk rådgivning. Konsulter altid en læge før
+            du træffer medicinske beslutninger.</p>
+    </aside>
+
+    <div class="metric-footer">
+        <hr>
+        <p><em>Sidst opdateret: januar 2026</em></p>
+    </div>
+</article>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../../../../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a>
+                
+                <a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a>
+                
+                <a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a>
+                
+                <a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a>
+                
+                <a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a>
+                
+                <a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a>
+                
+                <a href="/it/" class="lang-link"
+                    hreflang="it" >
+                    Italiano
+                </a>
+                
+                <a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a>
+                
+                <a href="/nl/" class="lang-link"
+                    hreflang="nl" >
+                    Nederlands
+                </a>
+                
+                <a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a>
+                
+                <a href="/da/" class="lang-link active"
+                    hreflang="da" >
+                    Dansk
+                </a>
+                
+                <a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a>
+                
+                <a href="/nb/" class="lang-link"
+                    hreflang="nb" >
+                    Norsk
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. Alle rettigheder forbeholdes
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/da/privacy/">Privatliv</a></li>
+                <li><a href="/da/terms/">Vilkår</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Denne hjemmeside bruger cookies til at forbedre din oplevelse.</p>
+            <a href="/da/privacy/" class="text-sm">Læs mere</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Afvis</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Accepter</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../../../assets/js/core.min.js?v=2026.01.22.01" defer></script>
+  <script src="../../../../assets/js/search.min.js?v=2026.01.22.01" defer></script>
+  
+
+  
+  
+  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
+</body>
+
+</html>

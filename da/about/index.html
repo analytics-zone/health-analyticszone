@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Om Health Analytics - Export Apple Health Data to CSV, PDF &amp; JSON...</title>
+  <meta name="description" content="Sundhedsdata bør være nyttige, bærbare og ejet af brugeren. Health Analytics eksisterer for at gøre Apple Health-data forståelige.">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="om os, mission, sundhed">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/da/about/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-01-23T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/da/about/">
+  <meta property="og:title" content="Om Health Analytics - Export Apple Health Data to CSV, PDF &amp; JSON...">
+  <meta property="og:description" content="Sundhedsdata bør være nyttige, bærbare og ejet af brugeren. Health Analytics eksisterer for at gøre Apple Health-data forståelige.">
+  <meta property="og:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/da/about/">
+  <meta name="twitter:title" content="Om Health Analytics - Export Apple Health Data to CSV, PDF &amp; JSON...">
+  <meta name="twitter:description" content="Sundhedsdata bør være nyttige, bærbare og ejet af brugeren. Health Analytics eksisterer for at gøre Apple Health-data forståelige.">
+  <meta name="twitter:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/about/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/about/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/about/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/about/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/about/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/about/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/about/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/about/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/about/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/about/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/about/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/about/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/about/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/about/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../assets/css/main.min.css?v=2026.01.21.05">
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "da"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Hjem",
+      "item": "https://health.analyticszone.app/da/"
+    },
+    
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Om os",
+      "item": "https://health.analyticszone.app/da/about/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Om Health Analytics - Export Apple Health Data to CSV, PDF &amp; JSON...",
+  "description": "Sundhedsdata bør være nyttige, bærbare og ejet af brugeren. Health Analytics eksisterer for at gøre Apple Health-data forståelige.",
+  "url": "https://health.analyticszone.app/da/about/"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Om Health Analytics - Export Apple Health Data to CSV, PDF &amp; JSON...",
+  "description": "Sundhedsdata bør være nyttige, bærbare og ejet af brugeren. Health Analytics eksisterer for at gøre Apple Health-data forståelige.",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-01-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/da/about/"
+  }
+}
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Gå til indhold</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/da/" class="site-logo">
+                <picture>
+                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/da/features/" 
+                                aria-current="">
+                                Funktioner
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/da/metrics/" 
+                                aria-current="">
+                                Målingsbibliotek
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/da/pricing/" 
+                                aria-current="">
+                                Priser
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/da/about/" class="active" 
+                                aria-current="page">
+                                Om os
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Vælg sprog">
+                        
+                        <option value="ca" >
+                            Català
+                        </option>
+                        
+                        <option value="da" selected>
+                            Dansk
+                        </option>
+                        
+                        <option value="de" >
+                            Deutsch
+                        </option>
+                        
+                        <option value="en" >
+                            English
+                        </option>
+                        
+                        <option value="es" >
+                            Español
+                        </option>
+                        
+                        <option value="fi" >
+                            Suomi
+                        </option>
+                        
+                        <option value="fr" >
+                            Français
+                        </option>
+                        
+                        <option value="it" >
+                            Italiano
+                        </option>
+                        
+                        <option value="km" >
+                            Khmer
+                        </option>
+                        
+                        <option value="nb" >
+                            Norsk
+                        </option>
+                        
+                        <option value="nl" >
+                            Nederlands
+                        </option>
+                        
+                        <option value="pt" >
+                            Português
+                        </option>
+                        
+                        <option value="sv" >
+                            Svenska
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Skift menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol>
+            
+            <li>
+                
+                <a href="/da/">Hjem</a>
+                
+            </li>
+            
+            <li>
+                
+                <span aria-current="page">Om os</span>
+                
+            </li>
+            
+        </ol>
+    </div>
+</nav>
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <section class="page-hero">
+    <div class="container">
+        <h1>Om Health Analytics</h1>
+        <p class="lead">Sundhedsdata bør være <strong>nyttige</strong>, <strong>bærbare</strong> og <strong>ejet af
+                brugeren</strong>.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="quick-answer">
+            <h2>Vores mission</h2>
+            <p>Health Analytics eksisterer for at gøre Apple Health-data:</p>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3 class="card-title">📖 Læsbart</h3>
+                    <p class="card-content">Tydelige dashboards og opsummeringer, der giver mening</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🤝 Delbart</h3>
+                    <p class="card-content">Læge-klare PDF-rapporter til medicinske konsultationer</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">📤 Eksporterbart</h3>
+                    <p class="card-content">CSV/JSON/Markdown til analyse og integration</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">✅ Troværdigt</h3>
+                    <p class="card-content">Gennemsigtige metoder med videnskabelige referencer</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🔒 Privat</h3>
+                    <p class="card-content">100% lokal behandling – dine data forlader aldrig din enhed</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🎯 Handlingsorienteret</h3>
+                    <p class="card-content">Indblik, du kan bruge til at forbedre dit helbred og din levetid</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <h2 class="text-center mb-xl">Kerneværdier</h2>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-icon">🔬</div>
+                <h3>Videnskaben først</h3>
+                <p>Vi forklarer, hvad hver måling betyder, hvorfor den betyder noget, og hvad begrænsningerne er. Hver
+                    forklaring
+                    på en sundhedsmåling linker til autoritative referencer. Ingen "sundhedsscores" uden forklaring.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🔒</div>
+                <h3>Privatliv som standard</h3>
+                <ul>
+                    <li>Kun lokal behandling</li>
+                    <li>Ingen konto påkrævet</li>
+                    <li>Ingen sporing eller analyse-SDK'er</li>
+                    <li>Ingen data sendes til servere</li>
+                    <li>Dine data bliver på din enhed</li>
+                </ul>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">👁️</div>
+                <h3>Gennemsigtighed</h3>
+                <ul>
+                    <li>Tydelige formler og tolkninger</li>
+                    <li>Mærkning af målte vs. estimerede værdier</li>
+                    <li>Fokus på fejlkilder</li>
+                    <li>Åbenhed om formåen og begrænsninger</li>
+                </ul>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🔗</div>
+                <h3>Interoperabilitet</h3>
+                <ul>
+                    <li>CSV til regneark</li>
+                    <li>JSON til udviklere</li>
+                    <li>PDF til sundhedsfaglige</li>
+                    <li>Markdown til dokumentation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <h2>Hvad vi er</h2>
+                <p>Health Analytics er en <strong>ledsage-app</strong> til Apple Health. Vi hjælper dig med at forstå,
+                    visualisere og
+                    eksportere dine HealthKit-data.</p>
+                <ul>
+                    <li>Et datavisualiseringsværktøj</li>
+                    <li>Et eksportværktøj</li>
+                    <li>En leverandør af videnskabelig kontekst</li>
+                    <li>En app, der respekterer privatlivet</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Hvad vi IKKE er</h2>
+                <p>Health Analytics er <strong>ikke</strong> et medicinsk udstyr eller en erstatning for
+                    sundhedspersonale.</p>
+                <ul>
+                    <li>Ikke et diagnosticeringsværktøj</li>
+                    <li>Ikke et alarmsystem til nødsituationer</li>
+                    <li>Ikke en motor til behandlingsanbefalinger</li>
+                    <li>Kun til informationsformål</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <h2 class="text-center">Redaktionelle standarder</h2>
+        <p class="text-center text-secondary mb-xl">Vores sundhedsindhold følger strenge standarder</p>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>📚 Autoritative kilder</h3>
+                <p>Hver målingsforklaring citerer WHO, CDC, ADA, AHA eller fagfællebedømte tidsskrifter.</p>
+            </div>
+            <div class="metric-card">
+                <h3>📍 Dataproveniens</h3>
+                <p>Vi mærker tydeligt, om værdier er målt direkte eller estimeret.</p>
+            </div>
+            <div class="metric-card">
+                <h3>⚠️ Begrænsninger oplyst</h3>
+                <p>Vi forklarer fejlkilder og nøjagtighedsbegrænsninger for hver måling.</p>
+            </div>
+            <div class="metric-card">
+                <h3>🔄 Regelmæssig gennemgang</h3>
+                <p>Indholdet opdateres løbende for nøjagtighed. Sidste gennemgang: januar 2026.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container text-center">
+        <h2>Teamet</h2>
+        <p>Health Analytics er udviklet af <strong>AnalyticsZone</strong>, skaberne af specialiserede apps til sport og
+            sundhed,
+            herunder Run Analytics, Bike Analytics, Swim Analytics, Walk Analytics og Cardio Analytics.</p>
+        <p>Vi tror på at gøre sundhedsdata tilgængelige, forståelige og nyttige for alle.</p>
+
+        <hr class="mt-xl">
+
+        <h2 class="mt-xl">Kontakt</h2>
+        <p>Spørgsmål, feedback eller supportanmodninger:</p>
+        <p><strong>E-mail:</strong> analyticszone@onmedic.org</p>
+        <p class="text-secondary">Vi svarer typisk inden for 24-48 timer.</p>
+    </div>
+</section>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a>
+                
+                <a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a>
+                
+                <a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a>
+                
+                <a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a>
+                
+                <a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a>
+                
+                <a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a>
+                
+                <a href="/it/" class="lang-link"
+                    hreflang="it" >
+                    Italiano
+                </a>
+                
+                <a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a>
+                
+                <a href="/nl/" class="lang-link"
+                    hreflang="nl" >
+                    Nederlands
+                </a>
+                
+                <a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a>
+                
+                <a href="/da/" class="lang-link active"
+                    hreflang="da" >
+                    Dansk
+                </a>
+                
+                <a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a>
+                
+                <a href="/nb/" class="lang-link"
+                    hreflang="nb" >
+                    Norsk
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. Alle rettigheder forbeholdes
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/da/privacy/">Privatliv</a></li>
+                <li><a href="/da/terms/">Vilkår</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Denne hjemmeside bruger cookies til at forbedre din oplevelse.</p>
+            <a href="/da/privacy/" class="text-sm">Læs mere</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Afvis</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Accepter</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../assets/js/core.min.js?v=2026.01.22.01" defer></script>
+  <script src="../../assets/js/search.min.js?v=2026.01.22.01" defer></script>
+  
+
+  
+  
+  <script src="../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
+</body>
+
+</html>

@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Health Analytics - Full kontroll over helsedata for iOS</title>
+  <meta name="description" content="Visualiser, administrer og eksporter alle dine Apple Health-data med Health Analytics. Lag profesjonelle PDF-rapporter og analyser hver metrikk.">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="helsedata, apple health eksport, helseanalyse, fitness-tracker, medisinske rapporter">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/nb/">
+
+  
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://health.analyticszone.app/nb/">
+  <meta property="og:title" content="Health Analytics - Full kontroll over helsedata for iOS">
+  <meta property="og:description" content="Visualiser, administrer og eksporter alle dine Apple Health-data med Health Analytics. Lag profesjonelle PDF-rapporter og analyser hver metrikk.">
+  <meta property="og:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  <meta property="og:locale" content="nb_NO">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/nb/">
+  <meta name="twitter:title" content="Health Analytics - Full kontroll over helsedata for iOS">
+  <meta name="twitter:description" content="Visualiser, administrer og eksporter alle dine Apple Health-data med Health Analytics. Lag profesjonelle PDF-rapporter og analyser hver metrikk.">
+  <meta name="twitter:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../assets/css/main.min.css?v=2026.01.21.05">
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "nb"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Health Analytics - Full kontroll over helsedata for iOS",
+  "description": "Visualiser, administrer og eksporter alle dine Apple Health-data med Health Analytics. Lag profesjonelle PDF-rapporter og analyser hver metrikk.",
+  "url": "https://health.analyticszone.app/nb/"
+}
+</script>
+
+
+
+
+
+
+
+  
+  
+
+  
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Hopp til innhold</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/nb/" class="site-logo">
+                <picture>
+                    <source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/nb/features/" 
+                                aria-current="">
+                                Funksjoner
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/nb/metrics/" 
+                                aria-current="">
+                                Metrikkbibliotek
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/nb/pricing/" 
+                                aria-current="">
+                                Prising
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/nb/about/" 
+                                aria-current="">
+                                Om oss
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Velg språk">
+                        
+                        <option value="ca" >
+                            Català
+                        </option>
+                        
+                        <option value="da" >
+                            Dansk
+                        </option>
+                        
+                        <option value="de" >
+                            Deutsch
+                        </option>
+                        
+                        <option value="en" >
+                            English
+                        </option>
+                        
+                        <option value="es" >
+                            Español
+                        </option>
+                        
+                        <option value="fi" >
+                            Suomi
+                        </option>
+                        
+                        <option value="fr" >
+                            Français
+                        </option>
+                        
+                        <option value="it" >
+                            Italiano
+                        </option>
+                        
+                        <option value="km" >
+                            Khmer
+                        </option>
+                        
+                        <option value="nb" selected>
+                            Norsk
+                        </option>
+                        
+                        <option value="nl" >
+                            Nederlands
+                        </option>
+                        
+                        <option value="pt" >
+                            Português
+                        </option>
+                        
+                        <option value="sv" >
+                            Svenska
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Vis/skjul meny"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <section class="page-hero">
+    <div class="container">
+        <h1>Eksporter og analyser dine Apple Health-data</h1>
+        <p class="lead">Gjør rå HealthKit-data om til handlingskraftig innsikt og delbare rapporter. Eksporter til CSV,
+            JSON og
+            PDF. Del med leger. Spor biomarkører for lang levetid. 100 % lokalt. Vitenskapelig forankret.</p>
+        <div class="mt-md">
+            <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary">Last ned gratis</a>
+            <a href="#science" class="btn btn-text">Se vitenskapen ↓</a>
+        </div>
+    </div>
+</section>
+
+<section id="science" class="section section-light">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Vitenskapen om din helse</h2>
+            <p class="lead">Vi viser ikke bare data. Vi tolker dine biometriske data basert på klinisk forskning og
+                fagfellevurderte studier.</p>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="card">
+                <h3 class="card-title">Kondisjon (VO₂ Max)</h3>
+                <div class="card-content">
+                    <p>Ofte ansett som den sterkeste enkeltfaktoren som kan forutsi levetid. Våre analyser evaluerer din
+                        estimerte VO₂ Max mot populasjonsnormer for å vurdere din fysiologiske alder og langsiktige
+                        dødelighetsrisiko.</p>
+                    <div class="callout callout-tip mt-md">
+                        <strong>Hvorfor det betyr noe:</strong> En landemerke-studie av 122 007 pasienter fant at
+                        "elite"
+                        kondisjon var assosiert med en 80 % reduksjon i dødelighetsrisiko sammenlignet med lav
+                        kondisjon.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Kilde:</strong> Mandsager K, et al. (JAMA Network Open, 2018).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Autonom balanse (HRV)</h3>
+                <div class="card-content">
+                    <p>Vi analyserer hjertefrekvensvariabilitet (spesifikt rMSSD) for å måle balansen mellom ditt
+                        sympatiske (kamp-eller-flukt) og parasympatiske (hvile-og-fordøyelse) nervesystem.</p>
+                    <div class="callout callout-info mt-md">
+                        <strong>Vitenskapen:</strong> Høyere HRV er generelt knyttet til bedre hjertehelse og
+                        stresstoleranse. Det fungerer som en sensitiv markør for systemisk betennelse og
+                        restitusjonsstatus.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Kilde:</strong> Task Force of the European Pantheon Cardiology (1996); Shaffer &
+                        Ginsberg (2017).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Funksjonell mobilitet (Ganghastighet)</h3>
+                <div class="card-content">
+                    <p>Ganghastighet blir ofte kalt "det sjette vitale tegnet" i kliniske sammenhenger. Vi sporer dine
+                        trender
+                        i ganghastighet for å oppdage tidlige tegn på funksjonsnedsettelse eller nevrologiske endringer.
+                    </p>
+                    <div class="callout callout-warning mt-md">
+                        <strong>Klinisk relevans:</strong> Analyse av 34 485 eldre voksne viste at ganghastighet
+                        er direkte assosiert med 5- og 10-års overlevelse på tvers av alle aldersgrupper.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Kilde:</strong> Studenski S, et al. (JAMA, 2011).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Søvn og glymfatisk rensing</h3>
+                <div class="card-content">
+                    <p>Vi sporer ikke bare timer søvn; vi analyserer varigheten av dyp søvn (NREM stadium 3). Dette er
+                        avgjørende
+                        for det "glymfatiske systemet", hjernens avfallshåndteringsmekanisme.</p>
+                    <div class="callout callout-tip mt-md">
+                        <strong>Mekanisme:</strong> Under dyp søvn blir det glymfatiske systemet aktivt og renser ut
+                        nevrotoksiske avfallsprodukter som beta-amyloid som akkumuleres i våken tilstand.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Kilde:</strong> Xie L, et al. (Science, 2013); Reddy & van der Werf (2020).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Metabolsk helse (Glukosekontroll)</h3>
+                <div class="card-content">
+                    <p>Vi sporer glukosemønstre og variabilitet for å vurdere metabolsk helse utover enkle gjennomsnitt.
+                        Stabile glukosenivåer er assosiert med redusert betennelse og bedre helseutfall på lang sikt.
+                    </p>
+                    <div class="callout callout-info mt-md">
+                        <strong>Viktig innsikt:</strong> Glukosevariabilitet (ikke bare gjennomsnittsnivåer) er en
+                        uavhengig
+                        prediktor for kardiovaskulære hendelser og total dødelighet, selv hos personer uten diabetes.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Kilde:</strong> Ceriello A, et al. (Diabetes Care, 2008); Hirsch IB (Clinical Diabetes,
+                        2015).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Kroppssammensetning (Fettfri masse)</h3>
+                <div class="card-content">
+                    <p>Muskelmasse er en kritisk biomarkør for sunn aldring. Vi overvåker trender i fettfri kroppsmasse
+                        for å oppdage
+                        sarkopeni (aldersrelatert muskeltap), som påvirker styrke, mobilitet og metabolsk helse.
+                    </p>
+                    <div class="callout callout-warning mt-md">
+                        <strong>Kobling til lang levetid:</strong> Høyere muskelmasse er assosiert med lavere total
+                        dødelighet. Hver 10 % økning i muskelmasseindeks korrelerer med en 12 % reduksjon i
+                        dødelighetsrisiko.
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>Kilde:</strong> Srikanthan P, et al. (American Journal of Medicine, 2014); Cruz-Jentoft
+                        AJ, et al. (Age and Ageing, 2019).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Hvorfor Health Analytics?</h2>
+        </div>
+        <div class="grid grid-3">
+            <div class="card text-center">
+                <div class="card-title">7-dagers gratis prøveperiode</div>
+                <div class="card-content">Prøv før du binder deg</div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">Ingen konto kreves</div>
+                <div class="card-content">Start umiddelbart</div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">100 % lokal behandling</div>
+                <div class="card-content">Dine data forlater aldri enheten din</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Eksporter dine helsedata i alle formater</h2>
+            <p class="lead">Apples innebygde eksport gir deg komplekse XML-filer. Vi gir deg formater du faktisk kan
+                bruke.
+            </p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card text-center">
+                <div class="card-title">📊 CSV-eksport</div>
+                <div class="card-content">
+                    <p>Perfekt for regneark og dataanalyse. Åpne i Excel, Google Sheets eller et hvilket som helst
+                        analyseverktøy.
+                    </p>
+                    <ul class="text-left mt-sm">
+                        <li>Velg spesifikke metrikker</li>
+                        <li>Velg datointervaller</li>
+                        <li>Klar for pivottabeller</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">📄 PDF-rapporter</div>
+                <div class="card-content">
+                    <p>Profesjonelle medisinske rapporter for legetimer. Oversiktlig formatering med grafer og
+                        referanseområder.</p>
+                    <ul class="text-left mt-sm">
+                        <li>Utskriftsklart format</li>
+                        <li>Trendvisualiseringer</li>
+                        <li>Klinisk kontekst inkludert</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">💻 JSON-eksport</div>
+                <div class="card-content">
+                    <p>Utviklervennlig format for integrasjoner og tilpassede analyseverktøy.</p>
+                    <ul class="text-left mt-sm">
+                        <li>Strukturert dataformat</li>
+                        <li>Klar for API</li>
+                        <li>Enkel å tolke</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Hurtigoversikt</h2>
+        </div>
+        <div class="grid grid-2">
+            
+
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-chart"></use>
+        </svg>
+        
+    </div>
+    <h3>Samlet dashbord</h3>
+    <p>
+        
+        Se dine viktigste metrikker ved et øyekast med rene visualiseringer
+            og oppsummerende statistikk.
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-layers"></use>
+        </svg>
+        
+    </div>
+    <h3>Dyp HealthKit-dekning</h3>
+    <p>
+        
+        Aktivitet, vitale tegn, søvn, kroppssammensetning, ernæring og
+            mer – organisert etter kategori og søkbart.
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-book"></use>
+        </svg>
+        
+    </div>
+    <h3>Vitenskapelig kontekst</h3>
+    <p>
+        
+        For hver metrikk, forstå hva den måler, hvorfor den betyr noe, og
+            typiske referanseområder med kilder.
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-export"></use>
+        </svg>
+        
+    </div>
+    <h3>Fleksibel eksport</h3>
+    <p>
+        
+        Eksporter bare det du trenger, i det formatet du foretrekker: CSV,
+            JSON, PDF,
+            HTML, Markdown eller ren tekst.
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-shield"></use>
+        </svg>
+        
+    </div>
+    <h3>Komplett personvern</h3>
+    <p>
+        
+        Ingen kontoer, ingen skybinding, ingen sporing. Behandlingen skjer
+            utelukkende
+            på din enhet.
+    </p>
+</div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>HealthKit-dekning</h2>
+            <p class="lead">Health Analytics organiserer HealthKit i praktiske områder:</p>
+        </div>
+        <div class="grid grid-3">
+            
+
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">🏃</div>
+        
+    </div>
+    <h3>Bevegelse og trening</h3>
+    <p>
+        
+        Skritt, distanse, energi, treningsøkter, kondisjon
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">❤️</div>
+        
+    </div>
+    <h3>Hjerte og vitale tegn</h3>
+    <p>
+        
+        Puls, HRV, EKG (når tilgjengelig), blodtrykk,
+            respirasjonsfrekvens
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">😴</div>
+        
+    </div>
+    <h3>Søvn og restitusjon</h3>
+    <p>
+        
+        Søvnvarighet/-stadier, pustemetrikker (når tilgjengelig)
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">⚖️</div>
+        
+    </div>
+    <h3>Kropp og sammensetning</h3>
+    <p>
+        
+        Vekt, BMI, fettprosent, midjeomkrets
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">🍎</div>
+        
+    </div>
+    <h3>Ernæring og væske</h3>
+    <p>
+        
+        Energiinntak, makro/mikro, vann
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">🧠</div>
+        
+    </div>
+    <h3>Oppmerksomhet og psykisk helse</h3>
+    <p>
+        
+        Mindful-minutter, humør/sinnstilstand (når tilgjengelig)
+    </p>
+</div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <h2>Del helsedata med legen din</h2>
+                <p class="lead">Forbered deg til legetimer med omfattende helserapporter som legen din faktisk kan
+                    bruke.</p>
+                <p>I stedet for å prøve å vise legen din data på telefonen, kan du generere profesjonelle PDF-rapporter
+                    som inkluderer:</p>
+                <ul>
+                    <li><strong>Uthevede nøkkeltall</strong> — Fokuser på det som betyr noe for konsultasjonen</li>
+                    <li><strong>Trendvisualiseringer</strong> — Se endringer over tid ved et øyekast</li>
+                    <li><strong>Referanseområder</strong> — Kontekst for klinisk tolkning</li>
+                    <li><strong>Dataopprinnelse</strong> — Vit hvilken enhet som registrerte hver måling</li>
+                </ul>
+                <p class="mt-md">Eksporter nøyaktig de dataene du trenger for den aktuelle tidsperioden. Send det på
+                    e-post før
+                    avtalen eller ta med en utskrift.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Vanlige medisinske bruksområder</h3>
+                <div class="card-content">
+                    <ul>
+                        <li><strong>Kardiologi</strong> — Puls, HRV, blodtrykk, EKG-data</li>
+                        <li><strong>Søvnkonsultasjoner</strong> — Søvnstadier, varighet, pustemetrikker</li>
+                        <li><strong>Diabetesoppfølging</strong> — Blodsukker, insulin, karbohydratinntak</li>
+                        <li><strong>Vektkontroll</strong> — Kroppsmasse, BMI, aktivitet, ernæring</li>
+                        <li><strong>Treningsvurderinger</strong> — VO₂ Max, treningstid, restitusjonsmetrikker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-hero">
+    <div class="container">
+        <h2>Start din gratis prøveperiode</h2>
+        <p class="lead">Gjør din helsehistorikk om til innsikt du kan bruke.</p>
+        <div class="mt-md">
+            <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary btn-large">Last ned i App Store</a>
+        </div>
+        <p class="text-sm text-secondary mt-md">7-dagers gratis prøveperiode | Ingen konto kreves | Dine data blir på
+            enheten din
+        </p>
+    </div>
+</section>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a>
+                
+                <a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a>
+                
+                <a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a>
+                
+                <a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a>
+                
+                <a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a>
+                
+                <a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a>
+                
+                <a href="/it/" class="lang-link"
+                    hreflang="it" >
+                    Italiano
+                </a>
+                
+                <a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a>
+                
+                <a href="/nl/" class="lang-link"
+                    hreflang="nl" >
+                    Nederlands
+                </a>
+                
+                <a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a>
+                
+                <a href="/da/" class="lang-link"
+                    hreflang="da" >
+                    Dansk
+                </a>
+                
+                <a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a>
+                
+                <a href="/nb/" class="lang-link active"
+                    hreflang="nb" >
+                    Norsk
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. Alle rettigheter forbeholdt
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/nb/privacy/">Personvern</a></li>
+                <li><a href="/nb/terms/">Vilkår</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Dette nettstedet bruker informasjonskapsler for å forbedre opplevelsen din.</p>
+            <a href="/nb/privacy/" class="text-sm">Lær mer</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Avvis</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Godta</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../assets/js/core.min.js?v=2026.01.22.01" defer></script>
+  <script src="../assets/js/search.min.js?v=2026.01.22.01" defer></script>
+  
+
+  
+  
+  <script src="../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
+</body>
+
+</html>
