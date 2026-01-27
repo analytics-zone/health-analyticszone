@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Hogyan Működik a HealthKit - Apple Health Adat Export</title>
+  <meta name="description" content="Technikai bevezető arról, hogyan tárolja és rendszerezi az Apple Health az Ön egészségügyi adatait. A HealthKit az Apple keretrendszere az egészségügyi és fittségi...">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="Hogyan Működik a HealthKit, metrikák-áttekintés, egészségügyi metrikák, healthkit">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/hu/metrics/how-healthkit-works/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-01-27T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/hu/metrics/how-healthkit-works/">
+  <meta property="og:title" content="Hogyan Működik a HealthKit - Apple Health Adat Export">
+  <meta property="og:description" content="Technikai bevezető arról, hogyan tárolja és rendszerezi az Apple Health az Ön egészségügyi adatait. A HealthKit az Apple keretrendszere az egészségügyi és fittségi...">
+  <meta property="og:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/hu/metrics/how-healthkit-works/">
+  <meta name="twitter:title" content="Hogyan Működik a HealthKit - Apple Health Adat Export">
+  <meta name="twitter:description" content="Technikai bevezető arról, hogyan tárolja és rendszerezi az Apple Health az Ön egészségügyi adatait. A HealthKit az Apple keretrendszere az egészségügyi és fittségi...">
+  <meta name="twitter:image" content="https://health.analyticszone.app{{ rel_root }}/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/how-healthkit-works/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/how-healthkit-works/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../../assets/css/main.min.css?v=2026.01.21.05">
+
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "hu"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hogyan Működik a HealthKit - Apple Health Adat Export",
+  "description": "Technikai bevezető arról, hogyan tárolja és rendszerezi az Apple Health az Ön egészségügyi adatait. A HealthKit az Apple keretrendszere az egészségügyi és fittségi...",
+  "url": "https://health.analyticszone.app/hu/metrics/how-healthkit-works/"
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hogyan Működik a HealthKit - Apple Health Adat Export",
+  "description": "Technikai bevezető arról, hogyan tárolja és rendszerezi az Apple Health az Ön egészségügyi adatait. A HealthKit az Apple keretrendszere az egészségügyi és fittségi...",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-01-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/hu/metrics/how-healthkit-works/"
+  }
+}
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/hu/" class="site-logo">
+                <picture>
+                    <source srcset="../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/hu/features/" 
+                                aria-current="">
+                                Funkciók
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/hu/metrics/" 
+                                aria-current="">
+                                Metrikák Könyvtára
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/hu/pricing/" 
+                                aria-current="">
+                                Árazás
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/hu/about/" 
+                                aria-current="">
+                                Rólunk
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Nyelv választása">
+                        
+                        <option value="ar" >
+                            العربية
+                        </option>
+                        
+                        <option value="bg" >
+                            Български
+                        </option>
+                        
+                        <option value="ca" >
+                            Català
+                        </option>
+                        
+                        <option value="cs" >
+                            Čeština
+                        </option>
+                        
+                        <option value="da" >
+                            Dansk
+                        </option>
+                        
+                        <option value="de" >
+                            Deutsch
+                        </option>
+                        
+                        <option value="el" >
+                            Ελληνικά
+                        </option>
+                        
+                        <option value="en" >
+                            English
+                        </option>
+                        
+                        <option value="es" >
+                            Español
+                        </option>
+                        
+                        <option value="et" >
+                            Eesti
+                        </option>
+                        
+                        <option value="fi" >
+                            Suomi
+                        </option>
+                        
+                        <option value="fr" >
+                            Français
+                        </option>
+                        
+                        <option value="gu" >
+                            ગુજરાતી
+                        </option>
+                        
+                        <option value="he" >
+                            עברית
+                        </option>
+                        
+                        <option value="hr" >
+                            Hrvatski
+                        </option>
+                        
+                        <option value="hu" selected>
+                            Magyar
+                        </option>
+                        
+                        <option value="id" >
+                            Bahasa Indonesia
+                        </option>
+                        
+                        <option value="it" >
+                            Italiano
+                        </option>
+                        
+                        <option value="ja" >
+                            日本語
+                        </option>
+                        
+                        <option value="km" >
+                            Khmer
+                        </option>
+                        
+                        <option value="kn" >
+                            ಕನ್ನಡ
+                        </option>
+                        
+                        <option value="ko" >
+                            한국어
+                        </option>
+                        
+                        <option value="lt" >
+                            Lietuvių
+                        </option>
+                        
+                        <option value="lv" >
+                            Latviešu
+                        </option>
+                        
+                        <option value="nb" >
+                            Norsk
+                        </option>
+                        
+                        <option value="nl" >
+                            Nederlands
+                        </option>
+                        
+                        <option value="pl" >
+                            Polski
+                        </option>
+                        
+                        <option value="pt" >
+                            Português
+                        </option>
+                        
+                        <option value="ro" >
+                            Română
+                        </option>
+                        
+                        <option value="sk" >
+                            Slovenčina
+                        </option>
+                        
+                        <option value="sl" >
+                            Slovenščina
+                        </option>
+                        
+                        <option value="sr" >
+                            Srpski
+                        </option>
+                        
+                        <option value="sv" >
+                            Svenska
+                        </option>
+                        
+                        <option value="ta" >
+                            தமிழ்
+                        </option>
+                        
+                        <option value="te" >
+                            తెలుగు
+                        </option>
+                        
+                        <option value="th" >
+                            ไทย
+                        </option>
+                        
+                        <option value="uk" >
+                            Українська
+                        </option>
+                        
+                        <option value="vi" >
+                            Tiếng Việt
+                        </option>
+                        
+                        <option value="zh" >
+                            中文
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menü váltása"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <article class="metric-article">
+
+  <nav class="metric-breadcrumb" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList"
+      style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
+
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/hu/metrics/">
+          <span itemprop="name">Metrikák Könyvtára</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <span>/</span>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" aria-current="page">Hogyan működik a HealthKit?</span>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </nav>
+
+
+  <header class="metric-article-header">
+    <span class="metric-category-badge">
+      <span>📁</span> Metrikák Áttekintése
+    </span>
+  </header>
+
+
+  <nav class="article-toc">
+    <h4>Tartalom</h4>
+    <div class="toc">
+      <ul>
+        <li><a href="#how-healthkit-works">Hogyan működik a HealthKit?</a>
+          <ul>
+            <li><a href="#what-is-healthkit">Mi az a HealthKit?</a></li>
+            <li><a href="#how-data-is-stored">Hogyan tárolódnak az adatok?</a></li>
+            <li><a href="#sample-types">Mintatípusok</a>
+              <ul>
+                <li><a href="#quantity-samples">Mennyiségi minták</a></li>
+                <li><a href="#category-samples">Kategória minták</a></li>
+                <li><a href="#correlation-samples">Korrelációs minták</a></li>
+                <li><a href="#workout-samples">Edzés minták</a></li>
+                <li><a href="#clinical-records">Klinikai adatok</a></li>
+              </ul>
+            </li>
+            <li><a href="#data-sources">Adatforrások</a>
+              <ul>
+                <li><a href="#apple-devices">Apple eszközök</a></li>
+                <li><a href="#third-party-devices">Külső eszközök</a></li>
+                <li><a href="#manual-entry">Manuális bevitel</a></li>
+                <li><a href="#healthcare-integration">Egészségügyi integráció</a></li>
+              </ul>
+            </li>
+            <li><a href="#source-priority">Források prioritása</a></li>
+            <li><a href="#privacy-architecture">Adatvédelmi architektúra</a>
+              <ul>
+                <li><a href="#per-type-permissions">Típusonkénti engedélyek</a></li>
+                <li><a href="#user-control">Felhasználói kontroll</a></li>
+                <li><a href="#on-device-storage">Eszközön történő tárolás</a></li>
+              </ul>
+            </li>
+            <li><a href="#common-healthkit-identifiers">Gyakori HealthKit azonosítók</a></li>
+            <li><a href="#references">Hivatkozások</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <div class="metric-content">
+    <h1 id="how-healthkit-works">Hogyan működik a HealthKit?</h1>
+    <p>Technikai bevezető arról, hogyan tárolja és rendszerezi az Apple Health az Ön egészségügyi adatait.</p>
+    <hr />
+    <h2 id="what-is-healthkit">Mi az a HealthKit?</h2>
+    <p>A HealthKit az Apple keretrendszere az egészségügyi és fittségi adatok kezelésére. Központi adattárként szolgál,
+      amely:</p>
+    <ul>
+      <li>Több forrásból (Apple Watch, iPhone, külső alkalmazások) származó adatokat tárol.</li>
+      <li>Egységes adatformátumot biztosít minden egészségügyi metrikához.</li>
+      <li>Finomhangolt adatvédelmi engedélyeket kezel.</li>
+      <li>Lehetővé teszi az adatok megosztását a felhatalmazott alkalmazások között.</li>
+    </ul>
+    <hr />
+    <h2 id="how-data-is-stored">Hogyan tárolódnak az adatok?</h2>
+    <p>A HealthKit az adatokat <strong>típusos mintákként</strong> tárolja, amelyek jellemzően az alábbiakat
+      tartalmazzák:</p>
+    <table class="clinical-table">
+      <thead>
+        <tr>
+          <th>Összetevő</th>
+          <th>Leírás</th>
+          <th>Példa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Kezdet/vég időpont</strong></td>
+          <td>Mikor történt a mérés.</td>
+          <td>2025-01-15 08:30:00</td>
+        </tr>
+        <tr>
+          <td><strong>Érték + egység</strong></td>
+          <td>Maga a mérési eredmény.</td>
+          <td>72 bpm</td>
+        </tr>
+        <tr>
+          <td><strong>Forrás és eszköz</strong></td>
+          <td>Melyik alkalmazás/eszköz rögzítette.</td>
+          <td>Apple Watch Series 9</td>
+        </tr>
+        <tr>
+          <td><strong>Metaadatok</strong></td>
+          <td>További kontextus.</td>
+          <td>Edzés típusa, eszköz elhelyezkedése.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2 id="sample-types">Mintatípusok</h2>
+    <h3 id="quantity-samples">Mennyiségi minták</h3>
+    <p>Számszerű mérések mértékegységekkel.</p>
+    <p><strong>Példák:</strong>
+      - Lépésszám (steps)
+      - Pulzusszám (bpm)
+      - Vércukorszint (mg/dL)
+      - Távolság (méter)
+      - Elégetett energia (kcal)</p>
+    <h3 id="category-samples">Kategória minták</h3>
+    <p>Egy meghatározott készletből származó értékek.</p>
+    <p><strong>Példák:</strong>
+      - Alvásfázis (REM, Felületes, Mély, Ébrenlét)
+      - Menstruációs vérzés (gyenge, közepes, erős)
+      - Tudatossági (mindfulness) szakasz</p>
+    <h3 id="correlation-samples">Korrelációs minták</h3>
+    <p>Összetartozó minták csoportja.</p>
+    <p><strong>Példák:</strong>
+      - Vérnyomás (szisztolés + diasztolés)
+      - Táplálkozás (egy étkezés több tápanyaga)</p>
+    <h3 id="workout-samples">Edzés minták</h3>
+    <p>Strukturált aktivitási szakaszok:
+      - Tevékenység típusa (futás, úszás, kerékpározás stb.)
+      - Kezdeti és befejezési időpont
+      - Összes elégetett energia
+      - Távolság (ha alkalmazható)
+      - Útvonaladatok (ha rögzítve lettek)</p>
+    <h3 id="clinical-records">Klinikai adatok</h3>
+    <p>Ha a régiója és az egészségügyi szolgáltatója támogatja:
+      - Laboreredmények
+      - Oltási igazolások
+      - Gyógyszerek
+      - Klinikai dokumentumok</p>
+    <hr />
+    <h2 id="data-sources">Adatforrások</h2>
+    <p>A HealthKit több forrásból is fogadhat adatokat:</p>
+    <h3 id="apple-devices">Apple eszközök</h3>
+    <ul>
+      <li><strong>Apple Watch</strong> - Pulzus, aktivitás, edzések, EKG, alvás, véroxigén-szint.</li>
+      <li><strong>iPhone</strong> - Lépések, távolság, megmászott emeletek (mozgásérzékelők).</li>
+    </ul>
+    <h3 id="third-party-devices">Külső eszközök</h3>
+    <ul>
+      <li>Okosmérlegek (súly, testösszetétel).</li>
+      <li>Vérnyomásmérők.</li>
+      <li>Vércukormérők.</li>
+      <li>Alváskövetők.</li>
+    </ul>
+    <h3 id="manual-entry">Manuális bevitel</h3>
+    <ul>
+      <li>A felhasználó által közvetlenül beírt adatok az Egészség alkalmazásban.</li>
+      <li>Külső alkalmazásokon keresztül bevitt adatok.</li>
+    </ul>
+    <h3 id="healthcare-integration">Egészségügyi integráció</h3>
+    <ul>
+      <li>Klinikai adatok támogatott szolgáltatóktól.</li>
+      <li>Laboreredmények (ahol elérhető).</li>
+    </ul>
+    <hr />
+    <h2 id="source-priority">Források prioritása</h2>
+    <p>Ha több forrás is rögzíti ugyanazt a metrikát, a HealthKit szabályok alapján dönti el, melyik adatot jelenítse
+      meg:</p>
+    <ol>
+      <li>A manuálisan bevitt adatok általában a legmagasabb prioritásúak.</li>
+      <li>A viselt érzékelőkből származó eszközadatok.</li>
+      <li>A külső alkalmazások adatai.</li>
+    </ol>
+    <p>A források sorrendjét az Apple Health beállításaiban Ön is megváltoztathatja.</p>
+    <hr />
+    <h2 id="privacy-architecture">Adatvédelmi architektúra</h2>
+    <p>A HealthKit adatvédelmi modellje a rendszer alapköve:</p>
+    <h3 id="per-type-permissions">Típusonkénti engedélyek</h3>
+    <p>Az alkalmazások specifikus adattípusokhoz kérhetnek hozzáférést. Ön külön engedélyezheti:
+      - Csak olvasási hozzáférés.
+      - Csak írási hozzáférés.
+      - Mindkettő.
+      - Egyik sem.</p>
+    <h3 id="user-control">Felhasználói kontroll</h3>
+    <ul>
+      <li>Az engedélyek bármikor felülvizsgálhatóak (Beállítások > Egészség > Adatkapcsolatok).</li>
+      <li>A hozzáférés bármikor visszavonható.</li>
+      <li>Látható, melyik alkalmazás melyik adathoz fért hozzá legutóbb.</li>
+    </ul>
+    <h3 id="on-device-storage">Eszközön történő tárolás</h3>
+    <ul>
+      <li>Az egészségügyi adatok helyileg, az iPhone-on tárolódnak.</li>
+      <li>Az adatok az eszköz jelkódjával titkosítva vannak.</li>
+      <li>Csak akkor kerülnek az iCloudba, ha az Egészség funkciót külön engedélyezte az iCloud beállításaiban.</li>
+    </ul>
+    <hr />
+    <h2 id="common-healthkit-identifiers">Gyakori HealthKit azonosítók</h2>
+    <p>Minden adattípus egyedi azonosítóval rendelkezik. Példák:</p>
+    <table class="clinical-table">
+      <thead>
+        <tr>
+          <th>Metrika</th>
+          <th>HealthKit azonosító</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pulzusszám</td>
+          <td><code>HKQuantityTypeIdentifier.heartRate</code></td>
+        </tr>
+        <tr>
+          <td>Lépésszám</td>
+          <td><code>HKQuantityTypeIdentifier.stepCount</code></td>
+        </tr>
+        <tr>
+          <td>Alváselemzés</td>
+          <td><code>HKCategoryTypeIdentifier.sleepAnalysis</code></td>
+        </tr>
+        <tr>
+          <td>VO₂ Max</td>
+          <td><code>HKQuantityTypeIdentifier.vo2Max</code></td>
+        </tr>
+        <tr>
+          <td>Vérnyomás</td>
+          <td><code>HKCorrelationTypeIdentifier.bloodPressure</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2 id="references">Hivatkozások</h2>
+    <ul>
+      <li><a href="https://developer.apple.com/documentation/healthkit/about-the-healthkit-framework">Apple HealthKit
+          dokumentáció fejlesztőknek</a></li>
+      <li><a href="https://www.apple.com/hu/privacy/health-data/">Apple Egészség adatvédelem áttekintése</a></li>
+    </ul>
+  </div>
+
+  <aside class="medical-disclaimer">
+    <div class="disclaimer-icon">⚠️ <strong>Orvosi Információ</strong></div>
+    <p>Ez a tartalom kizárólag oktatási célokat szolgál, és nem helyettesíti a szakszerű orvosi tanácsadást. Az orvosi
+      döntésekhez mindig konzultáljon egészségügyi szolgáltatóval.</p>
+  </aside>
+
+  <div class="metric-footer">
+    <hr>
+    <p><em>Utolsó frissítés: 2026. január</em></p>
+  </div>
+</article>
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../../../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a>
+                
+                <a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a>
+                
+                <a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a>
+                
+                <a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a>
+                
+                <a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a>
+                
+                <a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a>
+                
+                <a href="/it/" class="lang-link"
+                    hreflang="it" >
+                    Italiano
+                </a>
+                
+                <a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a>
+                
+                <a href="/nl/" class="lang-link"
+                    hreflang="nl" >
+                    Nederlands
+                </a>
+                
+                <a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a>
+                
+                <a href="/da/" class="lang-link"
+                    hreflang="da" >
+                    Dansk
+                </a>
+                
+                <a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a>
+                
+                <a href="/nb/" class="lang-link"
+                    hreflang="nb" >
+                    Norsk
+                </a>
+                
+                <a href="/zh/" class="lang-link"
+                    hreflang="zh" >
+                    中文
+                </a>
+                
+                <a href="/pl/" class="lang-link"
+                    hreflang="pl" >
+                    Polski
+                </a>
+                
+                <a href="/ja/" class="lang-link"
+                    hreflang="ja" >
+                    日本語
+                </a>
+                
+                <a href="/ko/" class="lang-link"
+                    hreflang="ko" >
+                    한국어
+                </a>
+                
+                <a href="/el/" class="lang-link"
+                    hreflang="el" >
+                    Ελληνικά
+                </a>
+                
+                <a href="/ar/" class="lang-link"
+                    hreflang="ar" dir="rtl" >
+                    العربية
+                </a>
+                
+                <a href="/cs/" class="lang-link"
+                    hreflang="cs" >
+                    Čeština
+                </a>
+                
+                <a href="/hu/" class="lang-link active"
+                    hreflang="hu" >
+                    Magyar
+                </a>
+                
+                <a href="/ro/" class="lang-link"
+                    hreflang="ro" >
+                    Română
+                </a>
+                
+                <a href="/bg/" class="lang-link"
+                    hreflang="bg" >
+                    Български
+                </a>
+                
+                <a href="/sk/" class="lang-link"
+                    hreflang="sk" >
+                    Slovenčina
+                </a>
+                
+                <a href="/uk/" class="lang-link"
+                    hreflang="uk" >
+                    Українська
+                </a>
+                
+                <a href="/hr/" class="lang-link"
+                    hreflang="hr" >
+                    Hrvatski
+                </a>
+                
+                <a href="/sr/" class="lang-link"
+                    hreflang="sr" >
+                    Srpski
+                </a>
+                
+                <a href="/et/" class="lang-link"
+                    hreflang="et" >
+                    Eesti
+                </a>
+                
+                <a href="/lv/" class="lang-link"
+                    hreflang="lv" >
+                    Latviešu
+                </a>
+                
+                <a href="/lt/" class="lang-link"
+                    hreflang="lt" >
+                    Lietuvių
+                </a>
+                
+                <a href="/sl/" class="lang-link"
+                    hreflang="sl" >
+                    Slovenščina
+                </a>
+                
+                <a href="/he/" class="lang-link"
+                    hreflang="he" dir="rtl" >
+                    עברית
+                </a>
+                
+                <a href="/gu/" class="lang-link"
+                    hreflang="gu" >
+                    ગુજરાતી
+                </a>
+                
+                <a href="/ta/" class="lang-link"
+                    hreflang="ta" >
+                    தமிழ்
+                </a>
+                
+                <a href="/te/" class="lang-link"
+                    hreflang="te" >
+                    తెలుగు
+                </a>
+                
+                <a href="/kn/" class="lang-link"
+                    hreflang="kn" >
+                    ಕನ್ನಡ
+                </a>
+                
+                <a href="/th/" class="lang-link"
+                    hreflang="th" >
+                    ไทย
+                </a>
+                
+                <a href="/vi/" class="lang-link"
+                    hreflang="vi" >
+                    Tiếng Việt
+                </a>
+                
+                <a href="/id/" class="lang-link"
+                    hreflang="id" >
+                    Bahasa Indonesia
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2026 Health Analytics. Minden jog fenntartva
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/hu/privacy/">Adatvédelem</a></li>
+                <li><a href="/hu/terms/">Feltételek</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Ez a weboldal sütiket használ az élmény javítása érdekében.</p>
+            <a href="/hu/privacy/" class="text-sm">Tudjon meg többet</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Elutasít</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Elfogad</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../../assets/js/core.min.js?v=2026.01.22.01" defer></script>
+  <script src="../../../assets/js/search.min.js?v=2026.01.22.01" defer></script>
+  
+
+  
+  
+  <script src="../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../sw.js') }</script>
+</body>
+
+</html>
