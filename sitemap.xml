@@ -673,7 +673,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -729,7 +729,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/about/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -841,7 +841,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/faq/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -897,7 +897,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/features/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -953,7 +953,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/medical-disclaimer/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -1064,7 +1064,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/pricing/</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -1120,7 +1120,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/privacy/</loc>
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -1176,7 +1176,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/terms/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -1232,7 +1232,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/use-cases/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -1288,7 +1288,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/am/who-its-for/</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -2686,6 +2686,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -2741,6 +2742,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/about/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -2796,6 +2798,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/bibliography/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -2851,6 +2854,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/faq/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -2906,6 +2910,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/features/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -2961,6 +2966,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/medical-disclaimer/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -3071,6 +3077,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/pricing/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -3126,6 +3133,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/privacy/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -3181,6 +3189,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/terms/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -3236,6 +3245,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/use-cases/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -3291,6 +3301,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/bn/who-its-for/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -4800,7 +4811,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/da/bibliography/</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -4856,7 +4867,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/da/faq/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -4968,7 +4979,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/da/medical-disclaimer/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -5247,7 +5258,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/da/use-cases/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -8714,6 +8725,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -8769,6 +8781,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/about/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -8824,6 +8837,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/bibliography/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -8879,6 +8893,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/faq/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -8934,6 +8949,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/features/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -8989,6 +9005,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/medical-disclaimer/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -9099,6 +9116,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/pricing/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -9154,6 +9172,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/privacy/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -9209,6 +9228,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/terms/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -9264,6 +9284,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/use-cases/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -9319,6 +9340,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fa/who-its-for/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -12058,6 +12080,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -12113,6 +12136,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/about/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -12168,6 +12192,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/bibliography/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -12223,6 +12248,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/faq/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -12278,6 +12304,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/features/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -12333,6 +12360,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/medical-disclaimer/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -12443,6 +12471,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/pricing/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -12498,6 +12527,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/privacy/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -12553,6 +12583,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/terms/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -12608,6 +12639,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/use-cases/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -12663,6 +12695,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/hi/who-its-for/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -16856,7 +16889,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/km/bibliography/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -17191,7 +17224,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/km/privacy/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -20099,6 +20132,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -20154,6 +20188,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/about/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -20209,6 +20244,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/bibliography/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -20264,6 +20300,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/faq/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -20319,6 +20356,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/features/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -20374,6 +20412,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/medical-disclaimer/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -20484,6 +20523,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/pricing/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -20539,6 +20579,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/privacy/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -20594,6 +20635,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/terms/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -20649,6 +20691,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/use-cases/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -20704,6 +20747,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ms/who-its-for/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -20759,6 +20803,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -20814,6 +20859,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/about/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -20869,6 +20915,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/bibliography/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -20924,6 +20971,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/faq/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -20979,6 +21027,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/features/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -21034,6 +21083,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/medical-disclaimer/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -21144,6 +21194,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/pricing/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -21199,6 +21250,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/privacy/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -21254,6 +21306,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/terms/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -21309,6 +21362,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/use-cases/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -21364,6 +21418,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/my/who-its-for/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -23432,7 +23487,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/pt/</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -27458,7 +27513,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -27514,7 +27569,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/about/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -27570,7 +27625,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/bibliography/</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -27626,7 +27681,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/faq/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -27682,7 +27737,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/features/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -27738,7 +27793,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/medical-disclaimer/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -27849,7 +27904,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/pricing/</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -27905,7 +27960,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/privacy/</loc>
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -27961,7 +28016,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/terms/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -28073,7 +28128,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/sw/who-its-for/</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -30142,7 +30197,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -30198,7 +30253,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/about/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -30254,7 +30309,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/bibliography/</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -30310,7 +30365,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/faq/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -30366,7 +30421,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/features/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -30422,7 +30477,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/medical-disclaimer/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -30533,7 +30588,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/pricing/</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -30589,7 +30644,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/privacy/</loc>
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -30645,7 +30700,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/terms/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -30701,7 +30756,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/use-cases/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -30757,7 +30812,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/tl/who-its-for/</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
@@ -32155,6 +32210,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>
@@ -32210,6 +32266,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/about/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/about/"/>
@@ -32265,6 +32322,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/bibliography/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/bibliography/"/>
@@ -32320,6 +32378,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/faq/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -32375,6 +32434,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/features/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/features/"/>
@@ -32430,6 +32490,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/medical-disclaimer/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/medical-disclaimer/"/>
@@ -32540,6 +32601,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/pricing/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/pricing/"/>
@@ -32595,6 +32657,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/privacy/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/privacy/"/>
@@ -32650,6 +32713,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/terms/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/terms/"/>
@@ -32705,6 +32769,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/use-cases/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -32760,6 +32825,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/ur/who-its-for/</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/who-its-for/"/>
