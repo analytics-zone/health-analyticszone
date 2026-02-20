@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>היקף מותניים - ייצוא נתוני Apple Health</title>
-  <meta name="description" content="היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך ספציפית שומן ויסרלי - השומן הפעיל מטבולית המאוחסן עמוק בתוך...">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="היקף, מותניים, ייצוא, נתוני, Apple, Health, הוא, מדידה, פשוטה, אך">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/">
-  <meta property="og:title" content="היקף מותניים - ייצוא נתוני Apple Health">
-  <meta property="og:description" content="היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך ספציפית שומן ויסרלי - השומן הפעיל מטבולית המאוחסן עמוק בתוך...">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="he_IL">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/">
-  <meta name="twitter:title" content="היקף מותניים - ייצוא נתוני Apple Health">
-  <meta name="twitter:description" content="היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך ספציפית שומן ויסרלי - השומן הפעיל מטבולית המאוחסן עמוק בתוך...">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/body-measurements/waist-circumference/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/body-measurements/waist-circumference/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="he" dir="rtl"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>היקף מותניים - ייצא נתוני בריאות אפל ל-CSV, PDF ו-JSON...</title><meta name="description" content="חקור ניתוח מפורט והקשר מדעי עבור היקף מותניים במעקב ב-Apple Health. ייצא את הנתונים שלך ל-CSV, PDF ו-JSON לניתוח מעמיק."><meta name="author" content="Arno Health"><meta name="keywords" content="היקף, מותניים, ייצוא, נתוני, Apple, Health, הוא, מדידה, פשוטה, אך"><link rel="canonical" href="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/"><meta property="og:title" content="היקף מותניים - ייצא נתוני בריאות אפל ל-CSV, PDF ו-JSON..."><meta property="og:description" content="חקור ניתוח מפורט והקשר מדעי עבור היקף מותניים במעקב ב-Apple Health. ייצא את הנתונים שלך ל-CSV, PDF ו-JSON לניתוח מעמיק."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="he_IL"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/"><meta name="twitter:title" content="היקף מותניים - ייצא נתוני בריאות אפל ל-CSV, PDF ו-JSON..."><meta name="twitter:description" content="חקור ניתוח מפורט והקשר מדעי עבור היקף מותניים במעקב ב-Apple Health. ייצא את הנתונים שלך ל-CSV, PDF ו-JSON לניתוח מעמיק."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/body-measurements/waist-circumference/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/body-measurements/waist-circumference/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "he"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "היקף מותניים - ייצוא נתוני Apple Health",
-  "description": "היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך ספציפית שומן ויסרלי - השומן הפעיל מטבולית המאוחסן עמוק בתוך...",
+  "name": "היקף מותניים - ייצא נתוני בריאות אפל ל-CSV, PDF ו-JSON...",
+  "description": "חקור ניתוח מפורט והקשר מדעי עבור היקף מותניים במעקב ב-Apple Health. ייצא את הנתונים שלך ל-CSV, PDF ו-JSON לניתוח מעמיק.",
   "url": "https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "היקף מותניים - ייצוא נתוני Apple Health",
-  "description": "היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך ספציפית שומן ויסרלי - השומן הפעיל מטבולית המאוחסן עמוק בתוך...",
+  "headline": "היקף מותניים - ייצא נתוני בריאות אפל ל-CSV, PDF ו-JSON...",
+  "description": "חקור ניתוח מפורט והקשר מדעי עבור היקף מותניים במעקב ב-Apple Health. ייצא את הנתונים שלך ל-CSV, PDF ו-JSON לניתוח מעמיק.",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/he/metrics/body-measurements/waist-circumference/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,919 +412,313 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">דלג לתוכן</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/he/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/he/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">דלג לתוכן</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/he/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/he/features/" 
                                 aria-current="">
                                 תכונות
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/he/metrics/" 
+                            </a></li><li><a href="/he/metrics/" 
                                 aria-current="">
                                 ספריית מדדים
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/he/pricing/" 
+                            </a></li><li><a href="/he/pricing/" 
                                 aria-current="">
                                 תמחור
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/he/about/" 
+                            </a></li><li><a href="/he/about/" 
                                 aria-current="">
                                 אודותינו
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="בחר שפה">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="בחר שפה"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" selected>
+                        </option><option value="he" selected>
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="שינוי מצב תפריט"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/he/metrics/">
-                    <span itemprop="name">ספריית מדדים</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/he/metrics/body-measurements/">
-                    <span itemprop="name">מדידות גוף</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">היקף מותניים</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>📏</span> מדידות גוף
-        </span>
-        <!-- הכותרת נמצאת בדרך כלל בתוכן, או שאנחנו יכולים לציין אותה כאן במפורש -->
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>בדף זה</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#waist-circumference">היקף מותניים</a>
-                    <ul>
-                        <li><a href="#what-is-waist-circumference">מהו היקף מותניים?</a>
-                            <ul>
-                                <li><a href="#how-to-measure-correctly">איך למדוד נכון</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#scientific-background">רקע מדעי</a>
-                            <ul>
-                                <li><a href="#visceral-fat-the-metabolic-danger">שומן ויסרלי: הסכנה המטבולית</a></li>
-                                <li><a href="#landmark-research-findings">ממצאי מחקר בולטים</a>
-                                    <ul>
-                                        <li><a href="#iasiccr-consensus-statement-2020">הצהרת הקונצנזוס של IAS/ICCR‏
-                                                (2020)</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#clinical-significance">משמעות קלינית</a>
-                            <ul>
-                                <li><a href="#risk-thresholds">ספי סיכון</a></li>
-                                <li><a href="#normal-weight-obesity">"השמנה במשקל תקין"</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#recommendations">המלצות</a>
-                            <ul>
-                                <li><a href="#tracking-progress">מעקב אחר התקדמות</a></li>
-                                <li><a href="#combining-metrics">שילוב מדדים</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#references">מקורות</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="waist-circumference">היקף מותניים</h1>
-        <h2 id="what-is-waist-circumference">מהו היקף מותניים?</h2>
-        <p>היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך
-            ספציפית <strong>שומן ויסרלי</strong> - השומן הפעיל מטבולית המאוחסן עמוק בתוך חלל הבטן סביב האיברים.</p>
-        <h3 id="how-to-measure-correctly">איך למדוד נכון</h3>
-        <ol>
-            <li>עמוד והנח סרט מדידה סביב האמצע שלך, בדיוק מעל עצמות הירך.</li>
-            <li>ודא שהסרט מקביל לרצפה סביב המותניים.</li>
-            <li>השאר את הסרט צמוד למותניים, אך לא לוחץ על עורך.</li>
-            <li>נשוף ומדוד.</li>
-        </ol>
-        <h2 id="scientific-background">רקע מדעי</h2>
-        <h3 id="visceral-fat-the-metabolic-danger">שומן ויסרלי: הסכנה המטבולית</h3>
-        <p>שומן בטני אינו רק מאגר אנרגיה; הוא איבר אנדוקריני פעיל. רקמת שומן ויסרלית מפרישה:
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="שינוי מצב תפריט"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/he/metrics/"><span itemprop="name">ספריית מדדים</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/he/metrics/body-measurements/"><span itemprop="name">מדידות גוף</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">היקף מותניים</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>📏</span> מדידות גוף
+        </span></header><nav class="article-toc"><h4>בדף זה</h4><div class="toc"><ul><li><a href="#waist-circumference">היקף מותניים</a><ul><li><a href="#what-is-waist-circumference">מהו היקף מותניים?</a><ul><li><a href="#how-to-measure-correctly">איך למדוד נכון</a></li></ul></li><li><a href="#scientific-background">רקע מדעי</a><ul><li><a href="#visceral-fat-the-metabolic-danger">שומן ויסרלי: הסכנה המטבולית</a></li><li><a href="#landmark-research-findings">ממצאי מחקר בולטים</a><ul><li><a href="#iasiccr-consensus-statement-2020">הצהרת הקונצנזוס של IAS/ICCR‏
+                                                (2020)</a></li></ul></li></ul></li><li><a href="#clinical-significance">משמעות קלינית</a><ul><li><a href="#risk-thresholds">ספי סיכון</a></li><li><a href="#normal-weight-obesity">"השמנה במשקל תקין"</a></li></ul></li><li><a href="#recommendations">המלצות</a><ul><li><a href="#tracking-progress">מעקב אחר התקדמות</a></li><li><a href="#combining-metrics">שילוב מדדים</a></li></ul></li><li><a href="#references">מקורות</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="waist-circumference">היקף מותניים</h1><h2 id="what-is-waist-circumference">מהו היקף מותניים?</h2><p>היקף מותניים הוא מדידה פשוטה אך עוצמתית של השמנה בטנית. בניגוד ל-BMI, המודד מסה כוללת, היקף המותניים מעריך
+            ספציפית <strong>שומן ויסרלי</strong> - השומן הפעיל מטבולית המאוחסן עמוק בתוך חלל הבטן סביב האיברים.</p><h3 id="how-to-measure-correctly">איך למדוד נכון</h3><ol><li>עמוד והנח סרט מדידה סביב האמצע שלך, בדיוק מעל עצמות הירך.</li><li>ודא שהסרט מקביל לרצפה סביב המותניים.</li><li>השאר את הסרט צמוד למותניים, אך לא לוחץ על עורך.</li><li>נשוף ומדוד.</li></ol><h2 id="scientific-background">רקע מדעי</h2><h3 id="visceral-fat-the-metabolic-danger">שומן ויסרלי: הסכנה המטבולית</h3><p>שומן בטני אינו רק מאגר אנרגיה; הוא איבר אנדוקריני פעיל. רקמת שומן ויסרלית מפרישה:
             * <strong>ציטוקינים דלקתיים</strong> (כמו IL-6 ו-TNF-α)
             * <strong>חומצות שומן חופשיות</strong> לכבד (הגורמות לתנגודת לאינסולין)
-            * <strong>הורמונים</strong> המשבשים את ויסות התיאבון</p>
-        <p>בשל פעילות מטבולית זו, נשיאת משקל סביב האמצע (מבנה "תפוח") מסוכנת משמעותית יותר מנשיאת משקל על הירכיים והישבן
-            (מבנה "אגס").</p>
-        <h3 id="landmark-research-findings">ממצאי מחקר בולטים</h3>
-        <h4 id="iasiccr-consensus-statement-2020">הצהרת הקונצנזוס של IAS/ICCR‏ (2020)</h4>
-        <p>בשנת 2020, ה-<strong>International Atherosclerosis Society</strong> וה-<strong>International Chair on
-                Cardiometabolic Risk</strong> פרסמו הצהרת קונצנזוס המבססת את היקף המותניים כסימן חיוני.</p>
-        <p><strong>ממצאים מרכזיים:</strong>
+            * <strong>הורמונים</strong> המשבשים את ויסות התיאבון</p><p>בשל פעילות מטבולית זו, נשיאת משקל סביב האמצע (מבנה "תפוח") מסוכנת משמעותית יותר מנשיאת משקל על הירכיים והישבן
+            (מבנה "אגס").</p><h3 id="landmark-research-findings">ממצאי מחקר בולטים</h3><h4 id="iasiccr-consensus-statement-2020">הצהרת הקונצנזוס של IAS/ICCR‏ (2020)</h4><p>בשנת 2020, ה-<strong>International Atherosclerosis Society</strong> וה-<strong>International Chair on
+                Cardiometabolic Risk</strong> פרסמו הצהרת קונצנזוס המבססת את היקף המותניים כסימן חיוני.</p><p><strong>ממצאים מרכזיים:</strong>
             * היקף מותניים הוא מנבא חזק יותר למחלות לב וכלי דם וסוכרת סוג 2 מאשר BMI.
             * גם אצל אנשים עם BMI "תקין" אך היקף מותניים גבוה, קיים סיכון תמותה מוגבר.
-            * הפחתת היקף המותניים משפרת מדדי בריאות מטבוליים גם אם הירידה במשקל מינימלית.</p>
-        <h2 id="clinical-significance">משמעות קלינית</h2>
-        <h3 id="risk-thresholds">ספי סיכון</h3>
-        <p>אין מספרים שמתאימים לכולם, אך ספי סיכון כלליים המקובלים ביותר (לאוכלוסיות לבנות, מזרח תיכוניות ואפריקאיות)
-            הם:</p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th style="text-align: right;">רמת סיכון</th>
-                    <th style="text-align: right;">גברים</th>
-                    <th style="text-align: right;">נשים</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="text-align: right;"><strong>סיכון מוגבר</strong></td>
-                    <td style="text-align: right;">&gt; 94 ס"מ</td>
-                    <td style="text-align: right;">&gt; 80 ס"מ</td>
-                </tr>
-                <tr>
-                    <td style="text-align: right;"><strong>סיכון גבוה</strong></td>
-                    <td style="text-align: right;">&gt; 102 ס"מ</td>
-                    <td style="text-align: right;">&gt; 88 ס"מ</td>
-                </tr>
-            </tbody>
-        </table>
-        <p><em>> הערה: אוכלוסיות בדרום אסיה ובסין משתמשות לעתים קרובות בספים נמוכים יותר (גברים > 90 ס"מ, נשים > 80 ס"מ)
-                בשל נטייה גבוהה יותר לשומן ויסרלי במשקלים נמוכים יותר.</em></p>
-        <h3 id="normal-weight-obesity">"השמנה במשקל תקין"</h3>
-        <p>יישום מרכזי של מדד זה הוא זיהוי "השמנה במשקל תקין" (או "רזה שמנה"). מישהו עשוי להיות עם BMI של 23 (תקין) אך
+            * הפחתת היקף המותניים משפרת מדדי בריאות מטבוליים גם אם הירידה במשקל מינימלית.</p><h2 id="clinical-significance">משמעות קלינית</h2><h3 id="risk-thresholds">ספי סיכון</h3><p>אין מספרים שמתאימים לכולם, אך ספי סיכון כלליים המקובלים ביותר (לאוכלוסיות לבנות, מזרח תיכוניות ואפריקאיות)
+            הם:</p><table class="clinical-table"><thead><tr><th style="text-align: right;">רמת סיכון</th><th style="text-align: right;">גברים</th><th style="text-align: right;">נשים</th></tr></thead><tbody><tr><td style="text-align: right;"><strong>סיכון מוגבר</strong></td><td style="text-align: right;">&gt; 94 ס"מ</td><td style="text-align: right;">&gt; 80 ס"מ</td></tr><tr><td style="text-align: right;"><strong>סיכון גבוה</strong></td><td style="text-align: right;">&gt; 102 ס"מ</td><td style="text-align: right;">&gt; 88 ס"מ</td></tr></tbody></table><p><em>> הערה: אוכלוסיות בדרום אסיה ובסין משתמשות לעתים קרובות בספים נמוכים יותר (גברים > 90 ס"מ, נשים > 80 ס"מ)
+                בשל נטייה גבוהה יותר לשומן ויסרלי במשקלים נמוכים יותר.</em></p><h3 id="normal-weight-obesity">"השמנה במשקל תקין"</h3><p>יישום מרכזי של מדד זה הוא זיהוי "השמנה במשקל תקין" (או "רזה שמנה"). מישהו עשוי להיות עם BMI של 23 (תקין) אך
             עם מותניים של 96 ס"מ. לפנוטיפ זה יש:
             * מסת שריר נמוכה (סרקופניה)
             * שומן ויסרלי גבוה
-            * סיכון מטבולי השקול למישהו עם השמנת יתר</p>
-        <h2 id="recommendations">המלצות</h2>
-        <h3 id="tracking-progress">מעקב אחר התקדמות</h3>
-        <p>היקף המותניים הוא לעתים קרובות <strong>מניע יותר</strong> מהמשקל. במיוחד אם אתה מתחיל להתאמן:
+            * סיכון מטבולי השקול למישהו עם השמנת יתר</p><h2 id="recommendations">המלצות</h2><h3 id="tracking-progress">מעקב אחר התקדמות</h3><p>היקף המותניים הוא לעתים קרובות <strong>מניע יותר</strong> מהמשקל. במיוחד אם אתה מתחיל להתאמן:
             * אתה עשוי להעלות שריר ולאבד שומן.
             * המשקל עשוי להישאר ללא שינוי (או לעלות!).
-            * אבל אם היקף המותניים שלך קטן, אתה בוודאות משפר את בריאותך ואת מצב השומן הויסרלי שלך.</p>
-        <h3 id="combining-metrics">שילוב מדדים</h3>
-        <p>ה"סטנדרט הזהב" לסריקה ביתית הוא שילוב של BMI ומותניים:</p>
-        <ol>
-            <li><strong>BMI:</strong> אומר לך אם אתה כבד מדי לגובה שלך.</li>
-            <li><strong>מותניים:</strong> אומר לך איפה המשקל הזה ממוקם.</li>
-        </ol>
-        <h2 id="references">מקורות</h2>
-        <ol>
-            <li>Ross R, et al. (2020) Waist circumference as a vital sign in clinical practice: a Consensus Statement
-                from the IAS and ICCR. <em>Nature Reviews Endocrinology</em>, 16(3), 177-189.</li>
-            <li>Cerhan JR, et al. (2014) A pooled analysis of waist circumference and mortality in 650,000 adults.
-                <em>Mayo Clinic Proceedings</em>, 89(3), 335-345.</li>
-            <li>Després JP. (2012) Body fat distribution and risk of cardiovascular disease: an update.
-                <em>Circulation</em>, 126(10).</li>
-        </ol>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>מידע רפואי</strong></div>
-        <p>תוכן זה נועד למטרות חינוכיות בלבד ואינו מחליף
+            * אבל אם היקף המותניים שלך קטן, אתה בוודאות משפר את בריאותך ואת מצב השומן הויסרלי שלך.</p><h3 id="combining-metrics">שילוב מדדים</h3><p>ה"סטנדרט הזהב" לסריקה ביתית הוא שילוב של BMI ומותניים:</p><ol><li><strong>BMI:</strong> אומר לך אם אתה כבד מדי לגובה שלך.</li><li><strong>מותניים:</strong> אומר לך איפה המשקל הזה ממוקם.</li></ol><h2 id="references">מקורות</h2><ol><li>Ross R, et al. (2020) Waist circumference as a vital sign in clinical practice: a Consensus Statement
+                from the IAS and ICCR. <em>Nature Reviews Endocrinology</em>, 16(3), 177-189.</li><li>Cerhan JR, et al. (2014) A pooled analysis of waist circumference and mortality in 650,000 adults.
+                <em>Mayo Clinic Proceedings</em>, 89(3), 335-345.</li><li>Després JP. (2012) Body fat distribution and risk of cardiovascular disease: an update.
+                <em>Circulation</em>, 126(10).</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>מידע רפואי</strong></div><p>תוכן זה נועד למטרות חינוכיות בלבד ואינו מחליף
             ייעוץ רפואי מקצועי. התייעץ תמיד עם ספק שירותי בריאות לצורך
-            החלטות רפואיות.</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>עודכן לאחרונה: ינואר 2026</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+            החלטות רפואיות.</p></aside><div class="metric-footer"><hr><p><em>עודכן לאחרונה: ינואר 2026</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link active"
+                </a><a href="/he/" class="lang-link active"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. כל הזכויות שמורות
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/he/privacy/">פרטיות</a></li>
-                <li><a href="/he/terms/">תנאים</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>אתר זה משתמש בעוגיות כדי לשפר את החוויה שלך.</p>
-            <a href="/he/privacy/" class="text-sm">למידע נוסף</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">דחייה</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">אישור</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/he/privacy/">פרטיות</a></li><li><a href="/he/terms/">תנאים</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>אתר זה משתמש בעוגיות כדי לשפר את החוויה שלך.</p><a href="/he/privacy/" class="text-sm">למידע נוסף</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">דחייה</button><button id="cookie-accept" class="btn btn-primary btn-small">אישור</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

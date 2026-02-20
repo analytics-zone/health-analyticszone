@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="ro" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Acuratețea Măsurătorilor Apple Watch</title>
-  <meta name="description" content="Înțelegerea acurateței, bias-ului și modurilor de eșec ale măsurătorilor de sănătate Apple Watch. Fotoplestismografia (PPG) folosind LED-uri infraroșii/verzi pentru a...">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Acuratețea Măsurătorilor Apple Watch, data-quality, health metrics, healthkit">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/">
-  <meta property="og:title" content="Acuratețea Măsurătorilor Apple Watch">
-  <meta property="og:description" content="Înțelegerea acurateței, bias-ului și modurilor de eșec ale măsurătorilor de sănătate Apple Watch. Fotoplestismografia (PPG) folosind LED-uri infraroșii/verzi pentru a...">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="ro_RO">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/">
-  <meta name="twitter:title" content="Acuratețea Măsurătorilor Apple Watch">
-  <meta name="twitter:description" content="Înțelegerea acurateței, bias-ului și modurilor de eșec ale măsurătorilor de sănătate Apple Watch. Fotoplestismografia (PPG) folosind LED-uri infraroșii/verzi pentru a...">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/data-quality/measurement-accuracy/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/data-quality/measurement-accuracy/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="ro" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>Precizia măsurătorilor Apple Watch</title><meta name="description" content="Explorați analizele detaliate și contextul științific pentru acuratețea măsurătorilor urmărite în Apple Health. Exportați datele în CSV, PDF și JSON pentru o analiză..."><meta name="author" content="Arno Health"><meta name="keywords" content="Acuratețea Măsurătorilor Apple Watch, data-quality, health metrics, healthkit"><link rel="canonical" href="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/"><meta property="og:title" content="Precizia măsurătorilor Apple Watch"><meta property="og:description" content="Explorați analizele detaliate și contextul științific pentru acuratețea măsurătorilor urmărite în Apple Health. Exportați datele în CSV, PDF și JSON pentru o analiză..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ro_RO"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/"><meta name="twitter:title" content="Precizia măsurătorilor Apple Watch"><meta name="twitter:description" content="Explorați analizele detaliate și contextul științific pentru acuratețea măsurătorilor urmărite în Apple Health. Exportați datele în CSV, PDF și JSON pentru o analiză..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/data-quality/measurement-accuracy/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/data-quality/measurement-accuracy/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "ro"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Acuratețea Măsurătorilor Apple Watch",
-  "description": "Înțelegerea acurateței, bias-ului și modurilor de eșec ale măsurătorilor de sănătate Apple Watch. Fotoplestismografia (PPG) folosind LED-uri infraroșii/verzi pentru a...",
+  "name": "Precizia măsurătorilor Apple Watch",
+  "description": "Explorați analizele detaliate și contextul științific pentru acuratețea măsurătorilor urmărite în Apple Health. Exportați datele în CSV, PDF și JSON pentru o analiză...",
   "url": "https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Acuratețea Măsurătorilor Apple Watch",
-  "description": "Înțelegerea acurateței, bias-ului și modurilor de eșec ale măsurătorilor de sănătate Apple Watch. Fotoplestismografia (PPG) folosind LED-uri infraroșii/verzi pentru a...",
+  "headline": "Precizia măsurătorilor Apple Watch",
+  "description": "Explorați analizele detaliate și contextul științific pentru acuratețea măsurătorilor urmărite în Apple Health. Exportați datele în CSV, PDF și JSON pentru o analiză...",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/ro/metrics/data-quality/measurement-accuracy/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,1076 +412,304 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Sari la conținut</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/ro/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/ro/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Sari la conținut</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ro/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ro/features/" 
                                 aria-current="">
                                 Funcționalități
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ro/metrics/" 
+                            </a></li><li><a href="/ro/metrics/" 
                                 aria-current="">
                                 Bibliotecă Metrici
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ro/pricing/" 
+                            </a></li><li><a href="/ro/pricing/" 
                                 aria-current="">
                                 Prețuri
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ro/about/" 
+                            </a></li><li><a href="/ro/about/" 
                                 aria-current="">
                                 Despre Noi
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Selectează limba">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Selectează limba"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" selected>
+                        </option><option value="ro" selected>
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Comută meniul"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/ro/metrics/">
-                    <span itemprop="name">Bibliotecă Metrici</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/ro/metrics/data-quality/">
-                    <span itemprop="name">Calitatea Datelor</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">Acuratețea Măsurătorilor Apple Watch</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>📊</span> Calitatea Datelor
-        </span>
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>Pe Această Pagină</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#apple-watch-measurement-accuracy">Acuratețea Măsurătorilor Apple Watch</a>
-                    <ul>
-                        <li><a href="#heart-rate-ppg">Ritmul Cardiac (PPG)</a>
-                            <ul>
-                                <li><a href="#method">Metodă</a></li>
-                                <li><a href="#accuracy">Acuratețe</a></li>
-                                <li><a href="#failure-modes">Posibile Erori</a></li>
-                                <li><a href="#best-practice">Cea Mai Bună Practică</a></li>
-                                <li><a href="#evidence">Dovezi Științifice</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#energy-expenditure-calories">Consumul de Energie (Calorii)</a>
-                            <ul>
-                                <li><a href="#reality">Realitate</a></li>
-                                <li><a href="#why-its-difficult">De Ce Este Dificil</a></li>
-                                <li><a href="#accuracy_1">Acuratețe</a></li>
-                                <li><a href="#best-practice_1">Cea Mai Bună Practică</a></li>
-                                <li><a href="#evidence_1">Dovezi</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#blood-oxygen-spo2">Oxigenul din Sânge (SpO₂)</a>
-                            <ul>
-                                <li><a href="#method_1">Metodă</a></li>
-                                <li><a href="#key-caution">Avertisment Cheie</a></li>
-                                <li><a href="#accuracy-factors">Factori de Acuratețe</a></li>
-                                <li><a href="#best-practice_2">Cea Mai Bună Practică</a></li>
-                                <li><a href="#regulatory-references">Referințe Reglementare</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#sleep-staging">Stadiile Somnului</a>
-                            <ul>
-                                <li><a href="#reality_1">Realitate</a></li>
-                                <li><a href="#accuracy_2">Acuratețe</a></li>
-                                <li><a href="#best-practice_3">Cea Mai Bună Practică</a></li>
-                                <li><a href="#evidence_2">Dovezi</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#vo2-max-cardio-fitness">VO₂ Max (Condiție Cardio)</a>
-                            <ul>
-                                <li><a href="#method_2">Metodă</a></li>
-                                <li><a href="#accuracy_3">Acuratețe</a></li>
-                                <li><a href="#best-practice_4">Cea Mai Bună Practică</a></li>
-                                <li><a href="#evidence_3">Dovezi</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#step-count">Numărul de Pași</a>
-                            <ul>
-                                <li><a href="#accuracy_4">Acuratețe</a></li>
-                                <li><a href="#known-limitations">Limitări Cunoscute</a></li>
-                                <li><a href="#best-practice_5">Cea Mai Bună Practică</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#summary-reliability-tiers">Rezumat: Niveluri de Fiabilitate</a>
-                            <ul>
-                                <li><a href="#higher-reliability">Fiabilitate Ridicată</a></li>
-                                <li><a href="#moderate-reliability">Fiabilitate Moderată</a></li>
-                                <li><a href="#use-with-caution">A se utiliza cu Atenție</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#key-takeaway">Concluzie Cheie</a></li>
-                        <li><a href="#references">Referințe</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="apple-watch-measurement-accuracy">Acuratețea Măsurătorilor Apple Watch</h1>
-        <h2 id="heart-rate-ppg">Ritmul Cardiac (PPG)</h2>
-        <h3 id="method">Metodă</h3>
-        <p>Fotopletismografie (PPG) folosind LED-uri infraroșii/verzi pentru a măsura schimbările de volum ale sângelui
-            la nivelul încheieturii mâinii.</p>
-        <h3 id="accuracy">Acuratețe</h3>
-        <ul>
-            <li><strong>Eroare medie:</strong> În general mică (câteva bpm).</li>
-            <li><strong>Limite de concordanță:</strong> Variabilitate moderată în jurul mediei.</li>
-            <li><strong>Context clinic:</strong> Acceptabil în condiții de stabilitate a încheieturii pentru majoritatea
-                populațiilor.</li>
-        </ul>
-        <h3 id="failure-modes">Posibile Erori</h3>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>Problemă</th>
-                    <th>Efect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Artefacte de mișcare</td>
-                    <td>Citiri imprecise în timpul mișcării</td>
-                </tr>
-                <tr>
-                    <td>Curea prea largă</td>
-                    <td>Calitate slabă a semnalului</td>
-                </tr>
-                <tr>
-                    <td>Tatuaje</td>
-                    <td>Pot interfera cu senzorul optic</td>
-                </tr>
-                <tr>
-                    <td>Extremități reci</td>
-                    <td>Perfuzia scăzută reduce acuratețea</td>
-                </tr>
-                <tr>
-                    <td>Tonuri de piele închise</td>
-                    <td>Pot avea o variabilitate ușor mai mare</td>
-                </tr>
-                <tr>
-                    <td>Ritmuri neregulate</td>
-                    <td>Detectarea bătăilor devine mai dificilă</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="best-practice">Cea Mai Bună Practică</h3>
-        <ul>
-            <li>Asigură-te că cureaua este fixă (fără a strânge excesiv).</li>
-            <li>Măsoară în stare de repaus deplin pentru pulsul bazal.</li>
-            <li>Concentrează-te pe tendințe mai degrabă decât pe valori absolute.</li>
-        </ul>
-        <h3 id="evidence">Dovezi Științifice</h3>
-        <ul>
-            <li>Falter et al. (2019) au constatat că pulsul măsurat de Apple Watch este acceptabil din punct de vedere
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Comută meniul"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/ro/metrics/"><span itemprop="name">Bibliotecă Metrici</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/ro/metrics/data-quality/"><span itemprop="name">Calitatea Datelor</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Acuratețea Măsurătorilor Apple Watch</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>📊</span> Calitatea Datelor
+        </span></header><nav class="article-toc"><h4>Pe Această Pagină</h4><div class="toc"><ul><li><a href="#apple-watch-measurement-accuracy">Acuratețea Măsurătorilor Apple Watch</a><ul><li><a href="#heart-rate-ppg">Ritmul Cardiac (PPG)</a><ul><li><a href="#method">Metodă</a></li><li><a href="#accuracy">Acuratețe</a></li><li><a href="#failure-modes">Posibile Erori</a></li><li><a href="#best-practice">Cea Mai Bună Practică</a></li><li><a href="#evidence">Dovezi Științifice</a></li></ul></li><li><a href="#energy-expenditure-calories">Consumul de Energie (Calorii)</a><ul><li><a href="#reality">Realitate</a></li><li><a href="#why-its-difficult">De Ce Este Dificil</a></li><li><a href="#accuracy_1">Acuratețe</a></li><li><a href="#best-practice_1">Cea Mai Bună Practică</a></li><li><a href="#evidence_1">Dovezi</a></li></ul></li><li><a href="#blood-oxygen-spo2">Oxigenul din Sânge (SpO₂)</a><ul><li><a href="#method_1">Metodă</a></li><li><a href="#key-caution">Avertisment Cheie</a></li><li><a href="#accuracy-factors">Factori de Acuratețe</a></li><li><a href="#best-practice_2">Cea Mai Bună Practică</a></li><li><a href="#regulatory-references">Referințe Reglementare</a></li></ul></li><li><a href="#sleep-staging">Stadiile Somnului</a><ul><li><a href="#reality_1">Realitate</a></li><li><a href="#accuracy_2">Acuratețe</a></li><li><a href="#best-practice_3">Cea Mai Bună Practică</a></li><li><a href="#evidence_2">Dovezi</a></li></ul></li><li><a href="#vo2-max-cardio-fitness">VO₂ Max (Condiție Cardio)</a><ul><li><a href="#method_2">Metodă</a></li><li><a href="#accuracy_3">Acuratețe</a></li><li><a href="#best-practice_4">Cea Mai Bună Practică</a></li><li><a href="#evidence_3">Dovezi</a></li></ul></li><li><a href="#step-count">Numărul de Pași</a><ul><li><a href="#accuracy_4">Acuratețe</a></li><li><a href="#known-limitations">Limitări Cunoscute</a></li><li><a href="#best-practice_5">Cea Mai Bună Practică</a></li></ul></li><li><a href="#summary-reliability-tiers">Rezumat: Niveluri de Fiabilitate</a><ul><li><a href="#higher-reliability">Fiabilitate Ridicată</a></li><li><a href="#moderate-reliability">Fiabilitate Moderată</a></li><li><a href="#use-with-caution">A se utiliza cu Atenție</a></li></ul></li><li><a href="#key-takeaway">Concluzie Cheie</a></li><li><a href="#references">Referințe</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="apple-watch-measurement-accuracy">Acuratețea Măsurătorilor Apple Watch</h1><h2 id="heart-rate-ppg">Ritmul Cardiac (PPG)</h2><h3 id="method">Metodă</h3><p>Fotopletismografie (PPG) folosind LED-uri infraroșii/verzi pentru a măsura schimbările de volum ale sângelui
+            la nivelul încheieturii mâinii.</p><h3 id="accuracy">Acuratețe</h3><ul><li><strong>Eroare medie:</strong> În general mică (câteva bpm).</li><li><strong>Limite de concordanță:</strong> Variabilitate moderată în jurul mediei.</li><li><strong>Context clinic:</strong> Acceptabil în condiții de stabilitate a încheieturii pentru majoritatea
+                populațiilor.</li></ul><h3 id="failure-modes">Posibile Erori</h3><table class="clinical-table"><thead><tr><th>Problemă</th><th>Efect</th></tr></thead><tbody><tr><td>Artefacte de mișcare</td><td>Citiri imprecise în timpul mișcării</td></tr><tr><td>Curea prea largă</td><td>Calitate slabă a semnalului</td></tr><tr><td>Tatuaje</td><td>Pot interfera cu senzorul optic</td></tr><tr><td>Extremități reci</td><td>Perfuzia scăzută reduce acuratețea</td></tr><tr><td>Tonuri de piele închise</td><td>Pot avea o variabilitate ușor mai mare</td></tr><tr><td>Ritmuri neregulate</td><td>Detectarea bătăilor devine mai dificilă</td></tr></tbody></table><h3 id="best-practice">Cea Mai Bună Practică</h3><ul><li>Asigură-te că cureaua este fixă (fără a strânge excesiv).</li><li>Măsoară în stare de repaus deplin pentru pulsul bazal.</li><li>Concentrează-te pe tendințe mai degrabă decât pe valori absolute.</li></ul><h3 id="evidence">Dovezi Științifice</h3><ul><li>Falter et al. (2019) au constatat că pulsul măsurat de Apple Watch este acceptabil din punct de vedere
                 clinic în reabilitarea cardiacă, în condiții de stabilitate: <a
-                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6444219/">PMC6444219</a></li>
-        </ul>
-        <hr />
-        <h2 id="energy-expenditure-calories">Consumul de Energie (Calorii)</h2>
-        <h3 id="reality">Realitate</h3>
-        <p>Estimările caloriilor sunt adesea metricul purtabil <strong>cel mai puțin fiabil</strong>.</p>
-        <h3 id="why-its-difficult">De Ce Este Dificil</h3>
-        <ul>
-            <li>Compoziția corporală variază (mușchi vs. grăsime).</li>
-            <li>Rata metabolică bazală este individuală.</li>
-            <li>Termogeneza variază.</li>
-            <li>Eficiența mișcării diferă de la o persoană la alta.</li>
-            <li>Ipotezele modelelor matematice nu se potrivesc tuturor.</li>
-        </ul>
-        <h3 id="accuracy_1">Acuratețe</h3>
-        <p>Studiile sistematice arată <strong>erori individuale mari</strong> în ceea ce privește consumul de energie
-            raportat de smartwatch-uri.</p>
-        <h3 id="best-practice_1">Cea Mai Bună Practică</h3>
-        <ul>
-            <li>Tratează caloriile ca fiind date <strong>relative</strong> („mai multe decât de obicei” vs. „exact X
-                calorii”).</li>
-            <li>Nu le folosi ca o „permisiune” precisă de a mânca în plus.</li>
-            <li>Compară datele doar cu propriile tale înregistrări, nu cu ținte externe.</li>
-        </ul>
-        <h3 id="evidence_1">Dovezi</h3>
-        <ul>
-            <li>Recenzia sistematică a lui Sun et al. (2023) arată erori individuale semnificative: <a
-                    href="https://www.sciencedirect.com/science/article/pii/S1440244023001779">ScienceDirect</a></li>
-        </ul>
-        <hr />
-        <h2 id="blood-oxygen-spo2">Oxigenul din Sânge (SpO₂)</h2>
-        <h3 id="method_1">Metodă</h3>
-        <p>Oximetria bazată pe PPG cu lumină roșie/infraroșie.</p>
-        <h3 id="key-caution">Avertisment Cheie</h3>
-        <p><strong>Pigmentarea pielii și perfuzia pot afecta acuratețea.</strong> FDA continuă să actualizeze ghidurile
-            pentru a îmbunătăți performanța indiferent de tonul pielii.</p>
-        <h3 id="accuracy-factors">Factori de Acuratețe</h3>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>Factor</th>
-                    <th>Efect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tonul pielii</td>
-                    <td>Poate afecta acuratețea; problemă monitorizată de FDA</td>
-                </tr>
-                <tr>
-                    <td>Perfuzia</td>
-                    <td>Circulația deficitară scade fiabilitatea</td>
-                </tr>
-                <tr>
-                    <td>Mișcarea</td>
-                    <td>Trebuie să stai nemișcat timp de 15 secunde</td>
-                </tr>
-                <tr>
-                    <td>Altitudinea</td>
-                    <td>SpO₂ este natural mai scăzut la înălțime</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="best-practice_2">Cea Mai Bună Practică</h3>
-        <ul>
-            <li>Repetă citirile scăzute în condiții optime de liniște.</li>
-            <li>Folosește mediile în timp, nu citiri individuale.</li>
-            <li>Solicită confirmare clinică pentru valorile scăzute persistente.</li>
-        </ul>
-        <hr />
-        <h2 id="sleep-staging">Stadiile Somnului</h2>
-        <h3 id="reality_1">Realitate</h3>
-        <p>Dispozitivele purtabile deduc stadiile somnului <strong>indirect</strong> (mișcare + puls), nu prin EEG ca
-            polisomnografia clinică.</p>
-        <h3 id="accuracy_2">Acuratețe</h3>
-        <ul>
-            <li><strong>Timpul total de somn:</strong> Destul de precis.</li>
-            <li><strong>Clasificarea stadiilor:</strong> Mai puțin precisă decât testele clinice.</li>
-            <li><strong>Variabilitatea de la noapte la noapte:</strong> Este de așteptat; nu suprainterpreta.</li>
-        </ul>
-        <h3 id="best-practice_3">Cea Mai Bună Practică</h3>
-        <ul>
-            <li>Folosește datele pentru tendințe și consistență.</li>
-            <li>Nu te obsesiona de „minutele exacte de REM”.</li>
-            <li>Caută deviații mari față de tiparul tău obișnuit.</li>
-        </ul>
-        <hr />
-        <h2 id="vo2-max-cardio-fitness">VO₂ Max (Condiție Cardio)</h2>
-        <h3 id="method_2">Metodă</h3>
-        <p>Estimare bazată pe efortul depus în mers sau alergare în aer liber și răspunsul ritmului cardiac, folosind
-            algoritmi validați.</p>
-        <h3 id="accuracy_3">Acuratețe</h3>
-        <ul>
-            <li>Este o estimare derivată din algoritmi, nu o măsurătoare directă.</li>
-            <li>Există o corelație rezonabilă cu testele VO₂ max de laborator.</li>
-            <li>Pot apărea variații individuale.</li>
-        </ul>
-        <h3 id="best-practice_4">Cea Mai Bună Practică</h3>
-        <ul>
-            <li>Concentrează-te pe tendințe pe parcursul a luni de zile.</li>
-            <li>Folosește activități suportate (mers, alergare sau drumeție în aer liber).</li>
-            <li>Compară rezultatele cu propriul istoric, nu cu tabele statistice.</li>
-        </ul>
-        <hr />
-        <h2 id="step-count">Numărul de Pași</h2>
-        <h3 id="accuracy_4">Acuratețe</h3>
-        <ul>
-            <li>În general bună pentru mers sau alergare tipică.</li>
-            <li>iPhone și Watch folosesc senzori complementari.</li>
-        </ul>
-        <h3 id="known-limitations">Limitări Cunoscute</h3>
-        <ul>
-            <li>Subestimează pașii când împingi un cărucior sau un coș de cumpărături.</li>
-            <li>Poate pierde pași dacă telefonul nu este purtat în buzunar.</li>
-            <li>Ținerea de mânere pe banda de alergare reduce acuratețea.</li>
-        </ul>
-        <hr />
-        <h2 id="summary-reliability-tiers">Rezumat: Niveluri de Fiabilitate</h2>
-        <h3 id="higher-reliability">Fiabilitate Ridicată</h3>
-        <ul>
-            <li>Tendințele ritmului cardiac (în condiții bune).</li>
-            <li>Tendințele numărului de pași.</li>
-            <li>Durata somnului.</li>
-            <li>Durata antrenamentelor.</li>
-            <li>Distanța GPS (în aer liber).</li>
-        </ul>
-        <h3 id="moderate-reliability">Fiabilitate Moderată</h3>
-        <ul>
-            <li>Ritmul cardiac în repaus (măsurat constant).</li>
-            <li>Estimarea VO₂ max (tendințe).</li>
-            <li>HRV (comparat cu linia de bază personală).</li>
-            <li>Stadiile somnului (tipare generale).</li>
-        </ul>
-        <h3 id="use-with-caution">A se utiliza cu Atenție</h3>
-        <ul>
-            <li>Citiri individuale de SpO₂.</li>
-            <li>Numărul absolut de calorii.</li>
-            <li>Comparațiile stadiilor de somn între nopți consecutive.</li>
-            <li>Orice metric în timpul unei mișcări intense.</li>
-        </ul>
-        <hr />
-        <h2 id="key-takeaway">Concluzie Cheie</h2>
-        <p>Apple Watch oferă perspective valoroase asupra sănătății, dar înțelegerea limitărilor ajută la interpretarea
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6444219/">PMC6444219</a></li></ul><hr /><h2 id="energy-expenditure-calories">Consumul de Energie (Calorii)</h2><h3 id="reality">Realitate</h3><p>Estimările caloriilor sunt adesea metricul purtabil <strong>cel mai puțin fiabil</strong>.</p><h3 id="why-its-difficult">De Ce Este Dificil</h3><ul><li>Compoziția corporală variază (mușchi vs. grăsime).</li><li>Rata metabolică bazală este individuală.</li><li>Termogeneza variază.</li><li>Eficiența mișcării diferă de la o persoană la alta.</li><li>Ipotezele modelelor matematice nu se potrivesc tuturor.</li></ul><h3 id="accuracy_1">Acuratețe</h3><p>Studiile sistematice arată <strong>erori individuale mari</strong> în ceea ce privește consumul de energie
+            raportat de smartwatch-uri.</p><h3 id="best-practice_1">Cea Mai Bună Practică</h3><ul><li>Tratează caloriile ca fiind date <strong>relative</strong> („mai multe decât de obicei” vs. „exact X
+                calorii”).</li><li>Nu le folosi ca o „permisiune” precisă de a mânca în plus.</li><li>Compară datele doar cu propriile tale înregistrări, nu cu ținte externe.</li></ul><h3 id="evidence_1">Dovezi</h3><ul><li>Recenzia sistematică a lui Sun et al. (2023) arată erori individuale semnificative: <a
+                    href="https://www.sciencedirect.com/science/article/pii/S1440244023001779">ScienceDirect</a></li></ul><hr /><h2 id="blood-oxygen-spo2">Oxigenul din Sânge (SpO₂)</h2><h3 id="method_1">Metodă</h3><p>Oximetria bazată pe PPG cu lumină roșie/infraroșie.</p><h3 id="key-caution">Avertisment Cheie</h3><p><strong>Pigmentarea pielii și perfuzia pot afecta acuratețea.</strong> FDA continuă să actualizeze ghidurile
+            pentru a îmbunătăți performanța indiferent de tonul pielii.</p><h3 id="accuracy-factors">Factori de Acuratețe</h3><table class="clinical-table"><thead><tr><th>Factor</th><th>Efect</th></tr></thead><tbody><tr><td>Tonul pielii</td><td>Poate afecta acuratețea; problemă monitorizată de FDA</td></tr><tr><td>Perfuzia</td><td>Circulația deficitară scade fiabilitatea</td></tr><tr><td>Mișcarea</td><td>Trebuie să stai nemișcat timp de 15 secunde</td></tr><tr><td>Altitudinea</td><td>SpO₂ este natural mai scăzut la înălțime</td></tr></tbody></table><h3 id="best-practice_2">Cea Mai Bună Practică</h3><ul><li>Repetă citirile scăzute în condiții optime de liniște.</li><li>Folosește mediile în timp, nu citiri individuale.</li><li>Solicită confirmare clinică pentru valorile scăzute persistente.</li></ul><hr /><h2 id="sleep-staging">Stadiile Somnului</h2><h3 id="reality_1">Realitate</h3><p>Dispozitivele purtabile deduc stadiile somnului <strong>indirect</strong> (mișcare + puls), nu prin EEG ca
+            polisomnografia clinică.</p><h3 id="accuracy_2">Acuratețe</h3><ul><li><strong>Timpul total de somn:</strong> Destul de precis.</li><li><strong>Clasificarea stadiilor:</strong> Mai puțin precisă decât testele clinice.</li><li><strong>Variabilitatea de la noapte la noapte:</strong> Este de așteptat; nu suprainterpreta.</li></ul><h3 id="best-practice_3">Cea Mai Bună Practică</h3><ul><li>Folosește datele pentru tendințe și consistență.</li><li>Nu te obsesiona de „minutele exacte de REM”.</li><li>Caută deviații mari față de tiparul tău obișnuit.</li></ul><hr /><h2 id="vo2-max-cardio-fitness">VO₂ Max (Condiție Cardio)</h2><h3 id="method_2">Metodă</h3><p>Estimare bazată pe efortul depus în mers sau alergare în aer liber și răspunsul ritmului cardiac, folosind
+            algoritmi validați.</p><h3 id="accuracy_3">Acuratețe</h3><ul><li>Este o estimare derivată din algoritmi, nu o măsurătoare directă.</li><li>Există o corelație rezonabilă cu testele VO₂ max de laborator.</li><li>Pot apărea variații individuale.</li></ul><h3 id="best-practice_4">Cea Mai Bună Practică</h3><ul><li>Concentrează-te pe tendințe pe parcursul a luni de zile.</li><li>Folosește activități suportate (mers, alergare sau drumeție în aer liber).</li><li>Compară rezultatele cu propriul istoric, nu cu tabele statistice.</li></ul><hr /><h2 id="step-count">Numărul de Pași</h2><h3 id="accuracy_4">Acuratețe</h3><ul><li>În general bună pentru mers sau alergare tipică.</li><li>iPhone și Watch folosesc senzori complementari.</li></ul><h3 id="known-limitations">Limitări Cunoscute</h3><ul><li>Subestimează pașii când împingi un cărucior sau un coș de cumpărături.</li><li>Poate pierde pași dacă telefonul nu este purtat în buzunar.</li><li>Ținerea de mânere pe banda de alergare reduce acuratețea.</li></ul><hr /><h2 id="summary-reliability-tiers">Rezumat: Niveluri de Fiabilitate</h2><h3 id="higher-reliability">Fiabilitate Ridicată</h3><ul><li>Tendințele ritmului cardiac (în condiții bune).</li><li>Tendințele numărului de pași.</li><li>Durata somnului.</li><li>Durata antrenamentelor.</li><li>Distanța GPS (în aer liber).</li></ul><h3 id="moderate-reliability">Fiabilitate Moderată</h3><ul><li>Ritmul cardiac în repaus (măsurat constant).</li><li>Estimarea VO₂ max (tendințe).</li><li>HRV (comparat cu linia de bază personală).</li><li>Stadiile somnului (tipare generale).</li></ul><h3 id="use-with-caution">A se utiliza cu Atenție</h3><ul><li>Citiri individuale de SpO₂.</li><li>Numărul absolut de calorii.</li><li>Comparațiile stadiilor de somn între nopți consecutive.</li><li>Orice metric în timpul unei mișcări intense.</li></ul><hr /><h2 id="key-takeaway">Concluzie Cheie</h2><p>Apple Watch oferă perspective valoroase asupra sănătății, dar înțelegerea limitărilor ajută la interpretarea
             corectă a datelor. <strong>Tendințele și liniile de bază personale sunt mult mai fiabile decat valorile
-                absolute sau citirile singulare.</strong></p>
-        <hr />
-        <h2 id="references">Referințe</h2>
-        <ul>
-            <li><a href="https://pubmed.ncbi.nlm.nih.gov/41513748/">Lambe et al. - Recenzia acurateței Apple Watch
-                    (2026)</a></li>
-            <li><a href="https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters">FDA despre
-                    Pulse Oximeters</a></li>
-        </ul>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>Informație Medicală</strong></div>
-        <p>Acest conținut are doar scop educațional și nu ar trebui să înlocuiască sfatul medical profesionist. Consultă
-            întotdeauna un furnizor de servicii medicale pentru decizii medicale.</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>Ultima actualizare: Ianuarie 2026</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+                absolute sau citirile singulare.</strong></p><hr /><h2 id="references">Referințe</h2><ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/41513748/">Lambe et al. - Recenzia acurateței Apple Watch
+                    (2026)</a></li><li><a href="https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters">FDA despre
+                    Pulse Oximeters</a></li></ul></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>Informație Medicală</strong></div><p>Acest conținut are doar scop educațional și nu ar trebui să înlocuiască sfatul medical profesionist. Consultă
+            întotdeauna un furnizor de servicii medicale pentru decizii medicale.</p></aside><div class="metric-footer"><hr><p><em>Ultima actualizare: Ianuarie 2026</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link active"
+                </a><a href="/ro/" class="lang-link active"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Toate drepturile rezervate
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/ro/privacy/">Confidențialitate</a></li>
-                <li><a href="/ro/terms/">Termeni</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența.</p>
-            <a href="/ro/privacy/" class="text-sm">Află mai multe</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Refuză</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Acceptă</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/ro/privacy/">Confidențialitate</a></li><li><a href="/ro/terms/">Termeni</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența.</p><a href="/ro/privacy/" class="text-sm">Află mai multe</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Refuză</button><button id="cookie-accept" class="btn btn-primary btn-small">Acceptă</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="el" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Καρδιακός Ρυθμός - Εξαγωγή Δεδομένων Apple Health σε CSV, PDF &amp; JSON</title>
-  <meta name="description" content="Ο καρδιακός ρυθμός είναι ένα από τα τέσσερα κύρια ζωτικά σημάδια. Παρακολουθήστε τις τάσεις και την υγεία της καρδιάς σας.">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Καρδιακός Ρυθμός, καρδιακή υγεία, μετρήσεις υγείας, healthkit">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/">
-  <meta property="og:title" content="Καρδιακός Ρυθμός - Εξαγωγή Δεδομένων Apple Health σε CSV, PDF &amp; JSON">
-  <meta property="og:description" content="Ο καρδιακός ρυθμός είναι ένα από τα τέσσερα κύρια ζωτικά σημάδια. Παρακολουθήστε τις τάσεις και την υγεία της καρδιάς σας.">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="el_GR">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/">
-  <meta name="twitter:title" content="Καρδιακός Ρυθμός - Εξαγωγή Δεδομένων Apple Health σε CSV, PDF &amp; JSON">
-  <meta name="twitter:description" content="Ο καρδιακός ρυθμός είναι ένα από τα τέσσερα κύρια ζωτικά σημάδια. Παρακολουθήστε τις τάσεις και την υγεία της καρδιάς σας.">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/heart-circulation/heart-rate/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="el" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>Καρδιακός ρυθμός - Εξαγωγή δεδομένων υγείας της Apple σε CSV, PDF...</title><meta name="description" content="Εξερευνήστε λεπτομερή αναλυτικά στοιχεία και επιστημονικό πλαίσιο για τον καρδιακό ρυθμό που παρακολουθείται στο Apple Health. Εξάγετε τα δεδομένα σας σε CSV, PDF και..."><meta name="author" content="Arno Health"><meta name="keywords" content="Καρδιακός Ρυθμός, καρδιακή υγεία, μετρήσεις υγείας, healthkit"><link rel="canonical" href="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/"><meta property="og:title" content="Καρδιακός ρυθμός - Εξαγωγή δεδομένων υγείας της Apple σε CSV, PDF..."><meta property="og:description" content="Εξερευνήστε λεπτομερή αναλυτικά στοιχεία και επιστημονικό πλαίσιο για τον καρδιακό ρυθμό που παρακολουθείται στο Apple Health. Εξάγετε τα δεδομένα σας σε CSV, PDF και..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="el_GR"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/"><meta name="twitter:title" content="Καρδιακός ρυθμός - Εξαγωγή δεδομένων υγείας της Apple σε CSV, PDF..."><meta name="twitter:description" content="Εξερευνήστε λεπτομερή αναλυτικά στοιχεία και επιστημονικό πλαίσιο για τον καρδιακό ρυθμό που παρακολουθείται στο Apple Health. Εξάγετε τα δεδομένα σας σε CSV, PDF και..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/heart-circulation/heart-rate/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "el"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Καρδιακός Ρυθμός - Εξαγωγή Δεδομένων Apple Health σε CSV, PDF &amp; JSON",
-  "description": "Ο καρδιακός ρυθμός είναι ένα από τα τέσσερα κύρια ζωτικά σημάδια. Παρακολουθήστε τις τάσεις και την υγεία της καρδιάς σας.",
+  "name": "Καρδιακός ρυθμός - Εξαγωγή δεδομένων υγείας της Apple σε CSV, PDF...",
+  "description": "Εξερευνήστε λεπτομερή αναλυτικά στοιχεία και επιστημονικό πλαίσιο για τον καρδιακό ρυθμό που παρακολουθείται στο Apple Health. Εξάγετε τα δεδομένα σας σε CSV, PDF και...",
   "url": "https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Καρδιακός Ρυθμός - Εξαγωγή Δεδομένων Apple Health σε CSV, PDF &amp; JSON",
-  "description": "Ο καρδιακός ρυθμός είναι ένα από τα τέσσερα κύρια ζωτικά σημάδια. Παρακολουθήστε τις τάσεις και την υγεία της καρδιάς σας.",
+  "headline": "Καρδιακός ρυθμός - Εξαγωγή δεδομένων υγείας της Apple σε CSV, PDF...",
+  "description": "Εξερευνήστε λεπτομερή αναλυτικά στοιχεία και επιστημονικό πλαίσιο για τον καρδιακό ρυθμό που παρακολουθείται στο Apple Health. Εξάγετε τα δεδομένα σας σε CSV, PDF και...",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,493 +412,140 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Μετάβαση στο περιεχόμενο</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/el/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/el/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Μετάβαση στο περιεχόμενο</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/el/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/el/features/" 
                                 aria-current="">
                                 Χαρακτηριστικά
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/el/metrics/" 
+                            </a></li><li><a href="/el/metrics/" 
                                 aria-current="">
                                 Βιβλιοθήκη Μετρήσεων
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/el/pricing/" 
+                            </a></li><li><a href="/el/pricing/" 
                                 aria-current="">
                                 Τιμολόγηση
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/el/about/" 
+                            </a></li><li><a href="/el/about/" 
                                 aria-current="">
                                 Σχετικά με εμάς
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Επιλογή γλώσσας">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Επιλογή γλώσσας"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" selected>
+                        </option><option value="el" selected>
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Εναλλαγή μενού"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/el/metrics/">
-                    <span itemprop="name">Βιβλιοθήκη Μετρήσεων</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/el/metrics/heart-circulation/">
-                    <span itemprop="name">Καρδιά & Κυκλοφορικό</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">Καρδιακός Ρυθμός</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>❤️</span> Καρδιά & Κυκλοφορικό
-        </span>
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>Σε αυτήν τη σελίδα</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#heart-rate">Καρδιακός Ρυθμός</a>
-                    <ul>
-                        <li><a href="#what-is-heart-rate">Τι είναι ο Καρδιακός Ρυθμός;</a>
-                            <ul>
-                                <li><a href="#how-healthkit-measures-heart-rate">Πώς Μετρά το HealthKit τον Καρδιακό
-                                        Ρυθμό</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#scientific-background">Επιστημονικό Υπόβαθρο</a>
-                            <ul>
-                                <li><a href="#the-role-of-heart-rate">Ο Ρόλος του Καρδιακού Ρυθμού</a></li>
-                                <li><a href="#clinical-metrics-derived-from-hr">Κλινικές Μετρήσεις που Προκύπτουν από
-                                        τον HR</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#clinical-significance">Κλινική Σημασία</a>
-                            <ul>
-                                <li><a href="#monitoring-heart-rate-zones">Παρακολούθηση Ζωνών Καρδιακού Ρυθμού</a></li>
-                                <li><a href="#when-high-is-too-high">Πότε το Υψηλό είναι «Πολύ Υψηλό»</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#recommendations">Συστάσεις</a>
-                            <ul>
-                                <li><a href="#using-heart-rate-for-training">Χρήση Καρδιακού Ρυθμού για Προπόνηση</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#references">Αναφορές</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="heart-rate">Καρδιακός Ρυθμός</h1>
-        <h2 id="what-is-heart-rate">Τι είναι ο Καρδιακός Ρυθμός;</h2>
-        <p>Ο καρδιακός ρυθμός (HR) είναι ο αριθμός των φορών που συστέλλεται η καρδιά σας ανά λεπτό (παλμοί ανά λεπτό ή
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Εναλλαγή μενού"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/el/metrics/"><span itemprop="name">Βιβλιοθήκη Μετρήσεων</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/el/metrics/heart-circulation/"><span itemprop="name">Καρδιά & Κυκλοφορικό</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Καρδιακός Ρυθμός</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>❤️</span> Καρδιά & Κυκλοφορικό
+        </span></header><nav class="article-toc"><h4>Σε αυτήν τη σελίδα</h4><div class="toc"><ul><li><a href="#heart-rate">Καρδιακός Ρυθμός</a><ul><li><a href="#what-is-heart-rate">Τι είναι ο Καρδιακός Ρυθμός;</a><ul><li><a href="#how-healthkit-measures-heart-rate">Πώς Μετρά το HealthKit τον Καρδιακό
+                                        Ρυθμό</a></li></ul></li><li><a href="#scientific-background">Επιστημονικό Υπόβαθρο</a><ul><li><a href="#the-role-of-heart-rate">Ο Ρόλος του Καρδιακού Ρυθμού</a></li><li><a href="#clinical-metrics-derived-from-hr">Κλινικές Μετρήσεις που Προκύπτουν από
+                                        τον HR</a></li></ul></li><li><a href="#clinical-significance">Κλινική Σημασία</a><ul><li><a href="#monitoring-heart-rate-zones">Παρακολούθηση Ζωνών Καρδιακού Ρυθμού</a></li><li><a href="#when-high-is-too-high">Πότε το Υψηλό είναι «Πολύ Υψηλό»</a></li></ul></li><li><a href="#recommendations">Συστάσεις</a><ul><li><a href="#using-heart-rate-for-training">Χρήση Καρδιακού Ρυθμού για Προπόνηση</a></li></ul></li><li><a href="#references">Αναφορές</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="heart-rate">Καρδιακός Ρυθμός</h1><h2 id="what-is-heart-rate">Τι είναι ο Καρδιακός Ρυθμός;</h2><p>Ο καρδιακός ρυθμός (HR) είναι ο αριθμός των φορών που συστέλλεται η καρδιά σας ανά λεπτό (παλμοί ανά λεπτό ή
             bpm). Είναι ένα από τα τέσσερα κύρια ζωτικά σημεία και χρησιμεύει ως άμεσος δείκτης της φυσιολογικής
-            κατάστασης, αντιδρώντας ακαριαία στην ανάγκη του σώματος για οξυγόνο και καύσιμα.</p>
-        <p>Ο καρδιακός σας ρυθμός είναι δυναμικός—υποτίθεται ότι αλλάζει. Ανεβαίνει κατά τη διάρκεια της άσκησης για να
+            κατάστασης, αντιδρώντας ακαριαία στην ανάγκη του σώματος για οξυγόνο και καύσιμα.</p><p>Ο καρδιακός σας ρυθμός είναι δυναμικός—υποτίθεται ότι αλλάζει. Ανεβαίνει κατά τη διάρκεια της άσκησης για να
             παρέχει περισσότερο αίμα στους μύες και πέφτει κατά τη διάρκεια του ύπνου όταν η μεταβολική ζήτηση είναι
-            χαμηλή.</p>
-        <h3 id="how-healthkit-measures-heart-rate">Πώς Μετρά το HealthKit τον Καρδιακό Ρυθμό</h3>
-        <p>Το Apple Watch χρησιμοποιεί <strong>Φωτοπληθυσμογραφία (PPG)</strong>:
+            χαμηλή.</p><h3 id="how-healthkit-measures-heart-rate">Πώς Μετρά το HealthKit τον Καρδιακό Ρυθμό</h3><p>Το Apple Watch χρησιμοποιεί <strong>Φωτοπληθυσμογραφία (PPG)</strong>:
             * <strong>Πράσινα LED</strong> αναβοσβήνουν εκατοντάδες φορές το δευτερόλεπτο.
             * <strong>Φωτοδίοδοι ευαίσθητες στο φως</strong> μετρούν την ποσότητα του πράσινου φωτός που απορροφάται από
             το αίμα που ρέει μέσα από τον καρπό σας.
@@ -1124,446 +553,190 @@ img[width][height] {
             χτυπά, η ροή του αίματος (και η απορρόφηση του πράσινου φωτός) είναι μεγαλύτερη. Μεταξύ των χτύπων, είναι
             μικρότερη.
             * Αναβοσβήνοντας τα φώτα LED του εκατοντάδες φορές το δευτερόλεπτο, το Apple Watch μπορεί να υπολογίσει
-            πόσες φορές χτυπά η καρδιά κάθε λεπτό.</p>
-        <h2 id="scientific-background">Επιστημονικό Υπόβαθρο</h2>
-        <h3 id="the-role-of-heart-rate">Ο Ρόλος του Καρδιακού Ρυθμού</h3>
-        <p>Η καρδιά είναι μια προσαρμοστική μηχανή. Ο πρωταρχικός της στόχος είναι να διατηρήσει την <strong>Καρδιακή
+            πόσες φορές χτυπά η καρδιά κάθε λεπτό.</p><h2 id="scientific-background">Επιστημονικό Υπόβαθρο</h2><h3 id="the-role-of-heart-rate">Ο Ρόλος του Καρδιακού Ρυθμού</h3><p>Η καρδιά είναι μια προσαρμοστική μηχανή. Ο πρωταρχικός της στόχος είναι να διατηρήσει την <strong>Καρδιακή
                 Παροχή</strong> (τον όγκο του αίματος που αντλείται ανά λεπτό), η οποία υπολογίζεται ως:
-            $$Καρδιακή Παροχή = Όγκος Παλμού \times Καρδιακός Ρυθμός$$</p>
-        <p>Οι τιμές κυμαίνονται ανάλογα με:
+            $$Καρδιακή Παροχή = Όγκος Παλμού \times Καρδιακός Ρυθμός$$</p><p>Οι τιμές κυμαίνονται ανάλογα με:
             * <strong>Σωματική Δραστηριότητα:</strong> Οι μύες απαιτούν περισσότερο οξυγόνο.
             * <strong>Αυτόνομο Νευρικό Σύστημα:</strong> Το σύστημα «μάχης ή φυγής» (συμπαθητικό) αυξάνει τον HR. Το
             σύστημα «ανάπαυσης και πέψης» (παρασυμπαθητικό) τον μειώνει.
             * <strong>Θερμοκρασία:</strong> Η καρδιά σας χτυπά πιο γρήγορα στη ζέστη για να αντλήσει αίμα στο δέρμα για
             ψύξη.
             * <strong>Ενυδάτωση:</strong> Η αφυδάτωση μειώνει τον όγκο του αίματος, αναγκάζοντας την καρδιά να χτυπά πιο
-            γρήγορα για να αντισταθμίσει.</p>
-        <h3 id="clinical-metrics-derived-from-hr">Κλινικές Μετρήσεις που Προκύπτουν από τον HR</h3>
-        <p>Το HealthKit χρησιμοποιεί ακατέργαστα δεδομένα καρδιακού ρυθμού για να εξαγάγει συγκεκριμένες κλινικές
+            γρήγορα για να αντισταθμίσει.</p><h3 id="clinical-metrics-derived-from-hr">Κλινικές Μετρήσεις που Προκύπτουν από τον HR</h3><p>Το HealthKit χρησιμοποιεί ακατέργαστα δεδομένα καρδιακού ρυθμού για να εξαγάγει συγκεκριμένες κλινικές
             πληροφορίες, που καλύπτονται στις δικές τους ενότητες:
             * <strong>Καρδιακός Ρυθμός Ηρεμίας (RHR):</strong> Βάση καρδιαγγειακής απόδοσης.
             * <strong>Μεταβλητότητα Καρδιακού Ρυθμού (HRV):</strong> Ισορροπία στρες και ανάκαμψης.
             * <strong>Ανάκαμψη Καρδιακού Ρυθμού:</strong> Πόσο γρήγορα επιβραδύνεται η καρδιά μετά την άσκηση.
             * <strong>Μέσος Όρος Καρδιακού Ρυθμού Βάδισης:</strong> Μια εκτίμηση της φυσικής κατάστασης κατά τη διάρκεια
-            τυπικής καθημερινής κίνησης.</p>
-        <h2 id="clinical-significance">Κλινική Σημασία</h2>
-        <h3 id="monitoring-heart-rate-zones">Παρακολούθηση Ζωνών Καρδιακού Ρυθμού</h3>
-        <p>Οι κλινικοί γιατροί και οι φυσιολόγοι της άσκησης χωρίζουν τον καρδιακό ρυθμό σε «Ζώνες» με βάση τον μέγιστο
-            καρδιακό ρυθμό σας (Max HR). Αυτό βοηθά στην κατηγοριοποίηση της έντασης:</p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th style="text-align: left;">Ζώνη</th>
-                    <th style="text-align: left;">% του Max HR</th>
-                    <th style="text-align: left;">Επίπτωση</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="text-align: left;"><strong>Ζώνη 1 (Ανάκαμψη)</strong></td>
-                    <td style="text-align: left;">50-60%</td>
-                    <td style="text-align: left;">Προθέρμανση, ανάκαμψη, πολύ ελαφριά δραστηριότητα.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>Ζώνη 2 (Αντοχή)</strong></td>
-                    <td style="text-align: left;">60-70%</td>
-                    <td style="text-align: left;">Βασική αερόβια προπόνηση, καύση λίπους, ρυθμός «όλη μέρα».</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>Ζώνη 3 (Αερόβια)</strong></td>
-                    <td style="text-align: left;">70-80%</td>
-                    <td style="text-align: left;">Βελτιώνει την αερόβια ικανότητα και την κυκλοφορία του αίματος.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>Ζώνη 4 (Κατώφλι)</strong></td>
-                    <td style="text-align: left;">80-90%</td>
-                    <td style="text-align: left;">Αυξάνει την αντοχή υψηλής ταχύτητας. Άβολο.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>Ζώνη 5 (Μέγιστη)</strong></td>
-                    <td style="text-align: left;">90-100%</td>
-                    <td style="text-align: left;">Μέγιστη προσπάθεια. Μπορεί να διατηρηθεί μόνο για δευτερόλεπτα/λεπτά.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="when-high-is-too-high">Πότε το Υψηλό είναι «Πολύ Υψηλό»</h3>
-        <ul>
-            <li><strong>Ταχυκαρδία:</strong> Καρδιακός ρυθμός &gt; 100 bpm <em>σε ηρεμία</em>. Αυτό μπορεί να προκληθεί
-                από πυρετό, αναιμία, στρες, προβλήματα θυρεοειδούς ή καρδιακές παθήσεις.</li>
-            <li><strong>Μέγιστο Άσκησης:</strong> Είναι γενικά ασφαλές να φτάσετε σε υψηλούς καρδιακούς ρυθμούς κατά τη
+            τυπικής καθημερινής κίνησης.</p><h2 id="clinical-significance">Κλινική Σημασία</h2><h3 id="monitoring-heart-rate-zones">Παρακολούθηση Ζωνών Καρδιακού Ρυθμού</h3><p>Οι κλινικοί γιατροί και οι φυσιολόγοι της άσκησης χωρίζουν τον καρδιακό ρυθμό σε «Ζώνες» με βάση τον μέγιστο
+            καρδιακό ρυθμό σας (Max HR). Αυτό βοηθά στην κατηγοριοποίηση της έντασης:</p><table class="clinical-table"><thead><tr><th style="text-align: left;">Ζώνη</th><th style="text-align: left;">% του Max HR</th><th style="text-align: left;">Επίπτωση</th></tr></thead><tbody><tr><td style="text-align: left;"><strong>Ζώνη 1 (Ανάκαμψη)</strong></td><td style="text-align: left;">50-60%</td><td style="text-align: left;">Προθέρμανση, ανάκαμψη, πολύ ελαφριά δραστηριότητα.</td></tr><tr><td style="text-align: left;"><strong>Ζώνη 2 (Αντοχή)</strong></td><td style="text-align: left;">60-70%</td><td style="text-align: left;">Βασική αερόβια προπόνηση, καύση λίπους, ρυθμός «όλη μέρα».</td></tr><tr><td style="text-align: left;"><strong>Ζώνη 3 (Αερόβια)</strong></td><td style="text-align: left;">70-80%</td><td style="text-align: left;">Βελτιώνει την αερόβια ικανότητα και την κυκλοφορία του αίματος.</td></tr><tr><td style="text-align: left;"><strong>Ζώνη 4 (Κατώφλι)</strong></td><td style="text-align: left;">80-90%</td><td style="text-align: left;">Αυξάνει την αντοχή υψηλής ταχύτητας. Άβολο.</td></tr><tr><td style="text-align: left;"><strong>Ζώνη 5 (Μέγιστη)</strong></td><td style="text-align: left;">90-100%</td><td style="text-align: left;">Μέγιστη προσπάθεια. Μπορεί να διατηρηθεί μόνο για δευτερόλεπτα/λεπτά.
+                    </td></tr></tbody></table><h3 id="when-high-is-too-high">Πότε το Υψηλό είναι «Πολύ Υψηλό»</h3><ul><li><strong>Ταχυκαρδία:</strong> Καρδιακός ρυθμός &gt; 100 bpm <em>σε ηρεμία</em>. Αυτό μπορεί να προκληθεί
+                από πυρετό, αναιμία, στρες, προβλήματα θυρεοειδούς ή καρδιακές παθήσεις.</li><li><strong>Μέγιστο Άσκησης:</strong> Είναι γενικά ασφαλές να φτάσετε σε υψηλούς καρδιακούς ρυθμούς κατά τη
                 διάρκεια της άσκησης, αλλά η υπέρβαση του θεωρητικού μέγιστου (περίπου 220 μείον την ηλικία) σημαντικά ή
-                η αίσθηση πόνου στο στήθος δικαιολογεί άμεση διακοπή.</li>
-        </ul>
-        <h2 id="recommendations">Συστάσεις</h2>
-        <h3 id="using-heart-rate-for-training">Χρήση Καρδιακού Ρυθμού για Προπόνηση</h3>
-        <ul>
-            <li><strong>Πολωμένη Προπόνηση:</strong> Ιδανικά, περάστε το 80% του χρόνου άσκησής σας στις Ζώνες 1-2
+                η αίσθηση πόνου στο στήθος δικαιολογεί άμεση διακοπή.</li></ul><h2 id="recommendations">Συστάσεις</h2><h3 id="using-heart-rate-for-training">Χρήση Καρδιακού Ρυθμού για Προπόνηση</h3><ul><li><strong>Πολωμένη Προπόνηση:</strong> Ιδανικά, περάστε το 80% του χρόνου άσκησής σας στις Ζώνες 1-2
                 (χτίζοντας τη μηχανή) και το 20% στις Ζώνες 4-5 (ακονίζοντας την ταχύτητα). Αυτό αποτρέπει τη
-                «στασιμότητα της Ζώνης 3».</li>
-            <li><strong>Ακούστε την Τάση:</strong> Εάν ο καρδιακός σας ρυθμός είναι 10-15 bpm υψηλότερος από το
+                «στασιμότητα της Ζώνης 3».</li><li><strong>Ακούστε την Τάση:</strong> Εάν ο καρδιακός σας ρυθμός είναι 10-15 bpm υψηλότερος από το
                 φυσιολογικό για την ίδια ταχύτητα περπατήματος, το σώμα σας πιθανότατα καταπολεμά μια ασθένεια, είναι
-                αφυδατωμένο ή υπερπροπονημένο.</li>
-        </ul>
-        <h2 id="references">Αναφορές</h2>
-        <ol>
-            <li>American Heart Association. (2015) All About Heart Rate (Pulse).</li>
-            <li>Tanaka H, κ.ά. (2001) Age-predicted maximal heart rate revisited. <em>Journal of the American College of
-                    Cardiology</em>, 37(1), 153-156.</li>
-            <li>Seiler S. (2010) What is best practice for training intensity and duration distribution in endurance
-                athletes? <em>International Journal of Sports Physiology and Performance</em>, 5(3), 276-291.</li>
-        </ol>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>Ιατρικές Πληροφορίες</strong></div>
-        <p>Αυτό το περιεχόμενο προορίζεται μόνο για εκπαιδευτικούς σκοπούς και δεν πρέπει να αντικαθιστά την
+                αφυδατωμένο ή υπερπροπονημένο.</li></ul><h2 id="references">Αναφορές</h2><ol><li>American Heart Association. (2015) All About Heart Rate (Pulse).</li><li>Tanaka H, κ.ά. (2001) Age-predicted maximal heart rate revisited. <em>Journal of the American College of
+                    Cardiology</em>, 37(1), 153-156.</li><li>Seiler S. (2010) What is best practice for training intensity and duration distribution in endurance
+                athletes? <em>International Journal of Sports Physiology and Performance</em>, 5(3), 276-291.</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>Ιατρικές Πληροφορίες</strong></div><p>Αυτό το περιεχόμενο προορίζεται μόνο για εκπαιδευτικούς σκοπούς και δεν πρέπει να αντικαθιστά την
             επαγγελματική ιατρική συμβουλή. Συμβουλεύεστε πάντα έναν πάροχο υγειονομικής περίθαλψης για ιατρικές
-            αποφάσεις.</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>Τελευταία ενημέρωση: Ιανουάριος 2026</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+            αποφάσεις.</p></aside><div class="metric-footer"><hr><p><em>Τελευταία ενημέρωση: Ιανουάριος 2026</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link active"
+                </a><a href="/el/" class="lang-link active"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Με επιφύλαξη παντός δικαιώματος
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/el/privacy/">Προστασία Προσωπικών Δεδομένων</a></li>
-                <li><a href="/el/terms/">Όροι Χρήσης</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Αυτός ο ιστότοπος χρησιμοποιεί cookies για να βελτιώσει την εμπειρία σας.</p>
-            <a href="/el/privacy/" class="text-sm">Μάθετε περισσότερα</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Απόρριψη</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Αποδοχή</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/el/privacy/">Προστασία Προσωπικών Δεδομένων</a></li><li><a href="/el/terms/">Όροι Χρήσης</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Αυτός ο ιστότοπος χρησιμοποιεί cookies για να βελτιώσει την εμπειρία σας.</p><a href="/el/privacy/" class="text-sm">Μάθετε περισσότερα</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Απόρριψη</button><button id="cookie-accept" class="btn btn-primary btn-small">Αποδοχή</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

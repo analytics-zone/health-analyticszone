@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="bn" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>কাদের জন্য - Export Apple Health Data to CSV, PDF &amp; JSON | Health...</title>
-  <meta name="description" content="Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="ক, দ, র, জন, য, Export, Apple, Health, Data, to">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/bn/who-its-for/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-01-27T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/bn/who-its-for/">
-  <meta property="og:title" content="কাদের জন্য - Export Apple Health Data to CSV, PDF &amp; JSON | Health...">
-  <meta property="og:description" content="Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="bn_BD">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/bn/who-its-for/">
-  <meta name="twitter:title" content="কাদের জন্য - Export Apple Health Data to CSV, PDF &amp; JSON | Health...">
-  <meta name="twitter:description" content="Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/who-its-for/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/who-its-for/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/who-its-for/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/who-its-for/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/who-its-for/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/who-its-for/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/who-its-for/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/who-its-for/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/who-its-for/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/who-its-for/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/who-its-for/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/who-its-for/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/who-its-for/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/who-its-for/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/who-its-for/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/who-its-for/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/who-its-for/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/who-its-for/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/who-its-for/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/who-its-for/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/who-its-for/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/who-its-for/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/who-its-for/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/who-its-for/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/who-its-for/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/who-its-for/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/who-its-for/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/who-its-for/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/who-its-for/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/who-its-for/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/who-its-for/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/who-its-for/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/who-its-for/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/who-its-for/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/who-its-for/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/who-its-for/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/who-its-for/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/who-its-for/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/who-its-for/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/who-its-for/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/who-its-for/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/who-its-for/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/who-its-for/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/who-its-for/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/who-its-for/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/who-its-for/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/who-its-for/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/who-its-for/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/who-its-for/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/who-its-for/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/who-its-for/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/who-its-for/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="bn" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>এটি কার জন্য - ব্যক্তিগতকৃত স্বাস্থ্য ডেটা অন্তর্দৃষ্টি</title><meta name="description" content="হেলথ অ্যানালিটিক্স যে কেউ তাদের স্বাস্থ্যের ডেটা বুঝতে, শেয়ার করতে এবং মালিক হতে চায় এমন কাউকে পরিবেশন করে। দীর্ঘায়ু-কেন্দ্রিক ব্যবহারকারী, রোগী এবং ফিটনেস..."><meta name="author" content="Arno Health"><meta name="keywords" content="ক, দ, র, জন, য, Export, Apple, Health, Data, to"><link rel="canonical" href="https://health.analyticszone.app/bn/who-its-for/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-01-27T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/bn/who-its-for/"><meta property="og:title" content="এটি কার জন্য - ব্যক্তিগতকৃত স্বাস্থ্য ডেটা অন্তর্দৃষ্টি"><meta property="og:description" content="হেলথ অ্যানালিটিক্স যে কেউ তাদের স্বাস্থ্যের ডেটা বুঝতে, শেয়ার করতে এবং মালিক হতে চায় এমন কাউকে পরিবেশন করে। দীর্ঘায়ু-কেন্দ্রিক ব্যবহারকারী, রোগী এবং ফিটনেস..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="bn_BD"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/bn/who-its-for/"><meta name="twitter:title" content="এটি কার জন্য - ব্যক্তিগতকৃত স্বাস্থ্য ডেটা অন্তর্দৃষ্টি"><meta name="twitter:description" content="হেলথ অ্যানালিটিক্স যে কেউ তাদের স্বাস্থ্যের ডেটা বুঝতে, শেয়ার করতে এবং মালিক হতে চায় এমন কাউকে পরিবেশন করে। দীর্ঘায়ু-কেন্দ্রিক ব্যবহারকারী, রোগী এবং ফিটনেস..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/who-its-for/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/who-its-for/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/who-its-for/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/who-its-for/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/who-its-for/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/who-its-for/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/who-its-for/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/who-its-for/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/who-its-for/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/who-its-for/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/who-its-for/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/who-its-for/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/who-its-for/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/who-its-for/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/who-its-for/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/who-its-for/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/who-its-for/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/who-its-for/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/who-its-for/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/who-its-for/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/who-its-for/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/who-its-for/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/who-its-for/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/who-its-for/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/who-its-for/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/who-its-for/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/who-its-for/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/who-its-for/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/who-its-for/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/who-its-for/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/who-its-for/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/who-its-for/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/who-its-for/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/who-its-for/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/who-its-for/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/who-its-for/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/who-its-for/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/who-its-for/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/who-its-for/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/who-its-for/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/who-its-for/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/who-its-for/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/who-its-for/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/who-its-for/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/who-its-for/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/who-its-for/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/who-its-for/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/who-its-for/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/who-its-for/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/who-its-for/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/who-its-for/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/who-its-for/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "bn"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "কাদের জন্য - Export Apple Health Data to CSV, PDF &amp; JSON | Health...",
-  "description": "Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।",
+  "name": "এটি কার জন্য - ব্যক্তিগতকৃত স্বাস্থ্য ডেটা অন্তর্দৃষ্টি",
+  "description": "হেলথ অ্যানালিটিক্স যে কেউ তাদের স্বাস্থ্যের ডেটা বুঝতে, শেয়ার করতে এবং মালিক হতে চায় এমন কাউকে পরিবেশন করে। দীর্ঘায়ু-কেন্দ্রিক ব্যবহারকারী, রোগী এবং ফিটনেস...",
   "url": "https://health.analyticszone.app/bn/who-its-for/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "কাদের জন্য - Export Apple Health Data to CSV, PDF &amp; JSON | Health...",
-  "description": "Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।",
+  "headline": "এটি কার জন্য - ব্যক্তিগতকৃত স্বাস্থ্য ডেটা অন্তর্দৃষ্টি",
+  "description": "হেলথ অ্যানালিটিক্স যে কেউ তাদের স্বাস্থ্যের ডেটা বুঝতে, শেয়ার করতে এবং মালিক হতে চায় এমন কাউকে পরিবেশন করে। দীর্ঘায়ু-কেন্দ্রিক ব্যবহারকারী, রোগী এবং ফিটনেস...",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -606,17 +398,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/bn/who-its-for/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,839 +412,304 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">বিষয়বস্তুতে যান</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/bn/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/bn/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">বিষয়বস্তুতে যান</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/bn/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/bn/features/" 
                                 aria-current="">
                                 বৈশিষ্ট্য
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/bn/metrics/" 
+                            </a></li><li><a href="/bn/metrics/" 
                                 aria-current="">
                                 মেট্রিক্স লাইব্রেরি
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/bn/pricing/" 
+                            </a></li><li><a href="/bn/pricing/" 
                                 aria-current="">
                                 মূল্য
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/bn/about/" 
+                            </a></li><li><a href="/bn/about/" 
                                 aria-current="">
                                 আমাদের সম্পর্কে
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="ভাষা নির্বাচন করুন">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="ভাষা নির্বাচন করুন"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" selected>
+                        </option><option value="bn" selected>
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="মেনু টগল করুন"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <div class="page-content container">
-  <div class="page-header text-center mb-xl">
-    <h1>কাদের জন্য</h1>
-  </div>
-  <div class="content-body">
-    <h1 id="who-its-for">কাদের জন্য</h1>
-    <p>Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।</p>
-    <hr />
-    <h2 id="patients">রোগী</h2>
-    <p><strong>অ্যাপয়েন্টমেন্টের জন্য সংগঠিত সারসংক্ষেপ প্রস্তুত ও শেয়ার করুন</strong></p>
-    <p>একটি স্বাস্থ্যগত সমস্যা পরিচালনা করার অর্থ হলো সময়ের সাথে লক্ষণ, ভাইটাল সাইন এবং চিকিৎসা ট্র্যাক করা। Health Analytics আপনাকে সাহায্য করে:</p>
-    <ul>
-      <li><strong>অ্যাপয়েন্টমেন্টের জন্য প্রস্তুতি</strong> - আপনার ট্রেন্ড দেখানো পরিষ্কার PDF রিপোর্ট তৈরি করুন</li>
-      <li><strong>একাধিক অবস্থা ট্র্যাক করুন</strong> - একটি একীভূত ভিউতে বিভিন্ন মেট্রিক্স পর্যবেক্ষণ করুন</li>
-      <li><strong>নির্বাচনমূলকভাবে শেয়ার করুন</strong> - প্রতিটি পরামর্শের জন্য শুধুমাত্র প্রাসঙ্গিক বিষয় রপ্তানি করুন</li>
-      <li><strong>রেকর্ড রাখুন</strong> - স্বাস্থ্য ডেটার নিজস্ব কপি সংরক্ষণ করুন</li>
-    </ul>
-    <p><strong>ব্যবহারের উদাহরণ:</strong>
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="মেনু টগল করুন"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><div class="page-content container"><div class="page-header text-center mb-xl"><h1>কাদের জন্য</h1></div><div class="content-body"><h1 id="who-its-for">কাদের জন্য</h1><p>Health Analytics এমন প্রত্যেকের জন্য যারা তাদের স্বাস্থ্য ডেটা বুঝতে, শেয়ার করতে এবং নিজের অধিকারে রাখতে চান। বিভিন্ন ব্যবহারকারী কীভাবে উপকৃত হন তা দেখুন।</p><hr /><h2 id="patients">রোগী</h2><p><strong>অ্যাপয়েন্টমেন্টের জন্য সংগঠিত সারসংক্ষেপ প্রস্তুত ও শেয়ার করুন</strong></p><p>একটি স্বাস্থ্যগত সমস্যা পরিচালনা করার অর্থ হলো সময়ের সাথে লক্ষণ, ভাইটাল সাইন এবং চিকিৎসা ট্র্যাক করা। Health Analytics আপনাকে সাহায্য করে:</p><ul><li><strong>অ্যাপয়েন্টমেন্টের জন্য প্রস্তুতি</strong> - আপনার ট্রেন্ড দেখানো পরিষ্কার PDF রিপোর্ট তৈরি করুন</li><li><strong>একাধিক অবস্থা ট্র্যাক করুন</strong> - একটি একীভূত ভিউতে বিভিন্ন মেট্রিক্স পর্যবেক্ষণ করুন</li><li><strong>নির্বাচনমূলকভাবে শেয়ার করুন</strong> - প্রতিটি পরামর্শের জন্য শুধুমাত্র প্রাসঙ্গিক বিষয় রপ্তানি করুন</li><li><strong>রেকর্ড রাখুন</strong> - স্বাস্থ্য ডেটার নিজস্ব কপি সংরক্ষণ করুন</li></ul><p><strong>ব্যবহারের উদাহরণ:</strong>
       - আপনার কার্ডিওলজিস্টের জন্য হার্ট রেট ট্রেন্ড এবং রক্তচাপ দেখানো প্রাক-অ্যাপয়েন্টমেন্ট সারসংক্ষেপ
       - গ্লুকোজ রিডিং এবং কার্যকলাপের মাত্রা সহ ডায়াবেটিস ব্যবস্থাপনা রিপোর্ট
-      - ক্লান্তি-সম্পর্কিত পরামর্শের জন্য ঘুমের গুণমানের ডকুমেন্টেশন</p>
-    <hr />
-    <h2 id="athletes-coaches">ক্রীড়াবিদ ও কোচ</h2>
-    <p><strong>প্রশিক্ষণ ট্রেন্ড ট্র্যাক করুন এবং বিশ্লেষণ টুলে রপ্তানি করুন</strong></p>
-    <p>গুরুতর প্রশিক্ষণের জন্য গুরুতর ডেটা প্রয়োজন। Health Analytics আপনাকে দেয়:</p>
-    <ul>
-      <li><strong>প্রশিক্ষণ লোড দৃশ্যমানতা</strong> - ওয়ার্কআউট, হার্ট রেট জোন এবং রিকভারি মেট্রিক্স দেখুন</li>
-      <li><strong>ট্রেন্ড বিশ্লেষণ</strong> - সময়ের সাথে VO₂ Max, বিশ্রামের হার্ট রেট এবং HRV ট্র্যাক করুন</li>
-      <li><strong>রপ্তানি নমনীয়তা</strong> - CSV এবং JSON রপ্তানি প্রশিক্ষণ প্ল্যাটফর্মের সাথে সংযুক্ত হয়</li>
-      <li><strong>রিকভারি অন্তর্দৃষ্টি</strong> - ঘুম এবং HRV ডেটা বিশ্রামের সময়কাল অপ্টিমাইজ করতে সাহায্য করে</li>
-    </ul>
-    <p><strong>ব্যবহারের উদাহরণ:</strong>
+      - ক্লান্তি-সম্পর্কিত পরামর্শের জন্য ঘুমের গুণমানের ডকুমেন্টেশন</p><hr /><h2 id="athletes-coaches">ক্রীড়াবিদ ও কোচ</h2><p><strong>প্রশিক্ষণ ট্রেন্ড ট্র্যাক করুন এবং বিশ্লেষণ টুলে রপ্তানি করুন</strong></p><p>গুরুতর প্রশিক্ষণের জন্য গুরুতর ডেটা প্রয়োজন। Health Analytics আপনাকে দেয়:</p><ul><li><strong>প্রশিক্ষণ লোড দৃশ্যমানতা</strong> - ওয়ার্কআউট, হার্ট রেট জোন এবং রিকভারি মেট্রিক্স দেখুন</li><li><strong>ট্রেন্ড বিশ্লেষণ</strong> - সময়ের সাথে VO₂ Max, বিশ্রামের হার্ট রেট এবং HRV ট্র্যাক করুন</li><li><strong>রপ্তানি নমনীয়তা</strong> - CSV এবং JSON রপ্তানি প্রশিক্ষণ প্ল্যাটফর্মের সাথে সংযুক্ত হয়</li><li><strong>রিকভারি অন্তর্দৃষ্টি</strong> - ঘুম এবং HRV ডেটা বিশ্রামের সময়কাল অপ্টিমাইজ করতে সাহায্য করে</li></ul><p><strong>ব্যবহারের উদাহরণ:</strong>
       - ওয়ার্কআউট ভলিউম এবং তীব্রতা সহ সাপ্তাহিক প্রশিক্ষণ সারসংক্ষেপ
       - HRV এবং ঘুমের গুণমান ট্রেন্ড ব্যবহার করে রিকভারি ট্র্যাকিং
-      - VO₂ Max অনুমানের মাধ্যমে কার্ডিও ফিটনেস অগ্রগতি পর্যবেক্ষণ</p>
-    <hr />
-    <h2 id="families">পরিবার</h2>
-    <p><strong>প্রিয়জনদের স্বাস্থ্য তথ্য পরিচালনায় সাহায্য করুন</strong></p>
-    <p>বয়স্ক পিতা-মাতার যত্ন নেওয়া হোক বা সন্তানদের স্বাস্থ্য পরিচালনা করা হোক, সংগঠিত ডেটা সাহায্য করে:</p>
-    <ul>
-      <li><strong>যত্ন সমন্বয় করুন</strong> - পরিবারের সদস্যদের সাথে প্রাসঙ্গিক স্বাস্থ্য সারসংক্ষেপ শেয়ার করুন</li>
-      <li><strong>অ্যাপয়েন্টমেন্টের জন্য প্রস্তুতি</strong> - প্রিয়জনদের সংগঠিত তথ্য নিয়ে আসতে সাহায্য করুন</li>
-      <li><strong>পরিবর্তন ট্র্যাক করুন</strong> - মনোযোগ দেওয়ার মতো ট্রেন্ড লক্ষ্য করুন</li>
-      <li><strong>রেকর্ড রাখুন</strong> - পারিবারিক স্বাস্থ্য ডকুমেন্টেশন সংরক্ষণ করুন</li>
-    </ul>
-    <p><strong>ব্যবহারের উদাহরণ:</strong>
+      - VO₂ Max অনুমানের মাধ্যমে কার্ডিও ফিটনেস অগ্রগতি পর্যবেক্ষণ</p><hr /><h2 id="families">পরিবার</h2><p><strong>প্রিয়জনদের স্বাস্থ্য তথ্য পরিচালনায় সাহায্য করুন</strong></p><p>বয়স্ক পিতা-মাতার যত্ন নেওয়া হোক বা সন্তানদের স্বাস্থ্য পরিচালনা করা হোক, সংগঠিত ডেটা সাহায্য করে:</p><ul><li><strong>যত্ন সমন্বয় করুন</strong> - পরিবারের সদস্যদের সাথে প্রাসঙ্গিক স্বাস্থ্য সারসংক্ষেপ শেয়ার করুন</li><li><strong>অ্যাপয়েন্টমেন্টের জন্য প্রস্তুতি</strong> - প্রিয়জনদের সংগঠিত তথ্য নিয়ে আসতে সাহায্য করুন</li><li><strong>পরিবর্তন ট্র্যাক করুন</strong> - মনোযোগ দেওয়ার মতো ট্রেন্ড লক্ষ্য করুন</li><li><strong>রেকর্ড রাখুন</strong> - পারিবারিক স্বাস্থ্য ডকুমেন্টেশন সংরক্ষণ করুন</li></ul><p><strong>ব্যবহারের উদাহরণ:</strong>
       - বয়স্ক পিতা-মাতার জন্য কার্যকলাপ ও ঘুমের সারসংক্ষেপ
       - শিশুদের জন্য বৃদ্ধি ও কার্যকলাপ ট্র্যাকিং
-      - পারিবারিক স্বাস্থ্য রেকর্ডের জন্য ওষুধ ও ভাইটাল সাইন লগ</p>
-    <hr />
-    <h2 id="developers-researchers">ডেভেলপার ও গবেষক</h2>
-    <p><strong>বিশ্লেষণ ও ইন্টিগ্রেশনের জন্য স্ট্রাকচার্ড রপ্তানি</strong></p>
-    <p>স্বাস্থ্য ডেটা দিয়ে টুল তৈরি বা গবেষণা করছেন? Health Analytics প্রদান করে:</p>
-    <ul>
-      <li><strong>পরিচ্ছন্ন ডেটা রপ্তানি</strong> - সুসংগঠিত CSV এবং JSON ফরম্যাট</li>
-      <li><strong>ব্যাপক কভারেজ</strong> - সমস্ত HealthKit ডেটা টাইপে অ্যাক্সেস</li>
-      <li><strong>নমনীয় সময় পরিসর</strong> - বিশ্লেষণের জন্য নির্দিষ্ট সময়কাল রপ্তানি</li>
-      <li><strong>সামঞ্জস্যপূর্ণ ফরম্যাটিং</strong> - প্রোগ্রাম্যাটিক ব্যবহারের জন্য নির্ভরযোগ্য ডেটা কাঠামো</li>
-    </ul>
-    <p><strong>ব্যবহারের উদাহরণ:</strong>
+      - পারিবারিক স্বাস্থ্য রেকর্ডের জন্য ওষুধ ও ভাইটাল সাইন লগ</p><hr /><h2 id="developers-researchers">ডেভেলপার ও গবেষক</h2><p><strong>বিশ্লেষণ ও ইন্টিগ্রেশনের জন্য স্ট্রাকচার্ড রপ্তানি</strong></p><p>স্বাস্থ্য ডেটা দিয়ে টুল তৈরি বা গবেষণা করছেন? Health Analytics প্রদান করে:</p><ul><li><strong>পরিচ্ছন্ন ডেটা রপ্তানি</strong> - সুসংগঠিত CSV এবং JSON ফরম্যাট</li><li><strong>ব্যাপক কভারেজ</strong> - সমস্ত HealthKit ডেটা টাইপে অ্যাক্সেস</li><li><strong>নমনীয় সময় পরিসর</strong> - বিশ্লেষণের জন্য নির্দিষ্ট সময়কাল রপ্তানি</li><li><strong>সামঞ্জস্যপূর্ণ ফরম্যাটিং</strong> - প্রোগ্রাম্যাটিক ব্যবহারের জন্য নির্ভরযোগ্য ডেটা কাঠামো</li></ul><p><strong>ব্যবহারের উদাহরণ:</strong>
       - ব্যক্তিগত স্বাস্থ্য ডেটা বিশ্লেষণ প্রকল্প
       - অংশগ্রহণকারী ডেটা রপ্তানি প্রয়োজন এমন গবেষণা অধ্যয়ন
       - কাস্টম স্বাস্থ্য ট্র্যাকিং সিস্টেমের সাথে ইন্টিগ্রেশন
-      - ব্যক্তিগত স্বাস্থ্য ড্যাশবোর্ড তৈরি</p>
-    <hr />
-    <h2 id="privacy-conscious-users">গোপনীয়তা-সচেতন ব্যবহারকারী</h2>
-    <p><strong>যারা ডেটা মালিকানা মূল্য দেন</strong></p>
-    <p>আপনার স্বাস্থ্য ডেটা কোথায় যায় সেদিকে যদি খেয়াল রাখেন, Health Analytics আপনার জন্য তৈরি:</p>
-    <ul>
-      <li><strong>ক্লাউড প্রয়োজন নেই</strong> - সবকিছু স্থানীয়ভাবে প্রক্রিয়া হয়</li>
-      <li><strong>কোনো অ্যাকাউন্ট নেই</strong> - সাইন আপ ছাড়াই সাথে সাথে ব্যবহার শুরু করুন</li>
-      <li><strong>কোনো ট্র্যাকিং নেই</strong> - শূন্য অ্যানালিটিক্স বা বিজ্ঞাপন SDK</li>
-      <li><strong>সম্পূর্ণ নিয়ন্ত্রণ</strong> - যেকোনো সময়, আপনার পছন্দের ফরম্যাটে ডেটা রপ্তানি করুন</li>
-    </ul>
-    <hr />
-    <h2 id="is-health-analytics-right-for-you">Health Analytics কি আপনার জন্য সঠিক?</h2>
-    <p>Health Analytics আদর্শ যদি আপনি:</p>
-    <ul>
-      <li>একটি iPhone এবং ঐচ্ছিকভাবে একটি Apple Watch ব্যবহার করেন</li>
-      <li>Apple Health-এর ডিফল্ট ভিউয়ের বাইরে আপনার স্বাস্থ্য ডেটা বুঝতে চান</li>
-      <li>ডাক্তার বা পরিবারের সাথে স্বাস্থ্য তথ্য শেয়ার করতে চান</li>
-      <li>স্থানীয়, গোপনীয়তা-সম্মানকারী অ্যাপ পছন্দ করেন</li>
-      <li>স্বাস্থ্য মেট্রিক্সের জন্য বৈজ্ঞানিক প্রসঙ্গ মূল্য দেন</li>
-    </ul>
-    <p><strong>সবচেয়ে উপযুক্ত নয় যদি আপনি:</strong>
+      - ব্যক্তিগত স্বাস্থ্য ড্যাশবোর্ড তৈরি</p><hr /><h2 id="privacy-conscious-users">গোপনীয়তা-সচেতন ব্যবহারকারী</h2><p><strong>যারা ডেটা মালিকানা মূল্য দেন</strong></p><p>আপনার স্বাস্থ্য ডেটা কোথায় যায় সেদিকে যদি খেয়াল রাখেন, Health Analytics আপনার জন্য তৈরি:</p><ul><li><strong>ক্লাউড প্রয়োজন নেই</strong> - সবকিছু স্থানীয়ভাবে প্রক্রিয়া হয়</li><li><strong>কোনো অ্যাকাউন্ট নেই</strong> - সাইন আপ ছাড়াই সাথে সাথে ব্যবহার শুরু করুন</li><li><strong>কোনো ট্র্যাকিং নেই</strong> - শূন্য অ্যানালিটিক্স বা বিজ্ঞাপন SDK</li><li><strong>সম্পূর্ণ নিয়ন্ত্রণ</strong> - যেকোনো সময়, আপনার পছন্দের ফরম্যাটে ডেটা রপ্তানি করুন</li></ul><hr /><h2 id="is-health-analytics-right-for-you">Health Analytics কি আপনার জন্য সঠিক?</h2><p>Health Analytics আদর্শ যদি আপনি:</p><ul><li>একটি iPhone এবং ঐচ্ছিকভাবে একটি Apple Watch ব্যবহার করেন</li><li>Apple Health-এর ডিফল্ট ভিউয়ের বাইরে আপনার স্বাস্থ্য ডেটা বুঝতে চান</li><li>ডাক্তার বা পরিবারের সাথে স্বাস্থ্য তথ্য শেয়ার করতে চান</li><li>স্থানীয়, গোপনীয়তা-সম্মানকারী অ্যাপ পছন্দ করেন</li><li>স্বাস্থ্য মেট্রিক্সের জন্য বৈজ্ঞানিক প্রসঙ্গ মূল্য দেন</li></ul><p><strong>সবচেয়ে উপযুক্ত নয় যদি আপনি:</strong>
       - রিয়েল-টাইম মনিটরিং বা মেডিকেল অ্যালার্ট প্রয়োজন
       - নির্দিষ্ট স্বাস্থ্যসেবা সিস্টেমের সাথে ইন্টিগ্রেশন প্রয়োজন
       - সামাজিক বৈশিষ্ট্য বা কমিউনিটি তুলনা চান
-      - Android সাপোর্ট প্রয়োজন</p>
-    <hr />
-    <h2 id="get-started">শুরু করুন</h2>
-    <p><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914">App Store থেকে ডাউনলোড করুন</a></p>
-    <p>৭ দিনের বিনামূল্যে ট্রায়াল | কোনো অ্যাকাউন্ট প্রয়োজন নেই | আপনার ডেটা আপনার ডিভাইসে থাকে</p>
-  </div>
-</div>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+      - Android সাপোর্ট প্রয়োজন</p><hr /><h2 id="get-started">শুরু করুন</h2><p><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914">App Store থেকে ডাউনলোড করুন</a></p><p>৭ দিনের বিনামূল্যে ট্রায়াল | কোনো অ্যাকাউন্ট প্রয়োজন নেই | আপনার ডেটা আপনার ডিভাইসে থাকে</p></div></div></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link active"
+                </a><a href="/bn/" class="lang-link active"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. সর্বস্বত্ব সংরক্ষিত
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/bn/privacy/">গোপনীয়তা</a></li>
-                <li><a href="/bn/terms/">শর্তাবলী</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>এই ওয়েবসাইটটি আপনার অভিজ্ঞতা উন্নত করতে কুকিজ ব্যবহার করে।</p>
-            <a href="/bn/privacy/" class="text-sm">আরও জানুন</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">প্রত্যাখ্যান করুন</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">গ্রহণ করুন</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/bn/privacy/">গোপনীয়তা</a></li><li><a href="/bn/terms/">শর্তাবলী</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>এই ওয়েবসাইটটি আপনার অভিজ্ঞতা উন্নত করতে কুকিজ ব্যবহার করে।</p><a href="/bn/privacy/" class="text-sm">আরও জানুন</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">প্রত্যাখ্যান করুন</button><button id="cookie-accept" class="btn btn-primary btn-small">গ্রহণ করুন</button></div></div></div><script src="../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

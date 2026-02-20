@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="km" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</title>
-  <meta name="description" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។ ប្រសិនបើចង្វាក់បេះដូងរបស់អ្នកមាន ៦០ ដងក្នុងមួយនាទី...">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង, HRV, បេះដូង និងឈាមរត់, healthkit">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/">
-  <meta property="og:title" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)">
-  <meta property="og:description" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។ ប្រសិនបើចង្វាក់បេះដូងរបស់អ្នកមាន ៦០ ដងក្នុងមួយនាទី...">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="km_KH">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/">
-  <meta name="twitter:title" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)">
-  <meta name="twitter:description" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។ ប្រសិនបើចង្វាក់បេះដូងរបស់អ្នកមាន ៦០ ដងក្នុងមួយនាទី...">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/heart-circulation/heart-rate-variability/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate-variability/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="km" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>ការប្រែប្រួលអត្រាបេះដូង (HRV) - នាំចេញទិន្នន័យសុខភាព Apple ទៅជា CSV...</title><meta name="description" content="ស្វែងរកការវិភាគលម្អិត និងបរិបទវិទ្យាសាស្ត្រសម្រាប់ការប្រែប្រួលអត្រាបេះដូងដែលត្រូវបានតាមដាននៅក្នុង Apple Health ។ នាំចេញទិន្នន័យរបស់អ្នកទៅជា CSV, PDF, និង JSON..."><meta name="author" content="Arno Health"><meta name="keywords" content="ភាពប្រែប្រួលនៃចង្វាក់បេះដូង, HRV, បេះដូង និងឈាមរត់, healthkit"><link rel="canonical" href="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/"><meta property="og:title" content="ការប្រែប្រួលអត្រាបេះដូង (HRV) - នាំចេញទិន្នន័យសុខភាព Apple ទៅជា CSV..."><meta property="og:description" content="ស្វែងរកការវិភាគលម្អិត និងបរិបទវិទ្យាសាស្ត្រសម្រាប់ការប្រែប្រួលអត្រាបេះដូងដែលត្រូវបានតាមដាននៅក្នុង Apple Health ។ នាំចេញទិន្នន័យរបស់អ្នកទៅជា CSV, PDF, និង JSON..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="km_KH"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/"><meta name="twitter:title" content="ការប្រែប្រួលអត្រាបេះដូង (HRV) - នាំចេញទិន្នន័យសុខភាព Apple ទៅជា CSV..."><meta name="twitter:description" content="ស្វែងរកការវិភាគលម្អិត និងបរិបទវិទ្យាសាស្ត្រសម្រាប់ការប្រែប្រួលអត្រាបេះដូងដែលត្រូវបានតាមដាននៅក្នុង Apple Health ។ នាំចេញទិន្នន័យរបស់អ្នកទៅជា CSV, PDF, និង JSON..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/heart-circulation/heart-rate-variability/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/heart-rate-variability/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "km"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)",
-  "description": "ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។ ប្រសិនបើចង្វាក់បេះដូងរបស់អ្នកមាន ៦០ ដងក្នុងមួយនាទី...",
+  "name": "ការប្រែប្រួលអត្រាបេះដូង (HRV) - នាំចេញទិន្នន័យសុខភាព Apple ទៅជា CSV...",
+  "description": "ស្វែងរកការវិភាគលម្អិត និងបរិបទវិទ្យាសាស្ត្រសម្រាប់ការប្រែប្រួលអត្រាបេះដូងដែលត្រូវបានតាមដាននៅក្នុង Apple Health ។ នាំចេញទិន្នន័យរបស់អ្នកទៅជា CSV, PDF, និង JSON...",
   "url": "https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)",
-  "description": "ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។ ប្រសិនបើចង្វាក់បេះដូងរបស់អ្នកមាន ៦០ ដងក្នុងមួយនាទី...",
+  "headline": "ការប្រែប្រួលអត្រាបេះដូង (HRV) - នាំចេញទិន្នន័យសុខភាព Apple ទៅជា CSV...",
+  "description": "ស្វែងរកការវិភាគលម្អិត និងបរិបទវិទ្យាសាស្ត្រសម្រាប់ការប្រែប្រួលអត្រាបេះដូងដែលត្រូវបានតាមដាននៅក្នុង Apple Health ។ នាំចេញទិន្នន័យរបស់អ្នកទៅជា CSV, PDF, និង JSON...",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/km/metrics/heart-circulation/heart-rate-variability/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,943 +412,320 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">រំលងទៅមាតិកា</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/km/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/km/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">រំលងទៅមាតិកា</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/km/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/km/features/" 
                                 aria-current="">
                                 លក្ខណៈពិសេស
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/km/metrics/" 
+                            </a></li><li><a href="/km/metrics/" 
                                 aria-current="">
                                 បណ្ណាល័យរង្វាស់
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/km/pricing/" 
+                            </a></li><li><a href="/km/pricing/" 
                                 aria-current="">
                                 តម្លៃ
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/km/about/" 
+                            </a></li><li><a href="/km/about/" 
                                 aria-current="">
                                 អំពីយើង
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="ជ្រើសរើសភាសា">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="ជ្រើសរើសភាសា"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" selected>
+                        </option><option value="km" selected>
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="បើក/បិទមឺនុយ"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/km/metrics/">
-                    <span itemprop="name">បណ្ណាល័យរង្វាស់</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/km/metrics/heart-circulation/">
-                    <span itemprop="name">បេះដូង និងចរន្តឈាម</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>❤️</span> បេះដូង និងចរន្តឈាម
-        </span>
-        <!-- Title is in the content usually, or we can explicit it here -->
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>នៅលើទំព័រនេះ</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#heart-rate-variability-hrv">ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</a>
-                    <ul>
-                        <li><a href="#what-is-hrv">តើអ្វីទៅជា HRV?</a>
-                            <ul>
-                                <li><a href="#how-healthkit-measures-hrv">របៀបដែល HealthKit វាស់វែង HRV</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#scientific-background">មូលដ្ឋានគ្រឹះវិទ្យាសាស្ត្រ</a>
-                            <ul>
-                                <li><a href="#the-gold-standard-of-stress">\"ស្តង់ដារមាស\" នៃភាពតានតឹង (Stress)</a>
-                                    <ul>
-                                        <li><a href="#the-neurovisceral-integration-model-thayer">ម៉ូដែលការរួមបញ្ចូលប្រព័ន្ធប្រសាទ
-                                                និងសរីរាង្គ (Thayer)</a></li>
-                                        <li><a href="#overtraining-immunity">ការហាត់ហួសកម្រិត និងប្រព័ន្ធភាពស៊ាំ</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#clinical-significance">សារៈសំខាន់គ្លីនិក</a>
-                            <ul>
-                                <li><a href="#interpreting-your-numbers">ការបកស្រាយតួលេខរបស់អ្នក</a></li>
-                                <li><a href="#factors-that-lower-hrv-bad">កត្តាដែលធ្វើឱ្យ HRV ទាប (មិនល្អ)</a></li>
-                                <li><a href="#factors-that-raise-hrv-good">កត្តាដែលធ្វើឱ្យ HRV ខ្ពស់ (ល្អ)</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#recommendations">អនុសាសន៍</a>
-                            <ul>
-                                <li><a href="#how-to-use-hrv">របៀបប្រើប្រាស់ HRV</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#references">ឯកសារយោង</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="heart-rate-variability-hrv">ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</h1>
-        <h2 id="what-is-hrv">តើអ្វីទៅជា HRV?</h2>
-        <p>ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="បើក/បិទមឺនុយ"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/km/metrics/"><span itemprop="name">បណ្ណាល័យរង្វាស់</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/km/metrics/heart-circulation/"><span itemprop="name">បេះដូង និងចរន្តឈាម</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>❤️</span> បេះដូង និងចរន្តឈាម
+        </span></header><nav class="article-toc"><h4>នៅលើទំព័រនេះ</h4><div class="toc"><ul><li><a href="#heart-rate-variability-hrv">ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</a><ul><li><a href="#what-is-hrv">តើអ្វីទៅជា HRV?</a><ul><li><a href="#how-healthkit-measures-hrv">របៀបដែល HealthKit វាស់វែង HRV</a></li></ul></li><li><a href="#scientific-background">មូលដ្ឋានគ្រឹះវិទ្យាសាស្ត្រ</a><ul><li><a href="#the-gold-standard-of-stress">\"ស្តង់ដារមាស\" នៃភាពតានតឹង (Stress)</a><ul><li><a href="#the-neurovisceral-integration-model-thayer">ម៉ូដែលការរួមបញ្ចូលប្រព័ន្ធប្រសាទ
+                                                និងសរីរាង្គ (Thayer)</a></li><li><a href="#overtraining-immunity">ការហាត់ហួសកម្រិត និងប្រព័ន្ធភាពស៊ាំ</a></li></ul></li></ul></li><li><a href="#clinical-significance">សារៈសំខាន់គ្លីនិក</a><ul><li><a href="#interpreting-your-numbers">ការបកស្រាយតួលេខរបស់អ្នក</a></li><li><a href="#factors-that-lower-hrv-bad">កត្តាដែលធ្វើឱ្យ HRV ទាប (មិនល្អ)</a></li><li><a href="#factors-that-raise-hrv-good">កត្តាដែលធ្វើឱ្យ HRV ខ្ពស់ (ល្អ)</a></li></ul></li><li><a href="#recommendations">អនុសាសន៍</a><ul><li><a href="#how-to-use-hrv">របៀបប្រើប្រាស់ HRV</a></li></ul></li><li><a href="#references">ឯកសារយោង</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="heart-rate-variability-hrv">ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV)</h1><h2 id="what-is-hrv">តើអ្វីទៅជា HRV?</h2><p>ភាពប្រែប្រួលនៃចង្វាក់បេះដូង (HRV) គឺជាការប្រែប្រួលនៃចន្លោះពេលរវាងចង្វាក់បេះដូងដែលនៅជាប់គ្នា។
             ប្រសិនបើចង្វាក់បេះដូងរបស់អ្នកមាន ៦០ ដងក្នុងមួយនាទី វាមិនមែនលោតរៀងរាល់មួយវិនាទីពិតប្រាកដនោះទេ។
-            ចន្លោះពេលមួយអាចជា ០.៨៥ វិនាទី ហើយចន្លោះពេលបន្ទាប់អាចជា ១.១៥ វិនាទី។</p>
-        <p>ភាពមិនទៀងទាត់នេះមិនមែនជាកំហុសនោះទេ—វាគឺជាសញ្ញានៃប្រព័ន្ធប្រសាទស្វយ័តដែលមានសុខភាពល្អ និងឆ្លើយតបបានរហ័ស។
-            <strong>ភាពប្រែប្រួលខ្ពស់គឺល្អ; ភាពប្រែប្រួលទាបបង្ហាញពីភាពតានតឹង (stress)។</strong></p>
-        <h3 id="how-healthkit-measures-hrv">របៀបដែល HealthKit វាស់វែង HRV</h3>
-        <p>Apple Watch វាស់ HRV ដោយប្រើ SDNN (គម្លាតស្តង់ដារនៃចន្លោះពេល NN) អំឡុងពេលសម័យតាមដាន (ដូចជាសម័យ \"Breathe\" ឬ
-            \"Mindfulness\") និងម្តងម្កាលនៅផ្ទៃខាងក្រោយ។</p>
-        <ul>
-            <li><strong>SDNN៖</strong> ជារង្វាស់ស្តង់ដាររបស់ Apple Watch។ វាឆ្លុះបញ្ចាំងពីភាពប្រែប្រួលជារួម។</li>
-            <li><strong>RMSSD៖</strong> ជារឿយៗត្រូវបានប្រើដោយវេទិកាកីឡាផ្សេងទៀត (ដូចជា Whoop, Oura)
+            ចន្លោះពេលមួយអាចជា ០.៨៥ វិនាទី ហើយចន្លោះពេលបន្ទាប់អាចជា ១.១៥ វិនាទី។</p><p>ភាពមិនទៀងទាត់នេះមិនមែនជាកំហុសនោះទេ—វាគឺជាសញ្ញានៃប្រព័ន្ធប្រសាទស្វយ័តដែលមានសុខភាពល្អ និងឆ្លើយតបបានរហ័ស។
+            <strong>ភាពប្រែប្រួលខ្ពស់គឺល្អ; ភាពប្រែប្រួលទាបបង្ហាញពីភាពតានតឹង (stress)។</strong></p><h3 id="how-healthkit-measures-hrv">របៀបដែល HealthKit វាស់វែង HRV</h3><p>Apple Watch វាស់ HRV ដោយប្រើ SDNN (គម្លាតស្តង់ដារនៃចន្លោះពេល NN) អំឡុងពេលសម័យតាមដាន (ដូចជាសម័យ \"Breathe\" ឬ
+            \"Mindfulness\") និងម្តងម្កាលនៅផ្ទៃខាងក្រោយ។</p><ul><li><strong>SDNN៖</strong> ជារង្វាស់ស្តង់ដាររបស់ Apple Watch។ វាឆ្លុះបញ្ចាំងពីភាពប្រែប្រួលជារួម។</li><li><strong>RMSSD៖</strong> ជារឿយៗត្រូវបានប្រើដោយវេទិកាកីឡាផ្សេងទៀត (ដូចជា Whoop, Oura)
                 សម្រាប់ការស្តារឡើងវិញ។ Apple រក្សាទុកទិន្នន័យចង្វាក់នីមួយៗ ដូច្នេះកម្មវិធីភាគីទីបីអាចគណនា RMSSD ពី
-                HealthKit បាន។</li>
-        </ul>
-        <h2 id="scientific-background">មូលដ្ឋានគ្រឹះវិទ្យាសាស្ត្រ</h2>
-        <h3 id="the-gold-standard-of-stress">\"ស្តង់ដារមាស\" នៃភាពតានតឹង (Stress)</h3>
-        <p>HRV ត្រូវបានចាត់ទុកយ៉ាងទូលំទូលាយថាជារង្វាស់មិនរាតល្បាតដែលត្រឹមត្រូវបំផុតនៃប្រព័ន្ធប្រសាទស្វយ័ត (ANS)
-            ដែលគ្រប់គ្រងការឆ្លើយតប ប្រយុទ្ធ-ឬ-រត់ របស់យើង។</p>
-        <h4 id="the-neurovisceral-integration-model-thayer">ម៉ូដែលការរួមបញ្ចូលប្រព័ន្ធប្រសាទ និងសរីរាង្គ (Thayer)</h4>
-        <p>ការស្រាវជ្រាវយ៉ាងទូលំទូលាយរបស់បណ្ឌិត Julian Thayer បានផ្សារភ្ជាប់ HRV ដោយផ្ទាល់ទៅនឹង <strong>សកម្មភាពរបស់
+                HealthKit បាន។</li></ul><h2 id="scientific-background">មូលដ្ឋានគ្រឹះវិទ្យាសាស្ត្រ</h2><h3 id="the-gold-standard-of-stress">\"ស្តង់ដារមាស\" នៃភាពតានតឹង (Stress)</h3><p>HRV ត្រូវបានចាត់ទុកយ៉ាងទូលំទូលាយថាជារង្វាស់មិនរាតល្បាតដែលត្រឹមត្រូវបំផុតនៃប្រព័ន្ធប្រសាទស្វយ័ត (ANS)
+            ដែលគ្រប់គ្រងការឆ្លើយតប ប្រយុទ្ធ-ឬ-រត់ របស់យើង។</p><h4 id="the-neurovisceral-integration-model-thayer">ម៉ូដែលការរួមបញ្ចូលប្រព័ន្ធប្រសាទ និងសរីរាង្គ (Thayer)</h4><p>ការស្រាវជ្រាវយ៉ាងទូលំទូលាយរបស់បណ្ឌិត Julian Thayer បានផ្សារភ្ជាប់ HRV ដោយផ្ទាល់ទៅនឹង <strong>សកម្មភាពរបស់
                 prefrontal cortex</strong> (តំបន់ខួរក្បាលផ្នែកខាងមុខ)។
             * <strong>HRV ខ្ពស់៖</strong> Prefrontal cortex (ខួរក្បាលផ្នែកបញ្ជា) កំពុងគ្រប់គ្រង ដោយធ្វើឱ្យ amygdala
             (មជ្ឈមណ្ឌលភ័យខ្លាច) ស្ងប់ស្ងាត់។ ស្ថានភាពនេះផ្សារភ្ជាប់ជាមួយនឹងការគ្រប់គ្រងអារម្មណ៍, ការផ្ដោតអារម្មណ៍
             និងសមត្ថភាពសម្របខ្លួន។
             * <strong>HRV ទាប៖</strong> Prefrontal cortex បាត់បង់ការគ្រប់គ្រង ហើយការឆ្លើយតបនឹងភាពតានតឹងបានគ្របដណ្តប់។
-            នេះផ្សារភ្ជាប់នឹងការថប់បារម្ភ, ការរលាក និងសមត្ថភាពយល់ដឹងមិនបានល្អ។</p>
-        <blockquote>
-            <p>\"ភាពប្រែប្រួលនៃចង្វាក់បេះដូងអាចបម្រើជារង្វាស់ប្រហាក់ប្រហែលសម្រាប់ 'ការរួមបញ្ចូលបញ្ឈរ'
+            នេះផ្សារភ្ជាប់នឹងការថប់បារម្ភ, ការរលាក និងសមត្ថភាពយល់ដឹងមិនបានល្អ។</p><blockquote><p>\"ភាពប្រែប្រួលនៃចង្វាក់បេះដូងអាចបម្រើជារង្វាស់ប្រហាក់ប្រហែលសម្រាប់ 'ការរួមបញ្ចូលបញ្ឈរ'
                 នៃយន្តការខួរក្បាលដែលណែនាំការគ្រប់គ្រងឥរិយាបថដែលបត់បែន។\"
-                — Thayer et al., Neuroscience & Biobehavioral Reviews, ២០១២</p>
-        </blockquote>
-        <h4 id="overtraining-immunity">ការហាត់ហួសកម្រិត និងប្រព័ន្ធភាពស៊ាំ</h4>
-        <p>ការស្រាវជ្រាវក្នុងសរីរវិទ្យាកីឡាបង្ហាញថា ការធ្លាក់ចុះយ៉ាងខ្លាំងនៃកម្រិត HRV មូលដ្ឋាន ជារឿយៗកើតឡើង
+                — Thayer et al., Neuroscience & Biobehavioral Reviews, ២០១២</p></blockquote><h4 id="overtraining-immunity">ការហាត់ហួសកម្រិត និងប្រព័ន្ធភាពស៊ាំ</h4><p>ការស្រាវជ្រាវក្នុងសរីរវិទ្យាកីឡាបង្ហាញថា ការធ្លាក់ចុះយ៉ាងខ្លាំងនៃកម្រិត HRV មូលដ្ឋាន ជារឿយៗកើតឡើង
             <strong>២៤-៤៨ ម៉ោងមុន</strong> ការលេចចេញរោគសញ្ញាផ្តាសាយ
-            ដែលធ្វើឱ្យវាក្លាយជាប្រព័ន្ធព្រមានទុកជាមុនសម្រាប់ប្រព័ន្ធភាពស៊ាំ។</p>
-        <h2 id="clinical-significance">សារៈសំខាន់គ្លីនិក</h2>
-        <h3 id="interpreting-your-numbers">ការបកស្រាយតួលេខរបស់អ្នក</h3>
-        <p>HRV មានលក្ខណៈបុគ្គលខ្ពស់ខ្លាំង។ ការប្រៀបធៀបតួលេខរបស់អ្នកទៅនឹងអ្នកដទៃគឺគ្មានប្រយោជន៍ឡើយ។ អ្នកត្រូវតែប្រៀបធៀប
-            <strong>ខ្លួនឯងថ្ងៃនេះ</strong> ធៀបនឹង <strong>កម្រិតមូលដ្ឋានរបស់អ្នក</strong>។</p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th style="text-align: left;">និន្នាការ</th>
-                    <th style="text-align: left;">ការបកស្រាយ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="text-align: left;"><strong>ប្រហាក់ប្រហែលកម្រិតមូលដ្ឋាន</strong></td>
-                    <td style="text-align: left;">ការស្តារឡើងវិញជាធម្មតា។ រួចរាល់សម្រាប់បន្ទុកការងារប្រចាំថ្ងៃ។</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>ខ្ពស់ជាងមុនខ្លាំង</strong></td>
-                    <td style="text-align: left;">ការស្តារឡើងវិញបានល្អខ្លាំង ឬការឆ្អែតនៃប្រព័ន្ធ parasympathetic។
-                        អាចជារឿងល្អ ប៉ុន្តែការខ្ពស់ខ្លាំងពេកក៏អាចបង្ហាញពីជំងឺស្រាលផងដែរ។</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>ទាបជាងមុនមធ្យម</strong></td>
-                    <td style="text-align: left;">ការអស់កម្លាំងសន្សំ, ភាពតានតឹងស្រាល ឬថ្មីៗនេះបានញ៉ាំគ្រឿងស្រវឹង។</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>ទាបជាងមុនខ្លាំង</strong></td>
-                    <td style="text-align: left;">ស្ថានភាព \"ប្រយុទ្ធ-ឬ-រត់\"។ ភាពតានតឹងខ្ពស់, ជំងឺ, ការគេងមិនបានល្អ
-                        ឬការហាត់ហួសកម្រិត។</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="factors-that-lower-hrv-bad">កត្តាដែលធ្វើឱ្យ HRV ទាប (មិនល្អ)</h3>
-        <ul>
-            <li><strong>គ្រឿងស្រវឹង៖</strong> ជាកត្តាមួយក្នុងចំណោមកត្តាដែលធ្វើឱ្យ HRV ធ្លាក់ចុះខ្លាំងបំផុត។ អាចកាត់បន្ថយ
-                HRV ពេលយប់បាន ២០-៥០%។</li>
-            <li><strong>ការញ៉ាំយប់ជ្រៅ៖</strong> ការញ៉ាំជិតម៉ោងគេងធ្វើឱ្យមេតាប៉ូលីសនៅតែសកម្ម ដែលជះឥទ្ធិពលដល់បេះដូង។</li>
-            <li><strong>ភាពតានតឹងរ៉ាំរ៉ៃ៖</strong> កង្វល់ការងារ ឬអារម្មណ៍ ធ្វើឱ្យប្រព័ន្ធ sympathetic នៅតែសកម្ម។</li>
-            <li><strong>ការខ្វះជាតិទឹក៖</strong> កាត់បន្ថយបរិមាណឈាម បង្កើនការប្រឹងប្រែងរបស់បេះដូង។</li>
-        </ul>
-        <h3 id="factors-that-raise-hrv-good">កត្តាដែលធ្វើឱ្យ HRV ខ្ពស់ (ល្អ)</h3>
-        <ul>
-            <li><strong>កាយសម្បទាអ៊ែរ៉ូប៊ិក៖</strong> បេះដូងដែលរឹងមាំលោតតិចជាងមុន
-                និងមានចន្លោះសម្រាប់ភាពប្រែប្រួលច្រើនជាង។</li>
-            <li><strong>ការគេងទៀងទាត់៖</strong> ម៉ោងគេងដែលទៀងទាត់កែលម្អចង្វាក់ជីវសាស្ត្រ និង HRV។</li>
-            <li><strong>ការដកដង្ហើមបែប Resonance៖</strong> ការដកដង្ហើមវែងៗ និងទៀងទាត់ (៦ ដង/នាទី)
-                ធ្វើឱ្យចង្វាក់បេះដូងស៊ីគ្នាជាមួយដង្ហើម (RSA) ដែលជួយជម្រុញ HRV ជាបណ្តោះអាសន្ន។</li>
-        </ul>
-        <h2 id="recommendations">អនុសាសន៍</h2>
-        <h3 id="how-to-use-hrv">របៀបប្រើប្រាស់ HRV</h3>
-        <ol>
-            <li><strong>មើលនិន្នាការ កុំមើលតែតួលេខ៖</strong> មើលមធ្យមភាគ ៧ ថ្ងៃ ឬ ៣០ ថ្ងៃ នៅក្នុងកម្មវិធី Health។</li>
-            <li><strong>ការវាស់វែងពេលព្រឹកគឺសំខាន់៖</strong> កម្មវិធី \"Mindfulness\" លើ Apple Watch បង្ខំឱ្យមានការវាស់
-                HRV។ ការចំណាយពេល ១ នាទីដកដង្ហើមរាល់ព្រឹក បង្កើតឱ្យមានកម្រិតមូលដ្ឋានដែលស្ថិតស្ថេរ និងអាចប្រៀបធៀបបាន។</li>
-            <li><strong>\"ការតេស្តគ្រឿងស្រវឹង\"៖</strong> សង្កេតមើល HRV របស់អ្នកនៅព្រឹកបន្ទាប់ពីញ៉ាំគ្រឿងស្រវឹង
-                ធៀបនឹងយប់ដែលមិនបានញ៉ាំ។ ភាពខុសគ្នានឹងបង្ហាញយ៉ាងច្បាស់ និងផ្តល់ជាមេរៀន។</li>
-        </ol>
-        <h2 id="references">ឯកសារយោង</h2>
-        <ol>
-            <li>Thayer JF, et al. (2012) A meta-analysis of heart rate variability and neuroimaging studies:
+            ដែលធ្វើឱ្យវាក្លាយជាប្រព័ន្ធព្រមានទុកជាមុនសម្រាប់ប្រព័ន្ធភាពស៊ាំ។</p><h2 id="clinical-significance">សារៈសំខាន់គ្លីនិក</h2><h3 id="interpreting-your-numbers">ការបកស្រាយតួលេខរបស់អ្នក</h3><p>HRV មានលក្ខណៈបុគ្គលខ្ពស់ខ្លាំង។ ការប្រៀបធៀបតួលេខរបស់អ្នកទៅនឹងអ្នកដទៃគឺគ្មានប្រយោជន៍ឡើយ។ អ្នកត្រូវតែប្រៀបធៀប
+            <strong>ខ្លួនឯងថ្ងៃនេះ</strong> ធៀបនឹង <strong>កម្រិតមូលដ្ឋានរបស់អ្នក</strong>។</p><table class="clinical-table"><thead><tr><th style="text-align: left;">និន្នាការ</th><th style="text-align: left;">ការបកស្រាយ</th></tr></thead><tbody><tr><td style="text-align: left;"><strong>ប្រហាក់ប្រហែលកម្រិតមូលដ្ឋាន</strong></td><td style="text-align: left;">ការស្តារឡើងវិញជាធម្មតា។ រួចរាល់សម្រាប់បន្ទុកការងារប្រចាំថ្ងៃ។</td></tr><tr><td style="text-align: left;"><strong>ខ្ពស់ជាងមុនខ្លាំង</strong></td><td style="text-align: left;">ការស្តារឡើងវិញបានល្អខ្លាំង ឬការឆ្អែតនៃប្រព័ន្ធ parasympathetic។
+                        អាចជារឿងល្អ ប៉ុន្តែការខ្ពស់ខ្លាំងពេកក៏អាចបង្ហាញពីជំងឺស្រាលផងដែរ។</td></tr><tr><td style="text-align: left;"><strong>ទាបជាងមុនមធ្យម</strong></td><td style="text-align: left;">ការអស់កម្លាំងសន្សំ, ភាពតានតឹងស្រាល ឬថ្មីៗនេះបានញ៉ាំគ្រឿងស្រវឹង។</td></tr><tr><td style="text-align: left;"><strong>ទាបជាងមុនខ្លាំង</strong></td><td style="text-align: left;">ស្ថានភាព \"ប្រយុទ្ធ-ឬ-រត់\"។ ភាពតានតឹងខ្ពស់, ជំងឺ, ការគេងមិនបានល្អ
+                        ឬការហាត់ហួសកម្រិត។</td></tr></tbody></table><h3 id="factors-that-lower-hrv-bad">កត្តាដែលធ្វើឱ្យ HRV ទាប (មិនល្អ)</h3><ul><li><strong>គ្រឿងស្រវឹង៖</strong> ជាកត្តាមួយក្នុងចំណោមកត្តាដែលធ្វើឱ្យ HRV ធ្លាក់ចុះខ្លាំងបំផុត។ អាចកាត់បន្ថយ
+                HRV ពេលយប់បាន ២០-៥០%។</li><li><strong>ការញ៉ាំយប់ជ្រៅ៖</strong> ការញ៉ាំជិតម៉ោងគេងធ្វើឱ្យមេតាប៉ូលីសនៅតែសកម្ម ដែលជះឥទ្ធិពលដល់បេះដូង។</li><li><strong>ភាពតានតឹងរ៉ាំរ៉ៃ៖</strong> កង្វល់ការងារ ឬអារម្មណ៍ ធ្វើឱ្យប្រព័ន្ធ sympathetic នៅតែសកម្ម។</li><li><strong>ការខ្វះជាតិទឹក៖</strong> កាត់បន្ថយបរិមាណឈាម បង្កើនការប្រឹងប្រែងរបស់បេះដូង។</li></ul><h3 id="factors-that-raise-hrv-good">កត្តាដែលធ្វើឱ្យ HRV ខ្ពស់ (ល្អ)</h3><ul><li><strong>កាយសម្បទាអ៊ែរ៉ូប៊ិក៖</strong> បេះដូងដែលរឹងមាំលោតតិចជាងមុន
+                និងមានចន្លោះសម្រាប់ភាពប្រែប្រួលច្រើនជាង។</li><li><strong>ការគេងទៀងទាត់៖</strong> ម៉ោងគេងដែលទៀងទាត់កែលម្អចង្វាក់ជីវសាស្ត្រ និង HRV។</li><li><strong>ការដកដង្ហើមបែប Resonance៖</strong> ការដកដង្ហើមវែងៗ និងទៀងទាត់ (៦ ដង/នាទី)
+                ធ្វើឱ្យចង្វាក់បេះដូងស៊ីគ្នាជាមួយដង្ហើម (RSA) ដែលជួយជម្រុញ HRV ជាបណ្តោះអាសន្ន។</li></ul><h2 id="recommendations">អនុសាសន៍</h2><h3 id="how-to-use-hrv">របៀបប្រើប្រាស់ HRV</h3><ol><li><strong>មើលនិន្នាការ កុំមើលតែតួលេខ៖</strong> មើលមធ្យមភាគ ៧ ថ្ងៃ ឬ ៣០ ថ្ងៃ នៅក្នុងកម្មវិធី Health។</li><li><strong>ការវាស់វែងពេលព្រឹកគឺសំខាន់៖</strong> កម្មវិធី \"Mindfulness\" លើ Apple Watch បង្ខំឱ្យមានការវាស់
+                HRV។ ការចំណាយពេល ១ នាទីដកដង្ហើមរាល់ព្រឹក បង្កើតឱ្យមានកម្រិតមូលដ្ឋានដែលស្ថិតស្ថេរ និងអាចប្រៀបធៀបបាន។</li><li><strong>\"ការតេស្តគ្រឿងស្រវឹង\"៖</strong> សង្កេតមើល HRV របស់អ្នកនៅព្រឹកបន្ទាប់ពីញ៉ាំគ្រឿងស្រវឹង
+                ធៀបនឹងយប់ដែលមិនបានញ៉ាំ។ ភាពខុសគ្នានឹងបង្ហាញយ៉ាងច្បាស់ និងផ្តល់ជាមេរៀន។</li></ol><h2 id="references">ឯកសារយោង</h2><ol><li>Thayer JF, et al. (2012) A meta-analysis of heart rate variability and neuroimaging studies:
                 implications for heart rate variability as a marker of stress and health. <em>Neuroscience &
-                    Biobehavioral Reviews</em>, 36(2), 747-756.</li>
-            <li>Shaffer F, Ginsberg JP. (2017) An Overview of Heart Rate Variability Metrics and Norms. <em>Frontiers in
-                    Public Health</em>, 5:258.</li>
-            <li>Plews DJ, et al. (2013) Heart rate variability in elite triathletes, is variation in variability the key
-                to effective training? A systematic review. <em>Sports Medicine</em>, 43(9), 775-791.</li>
-            <li>Altini M. (2020) The Ultimate Guide to Heart Rate Variability (HRV).</li>
-        </ol>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>ព័ត៌មានវេជ្ជសាស្ត្រ</strong></div>
-        <p>មាតិកានេះគឺសម្រាប់គោលបំណងអប់រំតែប៉ុណ្ណោះ ហើយមិនគួរជំនួសការណែនាំវេជ្ជសាស្ត្រវិជ្ជាជីវៈឡើយ។
-            ត្រូវប្រឹក្សាជាមួយអ្នកផ្តល់សេវាថែទាំសុខភាពជានិច្ចសម្រាប់ការសម្រេចចិត្តវេជ្ជសាស្ត្រ។</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>បានធ្វើបច្ចុប្បន្នភាពចុងក្រោយ៖ ខែមករា ឆ្នាំ ២០២៦</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+                    Biobehavioral Reviews</em>, 36(2), 747-756.</li><li>Shaffer F, Ginsberg JP. (2017) An Overview of Heart Rate Variability Metrics and Norms. <em>Frontiers in
+                    Public Health</em>, 5:258.</li><li>Plews DJ, et al. (2013) Heart rate variability in elite triathletes, is variation in variability the key
+                to effective training? A systematic review. <em>Sports Medicine</em>, 43(9), 775-791.</li><li>Altini M. (2020) The Ultimate Guide to Heart Rate Variability (HRV).</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>ព័ត៌មានវេជ្ជសាស្ត្រ</strong></div><p>មាតិកានេះគឺសម្រាប់គោលបំណងអប់រំតែប៉ុណ្ណោះ ហើយមិនគួរជំនួសការណែនាំវេជ្ជសាស្ត្រវិជ្ជាជីវៈឡើយ។
+            ត្រូវប្រឹក្សាជាមួយអ្នកផ្តល់សេវាថែទាំសុខភាពជានិច្ចសម្រាប់ការសម្រេចចិត្តវេជ្ជសាស្ត្រ។</p></aside><div class="metric-footer"><hr><p><em>បានធ្វើបច្ចុប្បន្នភាពចុងក្រោយ៖ ខែមករា ឆ្នាំ ២០២៦</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link active"
+                </a><a href="/km/" class="lang-link active"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. រក្សាសិទ្ធិគ្រប់យ៉ាង
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/km/privacy/">ឯកជនភាព</a></li>
-                <li><a href="/km/terms/">លក្ខខណ្ឌ</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>គេហទំព័រនេះប្រើប្រាស់ឃុកឃី (cookies) ដើម្បីកែលម្អបទពិសោធន៍របស់អ្នក។</p>
-            <a href="/km/privacy/" class="text-sm">ស្វែងយល់បន្ថែម</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">បដិសេធ</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">យល់ព្រម</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/km/privacy/">ឯកជនភាព</a></li><li><a href="/km/terms/">លក្ខខណ្ឌ</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>គេហទំព័រនេះប្រើប្រាស់ឃុកឃី (cookies) ដើម្បីកែលម្អបទពិសោធន៍របស់អ្នក។</p><a href="/km/privacy/" class="text-sm">ស្វែងយល់បន្ថែម</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">បដិសេធ</button><button id="cookie-accept" class="btn btn-primary btn-small">យល់ព្រម</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="ko" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>체중 및 BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...</title>
-  <meta name="description" content="체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강...">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="체중 및 BMI, 신체 측정, 건강 지표, healthkit">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/">
-  <meta property="og:title" content="체중 및 BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...">
-  <meta property="og:description" content="체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강...">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/">
-  <meta name="twitter:title" content="체중 및 BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...">
-  <meta name="twitter:description" content="체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강...">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/body-measurements/body-mass-index-bmi/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/body-measurements/body-mass-index-bmi/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="ko" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>무게 &amp;amp; BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...</title><meta name="description" content="체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강..."><meta name="author" content="Arno Health"><meta name="keywords" content="체중 및 BMI, 신체 측정, 건강 지표, healthkit"><link rel="canonical" href="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"><meta property="og:title" content="무게 &amp;amp; BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |..."><meta property="og:description" content="체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"><meta name="twitter:title" content="무게 &amp;amp; BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |..."><meta name="twitter:description" content="체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/body-measurements/body-mass-index-bmi/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "ko"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,30 +365,19 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "체중 및 BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...",
+  "name": "무게 &amp;amp; BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...",
   "description": "체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강...",
   "url": "https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "체중 및 BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...",
+  "headline": "무게 &amp;amp; BMI - Apple 건강 데이터를 CSV, PDF 및 JSON으로 내보내기 |...",
   "description": "체질량 지수(BMI) 는 체중과 키를 사용하여 계산된 수치입니다: $$BMI = \frac{체중 (kg)}{키 (m)^2}$$ BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강...",
   "author": {
     "@type": "Person",
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,1071 +412,326 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">콘텐츠로 바로가기</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/ko/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/ko/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">콘텐츠로 바로가기</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ko/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ko/features/" 
                                 aria-current="">
                                 기능
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ko/metrics/" 
+                            </a></li><li><a href="/ko/metrics/" 
                                 aria-current="">
                                 지표 라이브러리
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ko/pricing/" 
+                            </a></li><li><a href="/ko/pricing/" 
                                 aria-current="">
                                 가격
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ko/about/" 
+                            </a></li><li><a href="/ko/about/" 
                                 aria-current="">
                                 회사 소개
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="언어 선택">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="언어 선택"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" selected>
+                        </option><option value="ko" selected>
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="메뉴 토글"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/ko/metrics/">
-                    <span itemprop="name">지표 라이브러리</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/ko/metrics/body-measurements/">
-                    <span itemprop="name">신체 측정</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">체중 및 BMI</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>📏</span> 신체 측정
-        </span>
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>목차</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#weight-bmi">체중 및 BMI</a>
-                    <ul>
-                        <li><a href="#what-is-bmi">BMI란 무엇인가요?</a>
-                            <ul>
-                                <li><a href="#how-healthkit-stores-weight-bmi">HealthKit의 체중 및 BMI 저장 방식</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#scientific-background">과학적 배경</a>
-                            <ul>
-                                <li><a href="#bmi-a-controversial-metric">BMI: 논란이 많은 지표</a></li>
-                                <li><a href="#standard-bmi-categories-who">표준 BMI 카테고리 (WHO)</a></li>
-                                <li><a href="#landmark-research-findings">주요 연구 결과</a>
-                                    <ul>
-                                        <li><a href="#nejm-study-bmi-and-mortality-2010">NEJM 연구: BMI와 사망률 (2010)</a>
-                                        </li>
-                                        <li><a href="#the-obesity-paradox-jama-2013">비만의 역설 (JAMA 2013)</a></li>
-                                        <li><a href="#beyond-bmi-waist-circumference">BMI를 넘어: 허리둘레</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#the-fit-but-fat-evidence">"뚱뚱해도 건강한(Fit But Fat)" 증거</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#clinical-significance">임상적 중요성</a>
-                            <ul>
-                                <li><a href="#why-weight-tracking-matters">체중 추적이 중요한 이유</a></li>
-                                <li><a href="#what-affects-weight">체중에 영향을 미치는 요인</a></li>
-                                <li><a href="#daily-weight-fluctuations">일일 체중 변동</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#recommendations">권장 사항</a>
-                            <ul>
-                                <li><a href="#evidence-based-guidelines">증거 기반 가이드라인</a></li>
-                                <li><a href="#healthy-weight-management">건강한 체중 관리</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#when-to-seek-medical-attention">의료진의 도움이 필요한 경우</a></li>
-                        <li><a href="#references">참고 문헌</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="weight-bmi">체중 및 BMI</h1>
-        <h2 id="what-is-bmi">BMI란 무엇인가요?</h2>
-        <p><strong>체질량 지수(BMI)</strong>는 체중과 키를 사용하여 계산된 수치입니다:</p>
-        <p>$$BMI = \frac{체중 (kg)}{키 (m)^2}$$</p>
-        <p>BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강 측정 지표로 설계된 것은
-            아닙니다.</p>
-        <h3 id="how-healthkit-stores-weight-bmi">HealthKit의 체중 및 BMI 저장 방식</h3>
-        <p>HealthKit은 다음 데이터를 기록합니다:</p>
-        <ul>
-            <li><strong>체중 (Body Mass):</strong> 연결된 스마트 체중계, Apple Watch(추정치) 또는 수동 입력 데이터</li>
-            <li><strong>체질량 지수 (BMI):</strong> 체중과 키를 바탕으로 자동 계산</li>
-            <li><strong>체지방률:</strong> 생체 전기 저항 분석법을 사용하는 호환 가능한 스마트 체중계 데이터</li>
-            <li><strong>제지방량:</strong> 호환 가능한 체중계 데이터 또는 수동 입력 데이터</li>
-        </ul>
-        <h2 id="scientific-background">과학적 배경</h2>
-        <h3 id="bmi-a-controversial-metric">BMI: 논란이 많은 지표</h3>
-        <p>BMI는 그 단순함 덕분에 널리 사용되고 있지만, 현대 연구에서 밝혀진 것처럼 다음과 같은 중대한 한계가 있습니다:</p>
-        <p><strong>BMI의 유용성:</strong>
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="메뉴 토글"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/ko/metrics/"><span itemprop="name">지표 라이브러리</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/ko/metrics/body-measurements/"><span itemprop="name">신체 측정</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">체중 및 BMI</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>📏</span> 신체 측정
+        </span></header><nav class="article-toc"><h4>목차</h4><div class="toc"><ul><li><a href="#weight-bmi">체중 및 BMI</a><ul><li><a href="#what-is-bmi">BMI란 무엇인가요?</a><ul><li><a href="#how-healthkit-stores-weight-bmi">HealthKit의 체중 및 BMI 저장 방식</a></li></ul></li><li><a href="#scientific-background">과학적 배경</a><ul><li><a href="#bmi-a-controversial-metric">BMI: 논란이 많은 지표</a></li><li><a href="#standard-bmi-categories-who">표준 BMI 카테고리 (WHO)</a></li><li><a href="#landmark-research-findings">주요 연구 결과</a><ul><li><a href="#nejm-study-bmi-and-mortality-2010">NEJM 연구: BMI와 사망률 (2010)</a></li><li><a href="#the-obesity-paradox-jama-2013">비만의 역설 (JAMA 2013)</a></li><li><a href="#beyond-bmi-waist-circumference">BMI를 넘어: 허리둘레</a></li></ul></li><li><a href="#the-fit-but-fat-evidence">"뚱뚱해도 건강한(Fit But Fat)" 증거</a></li></ul></li><li><a href="#clinical-significance">임상적 중요성</a><ul><li><a href="#why-weight-tracking-matters">체중 추적이 중요한 이유</a></li><li><a href="#what-affects-weight">체중에 영향을 미치는 요인</a></li><li><a href="#daily-weight-fluctuations">일일 체중 변동</a></li></ul></li><li><a href="#recommendations">권장 사항</a><ul><li><a href="#evidence-based-guidelines">증거 기반 가이드라인</a></li><li><a href="#healthy-weight-management">건강한 체중 관리</a></li></ul></li><li><a href="#when-to-seek-medical-attention">의료진의 도움이 필요한 경우</a></li><li><a href="#references">참고 문헌</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="weight-bmi">체중 및 BMI</h1><h2 id="what-is-bmi">BMI란 무엇인가요?</h2><p><strong>체질량 지수(BMI)</strong>는 체중과 키를 사용하여 계산된 수치입니다:</p><p>$$BMI = \frac{체중 (kg)}{키 (m)^2}$$</p><p>BMI는 1830년대 벨기에의 수학자 아돌프 케틀레(Adolphe Quetelet)가 인구 집단 수준의 비만 평가를 위한 단순 선별 도구로 개발한 것이며, 개인의 건강 측정 지표로 설계된 것은
+            아닙니다.</p><h3 id="how-healthkit-stores-weight-bmi">HealthKit의 체중 및 BMI 저장 방식</h3><p>HealthKit은 다음 데이터를 기록합니다:</p><ul><li><strong>체중 (Body Mass):</strong> 연결된 스마트 체중계, Apple Watch(추정치) 또는 수동 입력 데이터</li><li><strong>체질량 지수 (BMI):</strong> 체중과 키를 바탕으로 자동 계산</li><li><strong>체지방률:</strong> 생체 전기 저항 분석법을 사용하는 호환 가능한 스마트 체중계 데이터</li><li><strong>제지방량:</strong> 호환 가능한 체중계 데이터 또는 수동 입력 데이터</li></ul><h2 id="scientific-background">과학적 배경</h2><h3 id="bmi-a-controversial-metric">BMI: 논란이 많은 지표</h3><p>BMI는 그 단순함 덕분에 널리 사용되고 있지만, 현대 연구에서 밝혀진 것처럼 다음과 같은 중대한 한계가 있습니다:</p><p><strong>BMI의 유용성:</strong>
             - 인구 집단 수준의 신속한 선별 도구 제공
             - 극단적인 수치에서 일부 건강 결과와 상관관계 보임
-            - 연구 간의 표준화된 비교 가능</p>
-        <p><strong>BMI의 한계:</strong>
+            - 연구 간의 표준화된 비교 가능</p><p><strong>BMI의 한계:</strong>
             - 근육량과 지방량을 구분하지 못함
             - 지방 분포(내장 지방 vs 피하 지방)를 고려하지 않음
             - 연령, 성별 또는 인종별 차이를 반영하지 않음
-            - 개인의 건강 결과를 정확하게 예측하지 못함</p>
-        <h3 id="standard-bmi-categories-who">표준 BMI 카테고리 (WHO)</h3>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>카테고리</th>
-                    <th>BMI 범위</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>저체중</td>
-                    <td>&lt; 18.5</td>
-                </tr>
-                <tr>
-                    <td>정상</td>
-                    <td>18.5-24.9</td>
-                </tr>
-                <tr>
-                    <td>과체중</td>
-                    <td>25.0-29.9</td>
-                </tr>
-                <tr>
-                    <td>비만 1단계</td>
-                    <td>30.0-34.9</td>
-                </tr>
-                <tr>
-                    <td>비만 2단계</td>
-                    <td>35.0-39.9</td>
-                </tr>
-                <tr>
-                    <td>비만 3단계</td>
-                    <td>≥ 40.0</td>
-                </tr>
-            </tbody>
-        </table>
-        <p><em>참고: 이 기준은 주로 유럽 인구를 대상으로 한 연구에서 개발되었으며 모든 인종에 동일하게 적용되지 않을 수 있습니다.</em></p>
-        <h2 id="landmark-research-findings">주요 연구 결과</h2>
-        <h3 class="visually-hidden" aria-hidden="true" data-az-a11y="inserted"> </h3><h4 id="nejm-study-bmi-and-mortality-2010">NEJM 연구: BMI와 사망률 (2010)</h4>
-        <p>19개의 전향적 연구에서 추출한 <strong>146만 명의 백인 성인</strong>을 대상으로 BMI와 사망률의 관계를 분석한 포괄적인 연구입니다.</p>
-        <p><strong>핵심 결과:</strong>
+            - 개인의 건강 결과를 정확하게 예측하지 못함</p><h3 id="standard-bmi-categories-who">표준 BMI 카테고리 (WHO)</h3><table class="clinical-table"><thead><tr><th>카테고리</th><th>BMI 범위</th></tr></thead><tbody><tr><td>저체중</td><td>&lt; 18.5</td></tr><tr><td>정상</td><td>18.5-24.9</td></tr><tr><td>과체중</td><td>25.0-29.9</td></tr><tr><td>비만 1단계</td><td>30.0-34.9</td></tr><tr><td>비만 2단계</td><td>35.0-39.9</td></tr><tr><td>비만 3단계</td><td>≥ 40.0</td></tr></tbody></table><p><em>참고: 이 기준은 주로 유럽 인구를 대상으로 한 연구에서 개발되었으며 모든 인종에 동일하게 적용되지 않을 수 있습니다.</em></p><h2 id="landmark-research-findings">주요 연구 결과</h2><h3 class="visually-hidden" aria-hidden="true" data-az-a11y="inserted"></h3><h4 id="nejm-study-bmi-and-mortality-2010">NEJM 연구: BMI와 사망률 (2010)</h4><p>19개의 전향적 연구에서 추출한 <strong>146만 명의 백인 성인</strong>을 대상으로 BMI와 사망률의 관계를 분석한 포괄적인 연구입니다.</p><p><strong>핵심 결과:</strong>
             - <strong>최적의 BMI 범위:</strong> 비흡연자 기준 22.5~24.9
             - BMI 스펙트럼의 양 끝단에서 사망 위험 증가
             - <strong>저체중 (BMI &lt; 18.5):</strong> 사망률 47% 증가
             - <strong>비만 1단계 (30-35):</strong> 사망률 44% 증가
-            - <strong>비만 3단계 (≥ 40):</strong> 사망률 2.5배 증가</p>
-        <blockquote>
-            <p>"건강한 비흡연자 분석 결과, 사망 위험이 가장 낮은 BMI는 20.0에서 24.9 사이였습니다."
-                — Berrington de Gonzalez et al., NEJM, 2010</p>
-        </blockquote>
-        <h4 id="the-obesity-paradox-jama-2013">비만의 역설 (JAMA 2013)</h4>
-        <p><strong>288만 명</strong>을 대상으로 한 <strong>97개 연구</strong>를 메타 분석한 결과, 예상치 못한 결과가 도출되어 논란이 되었습니다:</p>
-        <p><strong>핵심 결과:</strong>
+            - <strong>비만 3단계 (≥ 40):</strong> 사망률 2.5배 증가</p><blockquote><p>"건강한 비흡연자 분석 결과, 사망 위험이 가장 낮은 BMI는 20.0에서 24.9 사이였습니다."
+                — Berrington de Gonzalez et al., NEJM, 2010</p></blockquote><h4 id="the-obesity-paradox-jama-2013">비만의 역설 (JAMA 2013)</h4><p><strong>288만 명</strong>을 대상으로 한 <strong>97개 연구</strong>를 메타 분석한 결과, 예상치 못한 결과가 도출되어 논란이 되었습니다:</p><p><strong>핵심 결과:</strong>
             - <strong>과체중 (BMI 25-30):</strong> 모든 원인에 의한 사망률이 정상 체중보다 6% **낮음**
             - <strong>비만 1단계 (30-35):</strong> 사망률의 유의미한 차이 없음
-            - <strong>비만 2-3단계 (≥ 35):</strong> 사망률 29% 증가</p>
-        <p>이 "비만의 역설"은 BMI 기준치가 최적인지, 그리고 '대사적으로 건강한 비만'이 존재하는지에 대한 논쟁을 불러일으켰습니다.</p>
-        <h4 id="beyond-bmi-waist-circumference">BMI를 넘어: 허리둘레</h4>
-        <p>2020년 국제동맥경화학회(IAS)의 합의 성명은 허리둘레가 더 우수한 예측 지표임을 강조했습니다:</p>
-        <p><strong>허리둘레가 중요한 이유:</strong>
+            - <strong>비만 2-3단계 (≥ 35):</strong> 사망률 29% 증가</p><p>이 "비만의 역설"은 BMI 기준치가 최적인지, 그리고 '대사적으로 건강한 비만'이 존재하는지에 대한 논쟁을 불러일으켰습니다.</p><h4 id="beyond-bmi-waist-circumference">BMI를 넘어: 허리둘레</h4><p>2020년 국제동맥경화학회(IAS)의 합의 성명은 허리둘레가 더 우수한 예측 지표임을 강조했습니다:</p><p><strong>허리둘레가 중요한 이유:</strong>
             - 복부(내장) 지방을 직접 측정함
             - 내장 지방은 대사적으로 활발하며 염증을 유발함
             - BMI보다 심혈관 질환을 더 잘 예측함
-            - BMI를 보정한 후에도 독립적인 위험 요인임</p>
-        <p><strong>위험 기준치 (IAS/ICCR 컨센서스):</strong></p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>위험 수준</th>
-                    <th>남성</th>
-                    <th>여성</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>낮은 위험</td>
-                    <td>&lt; 94 cm (37인치)</td>
-                    <td>&lt; 80 cm (31.5인치)</td>
-                </tr>
-                <tr>
-                    <td>위험 증가</td>
-                    <td>94-102 cm (37-40인치)</td>
-                    <td>80-88 cm (31.5-34.5인치)</td>
-                </tr>
-                <tr>
-                    <td>높은 위험</td>
-                    <td>&gt; 102 cm (40인치)</td>
-                    <td>&gt; 88 cm (34.5인치)</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="the-fit-but-fat-evidence">"뚱뚱해도 건강한(Fit But Fat)" 증거</h3>
-        <p>체중보다 <strong>체력 수준(Fitness level)</strong>이 더 중요할 수 있다는 연구 결과가 늘어나고 있습니다:</p>
-        <ul>
-            <li><em>Progress in Cardiovascular Diseases</em>에 게재된 2016년 메타 분석에 따르면, 체력이 좋은 비만인은 체력이 좋은 정상 체중인과 **유사한
-                사망률**을 보였습니다.</li>
-            <li>체력이 좋지 않은 정상 체중인은 체력이 좋은 비만인보다 **사망률이 더 높았습니다**.</li>
-            <li>심폐 지구력(CRF)은 사망률을 예측하는 강력한 독립 지표입니다.</li>
-        </ul>
-        <h2 id="clinical-significance">임상적 중요성</h2>
-        <h3 id="why-weight-tracking-matters">체중 추적이 중요한 이유</h3>
-        <p>BMI의 한계에도 불구하고, 시간이 지남에 따라 체중 변화를 추적하는 것은 가치가 있습니다:</p>
-        <ol>
-            <li><strong>추세 감지:</strong> 점진적인 체중 변화는 건강 상태의 변화를 나타낼 수 있습니다.</li>
-            <li><strong>치료 모니터링:</strong> 많은 질환에서 체중은 중요한 치료 결과 지표입니다.</li>
-            <li><strong>행동 피드백:</strong> 생활 습관 개선의 효과를 평가하는 데 도움이 됩니다.</li>
-            <li><strong>의료 기록:</strong> 약물 용량 결정, 수술 계획 등에 필요합니다.</li>
-        </ol>
-        <h3 id="what-affects-weight">체중에 영향을 미치는 요인</h3>
-        <p><strong>생리적 요인:</strong>
+            - BMI를 보정한 후에도 독립적인 위험 요인임</p><p><strong>위험 기준치 (IAS/ICCR 컨센서스):</strong></p><table class="clinical-table"><thead><tr><th>위험 수준</th><th>남성</th><th>여성</th></tr></thead><tbody><tr><td>낮은 위험</td><td>&lt; 94 cm (37인치)</td><td>&lt; 80 cm (31.5인치)</td></tr><tr><td>위험 증가</td><td>94-102 cm (37-40인치)</td><td>80-88 cm (31.5-34.5인치)</td></tr><tr><td>높은 위험</td><td>&gt; 102 cm (40인치)</td><td>&gt; 88 cm (34.5인치)</td></tr></tbody></table><h3 id="the-fit-but-fat-evidence">"뚱뚱해도 건강한(Fit But Fat)" 증거</h3><p>체중보다 <strong>체력 수준(Fitness level)</strong>이 더 중요할 수 있다는 연구 결과가 늘어나고 있습니다:</p><ul><li><em>Progress in Cardiovascular Diseases</em>에 게재된 2016년 메타 분석에 따르면, 체력이 좋은 비만인은 체력이 좋은 정상 체중인과 **유사한
+                사망률**을 보였습니다.</li><li>체력이 좋지 않은 정상 체중인은 체력이 좋은 비만인보다 **사망률이 더 높았습니다**.</li><li>심폐 지구력(CRF)은 사망률을 예측하는 강력한 독립 지표입니다.</li></ul><h2 id="clinical-significance">임상적 중요성</h2><h3 id="why-weight-tracking-matters">체중 추적이 중요한 이유</h3><p>BMI의 한계에도 불구하고, 시간이 지남에 따라 체중 변화를 추적하는 것은 가치가 있습니다:</p><ol><li><strong>추세 감지:</strong> 점진적인 체중 변화는 건강 상태의 변화를 나타낼 수 있습니다.</li><li><strong>치료 모니터링:</strong> 많은 질환에서 체중은 중요한 치료 결과 지표입니다.</li><li><strong>행동 피드백:</strong> 생활 습관 개선의 효과를 평가하는 데 도움이 됩니다.</li><li><strong>의료 기록:</strong> 약물 용량 결정, 수술 계획 등에 필요합니다.</li></ol><h3 id="what-affects-weight">체중에 영향을 미치는 요인</h3><p><strong>생리적 요인:</strong>
             - 에너지 균형 (섭취 칼로리 vs 소모 칼로리)
             - 기초 대사량
             - 호르몬 조절 (갑상선, 인슐린, 코르티솔)
             - 장내 미생물 구성
-            - 유전적 소인</p>
-        <p><strong>외부 요인:</strong>
+            - 유전적 소인</p><p><strong>외부 요인:</strong>
             - 식단의 구성과 품질
             - 신체 활동 수준
             - 수면의 질과 시간
             - 약물 (많은 약이 체중 증가/감소를 유발함)
-            - 스트레스 및 심리적 요인</p>
-        <h3 id="daily-weight-fluctuations">일일 체중 변동</h3>
-        <p>체중은 다음과 같은 이유로 **하루에 1~3kg 정도 변동**할 수 있습니다:</p>
-        <ul>
-            <li>수분 상태</li>
-            <li>나트륨 섭취</li>
-            <li>장내 음식물</li>
-            <li>생리 주기</li>
-            <li>최근 운동 (수분 저류 현상)</li>
-        </ul>
-        <p><strong>권장 사항:</strong> 매일 같은 시간(아침 공복, 화장실을 다녀온 후)에 측정하고, 일일 수치보다는 **주간 평균**을 추적하십시오.</p>
-        <h2 id="recommendations">권장 사항</h2>
-        <h3 id="evidence-based-guidelines">증거 기반 가이드라인</h3>
-        <p>BMI의 한계를 고려하여 다음과 같은 종합적인 접근 방식을 고려하십시오:</p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>지표</th>
-                    <th>기대 효과</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>BMI</strong></td>
-                    <td>일반적인 선별 도구; 극단적인 수치는 주의 필요</td>
-                </tr>
-                <tr>
-                    <td><strong>허리둘레</strong></td>
-                    <td>복부 지방 및 심혈관 위험 평가</td>
-                </tr>
-                <tr>
-                    <td><strong>체중 추세</strong></td>
-                    <td>수주/수개월간의 변화 방향성 파악</td>
-                </tr>
-                <tr>
-                    <td><strong>체지방률</strong></td>
-                    <td>신체 구성 분석 (스마트 체중계 활용 시)</td>
-                </tr>
-                <tr>
-                    <td><strong>체력 수준</strong></td>
-                    <td>신체 활동량 및 심혈관 건강 상태 파악</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="healthy-weight-management">건강한 체중 관리</h3>
-        <p>증거 기반 접근 방식:</p>
-        <ol>
-            <li><strong>수치보다는 건강 행동에 집중하십시오.</strong></li>
-            <li>규칙적인 신체 활동 (주당 150분 이상의 중강도 운동)</li>
-            <li>자연 식품 중심의 균형 잡힌 영양 섭취</li>
-            <li>충분한 수면 (7~9시간)</li>
-            <li>스트레스 관리</li>
-            <li><strong>현실적인 기대치를 설정하십시오.</strong></li>
-            <li>주당 0.5~1kg 감량이 지속 가능한 수준입니다.</li>
-            <li>체중 유지는 지속적인 노력이 필요합니다.</li>
-            <li>신체 구성의 변화(지방 감소, 근육 증가)가 체중계 수치에 바로 나타나지 않을 수 있습니다.</li>
-            <li><strong>더 넓은 관점에서 바라보십시오.</strong></li>
-            <li>혈압, 혈중 지질, 혈당 조절이 BMI 수치보다 더 중요합니다.</li>
-            <li>체력 개선은 체중과 관계없이 사망 위험을 낮춥니다.</li>
-            <li>정신 건강은 신체 건강에 직접적인 영향을 미칩니다.</li>
-        </ol>
-        <h2 id="when-to-seek-medical-attention">의료진의 도움이 필요한 경우</h2>
-        <p>다음과 같은 경우 의료 전문가와 상담하십시오:</p>
-        <ul>
-            <li>6~12개월 사이 의도하지 않게 체중이 5% 이상 감소한 경우</li>
-            <li>급격하고 설명되지 않는 체중 증가가 있는 경우</li>
-            <li>BMI가 18.5 미만이거나 40 이상인 경우</li>
-            <li>체중이 일상 활동이나 독립적인 가동성을 방해하는 경우</li>
-            <li>비정상적인 식사 패턴이나 체중 측정에 대한 강박이 있는 경우</li>
-            <li>체중 변화와 함께 다른 증상(피로, 기분 변화 등)이 동반되는 경우</li>
-        </ul>
-        <h2 id="references">참고 문헌</h2>
-        <ol>
-            <li>Berrington de Gonzalez A, et al. (2010) Body-Mass Index and Mortality among 1.46 Million White Adults.
-                <em>NEJM</em>, 363(23), 2211-2219.</li>
-            <li>Flegal KM, et al. (2013) Association of all-cause mortality with overweight and obesity using standard
-                BMI categories. <em>JAMA</em>, 309(1), 71-82.</li>
-            <li>Aune D, et al. (2016) BMI and all cause mortality: systematic review and non-linear dose-response
-                meta-analysis. <em>BMJ</em>, 353, i2156.</li>
-            <li>Ross R, et al. (2020) Waist circumference as a vital sign in clinical practice: a Consensus Statement.
-                <em>Nature Reviews Endocrinology</em>, 16(3), 177-189.</li>
-            <li>Ortega FB, et al. (2016) Body Mass Index: Would a Criterion Standard Measure of Total Body Fat Be a
-                Better Predictor? <em>Mayo Clinic Proceedings</em>, 91(4), 443-455.</li>
-            <li>World Health Organization. (2024) Obesity and overweight: Key facts. WHO Fact Sheets.</li>
-        </ol>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>의학 정보 안내</strong></div>
-        <p>본 콘텐츠는 교육 목적으로만 제공되며 전문적인 의료 조언을 대체할 수 없습니다. 의학적 결정을 내릴 때는 항상 의료 전문가와 상담하십시오.</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>최종 업데이트: 2026년 1월</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+            - 스트레스 및 심리적 요인</p><h3 id="daily-weight-fluctuations">일일 체중 변동</h3><p>체중은 다음과 같은 이유로 **하루에 1~3kg 정도 변동**할 수 있습니다:</p><ul><li>수분 상태</li><li>나트륨 섭취</li><li>장내 음식물</li><li>생리 주기</li><li>최근 운동 (수분 저류 현상)</li></ul><p><strong>권장 사항:</strong> 매일 같은 시간(아침 공복, 화장실을 다녀온 후)에 측정하고, 일일 수치보다는 **주간 평균**을 추적하십시오.</p><h2 id="recommendations">권장 사항</h2><h3 id="evidence-based-guidelines">증거 기반 가이드라인</h3><p>BMI의 한계를 고려하여 다음과 같은 종합적인 접근 방식을 고려하십시오:</p><table class="clinical-table"><thead><tr><th>지표</th><th>기대 효과</th></tr></thead><tbody><tr><td><strong>BMI</strong></td><td>일반적인 선별 도구; 극단적인 수치는 주의 필요</td></tr><tr><td><strong>허리둘레</strong></td><td>복부 지방 및 심혈관 위험 평가</td></tr><tr><td><strong>체중 추세</strong></td><td>수주/수개월간의 변화 방향성 파악</td></tr><tr><td><strong>체지방률</strong></td><td>신체 구성 분석 (스마트 체중계 활용 시)</td></tr><tr><td><strong>체력 수준</strong></td><td>신체 활동량 및 심혈관 건강 상태 파악</td></tr></tbody></table><h3 id="healthy-weight-management">건강한 체중 관리</h3><p>증거 기반 접근 방식:</p><ol><li><strong>수치보다는 건강 행동에 집중하십시오.</strong></li><li>규칙적인 신체 활동 (주당 150분 이상의 중강도 운동)</li><li>자연 식품 중심의 균형 잡힌 영양 섭취</li><li>충분한 수면 (7~9시간)</li><li>스트레스 관리</li><li><strong>현실적인 기대치를 설정하십시오.</strong></li><li>주당 0.5~1kg 감량이 지속 가능한 수준입니다.</li><li>체중 유지는 지속적인 노력이 필요합니다.</li><li>신체 구성의 변화(지방 감소, 근육 증가)가 체중계 수치에 바로 나타나지 않을 수 있습니다.</li><li><strong>더 넓은 관점에서 바라보십시오.</strong></li><li>혈압, 혈중 지질, 혈당 조절이 BMI 수치보다 더 중요합니다.</li><li>체력 개선은 체중과 관계없이 사망 위험을 낮춥니다.</li><li>정신 건강은 신체 건강에 직접적인 영향을 미칩니다.</li></ol><h2 id="when-to-seek-medical-attention">의료진의 도움이 필요한 경우</h2><p>다음과 같은 경우 의료 전문가와 상담하십시오:</p><ul><li>6~12개월 사이 의도하지 않게 체중이 5% 이상 감소한 경우</li><li>급격하고 설명되지 않는 체중 증가가 있는 경우</li><li>BMI가 18.5 미만이거나 40 이상인 경우</li><li>체중이 일상 활동이나 독립적인 가동성을 방해하는 경우</li><li>비정상적인 식사 패턴이나 체중 측정에 대한 강박이 있는 경우</li><li>체중 변화와 함께 다른 증상(피로, 기분 변화 등)이 동반되는 경우</li></ul><h2 id="references">참고 문헌</h2><ol><li>Berrington de Gonzalez A, et al. (2010) Body-Mass Index and Mortality among 1.46 Million White Adults.
+                <em>NEJM</em>, 363(23), 2211-2219.</li><li>Flegal KM, et al. (2013) Association of all-cause mortality with overweight and obesity using standard
+                BMI categories. <em>JAMA</em>, 309(1), 71-82.</li><li>Aune D, et al. (2016) BMI and all cause mortality: systematic review and non-linear dose-response
+                meta-analysis. <em>BMJ</em>, 353, i2156.</li><li>Ross R, et al. (2020) Waist circumference as a vital sign in clinical practice: a Consensus Statement.
+                <em>Nature Reviews Endocrinology</em>, 16(3), 177-189.</li><li>Ortega FB, et al. (2016) Body Mass Index: Would a Criterion Standard Measure of Total Body Fat Be a
+                Better Predictor? <em>Mayo Clinic Proceedings</em>, 91(4), 443-455.</li><li>World Health Organization. (2024) Obesity and overweight: Key facts. WHO Fact Sheets.</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>의학 정보 안내</strong></div><p>본 콘텐츠는 교육 목적으로만 제공되며 전문적인 의료 조언을 대체할 수 없습니다. 의학적 결정을 내릴 때는 항상 의료 전문가와 상담하십시오.</p></aside><div class="metric-footer"><hr><p><em>최종 업데이트: 2026년 1월</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link active"
+                </a><a href="/ko/" class="lang-link active"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. 모든 권리 보유
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/ko/privacy/">개인정보 보호</a></li>
-                <li><a href="/ko/terms/">이용 약관</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>본 웹사이트는 사용자 경험을 개선하기 위해 쿠키를 사용합니다.</p>
-            <a href="/ko/privacy/" class="text-sm">자세히 알아보기</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">거절</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">수락</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/ko/privacy/">개인정보 보호</a></li><li><a href="/ko/terms/">이용 약관</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>본 웹사이트는 사용자 경험을 개선하기 위해 쿠키를 사용합니다.</p><a href="/ko/privacy/" class="text-sm">자세히 알아보기</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">거절</button><button id="cookie-accept" class="btn btn-primary btn-small">수락</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

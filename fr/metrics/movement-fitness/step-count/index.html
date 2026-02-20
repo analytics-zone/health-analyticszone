@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Nombre de pas - Export Apple Health Data to CSV, PDF &amp; JSON |...</title>
-  <meta name="description" content="Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24 heures. Cette mesure fondamentale de l&#39;activité physique...">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Nombre, de, pas, Export, Apple, Health, Data, to, CSV, PDF">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/">
-  <meta property="og:title" content="Nombre de pas - Export Apple Health Data to CSV, PDF &amp; JSON |...">
-  <meta property="og:description" content="Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24 heures. Cette mesure fondamentale de l&#39;activité physique...">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/">
-  <meta name="twitter:title" content="Nombre de pas - Export Apple Health Data to CSV, PDF &amp; JSON |...">
-  <meta name="twitter:description" content="Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24 heures. Cette mesure fondamentale de l&#39;activité physique...">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/movement-fitness/step-count/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/step-count/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="fr" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>Nombre de pas - Exportez les données de santé Apple vers CSV, PDF...</title><meta name="description" content="Explorez des analyses détaillées et le contexte scientifique du nombre de pas suivis dans Apple Health. Exportez vos données au format CSV, PDF et JSON pour une..."><meta name="author" content="Arno Health"><meta name="keywords" content="Nombre, de, pas, Export, Apple, Health, Data, to, CSV, PDF"><link rel="canonical" href="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/"><meta property="og:title" content="Nombre de pas - Exportez les données de santé Apple vers CSV, PDF..."><meta property="og:description" content="Explorez des analyses détaillées et le contexte scientifique du nombre de pas suivis dans Apple Health. Exportez vos données au format CSV, PDF et JSON pour une..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/"><meta name="twitter:title" content="Nombre de pas - Exportez les données de santé Apple vers CSV, PDF..."><meta name="twitter:description" content="Explorez des analyses détaillées et le contexte scientifique du nombre de pas suivis dans Apple Health. Exportez vos données au format CSV, PDF et JSON pour une..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/movement-fitness/step-count/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/step-count/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "fr"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Nombre de pas - Export Apple Health Data to CSV, PDF &amp; JSON |...",
-  "description": "Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24 heures. Cette mesure fondamentale de l&#39;activité physique...",
+  "name": "Nombre de pas - Exportez les données de santé Apple vers CSV, PDF...",
+  "description": "Explorez des analyses détaillées et le contexte scientifique du nombre de pas suivis dans Apple Health. Exportez vos données au format CSV, PDF et JSON pour une...",
   "url": "https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Nombre de pas - Export Apple Health Data to CSV, PDF &amp; JSON |...",
-  "description": "Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24 heures. Cette mesure fondamentale de l&#39;activité physique...",
+  "headline": "Nombre de pas - Exportez les données de santé Apple vers CSV, PDF...",
+  "description": "Explorez des analyses détaillées et le contexte scientifique du nombre de pas suivis dans Apple Health. Exportez vos données au format CSV, PDF et JSON pour une...",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/fr/metrics/movement-fitness/step-count/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,525 +412,150 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Passer au contenu</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/fr/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/fr/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Passer au contenu</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/fr/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/fr/features/" 
                                 aria-current="">
                                 Fonctionnalités
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/fr/metrics/" 
+                            </a></li><li><a href="/fr/metrics/" 
                                 aria-current="">
                                 Bibliothèque de Métriques
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/fr/pricing/" 
+                            </a></li><li><a href="/fr/pricing/" 
                                 aria-current="">
                                 Tarifs
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/fr/about/" 
+                            </a></li><li><a href="/fr/about/" 
                                 aria-current="">
                                 À Propos
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Choisir la langue">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Choisir la langue"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" selected>
+                        </option><option value="fr" selected>
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Basculer le menu"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/fr/metrics/">
-                    <span itemprop="name">Bibliothèque de métriques</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/fr/metrics/movement-fitness/">
-                    <span itemprop="name">Activité et forme physique</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">Nombre de pas</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>🏃</span> Activité et forme physique
-        </span>
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>Sur cette page</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#step-count">Nombre de pas</a>
-                    <ul>
-                        <li><a href="#what-are-daily-steps">Que sont les pas quotidiens ?</a>
-                            <ul>
-                                <li><a href="#how-healthkit-measures-steps">Comment HealthKit mesure les pas</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#scientific-background">Contexte scientifique</a>
-                            <ul>
-                                <li><a href="#the-10000-steps-origin">L'origine des 10 000 pas</a></li>
-                                <li><a href="#landmark-research-findings">Résultats de recherches marquantes</a>
-                                    <ul>
-                                        <li><a href="#the-lancet-meta-analysis-2022">La méta-analyse du Lancet
-                                                (2022)</a></li>
-                                        <li><a href="#nihjama-study-2020">L'étude NIH/JAMA (2020)</a></li>
-                                        <li><a href="#cardiovascular-dementia-research-2022">Recherches sur le
-                                                cardiovasculaire et la démence (2022)</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#clinical-significance">Signification clinique</a>
-                            <ul>
-                                <li><a href="#why-steps-matter">Pourquoi les pas comptent</a></li>
-                                <li><a href="#what-research-tells-us">Ce que la recherche nous dit</a></li>
-                                <li><a href="#important-limitations">Limites importantes</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#recommendations">Recommandations</a>
-                            <ul>
-                                <li><a href="#evidence-based-guidelines">Directives fondées sur des preuves</a></li>
-                                <li><a href="#practical-strategies">Stratégies pratiques</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#when-to-seek-medical-attention">Quand consulter un médecin</a></li>
-                        <li><a href="#references">Références</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="step-count">Nombre de pas</h1>
-        <h2 id="what-are-daily-steps">Que sont les pas quotidiens ?</h2>
-        <p>Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Basculer le menu"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/fr/metrics/"><span itemprop="name">Bibliothèque de métriques</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/fr/metrics/movement-fitness/"><span itemprop="name">Activité et forme physique</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Nombre de pas</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>🏃</span> Activité et forme physique
+        </span></header><nav class="article-toc"><h4>Sur cette page</h4><div class="toc"><ul><li><a href="#step-count">Nombre de pas</a><ul><li><a href="#what-are-daily-steps">Que sont les pas quotidiens ?</a><ul><li><a href="#how-healthkit-measures-steps">Comment HealthKit mesure les pas</a></li></ul></li><li><a href="#scientific-background">Contexte scientifique</a><ul><li><a href="#the-10000-steps-origin">L'origine des 10 000 pas</a></li><li><a href="#landmark-research-findings">Résultats de recherches marquantes</a><ul><li><a href="#the-lancet-meta-analysis-2022">La méta-analyse du Lancet
+                                                (2022)</a></li><li><a href="#nihjama-study-2020">L'étude NIH/JAMA (2020)</a></li><li><a href="#cardiovascular-dementia-research-2022">Recherches sur le
+                                                cardiovasculaire et la démence (2022)</a></li></ul></li></ul></li><li><a href="#clinical-significance">Signification clinique</a><ul><li><a href="#why-steps-matter">Pourquoi les pas comptent</a></li><li><a href="#what-research-tells-us">Ce que la recherche nous dit</a></li><li><a href="#important-limitations">Limites importantes</a></li></ul></li><li><a href="#recommendations">Recommandations</a><ul><li><a href="#evidence-based-guidelines">Directives fondées sur des preuves</a></li><li><a href="#practical-strategies">Stratégies pratiques</a></li></ul></li><li><a href="#when-to-seek-medical-attention">Quand consulter un médecin</a></li><li><a href="#references">Références</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="step-count">Nombre de pas</h1><h2 id="what-are-daily-steps">Que sont les pas quotidiens ?</h2><p>Les pas quotidiens représentent le nombre total de pas de marche et de course accumulés sur une période de 24
             heures. Cette mesure fondamentale de l'activité physique est capturée automatiquement par les capteurs de
             mouvement de votre iPhone et l'accéléromètre de votre Apple Watch, ce qui en fait l'une des métriques de
-            santé les plus accessibles et les plus suivies en continu.</p>
-        <h3 id="how-healthkit-measures-steps">Comment HealthKit mesure les pas</h3>
-        <p>Les appareils Apple utilisent une combinaison de technologies pour compter les pas avec précision :</p>
-        <ul>
-            <li><strong>Accéléromètre :</strong> Détecte les schémas d'accélération caractéristiques de la marche et de
-                la course.</li>
-            <li><strong>Gyroscope :</strong> Confirme la détection des pas en mesurant le mouvement de rotation.</li>
-            <li><strong>Apprentissage automatique :</strong> Des algorithmes entraînés sur des millions d'échantillons
-                de mouvement distinguent les pas d'autres activités.</li>
-            <li><strong>Coprocesseur de mouvement :</strong> Une puce dédiée à basse consommation permet un suivi 24h/24
-                et 7j/7 sans épuiser la batterie.</li>
-        </ul>
-        <p>HealthKit stocke les données de pas avec des horodatages, permettant l'analyse des totaux quotidiens, des
-            schémas horaires et des tendances au fil du temps.</p>
-        <h2 id="scientific-background">Contexte scientifique</h2>
-        <h3 id="the-10000-steps-origin">L'origine des 10 000 pas</h3>
-        <p>L'objectif populaire de 10 000 pas par jour ne provient pas d'une recherche scientifique, mais d'une
+            santé les plus accessibles et les plus suivies en continu.</p><h3 id="how-healthkit-measures-steps">Comment HealthKit mesure les pas</h3><p>Les appareils Apple utilisent une combinaison de technologies pour compter les pas avec précision :</p><ul><li><strong>Accéléromètre :</strong> Détecte les schémas d'accélération caractéristiques de la marche et de
+                la course.</li><li><strong>Gyroscope :</strong> Confirme la détection des pas en mesurant le mouvement de rotation.</li><li><strong>Apprentissage automatique :</strong> Des algorithmes entraînés sur des millions d'échantillons
+                de mouvement distinguent les pas d'autres activités.</li><li><strong>Coprocesseur de mouvement :</strong> Une puce dédiée à basse consommation permet un suivi 24h/24
+                et 7j/7 sans épuiser la batterie.</li></ul><p>HealthKit stocke les données de pas avec des horodatages, permettant l'analyse des totaux quotidiens, des
+            schémas horaires et des tendances au fil du temps.</p><h2 id="scientific-background">Contexte scientifique</h2><h3 id="the-10000-steps-origin">L'origine des 10 000 pas</h3><p>L'objectif populaire de 10 000 pas par jour ne provient pas d'une recherche scientifique, mais d'une
             <strong>campagne publicitaire japonaise de 1965</strong> pour le podomètre « manpo-kei » (万歩計, signifiant «
             compteur de 10 000 pas »). Le chiffre a été choisi car le caractère japonais pour 10 000 (万) ressemble à une
-            personne qui marche.</p>
-        <p>Malgré ses origines marketing, des recherches ultérieures ont validé que des nombres de pas plus élevés sont
+            personne qui marche.</p><p>Malgré ses origines marketing, des recherches ultérieures ont validé que des nombres de pas plus élevés sont
             corrélés à de meilleurs résultats pour la santé — bien que le nombre optimal puisse être plus bas que 10 000
-            pour de nombreuses populations.</p>
-        <h3 id="landmark-research-findings">Résultats de recherches marquantes</h3>
-        <h4 id="the-lancet-meta-analysis-2022">La méta-analyse du Lancet (2022)</h4>
-        <p>L'étude la plus complète à ce jour, publiée dans <strong>The Lancet Public Health</strong>, a analysé les
+            pour de nombreuses populations.</p><h3 id="landmark-research-findings">Résultats de recherches marquantes</h3><h4 id="the-lancet-meta-analysis-2022">La méta-analyse du Lancet (2022)</h4><p>L'étude la plus complète à ce jour, publiée dans <strong>The Lancet Public Health</strong>, a analysé les
             données de <strong>15 cohortes internationales</strong> totalisant <strong>47 471 adultes</strong> suivis
-            pendant une moyenne de 7 ans.</p>
-        <p><strong>Résultats clés :</strong>
+            pendant une moyenne de 7 ans.</p><p><strong>Résultats clés :</strong>
             - <strong>7 000 pas / jour</strong> = risque de mortalité toutes causes confondues inférieur de 47 % par
             rapport à &lt; 4 000 pas.
             - Les bénéfices continuent jusqu'à environ <strong>12 000 pas / jour</strong> pour les adultes de moins de
@@ -1156,510 +563,205 @@ img[width][height] {
             - Pour les adultes de <strong>60 ans et plus</strong>, les bénéfices plafonnent à environ <strong>8 000 pas
                 / jour</strong>.
             - L'<strong>intensité des pas</strong> (cadence) n'est pas un prédicteur indépendant de la mortalité lorsque
-            le nombre total de pas est pris en compte.</p>
-        <blockquote>
-            <p>« Des nombres de pas plus élevés étaient associés à un risque progressivement plus faible de mortalité
+            le nombre total de pas est pris en compte.</p><blockquote><p>« Des nombres de pas plus élevés étaient associés à un risque progressivement plus faible de mortalité
                 toutes causes confondues, bien que l'ampleur de cette association varie selon l'âge. »
-                — Paluch et al., Lancet Public Health, 2022</p>
-        </blockquote>
-        <h4 id="nihjama-study-2020">L'étude NIH/JAMA (2020)</h4>
-        <p>Une étude des <strong>National Institutes of Health</strong> (États-Unis) publiée dans le JAMA a suivi
-            <strong>4 840 adultes américains</strong> pendant une moyenne de 10 ans.</p>
-        <p><strong>Résultats clés :</strong>
+                — Paluch et al., Lancet Public Health, 2022</p></blockquote><h4 id="nihjama-study-2020">L'étude NIH/JAMA (2020)</h4><p>Une étude des <strong>National Institutes of Health</strong> (États-Unis) publiée dans le JAMA a suivi
+            <strong>4 840 adultes américains</strong> pendant une moyenne de 10 ans.</p><p><strong>Résultats clés :</strong>
             - <strong>8 000 pas / jour</strong> associés à une <strong>mortalité inférieure de 51 %</strong> par rapport
             à 4 000 pas.
             - <strong>12 000 pas / jour</strong> associés à une <strong>mortalité inférieure de 65 %</strong> par
             rapport à 4 000 pas.
             - Marcher à une intensité plus élevée n'apporte pas de bénéfices de mortalité supplémentaires au-delà du
-            nombre total de pas.</p>
-        <h4 id="cardiovascular-dementia-research-2022">Recherches sur le cardiovasculaire et la démence (2022)</h4>
-        <p>D'autres études du JAMA en 2022 ont examiné le nombre de pas et des résultats de santé spécifiques :</p>
-        <p><strong>Maladies cardiovasculaires et cancer (JAMA Internal Medicine) :</strong>
+            nombre total de pas.</p><h4 id="cardiovascular-dementia-research-2022">Recherches sur le cardiovasculaire et la démence (2022)</h4><p>D'autres études du JAMA en 2022 ont examiné le nombre de pas et des résultats de santé spécifiques :</p><p><strong>Maladies cardiovasculaires et cancer (JAMA Internal Medicine) :</strong>
             - 78 500 participants de la UK Biobank suivis pendant 7 ans.
             - <strong>10 000 pas / jour</strong> = incidence des maladies cardiovasculaires réduite de 25 %, mortalité
             par cancer réduite de 38 %.
-            - Des bénéfices proportionnels à la dose ont été observés jusqu'à 10 000 pas.</p>
-        <p><strong>Prévention de la démence (JAMA Neurology) :</strong>
+            - Des bénéfices proportionnels à la dose ont été observés jusqu'à 10 000 pas.</p><p><strong>Prévention de la démence (JAMA Neurology) :</strong>
             - 78 430 adultes britanniques suivis pendant 7 ans.
             - <strong>9 826 pas / jour</strong> associés à un <strong>risque de démence réduit de 50 %</strong>.
-            - Les bénéfices commencent dès environ 3 800 pas par jour (réduction du risque de 25 %).</p>
-        <h2 id="clinical-significance">Signification clinique</h2>
-        <h3 id="why-steps-matter">Pourquoi les pas comptent</h3>
-        <p>Le nombre de pas quotidiens sert d'indicateur du <strong>volume global de l'activité physique</strong>, qui
-            influence :</p>
-        <ol>
-            <li><strong>La santé cardiovasculaire :</strong> Une marche régulière améliore la fonction cardiaque,
-                abaisse la tension artérielle et améliore la circulation.</li>
-            <li><strong>La fonction métabolique :</strong> L'activité physique améliore la sensibilité à l'insuline et
-                la régulation du glucose.</li>
-            <li><strong>La force musculosquelettique :</strong> Une activité avec port de poids maintient la densité
-                osseuse et la masse musculaire.</li>
-            <li><strong>La santé mentale :</strong> La marche est corrélée à une réduction de la dépression, de
-                l'anxiété et du déclin cognitif.</li>
-            <li><strong>La longévité :</strong> Des nombres de pas plus élevés prédisent systématiquement un risque de
-                mortalité plus faible dans toutes les populations.</li>
-        </ol>
-        <h3 id="what-research-tells-us">Ce que la recherche nous dit</h3>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>Pas quotidiens</th>
-                    <th>Association avec la santé</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt; 4 000</td>
-                    <td>Niveau de risque de base / sédentaire</td>
-                </tr>
-                <tr>
-                    <td>4 000 – 6 000</td>
-                    <td>Réduction modeste de la mortalité (20-30 %)</td>
-                </tr>
-                <tr>
-                    <td>6 000 – 8 000</td>
-                    <td>Bénéfices significatifs, surtout pour les seniors</td>
-                </tr>
-                <tr>
-                    <td>8 000 – 10 000</td>
-                    <td>Bénéfices de mortalité quasi maximaux pour la plupart des adultes</td>
-                </tr>
-                <tr>
-                    <td>10 000 – 12 000</td>
-                    <td>Bénéfices supplémentaires principalement pour les jeunes adultes</td>
-                </tr>
-                <tr>
-                    <td>&gt; 12 000</td>
-                    <td>Bénéfice de mortalité supplémentaire minime (mais non nocif)</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="important-limitations">Limites importantes</h3>
-        <p>Bien que le nombre de pas soit précieux, il ne capture pas :</p>
-        <ul>
-            <li><strong>L'intensité de l'exercice :</strong> Une marche rapide et une flânerie enregistrent des nombres
-                de pas similaires.</li>
-            <li><strong>Les activités hors marche :</strong> La natation, le cyclisme et l'entraînement de force ne sont
-                pas reflétés.</li>
-            <li><strong>La qualité du mouvement :</strong> Les pas n'indiquent pas une mécanique de marche appropriée ou
-                un risque de blessure.</li>
-            <li><strong>La variation individuelle :</strong> Les cibles optimales varient selon l'âge, l'état de santé
-                et la forme physique initiale.</li>
-        </ul>
-        <h2 id="recommendations">Recommandations</h2>
-        <h3 id="evidence-based-guidelines">Directives fondées sur des preuves</h3>
-        <p>D'après les recherches actuelles, ces cibles de pas apportent des bénéfices de santé significatifs :</p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>Tranche d'âge</th>
-                    <th>Pas recommandés</th>
-                    <th>Base de preuves</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Adultes &lt; 60 ans</td>
-                    <td>8 000 – 10 000 / jour</td>
-                    <td>Méta-analyse du Lancet, études du JAMA</td>
-                </tr>
-                <tr>
-                    <td>Adultes ≥ 60 ans</td>
-                    <td>6 000 – 8 000 / jour</td>
-                    <td>Méta-analyse du Lancet montrant un plateau</td>
-                </tr>
-                <tr>
-                    <td>Adultes sédentaires</td>
-                    <td>Augmentation de +2 000 pas / jour</td>
-                    <td>Toute augmentation par rapport au niveau de base montre un bénéfice</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 id="practical-strategies">Stratégies pratiques</h4>
-        <ul>
-            <li><strong>Partez de votre niveau actuel :</strong> Suivez votre niveau de base pendant une semaine avant
-                de fixer des objectifs.</li>
-            <li><strong>Augmentez graduellement :</strong> Ajoutez 500 à 1 000 pas par semaine pour éviter les
-                blessures.</li>
-            <li><strong>Fractionnez :</strong> Plusieurs courtes marches sont aussi efficaces qu'une seule longue
-                marche.</li>
-            <li><strong>Suivez de façon régulière :</strong> Utilisez le même appareil et les mêmes habitudes de port
-                pour obtenir des tendances précises.</li>
-            <li><strong>Concentrez-vous sur le minimum, pas sur le maximum :</strong> Passer de 3 000 à 6 000 pas
-                importe plus que de passer de 10 000 à 12 000.</li>
-        </ul>
-        <h2 id="when-to-seek-medical-attention">Quand consulter un médecin</h2>
-        <p>Consultez un professionnel de la santé si vous ressentez :
+            - Les bénéfices commencent dès environ 3 800 pas par jour (réduction du risque de 25 %).</p><h2 id="clinical-significance">Signification clinique</h2><h3 id="why-steps-matter">Pourquoi les pas comptent</h3><p>Le nombre de pas quotidiens sert d'indicateur du <strong>volume global de l'activité physique</strong>, qui
+            influence :</p><ol><li><strong>La santé cardiovasculaire :</strong> Une marche régulière améliore la fonction cardiaque,
+                abaisse la tension artérielle et améliore la circulation.</li><li><strong>La fonction métabolique :</strong> L'activité physique améliore la sensibilité à l'insuline et
+                la régulation du glucose.</li><li><strong>La force musculosquelettique :</strong> Une activité avec port de poids maintient la densité
+                osseuse et la masse musculaire.</li><li><strong>La santé mentale :</strong> La marche est corrélée à une réduction de la dépression, de
+                l'anxiété et du déclin cognitif.</li><li><strong>La longévité :</strong> Des nombres de pas plus élevés prédisent systématiquement un risque de
+                mortalité plus faible dans toutes les populations.</li></ol><h3 id="what-research-tells-us">Ce que la recherche nous dit</h3><table class="clinical-table"><thead><tr><th>Pas quotidiens</th><th>Association avec la santé</th></tr></thead><tbody><tr><td>&lt; 4 000</td><td>Niveau de risque de base / sédentaire</td></tr><tr><td>4 000 – 6 000</td><td>Réduction modeste de la mortalité (20-30 %)</td></tr><tr><td>6 000 – 8 000</td><td>Bénéfices significatifs, surtout pour les seniors</td></tr><tr><td>8 000 – 10 000</td><td>Bénéfices de mortalité quasi maximaux pour la plupart des adultes</td></tr><tr><td>10 000 – 12 000</td><td>Bénéfices supplémentaires principalement pour les jeunes adultes</td></tr><tr><td>&gt; 12 000</td><td>Bénéfice de mortalité supplémentaire minime (mais non nocif)</td></tr></tbody></table><h3 id="important-limitations">Limites importantes</h3><p>Bien que le nombre de pas soit précieux, il ne capture pas :</p><ul><li><strong>L'intensité de l'exercice :</strong> Une marche rapide et une flânerie enregistrent des nombres
+                de pas similaires.</li><li><strong>Les activités hors marche :</strong> La natation, le cyclisme et l'entraînement de force ne sont
+                pas reflétés.</li><li><strong>La qualité du mouvement :</strong> Les pas n'indiquent pas une mécanique de marche appropriée ou
+                un risque de blessure.</li><li><strong>La variation individuelle :</strong> Les cibles optimales varient selon l'âge, l'état de santé
+                et la forme physique initiale.</li></ul><h2 id="recommendations">Recommandations</h2><h3 id="evidence-based-guidelines">Directives fondées sur des preuves</h3><p>D'après les recherches actuelles, ces cibles de pas apportent des bénéfices de santé significatifs :</p><table class="clinical-table"><thead><tr><th>Tranche d'âge</th><th>Pas recommandés</th><th>Base de preuves</th></tr></thead><tbody><tr><td>Adultes &lt; 60 ans</td><td>8 000 – 10 000 / jour</td><td>Méta-analyse du Lancet, études du JAMA</td></tr><tr><td>Adultes ≥ 60 ans</td><td>6 000 – 8 000 / jour</td><td>Méta-analyse du Lancet montrant un plateau</td></tr><tr><td>Adultes sédentaires</td><td>Augmentation de +2 000 pas / jour</td><td>Toute augmentation par rapport au niveau de base montre un bénéfice</td></tr></tbody></table><h4 id="practical-strategies">Stratégies pratiques</h4><ul><li><strong>Partez de votre niveau actuel :</strong> Suivez votre niveau de base pendant une semaine avant
+                de fixer des objectifs.</li><li><strong>Augmentez graduellement :</strong> Ajoutez 500 à 1 000 pas par semaine pour éviter les
+                blessures.</li><li><strong>Fractionnez :</strong> Plusieurs courtes marches sont aussi efficaces qu'une seule longue
+                marche.</li><li><strong>Suivez de façon régulière :</strong> Utilisez le même appareil et les mêmes habitudes de port
+                pour obtenir des tendances précises.</li><li><strong>Concentrez-vous sur le minimum, pas sur le maximum :</strong> Passer de 3 000 à 6 000 pas
+                importe plus que de passer de 10 000 à 12 000.</li></ul><h2 id="when-to-seek-medical-attention">Quand consulter un médecin</h2><p>Consultez un professionnel de la santé si vous ressentez :
             - Une incapacité soudaine à maintenir vos nombres de pas habituels.
             - Des douleurs, un essoufflement ou des vertiges en marchant.
             - Des changements inexpliqués importants dans vos schémas d'activité.
-            - Des difficultés à marcher qui interfèrent avec vos activités quotidiennes.</p>
-        <h2 id="references">Références</h2>
-        <ol>
-            <li>Paluch AE, et al. (2022) Daily steps and all-cause mortality: a meta-analysis of 15 international
-                cohorts. <em>Lancet Public Health</em>, 7(3), e219-e228.</li>
-            <li>Saint-Maurice PF, et al. (2020) Association of Daily Step Count and Step Intensity With Mortality Among
-                US Adults. <em>JAMA</em>, 323(12), 1151-1160.</li>
-            <li>Del Pozo Cruz B, et al. (2022) Prospective Associations of Daily Step Counts and Intensity With Cancer
+            - Des difficultés à marcher qui interfèrent avec vos activités quotidiennes.</p><h2 id="references">Références</h2><ol><li>Paluch AE, et al. (2022) Daily steps and all-cause mortality: a meta-analysis of 15 international
+                cohorts. <em>Lancet Public Health</em>, 7(3), e219-e228.</li><li>Saint-Maurice PF, et al. (2020) Association of Daily Step Count and Step Intensity With Mortality Among
+                US Adults. <em>JAMA</em>, 323(12), 1151-1160.</li><li>Del Pozo Cruz B, et al. (2022) Prospective Associations of Daily Step Counts and Intensity With Cancer
                 and Cardiovascular Disease Incidence and Mortality. <em>JAMA Internal Medicine</em>, 182(11), 1139-1148.
-            </li>
-            <li>Del Pozo Cruz B, et al. (2022) Association of Daily Step Count and Intensity With Incident Dementia.
-                <em>JAMA Neurology</em>, 79(10), 1059-1063.</li>
-            <li>Lee IM, et al. (2019) Association of Step Volume and Intensity With All-Cause Mortality in Older Women.
-                <em>JAMA Internal Medicine</em>, 179(8), 1105-1112.</li>
-            <li>Hatano Y. (1993) Use of the pedometer for promoting daily walking exercise. <em>ICHPER</em>, 29, 4-8.
-            </li>
-        </ol>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>Informations médicales</strong></div>
-        <p>Ce contenu est fourni à titre indicatif uniquement et ne doit pas remplacer un avis médical professionnel.
-            Consultez toujours un professionnel de la santé pour vos décisions médicales.</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>Dernière mise à jour : Janvier 2026</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+            </li><li>Del Pozo Cruz B, et al. (2022) Association of Daily Step Count and Intensity With Incident Dementia.
+                <em>JAMA Neurology</em>, 79(10), 1059-1063.</li><li>Lee IM, et al. (2019) Association of Step Volume and Intensity With All-Cause Mortality in Older Women.
+                <em>JAMA Internal Medicine</em>, 179(8), 1105-1112.</li><li>Hatano Y. (1993) Use of the pedometer for promoting daily walking exercise. <em>ICHPER</em>, 29, 4-8.
+            </li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>Informations médicales</strong></div><p>Ce contenu est fourni à titre indicatif uniquement et ne doit pas remplacer un avis médical professionnel.
+            Consultez toujours un professionnel de la santé pour vos décisions médicales.</p></aside><div class="metric-footer"><hr><p><em>Dernière mise à jour : Janvier 2026</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link active"
+                </a><a href="/fr/" class="lang-link active"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Tous droits réservés
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/fr/privacy/">Confidentialité</a></li>
-                <li><a href="/fr/terms/">Conditions</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Ce site web utilise des cookies pour améliorer votre expérience.</p>
-            <a href="/fr/privacy/" class="text-sm">En savoir plus</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Refuser</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Accepter</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/fr/privacy/">Confidentialité</a></li><li><a href="/fr/terms/">Conditions</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Ce site web utilise des cookies pour améliorer votre expérience.</p><a href="/fr/privacy/" class="text-sm">En savoir plus</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Refuser</button><button id="cookie-accept" class="btn btn-primary btn-small">Accepter</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

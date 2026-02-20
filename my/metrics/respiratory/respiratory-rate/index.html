@@ -1,234 +1,57 @@
-<!DOCTYPE html>
-<html lang="my" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>အသက်ရှူနှုန်း - Health Analytics</title>
-  <meta name="description" content="အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute - brpm) ဖြစ်သည်။ ၎င်းသည် ခန္ဓာကိုယ်၏ အခြေခံ အရေးကြီးသော လက္ခဏာ...">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="အသက, ရ, န, Health, Analytics, Respiratory, Rate, သည, တစ, မ">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-02-05T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/">
-  <meta property="og:title" content="အသက်ရှူနှုန်း - Health Analytics">
-  <meta property="og:description" content="အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute - brpm) ဖြစ်သည်။ ၎င်းသည် ခန္ဓာကိုယ်၏ အခြေခံ အရေးကြီးသော လက္ခဏာ...">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="my_MM">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/">
-  <meta name="twitter:title" content="အသက်ရှူနှုန်း - Health Analytics">
-  <meta name="twitter:description" content="အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute - brpm) ဖြစ်သည်။ ၎င်းသည် ခန္ဓာကိုယ်၏ အခြေခံ အရေးကြီးသော လက္ခဏာ...">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/respiratory/respiratory-rate/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/respiratory/respiratory-rate/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="my" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>အသက်ရှူနှုန်း - Apple Health Data ကို CSV၊ PDF &amp; JSON သို့...</title><meta name="description" content="Apple Health တွင် ခြေရာခံထားသော Respiratory Rate အတွက် အသေးစိတ်ခွဲခြမ်းစိတ်ဖြာမှုနှင့် သိပ္ပံနည်းကျအကြောင်းအရာကို စူးစမ်းပါ။ နက်ရှိုင်းစွာခွဲခြမ်းစိတ်ဖြာရန်အတွက်..."><meta name="author" content="Arno Health"><meta name="keywords" content="အသက, ရ, န, Health, Analytics, Respiratory, Rate, သည, တစ, မ"><link rel="canonical" href="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-02-20T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/"><meta property="og:title" content="အသက်ရှူနှုန်း - Apple Health Data ကို CSV၊ PDF &amp; JSON သို့..."><meta property="og:description" content="Apple Health တွင် ခြေရာခံထားသော Respiratory Rate အတွက် အသေးစိတ်ခွဲခြမ်းစိတ်ဖြာမှုနှင့် သိပ္ပံနည်းကျအကြောင်းအရာကို စူးစမ်းပါ။ နက်ရှိုင်းစွာခွဲခြမ်းစိတ်ဖြာရန်အတွက်..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="my_MM"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/"><meta name="twitter:title" content="အသက်ရှူနှုန်း - Apple Health Data ကို CSV၊ PDF &amp; JSON သို့..."><meta name="twitter:description" content="Apple Health တွင် ခြေရာခံထားသော Respiratory Rate အတွက် အသေးစိတ်ခွဲခြမ်းစိတ်ဖြာမှုနှင့် သိပ္ပံနည်းကျအကြောင်းအရာကို စူးစမ်းပါ။ နက်ရှိုင်းစွာခွဲခြမ်းစိတ်ဖြာရန်အတွက်..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/respiratory/respiratory-rate/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/respiratory/respiratory-rate/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -487,20 +310,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=65128cd77571"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -531,10 +341,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -543,11 +350,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "my"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -562,31 +365,20 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "အသက်ရှူနှုန်း - Health Analytics",
-  "description": "အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute - brpm) ဖြစ်သည်။ ၎င်းသည် ခန္ဓာကိုယ်၏ အခြေခံ အရေးကြီးသော လက္ခဏာ...",
+  "name": "အသက်ရှူနှုန်း - Apple Health Data ကို CSV၊ PDF &amp; JSON သို့...",
+  "description": "Apple Health တွင် ခြေရာခံထားသော Respiratory Rate အတွက် အသေးစိတ်ခွဲခြမ်းစိတ်ဖြာမှုနှင့် သိပ္ပံနည်းကျအကြောင်းအရာကို စူးစမ်းပါ။ နက်ရှိုင်းစွာခွဲခြမ်းစိတ်ဖြာရန်အတွက်...",
   "url": "https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "အသက်ရှူနှုန်း - Health Analytics",
-  "description": "အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute - brpm) ဖြစ်သည်။ ၎င်းသည် ခန္ဓာကိုယ်၏ အခြေခံ အရေးကြီးသော လက္ခဏာ...",
+  "headline": "အသက်ရှူနှုန်း - Apple Health Data ကို CSV၊ PDF &amp; JSON သို့...",
+  "description": "Apple Health တွင် ခြေရာခံထားသော Respiratory Rate အတွက် အသေးစိတ်ခွဲခြမ်းစိတ်ဖြာမှုနှင့် သိပ္ပံနည်းကျအကြောင်းအရာကို စူးစမ်းပါ။ နက်ရှိုင်းစွာခွဲခြမ်းစိတ်ဖြာရန်အတွက်...",
   "author": {
     "@type": "Person",
     "name": "Arno Health"
@@ -600,23 +392,13 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-02-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/my/metrics/respiratory/respiratory-rate/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -630,472 +412,136 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">အကြောင်းအရာသို့ ကျော်သွားပါ</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/my/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/my/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">အကြောင်းအရာသို့ ကျော်သွားပါ</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/my/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/my/features/" 
                                 aria-current="">
                                 အင်္ဂါရပ်များ
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/my/metrics/" 
+                            </a></li><li><a href="/my/metrics/" 
                                 aria-current="">
                                 မက်ထရစ် စာကြည့်တိုက်
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/my/pricing/" 
+                            </a></li><li><a href="/my/pricing/" 
                                 aria-current="">
                                 ဈေးနှုန်း
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/my/about/" 
+                            </a></li><li><a href="/my/about/" 
                                 aria-current="">
                                 ကျွန်ုပ်တို့အကြောင်း
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="ဘာသာစကား ရွေးချယ်ပါ">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="ဘာသာစကား ရွေးချယ်ပါ"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" selected>
+                        </option><option value="my" selected>
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="မီနူးကို ဖွင့်/ပိတ်ပါ"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/my/metrics/">
-                    <span itemprop="name">မက်ထရစ်များ စာကြည့်တိုက်</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/my/metrics/respiratory/">
-                    <span itemprop="name">အသက်ရှူလမ်းကြောင်းဆိုင်ရာ</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <span>/</span>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page">အသက်ရှူနှုန်း</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-
-    <header class="metric-article-header">
-        <span class="metric-category-badge">
-            <span>🫁</span> အသက်ရှူလမ်းကြောင်းဆိုင်ရာ
-        </span>
-        <!-- Title is in the content usually, or we can explicit it here -->
-    </header>
-
-
-    <nav class="article-toc">
-        <h4>ဤစာမျက်နှာတွင်</h4>
-        <div class="toc">
-            <ul>
-                <li><a href="#respiratory-rate">အသက်ရှူနှုန်း</a>
-                    <ul>
-                        <li><a href="#definition">အဓိပ္ပာယ်ဖွင့်ဆိုချက်</a></li>
-                        <li><a href="#why-it-matters">ဘာကြောင့် အရေးကြီးသလဲ</a></li>
-                        <li><a href="#how-its-measured">၎င်းကို မည်သို့ တိုင်းတာသနည်း</a></li>
-                        <li><a href="#interpreting-results">ရလဒ်များကို အနက်ဖွင့်ဆိုခြင်း</a></li>
-                        <li><a href="#factors-affecting-respiratory-rate">အသက်ရှူနှုန်းကို ထိခိုက်စေသော အချက်များ</a>
-                        </li>
-                        <li><a href="#references">ကိုးကားချက်များ</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <div class="metric-content">
-        <h1 id="respiratory-rate">အသက်ရှူနှုန်း</h1>
-        <h2 id="definition">အဓိပ္ပာယ်ဖွင့်ဆိုချက်</h2>
-        <p>အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute -
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="မီနူးကို ဖွင့်/ပိတ်ပါ"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/my/metrics/"><span itemprop="name">မက်ထရစ်များ စာကြည့်တိုက်</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/my/metrics/respiratory/"><span itemprop="name">အသက်ရှူလမ်းကြောင်းဆိုင်ရာ</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">အသက်ရှူနှုန်း</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>🫁</span> အသက်ရှူလမ်းကြောင်းဆိုင်ရာ
+        </span></header><nav class="article-toc"><h4>ဤစာမျက်နှာတွင်</h4><div class="toc"><ul><li><a href="#respiratory-rate">အသက်ရှူနှုန်း</a><ul><li><a href="#definition">အဓိပ္ပာယ်ဖွင့်ဆိုချက်</a></li><li><a href="#why-it-matters">ဘာကြောင့် အရေးကြီးသလဲ</a></li><li><a href="#how-its-measured">၎င်းကို မည်သို့ တိုင်းတာသနည်း</a></li><li><a href="#interpreting-results">ရလဒ်များကို အနက်ဖွင့်ဆိုခြင်း</a></li><li><a href="#factors-affecting-respiratory-rate">အသက်ရှူနှုန်းကို ထိခိုက်စေသော အချက်များ</a></li><li><a href="#references">ကိုးကားချက်များ</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="respiratory-rate">အသက်ရှူနှုန်း</h1><h2 id="definition">အဓိပ္ပာယ်ဖွင့်ဆိုချက်</h2><p>အသက်ရှူနှုန်း (Respiratory Rate) သည် တစ်မိနစ်အတွင်း သင် အသက်ရှူသည့် အကြိမ်အရေအတွက် (Breaths per minute -
             brpm) ဖြစ်သည်။ ၎င်းသည် ခန္ဓာကိုယ်၏ အခြေခံ အရေးကြီးသော လက္ခဏာ (Vital Sign) ၄ မျိုးတွင် တစ်မျိုး အပါအဝင်
-            ဖြစ်သည်။</p>
-        <h2 id="why-it-matters">ဘာကြောင့် အရေးကြီးသလဲ</h2>
-        <p>အသက်ရှူနှုန်းကို စောင့်ကြည့်ခြင်းက ကျန်းမာရေး အခြေအနေကို သိရှိနိုင်သည်-
+            ဖြစ်သည်။</p><h2 id="why-it-matters">ဘာကြောင့် အရေးကြီးသလဲ</h2><p>အသက်ရှူနှုန်းကို စောင့်ကြည့်ခြင်းက ကျန်းမာရေး အခြေအနေကို သိရှိနိုင်သည်-
             - <strong>ဖျားနာမှုကို ကြိုတင်သိရှိခြင်း</strong> - အနားယူနေစဉ် အသက်ရှူနှုန်း ရုတ်တရက် မြင့်တက်လာခြင်းသည်
             ဖျားနာတော့မည့် လက္ခဏာ (သို့မဟုတ်) ရောင်ရမ်းမှုဖြစ်ပွားနေခြင်းကို ပြသနိုင်သည်။
             - <strong>အိပ်စက်ခြင်း ကျန်းမာရေး</strong> - အိပ်ပျော်နေစဉ် အသက်ရှူနှုန်း တည်ငြိမ်မှုသည် ကောင်းမွန်စွာ
@@ -1103,407 +549,178 @@ img[width][height] {
             - <strong>ကြံ့ခိုင်မှု အဆင့်</strong> - ကြံ့ခိုင်မှု ကောင်းမွန်သူများသည် အနားယူချိန်တွင် အသက်ရှူနှုန်း
             ပိုမို နည်းပါးလေ့ ရှိသည်။
             - <strong>စိတ်ဖိစီးမှု ဆန်းစစ်ခြင်း</strong> - စိုးရိမ်ပူပန်မှု သို့မဟုတ် စိတ်ဖိစီးမှု ရှိနေချိန်တွင်
-            အသက်ရှူနှုန်း မြန်လာတတ်သည်။</p>
-        <h2 id="how-its-measured">၎င်းကို မည်သို့ တိုင်းတာသနည်း</h2>
-        <p>HealthKit တွင် အသက်ရှူနှုန်းကို နည်းလမ်းအမျိုးမျိုးဖြင့် မှတ်တမ်းတင်နိုင်သည်-
+            အသက်ရှူနှုန်း မြန်လာတတ်သည်။</p><h2 id="how-its-measured">၎င်းကို မည်သို့ တိုင်းတာသနည်း</h2><p>HealthKit တွင် အသက်ရှူနှုန်းကို နည်းလမ်းအမျိုးမျိုးဖြင့် မှတ်တမ်းတင်နိုင်သည်-
             - <strong>Apple Watch</strong> - သင် အိပ်ပျော်နေစဉ် လှုပ်ရှားမှုအာရုံခံကိရိယာ (Accelerometer) ကို အသုံးပြု၍
             သင်၏ အသက်ရှူနှုန်းကို အလိုအလျောက် တိုင်းတာပေးသည်။
             - <strong>ကိုယ်တိုင် တိုင်းတာခြင်း</strong> - တစ်မိနစ်အတွင်း ရင်ဘတ် နိမ့်တက်မှုကို ရေတွက်၍ ကျန်းမာရေး
             အက်ပ်တွင် ကိုယ်တိုင် ထည့်သွင်းနိုင်သည်။
             - <strong>ဆေးဘက်ဆိုင်ရာ ကိရိယာများ</strong> - ဆေးရုံသုံး စက်ပစ္စည်းများမှတစ်ဆင့် ရရှိသော ဒေတာများကို
-            ပေါင်းစပ်နိုင်သည်။</p>
-        <h2 id="interpreting-results">ရလဒ်များကို အနက်ဖွင့်ဆိုခြင်း</h2>
-        <p>လူကြီးတစ်ဦးအတွက် အနားယူနေစဉ် ပုံမှန် အသက်ရှူနှုန်းသည် များသောအားဖြင့် တစ်မိနစ်လျှင် ၁၂ ကြိမ်မှ ၂၀ ကြိမ်အတွင်း
-            ရှိတတ်သည်-</p>
-        <table class="clinical-table">
-            <thead>
-                <tr>
-                    <th>အခြေအနေ</th>
-                    <th>အသက်ရှူနှုန်း (တစ်မိနစ်လျှင်)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ပုံမှန် (Normal)</td>
-                    <td>၁၂ - ၂၀ brpm</td>
-                </tr>
-                <tr>
-                    <td>နှေးခြင်း (Bradypnea)</td>
-                    <td>၁၂ brpm အောက်</td>
-                </tr>
-                <tr>
-                    <td>မြန်ခြင်း (Tachypnea)</td>
-                    <td>၂၀ brpm အထက်</td>
-                </tr>
-            </tbody>
-        </table>
-        <p><em>မှတ်ချက်- အိပ်ပျော်နေစဉ်တွင် အသက်ရှူနှုန်းသည် နိုးနေချိန်ထက် အနည်းငယ် လျော့နည်းနိုင်ပါသည်။</em></p>
-        <h2 id="factors-affecting-respiratory-rate">အသက်ရှူနှုန်းကို ထိခိုက်စေသော အချက်များ</h2>
-        <p>အောက်ပါ အချက်များက အသက်ရှူနှုန်းကို ပြောင်းလဲစေနိုင်သည်-
+            ပေါင်းစပ်နိုင်သည်။</p><h2 id="interpreting-results">ရလဒ်များကို အနက်ဖွင့်ဆိုခြင်း</h2><p>လူကြီးတစ်ဦးအတွက် အနားယူနေစဉ် ပုံမှန် အသက်ရှူနှုန်းသည် များသောအားဖြင့် တစ်မိနစ်လျှင် ၁၂ ကြိမ်မှ ၂၀ ကြိမ်အတွင်း
+            ရှိတတ်သည်-</p><table class="clinical-table"><thead><tr><th>အခြေအနေ</th><th>အသက်ရှူနှုန်း (တစ်မိနစ်လျှင်)</th></tr></thead><tbody><tr><td>ပုံမှန် (Normal)</td><td>၁၂ - ၂၀ brpm</td></tr><tr><td>နှေးခြင်း (Bradypnea)</td><td>၁၂ brpm အောက်</td></tr><tr><td>မြန်ခြင်း (Tachypnea)</td><td>၂၀ brpm အထက်</td></tr></tbody></table><p><em>မှတ်ချက်- အိပ်ပျော်နေစဉ်တွင် အသက်ရှူနှုန်းသည် နိုးနေချိန်ထက် အနည်းငယ် လျော့နည်းနိုင်ပါသည်။</em></p><h2 id="factors-affecting-respiratory-rate">အသက်ရှူနှုန်းကို ထိခိုက်စေသော အချက်များ</h2><p>အောက်ပါ အချက်များက အသက်ရှူနှုန်းကို ပြောင်းလဲစေနိုင်သည်-
             - <strong>ကိုယ်လက်လှုပ်ရှားမှု</strong> - လေ့ကျင့်ခန်း လုပ်နေစဉ် ခန္ဓာကိုယ်က အောက်ဆီဂျင် ပိုမို လိုအပ်သဖြင့်
             အသက်ရှူ မြန်လာသည်။
             - <strong>ဖျားနာခြင်း</strong> - အဖျားတက်ခြင်း သို့မဟုတ် အသက်ရှူလမ်းကြောင်း ကူးစက်ပိုးဝင်ခြင်း။
             - <strong>စိတ်လှုပ်ရှားမှု</strong> - စိုးရိမ်စိတ်၊ ထိတ်လန့်မှု သို့မဟုတ် စိတ်လှုပ်ရှားမှုများ။
             - <strong>ဆေးဝါးများ</strong> - အချို့သော ဆေးဝါးများသည် အသက်ရှူနှုန်းကို နှေးစေခြင်း သို့မဟုတ် မြန်စေခြင်း
-            ဖြစ်စေနိုင်သည်။</p>
-        <h2 id="references">ကိုးကားချက်များ</h2>
-        <ul>
-            <li><a
+            ဖြစ်စေနိုင်သည်။</p><h2 id="references">ကိုးကားချက်များ</h2><ul><li><a
                     href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/vital-signs-body-temperature-pulse-rate-respiration-rate-blood-pressure">Johns
-                    Hopkins Medicine - Vital Signs</a></li>
-            <li><a href="https://support.apple.com/en-us/HT211685">Apple Support - Track your sleep with Apple Watch</a>
-            </li>
-        </ul>
-    </div>
-
-    <aside class="medical-disclaimer">
-        <div class="disclaimer-icon">⚠️ <strong>ဆေးဘက်ဆိုင်ရာ အချက်အလက်</strong></div>
-        <p>ဤအကြောင်းအရာသည် ဗဟုသုတအလို့ငှာသာဖြစ်ပြီး ကျွမ်းကျင်သော ဆေးဘက်ဆိုင်ရာ အကြံဉာဏ်များကို အစားမထိုးနိုင်ပါ။
-            ဆေးဘက်ဆိုင်ရာ ဆုံးဖြတ်ချက်များအတွက် ကျန်းမာရေး စောင့်ရှောက်မှု ပေးသူနှင့် အမြဲတမ်း တိုင်ပင်ပါ။</p>
-    </aside>
-
-    <div class="metric-footer">
-        <hr>
-        <p><em>နောက်ဆုံး အပ်ဒိတ်- ဇန်နဝါရီ ၂၀၂၆</em></p>
-    </div>
-</article>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+                    Hopkins Medicine - Vital Signs</a></li><li><a href="https://support.apple.com/en-us/HT211685">Apple Support - Track your sleep with Apple Watch</a></li></ul></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>ဆေးဘက်ဆိုင်ရာ အချက်အလက်</strong></div><p>ဤအကြောင်းအရာသည် ဗဟုသုတအလို့ငှာသာဖြစ်ပြီး ကျွမ်းကျင်သော ဆေးဘက်ဆိုင်ရာ အကြံဉာဏ်များကို အစားမထိုးနိုင်ပါ။
+            ဆေးဘက်ဆိုင်ရာ ဆုံးဖြတ်ချက်များအတွက် ကျန်းမာရေး စောင့်ရှောက်မှု ပေးသူနှင့် အမြဲတမ်း တိုင်ပင်ပါ။</p></aside><div class="metric-footer"><hr><p><em>နောက်ဆုံး အပ်ဒိတ်- ဇန်နဝါရီ ၂၀၂၆</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link active"
+                </a><a href="/my/" class="lang-link active"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. မူပိုင်ခွင့်အားလုံး လက်ဝယ်ရှိသည်
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/my/privacy/">ကိုယ်ရေးအချက်အလက် လုံခြုံမှု</a></li>
-                <li><a href="/my/terms/">စည်းကမ်းချက်များ</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>ဤဝဘ်ဆိုက်သည် သင်၏အတွေ့အကြုံကို ပိုမိုကောင်းမွန်စေရန် ကွတ်ကီး (cookies) များကို အသုံးပြုပါသည်။</p>
-            <a href="/my/privacy/" class="text-sm">ပိုမိုလေ့လာရန်</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">ငြင်းပယ်သည်</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">လက်ခံသည်</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/my/privacy/">ကိုယ်ရေးအချက်အလက် လုံခြုံမှု</a></li><li><a href="/my/terms/">စည်းကမ်းချက်များ</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>ဤဝဘ်ဆိုက်သည် သင်၏အတွေ့အကြုံကို ပိုမိုကောင်းမွန်စေရန် ကွတ်ကီး (cookies) များကို အသုံးပြုပါသည်။</p><a href="/my/privacy/" class="text-sm">ပိုမိုလေ့လာရန်</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">ငြင်းပယ်သည်</button><button id="cookie-accept" class="btn btn-primary btn-small">လက်ခံသည်</button></div></div></div><script src="../../../../assets/js/core.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/search.min.js?v=65128cd77571" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>
