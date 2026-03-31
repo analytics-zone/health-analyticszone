@@ -1,61 +1,247 @@
-<!DOCTYPE html><html lang="kn" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet"><title>ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple...</title><meta name="description" content="ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ..."><meta name="author" content="Arno Health"><meta name="keywords" content="ಆರೋಗ್ಯ ದತ್ತಾಂಶ, ಆಪಲ್ ಹೆಲ್ತ್ ರಫ್ತು, ಆರೋಗ್ಯ ವಿಶ್ಲೇಷಣೆ, ಫಿಟ್‌ನೆಸ್ ಟ್ರ್ಯಾಕರ್, ವೈದ್ಯಕೀಯ ವರದಿಗಳು"><link rel="canonical" href="https://health.analyticszone.app/kn/"><meta property="og:type" content="website"><meta property="og:url" content="https://health.analyticszone.app/kn/"><meta property="og:title" content="ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple..."><meta property="og:description" content="ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ..."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="kn_IN"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/kn/"><meta name="twitter:title" content="ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple..."><meta name="twitter:description" content="ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ..."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/"><link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/"><link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/"><link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/"><link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/"><link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/"><link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/"><link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/"><link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/"><link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
+<!DOCTYPE html>
+<html lang="kn" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  
+  <title>ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple...</title>
+  <meta name="description" content="ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ...">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="ಆರೋಗ್ಯ ದತ್ತಾಂಶ, ಆಪಲ್ ಹೆಲ್ತ್ ರಫ್ತು, ಆರೋಗ್ಯ ವಿಶ್ಲೇಷಣೆ, ಫಿಟ್‌ನೆಸ್ ಟ್ರ್ಯಾಕರ್, ವೈದ್ಯಕೀಯ ವರದಿಗಳು">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/kn/">
+
+  
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://health.analyticszone.app/kn/">
+  <meta property="og:title" content="ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple...">
+  <meta property="og:description" content="ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ...">
+  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="kn_IN">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/kn/">
+  <meta name="twitter:title" content="ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple...">
+  <meta name="twitter:description" content="ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ...">
+  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/">
+  
+  <link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/">
+  
+  <link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/">
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/">
+  
+  <link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/">
+  
+  <link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/">
+  
+  <link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/">
+  
+  <link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/">
+  
+  <link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/">
+  
+  <link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/">
+  
+  <link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/">
+  
+  <link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/">
+  
+  <link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/">
+  
+  <link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/">
+  
+  <link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/">
+  
+  <link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/">
+  
+  <link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  
+  
+  
+  
+  <meta name="robots" content="index, follow">
+  
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -314,7 +500,20 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=635348535bde"><script type="application/ld+json">
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../assets/css/main.min.css?v=19fdca55b3da">
+
+  
+  
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -345,7 +544,10 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -354,7 +556,11 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "kn"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -369,7 +575,14 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -412,7 +625,22 @@ img[width][height] {
     }
   ]
 }
-</script><script>
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -426,398 +654,1292 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script></head><body><a href="#main-content" class="skip-link">ವಿಷಯಕ್ಕೆ ಹೋಗಿ</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/kn/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/kn/features/" 
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">ವಿಷಯಕ್ಕೆ ಹೋಗಿ</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/kn/" class="site-logo">
+                <picture>
+                    <source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/kn/features/" 
                                 aria-current="">
                                 ವೈಶಿಷ್ಟ್ಯಗಳು
-                            </a></li><li><a href="/kn/metrics/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/kn/metrics/" 
                                 aria-current="">
                                 ಮೆಟ್ರಿಕ್ಸ್ ಲೈಬ್ರರಿ
-                            </a></li><li><a href="/kn/pricing/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/kn/pricing/" 
                                 aria-current="">
                                 ಬೆಲೆ
-                            </a></li><li><a href="/kn/about/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/kn/about/" 
                                 aria-current="">
                                 ನಮ್ಮ ಬಗ್ಗೆ
-                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="ಭಾಷೆಯನ್ನು ಆರಿಸಿ"><option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="ಭಾಷೆಯನ್ನು ಆರಿಸಿ">
+                        
+                        <option value="af" >
                             Afrikaans
-                        </option><option value="am" >
+                        </option>
+                        
+                        <option value="am" >
                             አማርኛ
-                        </option><option value="ar" >
+                        </option>
+                        
+                        <option value="ar" >
                             العربية
-                        </option><option value="bg" >
+                        </option>
+                        
+                        <option value="bg" >
                             Български
-                        </option><option value="bn" >
+                        </option>
+                        
+                        <option value="bn" >
                             বাংলা
-                        </option><option value="ca" >
+                        </option>
+                        
+                        <option value="ca" >
                             Català
-                        </option><option value="cs" >
+                        </option>
+                        
+                        <option value="cs" >
                             Čeština
-                        </option><option value="da" >
+                        </option>
+                        
+                        <option value="da" >
                             Dansk
-                        </option><option value="de" >
+                        </option>
+                        
+                        <option value="de" >
                             Deutsch
-                        </option><option value="el" >
+                        </option>
+                        
+                        <option value="el" >
                             Ελληνικά
-                        </option><option value="en" >
+                        </option>
+                        
+                        <option value="en" >
                             English
-                        </option><option value="es" >
+                        </option>
+                        
+                        <option value="es" >
                             Español
-                        </option><option value="et" >
+                        </option>
+                        
+                        <option value="et" >
                             Eesti
-                        </option><option value="fa" >
+                        </option>
+                        
+                        <option value="fa" >
                             فارسی
-                        </option><option value="fi" >
+                        </option>
+                        
+                        <option value="fi" >
                             Suomi
-                        </option><option value="fr" >
+                        </option>
+                        
+                        <option value="fr" >
                             Français
-                        </option><option value="gu" >
+                        </option>
+                        
+                        <option value="gu" >
                             ગુજરાતી
-                        </option><option value="ha" >
+                        </option>
+                        
+                        <option value="ha" >
                             Hausa
-                        </option><option value="he" >
+                        </option>
+                        
+                        <option value="he" >
                             עברית
-                        </option><option value="hi" >
+                        </option>
+                        
+                        <option value="hi" >
                             हिन्दी
-                        </option><option value="hr" >
+                        </option>
+                        
+                        <option value="hr" >
                             Hrvatski
-                        </option><option value="hu" >
+                        </option>
+                        
+                        <option value="hu" >
                             Magyar
-                        </option><option value="id" >
+                        </option>
+                        
+                        <option value="id" >
                             Bahasa Indonesia
-                        </option><option value="is" >
+                        </option>
+                        
+                        <option value="is" >
                             Íslenska
-                        </option><option value="it" >
+                        </option>
+                        
+                        <option value="it" >
                             Italiano
-                        </option><option value="ja" >
+                        </option>
+                        
+                        <option value="ja" >
                             日本語
-                        </option><option value="km" >
+                        </option>
+                        
+                        <option value="km" >
                             Khmer
-                        </option><option value="kn" selected>
+                        </option>
+                        
+                        <option value="kn" selected>
                             ಕನ್ನಡ
-                        </option><option value="ko" >
+                        </option>
+                        
+                        <option value="ko" >
                             한국어
-                        </option><option value="lt" >
+                        </option>
+                        
+                        <option value="lt" >
                             Lietuvių
-                        </option><option value="lv" >
+                        </option>
+                        
+                        <option value="lv" >
                             Latviešu
-                        </option><option value="ms" >
+                        </option>
+                        
+                        <option value="ms" >
                             Bahasa Melayu
-                        </option><option value="my" >
+                        </option>
+                        
+                        <option value="my" >
                             မြန်မာဘာသာ
-                        </option><option value="nb" >
+                        </option>
+                        
+                        <option value="nb" >
                             Norsk
-                        </option><option value="nl" >
+                        </option>
+                        
+                        <option value="nl" >
                             Nederlands
-                        </option><option value="pl" >
+                        </option>
+                        
+                        <option value="pl" >
                             Polski
-                        </option><option value="pt" >
+                        </option>
+                        
+                        <option value="pt" >
                             Português
-                        </option><option value="pt-br" >
+                        </option>
+                        
+                        <option value="pt-br" >
                             Português (Brasil)
-                        </option><option value="ro" >
+                        </option>
+                        
+                        <option value="ro" >
                             Română
-                        </option><option value="ru" >
+                        </option>
+                        
+                        <option value="ru" >
                             Русский
-                        </option><option value="sk" >
+                        </option>
+                        
+                        <option value="sk" >
                             Slovenčina
-                        </option><option value="sl" >
+                        </option>
+                        
+                        <option value="sl" >
                             Slovenščina
-                        </option><option value="sr" >
+                        </option>
+                        
+                        <option value="sr" >
                             Srpski
-                        </option><option value="sv" >
+                        </option>
+                        
+                        <option value="sv" >
                             Svenska
-                        </option><option value="sw" >
+                        </option>
+                        
+                        <option value="sw" >
                             Kiswahili
-                        </option><option value="ta" >
+                        </option>
+                        
+                        <option value="ta" >
                             தமிழ்
-                        </option><option value="te" >
+                        </option>
+                        
+                        <option value="te" >
                             తెలుగు
-                        </option><option value="th" >
+                        </option>
+                        
+                        <option value="th" >
                             ไทย
-                        </option><option value="tl" >
+                        </option>
+                        
+                        <option value="tl" >
                             Tagalog
-                        </option><option value="tr" >
+                        </option>
+                        
+                        <option value="tr" >
                             Türkçe
-                        </option><option value="uk" >
+                        </option>
+                        
+                        <option value="uk" >
                             Українська
-                        </option><option value="ur" >
+                        </option>
+                        
+                        <option value="ur" >
                             اردو
-                        </option><option value="vi" >
+                        </option>
+                        
+                        <option value="vi" >
                             Tiếng Việt
-                        </option><option value="yo" >
+                        </option>
+                        
+                        <option value="yo" >
                             Yorùbá
-                        </option><option value="zh" >
+                        </option>
+                        
+                        <option value="zh" >
                             中文
-                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="ಮೆನು ಬದಲಿಸಿ"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><section class="page-hero"><div class="container"><h1>ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ</h1><p class="lead">ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ.
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
+                                
+                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
+                                
+                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="ಮೆನು ಬದಲಿಸಿ"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <section class="page-hero">
+    <div class="container">
+        <h1>ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ</h1>
+        <p class="lead">ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ.
             CSV, JSON ಮತ್ತು
             PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ. ದೀರ್ಘಾಯುಷ್ಯಕ್ಕಾಗಿ ಬಯೋಮಾರ್ಕರ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. 100% ಸ್ಥಳೀಯ.
-            ವಿಜ್ಞಾನ-ಚಾಲಿತ.</p><div class="mt-md"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary">ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</a><a href="#science" class="btn btn-text">ವಿಜ್ಞಾನವನ್ನು ನೋಡಿ ↓</a></div></div></section><section id="science" class="section section-light"><div class="container"><div class="text-center mb-xl"><h2>ನಿಮ್ಮ ಆರೋಗ್ಯದ ವಿಜ್ಞಾನ</h2><p class="lead">ನಾವು ಕೇವಲ ದತ್ತಾಂಶವನ್ನು ಪ್ರದರ್ಶಿಸುವುದಿಲ್ಲ. ಕ್ಲಿನಿಕಲ್ ಸಂಶೋಧನೆ ಮತ್ತು ಪೀರ್-ರಿವ್ಯೂಡ್ ಅಧ್ಯಯನಗಳ
-                ಆಧಾರದ ಮೇಲೆ ನಿಮ್ಮ ಬಯೋಮೆಟ್ರಿಕ್ಸ್ ಅನ್ನು ನಾವು ವಿಶ್ಲೇಷಿಸುತ್ತೇವೆ.</p></div><div class="grid grid-2"><div class="card"><h3 class="card-title">ಕಾರ್ಡಿಯೋರೆಸ್ಪಿರೇಟರಿ ಫಿಟ್‌ನೆಸ್ (VO₂ Max)</h3><div class="card-content"><p>ಜೀವಿತಾವಧಿಯ ಪ್ರಬಲ ಮುನ್ಸೂಚಕ ಎಂದು ಇದನ್ನು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಅಂದಾಜು VO₂ Max ಅನ್ನು ಜನಸಂಖ್ಯೆಯ
+            ವಿಜ್ಞಾನ-ಚಾಲಿತ.</p>
+        <div class="mt-md">
+            <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary">ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</a>
+            <a href="#science" class="btn btn-text">ವಿಜ್ಞಾನವನ್ನು ನೋಡಿ ↓</a>
+        </div>
+    </div>
+</section>
+
+<section id="science" class="section section-light">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>ನಿಮ್ಮ ಆರೋಗ್ಯದ ವಿಜ್ಞಾನ</h2>
+            <p class="lead">ನಾವು ಕೇವಲ ದತ್ತಾಂಶವನ್ನು ಪ್ರದರ್ಶಿಸುವುದಿಲ್ಲ. ಕ್ಲಿನಿಕಲ್ ಸಂಶೋಧನೆ ಮತ್ತು ಪೀರ್-ರಿವ್ಯೂಡ್ ಅಧ್ಯಯನಗಳ
+                ಆಧಾರದ ಮೇಲೆ ನಿಮ್ಮ ಬಯೋಮೆಟ್ರಿಕ್ಸ್ ಅನ್ನು ನಾವು ವಿಶ್ಲೇಷಿಸುತ್ತೇವೆ.</p>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="card">
+                <h3 class="card-title">ಕಾರ್ಡಿಯೋರೆಸ್ಪಿರೇಟರಿ ಫಿಟ್‌ನೆಸ್ (VO₂ Max)</h3>
+                <div class="card-content">
+                    <p>ಜೀವಿತಾವಧಿಯ ಪ್ರಬಲ ಮುನ್ಸೂಚಕ ಎಂದು ಇದನ್ನು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಅಂದಾಜು VO₂ Max ಅನ್ನು ಜನಸಂಖ್ಯೆಯ
                         ರೂಢಿಗಳಿಗೆ ಹೋಲಿಸಿ ನಿಮ್ಮ ದೈಹಿಕ ವಯಸ್ಸು ಮತ್ತು ದೀರ್ಘಕಾಲೀನ ಮರಣದ ಅಪಾಯವನ್ನು ನಮ್ಮ ಅನಾಲಿಟಿಕ್ಸ್ ಮೌಲ್ಯಮಾಪನ
-                        ಮಾಡುತ್ತದೆ.</p><div class="callout callout-tip mt-md"><strong>ಇದು ಏಕೆ ಮುಖ್ಯ:</strong> 1,22,007 ರೋಗಿಗಳ ಒಂದು ಪ್ರಮುಖ ಅಧ್ಯಯನವು "ಎಲೈಟ್" ಕಾರ್ಡಿಯೋರೆಸ್ಪಿರೇಟರಿ
+                        ಮಾಡುತ್ತದೆ.</p>
+                    <div class="callout callout-tip mt-md">
+                        <strong>ಇದು ಏಕೆ ಮುಖ್ಯ:</strong> 1,22,007 ರೋಗಿಗಳ ಒಂದು ಪ್ರಮುಖ ಅಧ್ಯಯನವು "ಎಲೈಟ್" ಕಾರ್ಡಿಯೋರೆಸ್ಪಿರೇಟರಿ
                         ಫಿಟ್‌ನೆಸ್ ಕಡಿಮೆ ಫಿಟ್‌ನೆಸ್‌ಗೆ ಹೋಲಿಸಿದರೆ ಮರಣದ ಅಪಾಯದಲ್ಲಿ 80% ಕಡಿತದೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದೆ ಎಂದು
                         ಕಂಡುಹಿಡಿದಿದೆ.
-                    </div><p class="text-sm text-secondary mt-sm"><strong>ಮೂಲ:</strong> Mandsager K, et al. (JAMA Network Open, 2018).
-                    </p></div></div><div class="card"><h3 class="card-title">ಆಟೋನೊಮಿಕ್ ಬ್ಯಾಲೆನ್ಸ್ (HRV)</h3><div class="card-content"><p>ನಿಮ್ಮ ಸಿಂಪಥೆಟಿಕ್ (ಹೋರಾಟ ಅಥವಾ ಪಲಾಯನ) ಮತ್ತು ಪ್ಯಾರಾಸಿಂಪಥೆಟಿಕ್ (ವಿಶ್ರಾಂತಿ ಮತ್ತು ಜೀರ್ಣಕ್ರಿಯೆ) ನರಮಂಡಲಗಳ
-                        ನಡುವಿನ ಸಮತೋಲನವನ್ನು ಅಳೆಯಲು ನಾವು ಹೃದಯ ಬಡಿತದ ವ್ಯತ್ಯಾಸವನ್ನು (ವಿಶೇಷವಾಗಿ rMSSD) ವಿಶ್ಲೇಷಿಸುತ್ತೇವೆ.</p><div class="callout callout-info mt-md"><strong>ವಿಜ್ಞಾನ:</strong> ಹೆಚ್ಚಿನ HRV ಸಾಮಾನ್ಯವಾಗಿ ಉತ್ತಮ ಹೃದಯರಕ್ತನಾಳದ ಆರೋಗ್ಯ ಮತ್ತು ಒತ್ತಡದ
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>ಮೂಲ:</strong> Mandsager K, et al. (JAMA Network Open, 2018).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">ಆಟೋನೊಮಿಕ್ ಬ್ಯಾಲೆನ್ಸ್ (HRV)</h3>
+                <div class="card-content">
+                    <p>ನಿಮ್ಮ ಸಿಂಪಥೆಟಿಕ್ (ಹೋರಾಟ ಅಥವಾ ಪಲಾಯನ) ಮತ್ತು ಪ್ಯಾರಾಸಿಂಪಥೆಟಿಕ್ (ವಿಶ್ರಾಂತಿ ಮತ್ತು ಜೀರ್ಣಕ್ರಿಯೆ) ನರಮಂಡಲಗಳ
+                        ನಡುವಿನ ಸಮತೋಲನವನ್ನು ಅಳೆಯಲು ನಾವು ಹೃದಯ ಬಡಿತದ ವ್ಯತ್ಯಾಸವನ್ನು (ವಿಶೇಷವಾಗಿ rMSSD) ವಿಶ್ಲೇಷಿಸುತ್ತೇವೆ.</p>
+                    <div class="callout callout-info mt-md">
+                        <strong>ವಿಜ್ಞಾನ:</strong> ಹೆಚ್ಚಿನ HRV ಸಾಮಾನ್ಯವಾಗಿ ಉತ್ತಮ ಹೃದಯರಕ್ತನಾಳದ ಆರೋಗ್ಯ ಮತ್ತು ಒತ್ತಡದ
                         ಸ್ಥಿತಿಸ್ಥಾಪಕತ್ವಕ್ಕೆ ಸಂಬಂಧಿಸಿದೆ. ಇದು ವ್ಯವಸ್ಥಿತ ಉರಿಯೂತ ಮತ್ತು ಚೇತರಿಕೆಯ ಸ್ಥಿತಿಗೆ ಸೂಕ್ಷ್ಮ ಸಂಕೇತವಾಗಿ
                         ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-                    </div><p class="text-sm text-secondary mt-sm"><strong>ಮೂಲ:</strong> Task Force of the European Society of Cardiology (1996); Shaffer &
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>ಮೂಲ:</strong> Task Force of the European Society of Cardiology (1996); Shaffer &
                         Ginsberg (2017).
-                    </p></div></div><div class="card"><h3 class="card-title">ಫಂಕ್ಷನಲ್ ಮೊಬಿಲಿಟಿ (ಗೈಟ್ ಸ್ಪೀಡ್)</h3><div class="card-content"><p>ನಡೆಯುವ ವೇಗವನ್ನು ಕ್ಲಿನಿಕಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ "ಆರನೇ ಜೈವಿಕ ಲಕ್ಷಣ" ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಕ್ರಿಯಾತ್ಮಕ
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">ಫಂಕ್ಷನಲ್ ಮೊಬಿಲಿಟಿ (ಗೈಟ್ ಸ್ಪೀಡ್)</h3>
+                <div class="card-content">
+                    <p>ನಡೆಯುವ ವೇಗವನ್ನು ಕ್ಲಿನಿಕಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ "ಆರನೇ ಜೈವಿಕ ಲಕ್ಷಣ" ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಕ್ರಿಯಾತ್ಮಕ
                         ಕುಸಿತ ಅಥವಾ ನರವೈಜ್ಞಾನಿಕ ಬದಲಾವಣೆಗಳ ಆರಂಭಿಕ ಲಕ್ಷಣಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲು ನಾವು ನಿಮ್ಮ ನಡೆದಾಟದ ವೇಗದ
-                        ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತೇವೆ.</p><div class="callout callout-warning mt-md"><strong>ಕ್ಲಿನಿಕಲ್ ಪ್ರಸ್ತುತತೆ:</strong> 34,485 ಹಿರಿಯ ವಯಸ್ಕರ ವಿಶ್ಲೇಷಣೆಯು ಎಲ್ಲಾ ವಯೋಮಾನದ ಗುಂಪುಗಳಲ್ಲಿ
+                        ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತೇವೆ.</p>
+                    <div class="callout callout-warning mt-md">
+                        <strong>ಕ್ಲಿನಿಕಲ್ ಪ್ರಸ್ತುತತೆ:</strong> 34,485 ಹಿರಿಯ ವಯಸ್ಕರ ವಿಶ್ಲೇಷಣೆಯು ಎಲ್ಲಾ ವಯೋಮಾನದ ಗುಂಪುಗಳಲ್ಲಿ
                         5-ವರ್ಷದ ಮತ್ತು 10-ವರ್ಷದ ಬದುಕುಳಿಯುವಿಕೆಯ ದರಗಳೊಂದಿಗೆ ನಡೆಯುವ ವೇಗವು ನೇರವಾಗಿ ಸಂಬಂಧಿಸಿದೆ ಎಂದು ತೋರಿಸಿದೆ.
-                    </div><p class="text-sm text-secondary mt-sm"><strong>ಮೂಲ:</strong> Studenski S, et al. (JAMA, 2011).
-                    </p></div></div><div class="card"><h3 class="card-title">ನಿದ್ರೆ ಮತ್ತು ಗ್ಲಿಂಫಾಟಿಕ್ ಕ್ಲಿಯರೆನ್ಸ್</h3><div class="card-content"><p>ನಾವು ಕೇವಲ ನಿದ್ರೆಯ ಸಮಯವನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದಿಲ್ಲ; ನಾವು ಆಳವಾದ ನಿದ್ರೆಯ (NREM ಸ್ಟೇಜ್ 3) ಅವಧಿಯನ್ನು
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>ಮೂಲ:</strong> Studenski S, et al. (JAMA, 2011).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">ನಿದ್ರೆ ಮತ್ತು ಗ್ಲಿಂಫಾಟಿಕ್ ಕ್ಲಿಯರೆನ್ಸ್</h3>
+                <div class="card-content">
+                    <p>ನಾವು ಕೇವಲ ನಿದ್ರೆಯ ಸಮಯವನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದಿಲ್ಲ; ನಾವು ಆಳವಾದ ನಿದ್ರೆಯ (NREM ಸ್ಟೇಜ್ 3) ಅವಧಿಯನ್ನು
                         ವಿಶ್ಲೇಷಿಸುತ್ತೇವೆ. ಇದು ಮೆದುಳಿನ ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿ ಕಾರ್ಯವಿಧಾನವಾದ "ಗ್ಲಿಂಫಾಟಿಕ್ ಸಿಸ್ಟಮ್" ಗೆ
-                        ನಿರ್ಣಾಯಕವಾಗಿದೆ.</p><div class="callout callout-tip mt-md"><strong>ವಿಧಾನ:</strong> ಆಳವಾದ ನಿದ್ರೆಯ ಸಮಯದಲ್ಲಿ, ಗ್ಲಿಂಫಾಟಿಕ್ ವ್ಯವಸ್ಥೆಯು ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ, ಜಾಗೃತ
+                        ನಿರ್ಣಾಯಕವಾಗಿದೆ.</p>
+                    <div class="callout callout-tip mt-md">
+                        <strong>ವಿಧಾನ:</strong> ಆಳವಾದ ನಿದ್ರೆಯ ಸಮಯದಲ್ಲಿ, ಗ್ಲಿಂಫಾಟಿಕ್ ವ್ಯವಸ್ಥೆಯು ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ, ಜಾಗೃತ
                         ಸ್ಥಿತಿಯಲ್ಲಿ ಸಂಗ್ರಹವಾಗುವ ಬೀಟಾ-ಅಮಿಲಾಯ್ಡ್‌ನಂತಹ ನ್ಯೂರೋಟಾಕ್ಸಿಕ್ ತ್ಯಾಜ್ಯ ವಸ್ತುಗಳನ್ನು
                         ಸ್ವಚ್ಛಗೊಳಿಸುತ್ತದೆ.
-                    </div><p class="text-sm text-secondary mt-sm"><strong>ಮೂಲ:</strong> Xie L, et al. (Science, 2013); Reddy & van der Werf (2020).
-                    </p></div></div><div class="card"><h3 class="card-title">ಮೆಟಬಾಲಿಕ್ ಹೆಲ್ತ್ (ಗ್ಲೂಕೋಸ್ ನಿಯಂತ್ರಣ)</h3><div class="card-content"><p>ಸರಳ ಸರಾಸರಿಗಳಿಗಿಂತ ಹೆಚ್ಚಾಗಿ ಮೆಟಾಬಾಲಿಕ್ ಆರೋಗ್ಯವನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು ನಾವು ಗ್ಲೂಕೋಸ್ ಮಾದರಿಗಳು ಮತ್ತು
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>ಮೂಲ:</strong> Xie L, et al. (Science, 2013); Reddy & van der Werf (2020).
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">ಮೆಟಬಾಲಿಕ್ ಹೆಲ್ತ್ (ಗ್ಲೂಕೋಸ್ ನಿಯಂತ್ರಣ)</h3>
+                <div class="card-content">
+                    <p>ಸರಳ ಸರಾಸರಿಗಳಿಗಿಂತ ಹೆಚ್ಚಾಗಿ ಮೆಟಾಬಾಲಿಕ್ ಆರೋಗ್ಯವನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು ನಾವು ಗ್ಲೂಕೋಸ್ ಮಾದರಿಗಳು ಮತ್ತು
                         ವ್ಯತ್ಯಾಸಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತೇವೆ. ಸ್ಥಿರವಾದ ಗ್ಲೂಕೋಸ್ ಮಟ್ಟಗಳು ಕಡಿಮೆ ಉರಿಯೂತ ಮತ್ತು ಉತ್ತಮ
-                        ದೀರ್ಘಕಾಲೀನ ಆರೋಗ್ಯದ ಫಲಿತಾಂಶಗಳೊಂದಿಗೆ ಸಂಬಂಧ ಹೊಂದಿವೆ.</p><div class="callout callout-info mt-md"><strong>ಪ್ರಮುಖ ಒಳನೋಟ:</strong> ಗ್ಲೂಕೋಸ್ ವ್ಯತ್ಯಾಸವು (ಕೇವಲ ಸರಾಸರಿ ಮಟ್ಟಗಳಲ್ಲ) ಮಧುಮೇಹ ರಹಿತ
+                        ದೀರ್ಘಕಾಲೀನ ಆರೋಗ್ಯದ ಫಲಿತಾಂಶಗಳೊಂದಿಗೆ ಸಂಬಂಧ ಹೊಂದಿವೆ.</p>
+                    <div class="callout callout-info mt-md">
+                        <strong>ಪ್ರಮುಖ ಒಳನೋಟ:</strong> ಗ್ಲೂಕೋಸ್ ವ್ಯತ್ಯಾಸವು (ಕೇವಲ ಸರಾಸರಿ ಮಟ್ಟಗಳಲ್ಲ) ಮಧುಮೇಹ ರಹಿತ
                         ವ್ಯಕ್ತಿಗಳಲ್ಲಿಯೂ ಸಹ ಹೃದಯರಕ್ತನಾಳದ ಘಟನೆಗಳು ಮತ್ತು ಸಾವಿನ ಸ್ವತಂತ್ರ ಮುನ್ಸೂಚಕವಾಗಿದೆ.
-                    </div><p class="text-sm text-secondary mt-sm"><strong>ಮೂಲ:</strong> Ceriello A, et al. (Diabetes Care, 2008); Hirsch IB (Clinical Diabetes,
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>ಮೂಲ:</strong> Ceriello A, et al. (Diabetes Care, 2008); Hirsch IB (Clinical Diabetes,
                         2015).
-                    </p></div></div><div class="card"><h3 class="card-title">ದೇಹದ ರಚನೆ (ಲೀನ್ ಮಾಸ್)</h3><div class="card-content"><p>ಸ್ನಾಯುವಿನ ದ್ರವ್ಯರಾಶಿಯು ಆರೋಗ್ಯಕರ ವಯಸ್ಸಾದ ಪ್ರಮುಖ ಜೈವಿಕ ಲಕ್ಷಣವಾಗಿದೆ. ಸಾರ್ಕೊಪೆನಿಯಾ (ವಯಸ್ಸಿಗೆ
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">ದೇಹದ ರಚನೆ (ಲೀನ್ ಮಾಸ್)</h3>
+                <div class="card-content">
+                    <p>ಸ್ನಾಯುವಿನ ದ್ರವ್ಯರಾಶಿಯು ಆರೋಗ್ಯಕರ ವಯಸ್ಸಾದ ಪ್ರಮುಖ ಜೈವಿಕ ಲಕ್ಷಣವಾಗಿದೆ. ಸಾರ್ಕೊಪೆನಿಯಾ (ವಯಸ್ಸಿಗೆ
                         ಸಂಬಂಧಿಸಿದ ಸ್ನಾಯು ನಷ್ಟ) ಪತ್ತೆಹಚ್ಚಲು ನಾವು ಲೀನ್ ಬಾಡಿ ಮಾಸ್ ಪ್ರವೃತ್ತಿಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡುತ್ತೇವೆ,
-                        ಇದು ಶಕ್ತಿ, ಚಲನಶೀಲತೆ ಮತ್ತು ಚಯಾಪಚಯ ಆರೋಗ್ಯದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.</p><div class="callout callout-warning mt-md"><strong>ದೀರ್ಘಾಯುಷ್ಯದ ಸಂಪರ್ಕ:</strong> ಹೆಚ್ಚಿನ ಸ್ನಾಯುವಿನ ದ್ರವ್ಯರಾಶಿಯು ಕಡಿಮೆ ಸಾವಿನ ಅಪಾಯದೊಂದಿಗೆ
+                        ಇದು ಶಕ್ತಿ, ಚಲನಶೀಲತೆ ಮತ್ತು ಚಯಾಪಚಯ ಆರೋಗ್ಯದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.</p>
+                    <div class="callout callout-warning mt-md">
+                        <strong>ದೀರ್ಘಾಯುಷ್ಯದ ಸಂಪರ್ಕ:</strong> ಹೆಚ್ಚಿನ ಸ್ನಾಯುವಿನ ದ್ರವ್ಯರಾಶಿಯು ಕಡಿಮೆ ಸಾವಿನ ಅಪಾಯದೊಂದಿಗೆ
                         ಸಂಬಂಧ ಹೊಂದಿದೆ. ಪ್ರತಿ 10% ಸ್ನಾಯುವಿನ ದ್ರವ್ಯರಾಶಿ ಸೂಚ್ಯಂಕದ ಹೆಚ್ಚಳವು ಮರಣದ ಅಪಾಯದಲ್ಲಿ 12% ಕಡಿತದೊಂದಿಗೆ
                         ಪರಸ್ಪರ ಸಂಬಂಧ ಹೊಂದಿದೆ.
-                    </div><p class="text-sm text-secondary mt-sm"><strong>ಮೂಲ:</strong> Srikanthan P, et al. (American Journal of Medicine, 2014); Cruz-Jentoft
+                    </div>
+                    <p class="text-sm text-secondary mt-sm">
+                        <strong>ಮೂಲ:</strong> Srikanthan P, et al. (American Journal of Medicine, 2014); Cruz-Jentoft
                         AJ, et al. (Age and Ageing, 2019).
-                    </p></div></div></div></div></section><section class="section"><div class="container"><div class="text-center mb-xl"><h2>ಹೆಲ್ತ್ ಅನಾಲಿಟಿಕ್ಸ್ ಏಕೆ?</h2></div><div class="grid grid-3"><div class="card text-center"><div class="card-title">7-ದಿನಗಳ ಉಚಿತ ಪ್ರಯೋಗ</div><div class="card-content">ಬಳಸಿ ನೋಡಿ, ನಂತರ ನಿರ್ಧರಿಸಿ</div></div><div class="card text-center"><div class="card-title">ಖಾತೆಯ ಅಗತ್ಯವಿಲ್ಲ</div><div class="card-content">ತಕ್ಷಣವೇ ಪ್ರಾರಂಭಿಸಿ</div></div><div class="card text-center"><div class="card-title">100% ಸ್ಥಳೀಯ ಪ್ರಕ್ರಿಯೆ</div><div class="card-content">ನಿಮ್ಮ ದತ್ತಾಂಶವು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಎಂದಿಗೂ ಬಿಡುವುದಿಲ್ಲ</div></div></div></div></section><section class="section section-light"><div class="container"><div class="text-center mb-xl"><h2>ಯಾವುದೇ ಸ್ವರೂಪದಲ್ಲಿ ನಿಮ್ಮ ಆರೋಗ್ಯ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ</h2><p class="lead">ಆಪಲ್‌ನ ಸ್ಥಳೀಯ ರಫ್ತು ಸಂಕೀರ್ಣ XML ಫೈಲ್‌ಗಳನ್ನು ನೀಡುತ್ತದೆ. ನಾವು ನಿಮಗೆ ಬಳಸಬಹುದಾದ ಸ್ವರೂಪಗಳನ್ನು
-                ನೀಡುತ್ತೇವೆ.</p></div><div class="grid grid-3"><div class="card text-center"><div class="card-title">📊 CSV ರಫ್ತು</div><div class="card-content"><p>ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌ಗಳು ಮತ್ತು ದತ್ತಾಂಶ ವಿಶ್ಲೇಷಣೆಗಾಗಿ ಸೂಕ್ತವಾಗಿದೆ. ಎಕ್ಸೆಲ್, ಗೂಗಲ್ ಶೀಟ್ಸ್ ಅಥವಾ ಯಾವುದೇ
-                        ವಿಶ್ಲೇಷಣಾ ಸಾಧನದಲ್ಲಿ ತೆರೆಯಿರಿ.</p><ul class="text-left mt-sm"><li>ನಿರ್ದಿಷ್ಟ ಮೆಟ್ರಿಕ್‌ಗಳನ್ನು ಆರಿಸಿ</li><li>ದಿನಾಂಕ ಶ್ರೇಣಿಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</li><li>ಪಿವೋಟ್ ಟೇಬಲ್‌ಗಳಿಗೆ ಸಿದ್ಧವಾಗಿದೆ</li></ul></div></div><div class="card text-center"><div class="card-title">📄 PDF ವರದಿಗಳು</div><div class="card-content"><p>ವೈದ್ಯರ ಭೇಟಿಗಾಗಿ ವೃತ್ತಿಪರ ವೈದ್ಯಕೀಯ ವರದಿಗಳು. ಚಾರ್ಟ್‌ಗಳು ಮತ್ತು ಉಲ್ಲೇಖ ಶ್ರೇಣಿಗಳೊಂದಿಗೆ ಸ್ಪಷ್ಟವಾದ
-                        ಫಾರ್ಮ್ಯಾಟಿಂಗ್.</p><ul class="text-left mt-sm"><li>ಪ್ರಿಂಟ್-ಸಿದ್ಧ ಸ್ವರೂಪ</li><li>ಪ್ರವೃತ್ತಿಯ ದೃಶ್ಯೀಕರಣಗಳು</li><li>ಕ್ಲಿನಿಕಲ್ ಸಂದರ್ಭವನ್ನು ಒಳಗೊಂಡಿದೆ</li></ul></div></div><div class="card text-center"><div class="card-title">💻 JSON ರಫ್ತು</div><div class="card-content"><p>ಇಂಟಿಗ್ರೇಷನ್ ಮತ್ತು ಕಸ್ಟಮ್ ವಿಶ್ಲೇಷಣಾ ಸಾಧನಗಳಿಗಾಗಿ ಡೆವಲಪರ್-ಸ್ನೇಹಿ ಸ್ವರೂಪ.</p><ul class="text-left mt-sm"><li>ರಚನಾತ್ಮಕ ದತ್ತಾಂಶ ಸ್ವರೂಪ</li><li>API-ಸಿದ್ಧ</li><li>ವಿಶ್ಲೇಷಿಸಲು ಸುಲಭ</li></ul></div></div></div></div></section><section class="section section-light"><div class="container"><div class="text-center mb-xl"><h2>ಒಂದು ನೋಟದಲ್ಲಿ</h2></div><div class="grid grid-2"><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>ಏಕೀಕೃತ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</h3><p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>ಹೆಲ್ತ್ ಅನಾಲಿಟಿಕ್ಸ್ ಏಕೆ?</h2>
+        </div>
+        <div class="grid grid-3">
+            <div class="card text-center">
+                <div class="card-title">7-ದಿನಗಳ ಉಚಿತ ಪ್ರಯೋಗ</div>
+                <div class="card-content">ಬಳಸಿ ನೋಡಿ, ನಂತರ ನಿರ್ಧರಿಸಿ</div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">ಖಾತೆಯ ಅಗತ್ಯವಿಲ್ಲ</div>
+                <div class="card-content">ತಕ್ಷಣವೇ ಪ್ರಾರಂಭಿಸಿ</div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">100% ಸ್ಥಳೀಯ ಪ್ರಕ್ರಿಯೆ</div>
+                <div class="card-content">ನಿಮ್ಮ ದತ್ತಾಂಶವು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಎಂದಿಗೂ ಬಿಡುವುದಿಲ್ಲ</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>ಯಾವುದೇ ಸ್ವರೂಪದಲ್ಲಿ ನಿಮ್ಮ ಆರೋಗ್ಯ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ</h2>
+            <p class="lead">ಆಪಲ್‌ನ ಸ್ಥಳೀಯ ರಫ್ತು ಸಂಕೀರ್ಣ XML ಫೈಲ್‌ಗಳನ್ನು ನೀಡುತ್ತದೆ. ನಾವು ನಿಮಗೆ ಬಳಸಬಹುದಾದ ಸ್ವರೂಪಗಳನ್ನು
+                ನೀಡುತ್ತೇವೆ.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card text-center">
+                <div class="card-title">📊 CSV ರಫ್ತು</div>
+                <div class="card-content">
+                    <p>ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌ಗಳು ಮತ್ತು ದತ್ತಾಂಶ ವಿಶ್ಲೇಷಣೆಗಾಗಿ ಸೂಕ್ತವಾಗಿದೆ. ಎಕ್ಸೆಲ್, ಗೂಗಲ್ ಶೀಟ್ಸ್ ಅಥವಾ ಯಾವುದೇ
+                        ವಿಶ್ಲೇಷಣಾ ಸಾಧನದಲ್ಲಿ ತೆರೆಯಿರಿ.</p>
+                    <ul class="text-left mt-sm">
+                        <li>ನಿರ್ದಿಷ್ಟ ಮೆಟ್ರಿಕ್‌ಗಳನ್ನು ಆರಿಸಿ</li>
+                        <li>ದಿನಾಂಕ ಶ್ರೇಣಿಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</li>
+                        <li>ಪಿವೋಟ್ ಟೇಬಲ್‌ಗಳಿಗೆ ಸಿದ್ಧವಾಗಿದೆ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">📄 PDF ವರದಿಗಳು</div>
+                <div class="card-content">
+                    <p>ವೈದ್ಯರ ಭೇಟಿಗಾಗಿ ವೃತ್ತಿಪರ ವೈದ್ಯಕೀಯ ವರದಿಗಳು. ಚಾರ್ಟ್‌ಗಳು ಮತ್ತು ಉಲ್ಲೇಖ ಶ್ರೇಣಿಗಳೊಂದಿಗೆ ಸ್ಪಷ್ಟವಾದ
+                        ಫಾರ್ಮ್ಯಾಟಿಂಗ್.</p>
+                    <ul class="text-left mt-sm">
+                        <li>ಪ್ರಿಂಟ್-ಸಿದ್ಧ ಸ್ವರೂಪ</li>
+                        <li>ಪ್ರವೃತ್ತಿಯ ದೃಶ್ಯೀಕರಣಗಳು</li>
+                        <li>ಕ್ಲಿನಿಕಲ್ ಸಂದರ್ಭವನ್ನು ಒಳಗೊಂಡಿದೆ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-title">💻 JSON ರಫ್ತು</div>
+                <div class="card-content">
+                    <p>ಇಂಟಿಗ್ರೇಷನ್ ಮತ್ತು ಕಸ್ಟಮ್ ವಿಶ್ಲೇಷಣಾ ಸಾಧನಗಳಿಗಾಗಿ ಡೆವಲಪರ್-ಸ್ನೇಹಿ ಸ್ವರೂಪ.</p>
+                    <ul class="text-left mt-sm">
+                        <li>ರಚನಾತ್ಮಕ ದತ್ತಾಂಶ ಸ್ವರೂಪ</li>
+                        <li>API-ಸಿದ್ಧ</li>
+                        <li>ವಿಶ್ಲೇಷಿಸಲು ಸುಲಭ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>ಒಂದು ನೋಟದಲ್ಲಿ</h2>
+        </div>
+        <div class="grid grid-2">
+            
+
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-chart"></use>
+        </svg>
+        
+    </div>
+    <h3>ಏಕೀಕೃತ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</h3>
+    <p>
         
         ಸ್ಪಷ್ಟವಾದ ದೃಶ್ಯೀಕರಣಗಳು ಮತ್ತು ಸಾರಾಂಶ ಅಂಕಿಅಂಶಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಪ್ರಮುಖ
             ಮೆಟ್ರಿಕ್‌ಗಳನ್ನು ಒಂದು ನೋಟದಲ್ಲಿ ನೋಡಿ.
-    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-layers"></use></svg></div><h3>ಆಳವಾದ HealthKit ವ್ಯಾಪ್ತಿ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-layers"></use>
+        </svg>
+        
+    </div>
+    <h3>ಆಳವಾದ HealthKit ವ್ಯಾಪ್ತಿ</h3>
+    <p>
         
         ಚಟುವಟಿಕೆ, ಜೈವಿಕ ಲಕ್ಷಣಗಳು, ನಿದ್ರೆ, ದೇಹದ ರಚನೆ, ಪೋಷಣೆ ಮತ್ತು
             ಹೆಚ್ಚಿನವುಗಳನ್ನು ವರ್ಗಗಳ ಮೂಲಕ ಆಯೋಜಿಸಲಾಗಿದೆ.
-    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-book"></use></svg></div><h3>ವೈಜ್ಞಾನಿಕ ಸಂದರ್ಭ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-book"></use>
+        </svg>
+        
+    </div>
+    <h3>ವೈಜ್ಞಾನಿಕ ಸಂದರ್ಭ</h3>
+    <p>
         
         ಪ್ರತಿ ಮೆಟ್ರಿಕ್‌ಗೆ, ಅದು ಏನನ್ನು ಅಳೆಯುತ್ತದೆ, ಅದು ಏಕೆ ಮುಖ್ಯ ಮತ್ತು ಉಲ್ಲೇಖ
             ಶ್ರೇಣಿಗಳನ್ನು ಅರಿತುಕೊಳ್ಳಿ.
-    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-export"></use></svg></div><h3>ಹೊಂದಿಕೊಳ್ಳುವ ರಫ್ತು</h3><p>
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-export"></use>
+        </svg>
+        
+    </div>
+    <h3>ಹೊಂದಿಕೊಳ್ಳುವ ರಫ್ತು</h3>
+    <p>
         
         ನಿಮಗೆ ಬೇಕಾದುದನ್ನು ಮಾತ್ರ, ನೀವು ಇಷ್ಟಪಡುವ ಸ್ವರೂಪದಲ್ಲಿ ರಫ್ತು ಮಾಡಿ: CSV,
             JSON, PDF, HTML, ಅಥವಾ ಸರಳ ಪಠ್ಯ.
-    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-shield"></use></svg></div><h3>ಸಂಪೂರ್ಣ ಗೌಪ್ಯತೆ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <svg class="icon" aria-hidden="true">
+            <use href="../assets/images/icons-sprite.svg#icon-shield"></use>
+        </svg>
+        
+    </div>
+    <h3>ಸಂಪೂರ್ಣ ಗೌಪ್ಯತೆ</h3>
+    <p>
         
         ಯಾವುದೇ ಖಾತೆಗಳಿಲ್ಲ, ಯಾವುದೇ ಕ್ಲೌಡ್ ಲಾಕ್-ಇನ್ ಇಲ್ಲ, ಯಾವುದೇ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.
             ಪ್ರಕ್ರಿಯೆಯು ಸಂಪೂರ್ಣವಾಗಿ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ನಡೆಯುತ್ತದೆ.
-    </p></div></div></div></section><section class="section"><div class="container"><div class="text-center mb-xl"><h2>HealthKit ವ್ಯಾಪ್ತಿ</h2><p class="lead">ಹೆಲ್ತ್ ಅನಾಲಿಟಿಕ್ಸ್ HealthKit ಅನ್ನು ಪ್ರಾಯೋಗಿಕ ಡೊಮೇನ್‌ಗಳಲ್ಲಿ ಆಯೋಜಿಸುತ್ತದೆ:</p></div><div class="grid grid-3"><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">🏃</div></div><h3>ಚಲನೆ ಮತ್ತು ಫಿಟ್‌ನೆಸ್</h3><p>
+    </p>
+</div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>HealthKit ವ್ಯಾಪ್ತಿ</h2>
+            <p class="lead">ಹೆಲ್ತ್ ಅನಾಲಿಟಿಕ್ಸ್ HealthKit ಅನ್ನು ಪ್ರಾಯೋಗಿಕ ಡೊಮೇನ್‌ಗಳಲ್ಲಿ ಆಯೋಜಿಸುತ್ತದೆ:</p>
+        </div>
+        <div class="grid grid-3">
+            
+
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">🏃</div>
+        
+    </div>
+    <h3>ಚಲನೆ ಮತ್ತು ಫಿಟ್‌ನೆಸ್</h3>
+    <p>
         
         ಹೆಜ್ಜೆಗಳು, ದೂರ, ಶಕ್ತಿ, ವ್ಯಾಯಾಮಗಳು, ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್
-    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">❤️</div></div><h3>ಹೃದಯ ಮತ್ತು ಜೈವಿಕ ಲಕ್ಷಣಗಳು</h3><p>
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">❤️</div>
+        
+    </div>
+    <h3>ಹೃದಯ ಮತ್ತು ಜೈವಿಕ ಲಕ್ಷಣಗಳು</h3>
+    <p>
         
         ಹೃದಯ ಬಡಿತ, HRV, ECG, ರಕ್ತದೊತ್ತಡ, ಉಸಿರಾಟದ ದರ
-    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">😴</div></div><h3>ನಿದ್ರೆ ಮತ್ತು ಚೇತರಿಕೆ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">😴</div>
+        
+    </div>
+    <h3>ನಿದ್ರೆ ಮತ್ತು ಚೇತರಿಕೆ</h3>
+    <p>
         
         ನಿದ್ರೆಯ ಅವಧಿ/ಹಂತಗಳು, ಉಸಿರಾಟದ ಮೆಟ್ರಿಕ್‌ಗಳು
-    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">⚖️</div></div><h3>ದೇಹ ಮತ್ತು ರಚನೆ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">⚖️</div>
+        
+    </div>
+    <h3>ದೇಹ ಮತ್ತು ರಚನೆ</h3>
+    <p>
         
         ತೂಕ, BMI, ದೇಹದ ಕೊಬ್ಬು %, ಸೊಂಟದ ಸುತ್ತಳತೆ
-    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">🍎</div></div><h3>ಪೋಷಣೆ ಮತ್ತು ಜಲಸಂಚಯನ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">🍎</div>
+        
+    </div>
+    <h3>ಪೋಷಣೆ ಮತ್ತು ಜಲಸಂಚಯನ</h3>
+    <p>
         
         ಶಕ್ತಿ ಸೇವನೆ, ಮ್ಯಾಕ್ರೋಗಳು/ಮೈಕ್ರೋಗಳು, ನೀರು
-    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">🧠</div></div><h3>ಮನಃಪೂರ್ವಕತೆ ಮತ್ತು ಮಾನಸಿಕ</h3><p>
+    </p>
+</div>
+            
+            
+            
+            
+            <div class="feature-card ">
+    <div class="feature-icon">
+        
+        <div style="font-size: 24px;">🧠</div>
+        
+    </div>
+    <h3>ಮನಃಪೂರ್ವಕತೆ ಮತ್ತು ಮಾನಸಿಕ</h3>
+    <p>
         
         ಮನಃಪೂರ್ವಕ ನಿಮಿಷಗಳು, ಮೂಡ್/ಸ್ಟೇಟ್-ಆಫ್-ಮೈಂಡ್
-    </p></div></div></div></section><section class="section"><div class="container"><div class="grid grid-2"><div><h2>ನಿಮ್ಮ ವೈದ್ಯರೊಂದಿಗೆ ಆರೋಗ್ಯ ದತ್ತಾಂಶವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ</h2><p class="lead">ನಿಮ್ಮ ಆರೋಗ್ಯ ಪೂರೈಕೆದಾರರು ಬಳಸಬಹುದಾದ ಸಮಗ್ರ ಆರೋಗ್ಯ ವರದಿಗಳೊಂದಿಗೆ ವೈದ್ಯಕೀಯ ನೇಮಕಾತಿಗಳಿಗೆ ತಯಾರಿ
-                    ನಡೆಸಿ.</p><p>ನಿಮ್ಮ ಫೋನ್ ಪರದೆಯಲ್ಲಿ ವೈದ್ಯರಿಗೆ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸುವ ಬದಲು, ಇವುಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ವೃತ್ತಿಪರ PDF
-                    ವರದಿಗಳನ್ನು ರಚಿಸಿ:</p><ul><li><strong>ಪ್ರಮುಖ ಮೆಟ್ರಿಕ್‌ಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡಲಾಗಿದೆ</strong> — ನಿಮ್ಮ ಸಮಾಲೋಚನೆಗೆ ಮುಖ್ಯವಾದುದನ್ನು
-                        ಗಮನಿಸಿ</li><li><strong>ಪ್ರವೃತ್ತಿಯ ದೃಶ್ಯೀಕರಣಗಳು</strong> — ಕಾಲಾನಂತರದಲ್ಲಿ ಆಗುವ ಬದಲಾವಣೆಗಳನ್ನು ಒಂದು ನೋಟದಲ್ಲಿ ನೋಡಿ
-                    </li><li><strong>ಉಲ್ಲೇಖ ಶ್ರೇಣಿಗಳು</strong> — ಕ್ಲಿನಿಕಲ್ ವಿಶ್ಲೇಷಣೆಗಾಗಿ ಸಂದರ್ಭ</li><li><strong>ದತ್ತಾಂಶದ ಮೂಲ</strong> — ಪ್ರತಿ ಅಳತೆಯನ್ನು ಯಾವ ಸಾಧನವು ದಾಖಲಿಸಿದೆ ಎಂದು ತಿಳಿಯಿರಿ</li></ul><p class="mt-md">ನಿಮಗೆ ಬೇಕಾದ ಸಮಯದ ಅವಧಿಗೆ ಅಗತ್ಯವಿರುವ ದತ್ತಾಂಶವನ್ನು ಮಾತ್ರ ರಫ್ತು ಮಾಡಿ. ನಿಮ್ಮ ನೇಮಕಾತಿಗೆ ಮೊದಲು
-                    ಇಮೇಲ್ ಮಾಡಿ ಅಥವಾ ಮುದ್ರಿತ ಪ್ರತಿಯನ್ನು ತನ್ನಿ.</p></div><div class="card"><h3 class="card-title">ಸಾಮಾನ್ಯ ವೈದ್ಯಕೀಯ ಬಳಕೆಯ ಸಂದರ್ಭಗಳು</h3><div class="card-content"><ul><li><strong>ಕಾರ್ಡಿಯಾಲಜಿ ನೇಮಕಾತಿಗಳು</strong> — ಹೃದಯ ಬಡಿತ, HRV, ರಕ್ತದೊತ್ತಡ, ECG ದತ್ತಾಂಶ</li><li><strong>ನಿದ್ರೆಯ ಸಮಾಲೋಚನೆಗಳು</strong> — ನಿದ್ರೆಯ ಹಂತಗಳು, ಅವಧಿ, ಉಸಿರಾಟದ ಮೆಟ್ರಿಕ್‌ಗಳು</li><li><strong>ಮಧುಮೇಹ ನಿರ್ವಹಣೆ</strong> — ರಕ್ತದ ಗ್ಲೂಕೋಸ್, ಇನ್ಸುಲಿನ್, ಕಾರ್ಬ್ ಸೇವನೆ</li><li><strong>ತೂಕ ನಿರ್ವಹಣೆ</strong> — ದೇಹದ ದ್ರವ್ಯರಾಶಿ, BMI, ಚಟುವಟಿಕೆ, ಪೋಷಣೆ</li><li><strong>ಫಿಟ್‌ನೆಸ್ ಮೌಲ್ಯಮಾಪನಗಳು</strong> — VO₂ Max, ವ್ಯಾಯಾಮದ ಸಮಯ, ಚೇತರಿಕೆ ಮೆಟ್ರಿಕ್‌ಗಳು</li></ul></div></div></div></div></section><section class="page-hero"><div class="container"><h2>ನಿಮ್ಮ ಉಚಿತ ಪ್ರಯೋಗವನ್ನು ಪ್ರಾರಂಭಿಸಿ</h2><p class="lead">ನಿಮ್ಮ ಆರೋಗ್ಯದ ಇತಿಹಾಸವನ್ನು ನೀವು ಬಳಸಬಹುದಾದ ಒಳನೋಟಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ.</p><div class="mt-md"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary btn-large">App Store ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</a></div><p class="text-sm text-secondary mt-md">7-ದಿನಗಳ ಉಚಿತ ಪ್ರಯೋಗ | ಖಾತೆಯ ಅಗತ್ಯವಿಲ್ಲ | ನಿಮ್ಮ ದತ್ತಾಂಶ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿಯೇ
-            ಉಳಿಯುತ್ತದೆ</p></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple...</h2><p class="ai-citation-answer">ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ...</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-01-27</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>ಆರೋಗ್ಯ ದತ್ತಾಂಶ · ಆಪಲ್ ಹೆಲ್ತ್ ರಫ್ತು · ಆರೋಗ್ಯ ವಿಶ್ಲೇಷಣೆ · ಫಿಟ್‌ನೆಸ್ ಟ್ರ್ಯಾಕರ್ · ವೈದ್ಯಕೀಯ ವರದಿಗಳು</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../kn/bibliography/">
+    </p>
+</div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <h2>ನಿಮ್ಮ ವೈದ್ಯರೊಂದಿಗೆ ಆರೋಗ್ಯ ದತ್ತಾಂಶವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ</h2>
+                <p class="lead">ನಿಮ್ಮ ಆರೋಗ್ಯ ಪೂರೈಕೆದಾರರು ಬಳಸಬಹುದಾದ ಸಮಗ್ರ ಆರೋಗ್ಯ ವರದಿಗಳೊಂದಿಗೆ ವೈದ್ಯಕೀಯ ನೇಮಕಾತಿಗಳಿಗೆ ತಯಾರಿ
+                    ನಡೆಸಿ.</p>
+                <p>ನಿಮ್ಮ ಫೋನ್ ಪರದೆಯಲ್ಲಿ ವೈದ್ಯರಿಗೆ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸುವ ಬದಲು, ಇವುಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ವೃತ್ತಿಪರ PDF
+                    ವರದಿಗಳನ್ನು ರಚಿಸಿ:</p>
+                <ul>
+                    <li><strong>ಪ್ರಮುಖ ಮೆಟ್ರಿಕ್‌ಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡಲಾಗಿದೆ</strong> — ನಿಮ್ಮ ಸಮಾಲೋಚನೆಗೆ ಮುಖ್ಯವಾದುದನ್ನು
+                        ಗಮನಿಸಿ</li>
+                    <li><strong>ಪ್ರವೃತ್ತಿಯ ದೃಶ್ಯೀಕರಣಗಳು</strong> — ಕಾಲಾನಂತರದಲ್ಲಿ ಆಗುವ ಬದಲಾವಣೆಗಳನ್ನು ಒಂದು ನೋಟದಲ್ಲಿ ನೋಡಿ
+                    </li>
+                    <li><strong>ಉಲ್ಲೇಖ ಶ್ರೇಣಿಗಳು</strong> — ಕ್ಲಿನಿಕಲ್ ವಿಶ್ಲೇಷಣೆಗಾಗಿ ಸಂದರ್ಭ</li>
+                    <li><strong>ದತ್ತಾಂಶದ ಮೂಲ</strong> — ಪ್ರತಿ ಅಳತೆಯನ್ನು ಯಾವ ಸಾಧನವು ದಾಖಲಿಸಿದೆ ಎಂದು ತಿಳಿಯಿರಿ</li>
+                </ul>
+                <p class="mt-md">ನಿಮಗೆ ಬೇಕಾದ ಸಮಯದ ಅವಧಿಗೆ ಅಗತ್ಯವಿರುವ ದತ್ತಾಂಶವನ್ನು ಮಾತ್ರ ರಫ್ತು ಮಾಡಿ. ನಿಮ್ಮ ನೇಮಕಾತಿಗೆ ಮೊದಲು
+                    ಇಮೇಲ್ ಮಾಡಿ ಅಥವಾ ಮುದ್ರಿತ ಪ್ರತಿಯನ್ನು ತನ್ನಿ.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">ಸಾಮಾನ್ಯ ವೈದ್ಯಕೀಯ ಬಳಕೆಯ ಸಂದರ್ಭಗಳು</h3>
+                <div class="card-content">
+                    <ul>
+                        <li><strong>ಕಾರ್ಡಿಯಾಲಜಿ ನೇಮಕಾತಿಗಳು</strong> — ಹೃದಯ ಬಡಿತ, HRV, ರಕ್ತದೊತ್ತಡ, ECG ದತ್ತಾಂಶ</li>
+                        <li><strong>ನಿದ್ರೆಯ ಸಮಾಲೋಚನೆಗಳು</strong> — ನಿದ್ರೆಯ ಹಂತಗಳು, ಅವಧಿ, ಉಸಿರಾಟದ ಮೆಟ್ರಿಕ್‌ಗಳು</li>
+                        <li><strong>ಮಧುಮೇಹ ನಿರ್ವಹಣೆ</strong> — ರಕ್ತದ ಗ್ಲೂಕೋಸ್, ಇನ್ಸುಲಿನ್, ಕಾರ್ಬ್ ಸೇವನೆ</li>
+                        <li><strong>ತೂಕ ನಿರ್ವಹಣೆ</strong> — ದೇಹದ ದ್ರವ್ಯರಾಶಿ, BMI, ಚಟುವಟಿಕೆ, ಪೋಷಣೆ</li>
+                        <li><strong>ಫಿಟ್‌ನೆಸ್ ಮೌಲ್ಯಮಾಪನಗಳು</strong> — VO₂ Max, ವ್ಯಾಯಾಮದ ಸಮಯ, ಚೇತರಿಕೆ ಮೆಟ್ರಿಕ್‌ಗಳು</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-hero">
+    <div class="container">
+        <h2>ನಿಮ್ಮ ಉಚಿತ ಪ್ರಯೋಗವನ್ನು ಪ್ರಾರಂಭಿಸಿ</h2>
+        <p class="lead">ನಿಮ್ಮ ಆರೋಗ್ಯದ ಇತಿಹಾಸವನ್ನು ನೀವು ಬಳಸಬಹುದಾದ ಒಳನೋಟಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ.</p>
+        <div class="mt-md">
+            <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary btn-large">App Store ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</a>
+        </div>
+        <p class="text-sm text-secondary mt-md">7-ದಿನಗಳ ಉಚಿತ ಪ್ರಯೋಗ | ಖಾತೆಯ ಅಗತ್ಯವಿಲ್ಲ | ನಿಮ್ಮ ದತ್ತಾಂಶ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿಯೇ
+            ಉಳಿಯುತ್ತದೆ</p>
+    </div>
+</section>
+    
+
+    
+    
+
+    
+    
+<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
+  <div class="container ai-citation-shell">
+    <h2 class="ai-citation-title">ನಿಮ್ಮ ಆಪಲ್ ಹೆಲ್ತ್ ದತ್ತಾಂಶವನ್ನು ರಫ್ತು ಮಾಡಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ - Apple...</h2>
+    <p class="ai-citation-answer">ಕಚ್ಚಾ HealthKit ದತ್ತಾಂಶವನ್ನು ಕ್ರಿಯಾಶೀಲ ಒಳನೋಟಗಳಾಗಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ವರದಿಗಳಾಗಿ ಪರಿವರ್ತಿಸಿ. CSV, JSON ಮತ್ತು PDF ಗೆ ರಫ್ತು ಮಾಡಿ. ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ...</p>
+
+    <ul class="ai-citation-facts" role="list">
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">📅</span>
+        <span>2026-01-27</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact ai-citation-keywords">
+        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
+        <span>ಆರೋಗ್ಯ ದತ್ತಾಂಶ · ಆಪಲ್ ಹೆಲ್ತ್ ರಫ್ತು · ಆರೋಗ್ಯ ವಿಶ್ಲೇಷಣೆ · ಫಿಟ್‌ನೆಸ್ ಟ್ರ್ಯಾಕರ್ · ವೈದ್ಯಕೀಯ ವರದಿಗಳು</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
+        <a href="../kn/bibliography/">
           
           ಗ್ರಂಥಸೂಚಿ
           
-        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store"><img src="../assets/images/badge-app-store.svg"
+        </a>
+      </li>
+      
+    </ul>
+
+    
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a><a href="/am/" class="lang-link"
+                </a>
+                
+                <a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a><a href="/ar/" class="lang-link"
+                </a>
+                
+                <a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a><a href="/bg/" class="lang-link"
+                </a>
+                
+                <a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a><a href="/bn/" class="lang-link"
+                </a>
+                
+                <a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a><a href="/ca/" class="lang-link"
+                </a>
+                
+                <a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a><a href="/cs/" class="lang-link"
+                </a>
+                
+                <a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a><a href="/da/" class="lang-link"
+                </a>
+                
+                <a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a><a href="/de/" class="lang-link"
+                </a>
+                
+                <a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a><a href="/el/" class="lang-link"
+                </a>
+                
+                <a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a><a href="/en/" class="lang-link"
+                </a>
+                
+                <a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a><a href="/es/" class="lang-link"
+                </a>
+                
+                <a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a><a href="/et/" class="lang-link"
+                </a>
+                
+                <a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a><a href="/fa/" class="lang-link"
+                </a>
+                
+                <a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a><a href="/fi/" class="lang-link"
+                </a>
+                
+                <a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a><a href="/fr/" class="lang-link"
+                </a>
+                
+                <a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a><a href="/gu/" class="lang-link"
+                </a>
+                
+                <a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a><a href="/ha/" class="lang-link"
+                </a>
+                
+                <a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a><a href="/he/" class="lang-link"
+                </a>
+                
+                <a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a><a href="/hi/" class="lang-link"
+                </a>
+                
+                <a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a><a href="/hr/" class="lang-link"
+                </a>
+                
+                <a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a><a href="/hu/" class="lang-link"
+                </a>
+                
+                <a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a><a href="/id/" class="lang-link"
+                </a>
+                
+                <a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a><a href="/is/" class="lang-link"
+                </a>
+                
+                <a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a><a href="/it/" class="lang-link"
+                </a>
+                
+                <a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a><a href="/ja/" class="lang-link"
+                </a>
+                
+                <a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a><a href="/km/" class="lang-link"
+                </a>
+                
+                <a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a><a href="/kn/" class="lang-link active"
+                </a>
+                
+                <a href="/kn/" class="lang-link active"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a><a href="/ko/" class="lang-link"
+                </a>
+                
+                <a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a><a href="/lt/" class="lang-link"
+                </a>
+                
+                <a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a><a href="/lv/" class="lang-link"
+                </a>
+                
+                <a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a><a href="/ms/" class="lang-link"
+                </a>
+                
+                <a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a><a href="/my/" class="lang-link"
+                </a>
+                
+                <a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a><a href="/nb/" class="lang-link"
+                </a>
+                
+                <a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a><a href="/nl/" class="lang-link"
+                </a>
+                
+                <a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a><a href="/pl/" class="lang-link"
+                </a>
+                
+                <a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a><a href="/pt/" class="lang-link"
+                </a>
+                
+                <a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a><a href="/pt-br/" class="lang-link"
+                </a>
+                
+                <a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a><a href="/ro/" class="lang-link"
+                </a>
+                
+                <a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a><a href="/ru/" class="lang-link"
+                </a>
+                
+                <a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a><a href="/sk/" class="lang-link"
+                </a>
+                
+                <a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a><a href="/sl/" class="lang-link"
+                </a>
+                
+                <a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a><a href="/sr/" class="lang-link"
+                </a>
+                
+                <a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a><a href="/sv/" class="lang-link"
+                </a>
+                
+                <a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a><a href="/sw/" class="lang-link"
+                </a>
+                
+                <a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a><a href="/ta/" class="lang-link"
+                </a>
+                
+                <a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a><a href="/te/" class="lang-link"
+                </a>
+                
+                <a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a><a href="/th/" class="lang-link"
+                </a>
+                
+                <a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a><a href="/tl/" class="lang-link"
+                </a>
+                
+                <a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a><a href="/tr/" class="lang-link"
+                </a>
+                
+                <a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a><a href="/uk/" class="lang-link"
+                </a>
+                
+                <a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a><a href="/ur/" class="lang-link"
+                </a>
+                
+                <a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a><a href="/vi/" class="lang-link"
+                </a>
+                
+                <a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a><a href="/yo/" class="lang-link"
+                </a>
+                
+                <a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a><a href="/zh/" class="lang-link"
+                </a>
+                
+                <a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
                 &copy; 2026 Health Analytics. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ
-            </p><ul class="footer-legal"><li><a href="/kn/privacy/">ಗೌಪ್ಯತೆ</a></li><li><a href="/kn/terms/">ನಿಯಮಗಳು</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಈ ವೆಬ್‌ಸೈಟ್ ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತದೆ.</p><a href="/kn/privacy/" class="text-sm">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">ತಿರಸ್ಕರಿಸಿ</button><button id="cookie-accept" class="btn btn-primary btn-small">ಒಪ್ಪಿಕೊಳ್ಳಿ</button></div></div></div><script src="../assets/js/core.min.js?v=635348535bde" defer></script><script src="../assets/js/search.min.js?v=635348535bde" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/kn/privacy/">ಗೌಪ್ಯತೆ</a></li>
+                <li><a href="/kn/terms/">ನಿಯಮಗಳು</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಈ ವೆಬ್‌ಸೈಟ್ ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತದೆ.</p>
+            <a href="/kn/privacy/" class="text-sm">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">ತಿರಸ್ಕರಿಸಿ</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">ಒಪ್ಪಿಕೊಳ್ಳಿ</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../assets/js/core.min.js?v=19fdca55b3da" defer></script>
+  <script src="../assets/js/search.min.js?v=19fdca55b3da" defer></script>
+  
+
+  
+  
+  <script src="../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
+</body>
+
+</html>

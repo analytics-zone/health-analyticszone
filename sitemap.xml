@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://health.analyticszone.app/af/</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="am" href="https://health.analyticszone.app/am/"/>
@@ -9048,7 +9048,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fi/faq/</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/faq/"/>
@@ -9347,7 +9347,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/fi/use-cases/</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/use-cases/"/>
@@ -21568,7 +21568,7 @@
   </url>
   <url>
     <loc>https://health.analyticszone.app/nl/</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="af" href="https://health.analyticszone.app/af/"/>

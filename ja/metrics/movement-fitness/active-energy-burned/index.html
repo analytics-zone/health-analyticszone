@@ -1,61 +1,251 @@
-<!DOCTYPE html><html lang="ja" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet"><title>アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |...</title><meta name="description" content="アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。"><meta name="author" content="Arno Health"><meta name="keywords" content="アクティブエネルギー, Export, Apple, Health"><link rel="canonical" href="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/"><meta property="og:title" content="アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |..."><meta property="og:description" content="アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。"><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ja_JP"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/"><meta name="twitter:title" content="アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |..."><meta name="twitter:description" content="アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。"><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  
+  <title>アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |...</title>
+  <meta name="description" content="アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。">
+  <meta name="author" content="Arno Health">
+
+  
+  
+  <meta name="keywords" content="アクティブエネルギー, Export, Apple, Health">
+  
+
+  
+  <link rel="canonical" href="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-03-31T14:30:00Z">
+  <meta property="article:author" content="Arno Health">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/">
+  <meta property="og:title" content="アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |...">
+  <meta property="og:description" content="アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。">
+  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="Health Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/">
+  <meta name="twitter:title" content="アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |...">
+  <meta name="twitter:description" content="アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。">
+  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@HealthAnalytics">
+  <meta name="twitter:creator" content="@HealthAnalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/movement-fitness/active-energy-burned/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  
+  
+  
+  
+  <meta name="robots" content="index, follow">
+  
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6757945914">
+  
+
+  
+  <style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -314,7 +504,20 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=635348535bde"><script type="application/ld+json">
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=19fdca55b3da">
+
+  
+  
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -345,7 +548,10 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -354,7 +560,11 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "ja"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -369,7 +579,14 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -383,7 +600,7 @@ img[width][height] {
     "url": "https://health.analyticszone.app"
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-03-24",
+  "dateModified": "2026-03-31",
   "keywords": ["アクティブエネルギー", "Export", "Apple", "Health"],
   "about": [
     {
@@ -407,7 +624,14 @@ img[width][height] {
     }
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -426,13 +650,23 @@ img[width][height] {
     }
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-03-24",
+  "dateModified": "2026-03-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/"
   }
 }
-</script><script>
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -446,338 +680,1169 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script></head><body><a href="#main-content" class="skip-link">コンテンツへスキップ</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ja/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ja/features/" 
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ja/" class="site-logo">
+                <picture>
+                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
+                </picture>
+                <span class="logo-text">Health Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/ja/features/" 
                                 aria-current="">
                                 機能
-                            </a></li><li><a href="/ja/metrics/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/ja/metrics/" 
                                 aria-current="">
                                 メトリクスライブラリ
-                            </a></li><li><a href="/ja/pricing/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/ja/pricing/" 
                                 aria-current="">
                                 料金
-                            </a></li><li><a href="/ja/about/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/ja/about/" 
                                 aria-current="">
                                 私たちについて
-                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="言語を選択"><option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="言語を選択">
+                        
+                        <option value="af" >
                             Afrikaans
-                        </option><option value="am" >
+                        </option>
+                        
+                        <option value="am" >
                             አማርኛ
-                        </option><option value="ar" >
+                        </option>
+                        
+                        <option value="ar" >
                             العربية
-                        </option><option value="bg" >
+                        </option>
+                        
+                        <option value="bg" >
                             Български
-                        </option><option value="bn" >
+                        </option>
+                        
+                        <option value="bn" >
                             বাংলা
-                        </option><option value="ca" >
+                        </option>
+                        
+                        <option value="ca" >
                             Català
-                        </option><option value="cs" >
+                        </option>
+                        
+                        <option value="cs" >
                             Čeština
-                        </option><option value="da" >
+                        </option>
+                        
+                        <option value="da" >
                             Dansk
-                        </option><option value="de" >
+                        </option>
+                        
+                        <option value="de" >
                             Deutsch
-                        </option><option value="el" >
+                        </option>
+                        
+                        <option value="el" >
                             Ελληνικά
-                        </option><option value="en" >
+                        </option>
+                        
+                        <option value="en" >
                             English
-                        </option><option value="es" >
+                        </option>
+                        
+                        <option value="es" >
                             Español
-                        </option><option value="et" >
+                        </option>
+                        
+                        <option value="et" >
                             Eesti
-                        </option><option value="fa" >
+                        </option>
+                        
+                        <option value="fa" >
                             فارسی
-                        </option><option value="fi" >
+                        </option>
+                        
+                        <option value="fi" >
                             Suomi
-                        </option><option value="fr" >
+                        </option>
+                        
+                        <option value="fr" >
                             Français
-                        </option><option value="gu" >
+                        </option>
+                        
+                        <option value="gu" >
                             ગુજરાતી
-                        </option><option value="ha" >
+                        </option>
+                        
+                        <option value="ha" >
                             Hausa
-                        </option><option value="he" >
+                        </option>
+                        
+                        <option value="he" >
                             עברית
-                        </option><option value="hi" >
+                        </option>
+                        
+                        <option value="hi" >
                             हिन्दी
-                        </option><option value="hr" >
+                        </option>
+                        
+                        <option value="hr" >
                             Hrvatski
-                        </option><option value="hu" >
+                        </option>
+                        
+                        <option value="hu" >
                             Magyar
-                        </option><option value="id" >
+                        </option>
+                        
+                        <option value="id" >
                             Bahasa Indonesia
-                        </option><option value="is" >
+                        </option>
+                        
+                        <option value="is" >
                             Íslenska
-                        </option><option value="it" >
+                        </option>
+                        
+                        <option value="it" >
                             Italiano
-                        </option><option value="ja" selected>
+                        </option>
+                        
+                        <option value="ja" selected>
                             日本語
-                        </option><option value="km" >
+                        </option>
+                        
+                        <option value="km" >
                             Khmer
-                        </option><option value="kn" >
+                        </option>
+                        
+                        <option value="kn" >
                             ಕನ್ನಡ
-                        </option><option value="ko" >
+                        </option>
+                        
+                        <option value="ko" >
                             한국어
-                        </option><option value="lt" >
+                        </option>
+                        
+                        <option value="lt" >
                             Lietuvių
-                        </option><option value="lv" >
+                        </option>
+                        
+                        <option value="lv" >
                             Latviešu
-                        </option><option value="ms" >
+                        </option>
+                        
+                        <option value="ms" >
                             Bahasa Melayu
-                        </option><option value="my" >
+                        </option>
+                        
+                        <option value="my" >
                             မြန်မာဘာသာ
-                        </option><option value="nb" >
+                        </option>
+                        
+                        <option value="nb" >
                             Norsk
-                        </option><option value="nl" >
+                        </option>
+                        
+                        <option value="nl" >
                             Nederlands
-                        </option><option value="pl" >
+                        </option>
+                        
+                        <option value="pl" >
                             Polski
-                        </option><option value="pt" >
+                        </option>
+                        
+                        <option value="pt" >
                             Português
-                        </option><option value="pt-br" >
+                        </option>
+                        
+                        <option value="pt-br" >
                             Português (Brasil)
-                        </option><option value="ro" >
+                        </option>
+                        
+                        <option value="ro" >
                             Română
-                        </option><option value="ru" >
+                        </option>
+                        
+                        <option value="ru" >
                             Русский
-                        </option><option value="sk" >
+                        </option>
+                        
+                        <option value="sk" >
                             Slovenčina
-                        </option><option value="sl" >
+                        </option>
+                        
+                        <option value="sl" >
                             Slovenščina
-                        </option><option value="sr" >
+                        </option>
+                        
+                        <option value="sr" >
                             Srpski
-                        </option><option value="sv" >
+                        </option>
+                        
+                        <option value="sv" >
                             Svenska
-                        </option><option value="sw" >
+                        </option>
+                        
+                        <option value="sw" >
                             Kiswahili
-                        </option><option value="ta" >
+                        </option>
+                        
+                        <option value="ta" >
                             தமிழ்
-                        </option><option value="te" >
+                        </option>
+                        
+                        <option value="te" >
                             తెలుగు
-                        </option><option value="th" >
+                        </option>
+                        
+                        <option value="th" >
                             ไทย
-                        </option><option value="tl" >
+                        </option>
+                        
+                        <option value="tl" >
                             Tagalog
-                        </option><option value="tr" >
+                        </option>
+                        
+                        <option value="tr" >
                             Türkçe
-                        </option><option value="uk" >
+                        </option>
+                        
+                        <option value="uk" >
                             Українська
-                        </option><option value="ur" >
+                        </option>
+                        
+                        <option value="ur" >
                             اردو
-                        </option><option value="vi" >
+                        </option>
+                        
+                        <option value="vi" >
                             Tiếng Việt
-                        </option><option value="yo" >
+                        </option>
+                        
+                        <option value="yo" >
                             Yorùbá
-                        </option><option value="zh" >
+                        </option>
+                        
+                        <option value="zh" >
                             中文
-                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="メニューを切り替え"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
-            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/ja/metrics/"><span itemprop="name">メトリクスライブラリ</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/ja/metrics/movement-fitness/"><span itemprop="name">運動とフィットネス</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">アクティブエネルギー</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>🏃</span> 運動とフィットネス
-        </span></header><nav class="article-toc"><h4>目次</h4><div class="toc"><ul><li><a href="#active-energy">アクティブエネルギー</a><ul><li><a href="#what-is-active-energy">アクティブエネルギーとは？</a><ul><li><a href="#how-healthkit-measures-active-energy">HealthKit におけるアクティブエネルギーの測定</a></li></ul></li><li><a href="#scientific-background">科学적背景</a><ul><li><a href="#the-energy-balance-debate">エネルギーバランスに関する論争</a><ul><li><a href="#the-constrained-energy-model">エネルギー制限モデル (Constrained Energy
-                                                Model)</a></li><li><a
-                                                href="#recent-research-exercise-does-increase-energy-expenditure">最新の研究：運動はエネルギー消費を「増加させる」</a></li><li><a href="#practical-implications">実践的な意味</a></li></ul></li><li><a href="#exercise-and-mortality-beyond-calories">運動と死亡率：カロリーを超えた価値</a></li></ul></li><li><a href="#clinical-significance">臨床上の重要性</a><ul><li><a href="#why-track-active-energy">なぜアクティブエネルギーを追跡するのか</a></li><li><a href="#understanding-your-numbers">数値の理解</a></li><li><a href="#limitations-of-calorie-tracking">カロリー追跡の限界</a></li></ul></li><li><a href="#recommendations">推奨事項</a><ul><li><a href="#activity-guidelines">活動ガイドライン</a></li><li><a href="#using-active-energy-effectively">アクティブエネルギーを効果的に活用する</a></li><li><a href="#healthy-relationship-with-numbers">数値との健康的な向き合い方</a></li></ul></li><li><a href="#when-to-seek-medical-attention">医師に相談すべき場合</a></li><li><a href="#references">参考文献</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="active-energy">アクティブエネルギー</h1><h2 id="what-is-active-energy">アクティブエネルギーとは？</h2><p>アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。
-        </p><p><strong>1日の総エネルギー消費量 (TDEE)</strong> の内訳は以下の通りです：</p><table class="clinical-table"><thead><tr><th>要素</th><th>略称</th><th>TDEE に占める割合</th><th>説明</th></tr></thead><tbody><tr><td>基礎代謝率</td><td>BMR</td><td>60-75%</td><td>完全な安静時における基本的な生命維持のためのエネルギー</td></tr><tr><td>食事誘発性熱産生</td><td>TEF</td><td>8-12%</td><td>食事の消化、吸収、代謝に必要なエネルギー</td></tr><tr><td>非運動性熱産生</td><td>NEAT</td><td>10-15%</td><td>貧乏揺すり、立位、家の中での歩行など</td></tr><tr><td>運動性熱産生</td><td>EAT</td><td>5-10%</td><td>意図的な運動やワークアウトによるエネルギー</td></tr></tbody></table><h3 id="how-healthkit-measures-active-energy">HealthKit におけるアクティブエネルギーの測定</h3><p>Apple デバイスは、以下の情報を利用してアクティブエネルギーを計算します：</p><ul><li><strong>モーションセンサー：</strong> 加速度センサーとジャイロスコープが動きの強度を追跡します</li><li><strong>心拍数：</strong> 心拍数が高くなるほど、エネルギー消費量が多いことを示します</li><li><strong>GPS データ：</strong> 屋外アクティビティ中に移動した距離を計測します</li><li><strong>個人の指標：</strong> 年齢、体重、身長、性別がカロリー計算に反映されます</li><li><strong>機械学習：</strong> 実験室でのエネルギー消費データに基づいて訓練されたモデルを使用します</li></ul><p>HealthKit は以下を区別します：
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
+                                
+                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
+                                
+                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="メニューを切り替え"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
+    
+    <article class="metric-article">
+
+    <nav class="metric-breadcrumb" aria-label="Breadcrumb">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList"
+            style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/ja/metrics/">
+                    <span itemprop="name">メトリクスライブラリ</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <span>/</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/ja/metrics/movement-fitness/">
+                    <span itemprop="name">運動とフィットネス</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <span>/</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name" aria-current="page">アクティブエネルギー</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
+
+
+    <header class="metric-article-header">
+        <span class="metric-category-badge">
+            <span>🏃</span> 運動とフィットネス
+        </span>
+    </header>
+
+
+    <nav class="article-toc">
+        <h4>目次</h4>
+        <div class="toc">
+            <ul>
+                <li><a href="#active-energy">アクティブエネルギー</a>
+                    <ul>
+                        <li><a href="#what-is-active-energy">アクティブエネルギーとは？</a>
+                            <ul>
+                                <li><a href="#how-healthkit-measures-active-energy">HealthKit におけるアクティブエネルギーの測定</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#scientific-background">科学적背景</a>
+                            <ul>
+                                <li><a href="#the-energy-balance-debate">エネルギーバランスに関する論争</a>
+                                    <ul>
+                                        <li><a href="#the-constrained-energy-model">エネルギー制限モデル (Constrained Energy
+                                                Model)</a></li>
+                                        <li><a
+                                                href="#recent-research-exercise-does-increase-energy-expenditure">最新の研究：運動はエネルギー消費を「増加させる」</a>
+                                        </li>
+                                        <li><a href="#practical-implications">実践的な意味</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#exercise-and-mortality-beyond-calories">運動と死亡率：カロリーを超えた価値</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#clinical-significance">臨床上の重要性</a>
+                            <ul>
+                                <li><a href="#why-track-active-energy">なぜアクティブエネルギーを追跡するのか</a></li>
+                                <li><a href="#understanding-your-numbers">数値の理解</a></li>
+                                <li><a href="#limitations-of-calorie-tracking">カロリー追跡の限界</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#recommendations">推奨事項</a>
+                            <ul>
+                                <li><a href="#activity-guidelines">活動ガイドライン</a></li>
+                                <li><a href="#using-active-energy-effectively">アクティブエネルギーを効果的に活用する</a></li>
+                                <li><a href="#healthy-relationship-with-numbers">数値との健康的な向き合い方</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#when-to-seek-medical-attention">医師に相談すべき場合</a></li>
+                        <li><a href="#references">参考文献</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="metric-content">
+        <h1 id="active-energy">アクティブエネルギー</h1>
+        <h2 id="what-is-active-energy">アクティブエネルギーとは？</h2>
+        <p>アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。
+        </p>
+        <p><strong>1日の総エネルギー消費量 (TDEE)</strong> の内訳は以下の通りです：</p>
+        <table class="clinical-table">
+            <thead>
+                <tr>
+                    <th>要素</th>
+                    <th>略称</th>
+                    <th>TDEE に占める割合</th>
+                    <th>説明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>基礎代謝率</td>
+                    <td>BMR</td>
+                    <td>60-75%</td>
+                    <td>完全な安静時における基本的な生命維持のためのエネルギー</td>
+                </tr>
+                <tr>
+                    <td>食事誘発性熱産生</td>
+                    <td>TEF</td>
+                    <td>8-12%</td>
+                    <td>食事の消化、吸収、代謝に必要なエネルギー</td>
+                </tr>
+                <tr>
+                    <td>非運動性熱産生</td>
+                    <td>NEAT</td>
+                    <td>10-15%</td>
+                    <td>貧乏揺すり、立位、家の中での歩行など</td>
+                </tr>
+                <tr>
+                    <td>運動性熱産生</td>
+                    <td>EAT</td>
+                    <td>5-10%</td>
+                    <td>意図的な運動やワークアウトによるエネルギー</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="how-healthkit-measures-active-energy">HealthKit におけるアクティブエネルギーの測定</h3>
+        <p>Apple デバイスは、以下の情報を利用してアクティブエネルギーを計算します：</p>
+        <ul>
+            <li><strong>モーションセンサー：</strong> 加速度センサーとジャイロスコープが動きの強度を追跡します</li>
+            <li><strong>心拍数：</strong> 心拍数が高くなるほど、エネルギー消費量が多いことを示します</li>
+            <li><strong>GPS データ：</strong> 屋外アクティビティ中に移動した距離を計測します</li>
+            <li><strong>個人の指標：</strong> 年齢、体重、身長、性別がカロリー計算に反映されます</li>
+            <li><strong>機械学習：</strong> 実験室でのエネルギー消費データに基づいて訓練されたモデルを使用します</li>
+        </ul>
+        <p>HealthKit は以下を区別します：
             - <strong>アクティブエネルギー：</strong> 動きや運動によるカロリー
             - <strong>安静時エネルギー：</strong> 推定される基礎代謝率
-            - <strong>総エネルギー：</strong> アクティブエネルギー ＋ 安静時エネルギーの合計</p><h2 id="scientific-background">科学的背景</h2><h3 id="the-energy-balance-debate">エネルギーバランスに関する論争</h3><p>大きな科学的論争の一つは、運動が本当に1日の総エネルギー消費量を増やすのか、それとも体が他の場所でのエネルギー消費を減らすことで代償しようとするのかという点に集中しています。</p><h4 id="the-constrained-energy-model">エネルギー制限モデル (Constrained Energy Model)</h4><p>進化人類学者の <strong>ハーマン・ポンツァー (Herman Pontzer)</strong>
-            は2016年に、人間は活動レベルに関係なく、1日の総エネルギー消費量を狭い範囲内に維持するように進化したという説を提唱しました。</p><p><strong>主な主張：</strong>
+            - <strong>総エネルギー：</strong> アクティブエネルギー ＋ 安静時エネルギーの合計</p>
+        <h2 id="scientific-background">科学的背景</h2>
+        <h3 id="the-energy-balance-debate">エネルギーバランスに関する論争</h3>
+        <p>大きな科学的論争の一つは、運動が本当に1日の総エネルギー消費量を増やすのか、それとも体が他の場所でのエネルギー消費を減らすことで代償しようとするのかという点に集中しています。</p>
+        <h4 id="the-constrained-energy-model">エネルギー制限モデル (Constrained Energy Model)</h4>
+        <p>進化人類学者の <strong>ハーマン・ポンツァー (Herman Pontzer)</strong>
+            は2016年に、人間は活動レベルに関係なく、1日の総エネルギー消費量を狭い範囲内に維持するように進化したという説を提唱しました。</p>
+        <p><strong>主な主張：</strong>
             - 体は、運動による消費の増加に対して、他のプロセスに使われるエネルギーを減らすことで適応する
             - この「制限された」モデルは、運動が期待したほど総エネルギー消費量を増やさない可能性を示唆している
-            - 証拠は狩猟採集民の調査から得られました</p><h4 id="recent-research-exercise-does-increase-energy-expenditure">最新の研究：運動はエネルギー消費を「増加させる」</h4><p><em>PNAS</em> に掲載された <strong>2025年のバージニア工科大学の研究</strong> は、対照試験を用いてこの仮説を直接検証しました：</p><p><strong>主な知見：</strong>
+            - 証拠は狩猟採集民の調査から得られました</p>
+        <h4 id="recent-research-exercise-does-increase-energy-expenditure">最新の研究：運動はエネルギー消費を「増加させる」</h4>
+        <p><em>PNAS</em> に掲載された <strong>2025年のバージニア工科大学の研究</strong> は、対照試験を用いてこの仮説を直接検証しました：</p>
+        <p><strong>主な知見：</strong>
             - 身体活動は、1日の総エネルギー消費量を<strong>実際に増加させる</strong>
             - 代償反応は存在するが、それは<strong>部分的</strong>であり、完全なものではない
-            - 制限モデルは関係性を単純化しすぎていた</p><blockquote><p>「この研究は、身体活動が1日の消費カロリーを確実に増やすことを明確に示しています。注目すべきは、1日のエネルギー消費量の増加が必ずしも期待したほど大きくなかったことですが、適度な増加は、運動が1日のエネルギー消費量を全く増やさないという主張とは程遠いものです。」
-                — 2025年 バージニア工科大学の研究</p></blockquote><h4 id="practical-implications">実践的な意味</h4><ul><li><strong>運動は追加のカロリーを消費します</strong>が、おそらく理論上の 50〜80% 程度です</li><li>代償が起こるため、<strong>運動だけで体重を減らすこと</strong>は困難です</li><li>体重管理には、<strong>食事と運動の組み合わせ</strong>が依然として最も効果的です</li><li><strong>運動のメリットはカロリーだけではありません：</strong> 心血管の健康、メンタルヘルス、筋肉の維持、代謝の健康など多岐にわたります</li></ul><h3 id="exercise-and-mortality-beyond-calories">運動と死亡率：カロリーを超えた価値</h3><p>減量効果にかかわらず、身体活動は独立して死亡率を低下させます：</p><p><strong>メタ分析より：</strong>
+            - 制限モデルは関係性を単純化しすぎていた</p>
+        <blockquote>
+            <p>「この研究は、身体活動が1日の消費カロリーを確実に増やすことを明確に示しています。注目すべきは、1日のエネルギー消費量の増加が必ずしも期待したほど大きくなかったことですが、適度な増加は、運動が1日のエネルギー消費量を全く増やさないという主張とは程遠いものです。」
+                — 2025年 バージニア工科大学の研究</p>
+        </blockquote>
+        <h4 id="practical-implications">実践的な意味</h4>
+        <ul>
+            <li><strong>運動は追加のカロリーを消費します</strong>が、おそらく理論上の 50〜80% 程度です</li>
+            <li>代償が起こるため、<strong>運動だけで体重を減らすこと</strong>は困難です</li>
+            <li>体重管理には、<strong>食事と運動の組み合わせ</strong>が依然として最も効果的です</li>
+            <li><strong>運動のメリットはカロリーだけではありません：</strong> 心血管の健康、メンタルヘルス、筋肉の維持、代謝の健康など多岐にわたります</li>
+        </ul>
+        <h3 id="exercise-and-mortality-beyond-calories">運動と死亡率：カロリーを超えた価値</h3>
+        <p>減量効果にかかわらず、身体活動は独立して死亡率を低下させます：</p>
+        <p><strong>メタ分析より：</strong>
             - <strong>週150分の中強度の活動：</strong> 全死亡率が 22% 低下
             - <strong>週300分の中強度の活動：</strong> 全死亡率が 35% 低下
-            - メリットは非常に高い活動レベルで頭打ちになりますが、悪化することはありません</p><p><strong>身体活動は以下を減少させます：</strong>
+            - メリットは非常に高い活動レベルで頭打ちになりますが、悪化することはありません</p>
+        <p><strong>身体活動は以下を減少させます：</strong>
             - 心血管疾患のリスク
             - 2型糖尿病のリスク
             - 数種類のがん
             - うつや不安
             - 認知機能の低下
-            - 全死亡率</p><h2 id="clinical-significance">臨床上の重要性</h2><h3 id="why-track-active-energy">なぜアクティブエネルギーを追跡するのか？</h3><p>カロリー計算には限界がありますが、アクティブエネルギーの追跡は以下を提供します：</p><ol><li><strong>活動への意識：</strong> 1日の動きの客観的な尺度</li><li><strong>トレンドの監視：</strong> 活動レベルの週ごとの変化</li><li><strong>目標設定：</strong> 身体活動を増やすための目標値</li><li><strong>ワークアウトの強度：</strong> カロリー消費が高いほど、より高い負荷がかかっていることを示します</li><li><strong>回復の状況：</strong> 消費が極端に高い場合は、休息が必要な指標となります</li></ol><h3 id="understanding-your-numbers">数値の理解</h3><p><strong>一般的なアクティブエネルギーの範囲：</strong></p><table class="clinical-table"><thead><tr><th>活動レベル</th><th>1日のアクティブカロリー</th></tr></thead><tbody><tr><td>ほとんど動かない (Sedentary)</td><td>100-200 kcal</td></tr><tr><td>軽い活動 (Lightly active)</td><td>200-400 kcal</td></tr><tr><td>中程度の活動 (Moderately active)</td><td>400-700 kcal</td></tr><tr><td>活発な活動 (Very active)</td><td>700-1000 kcal</td></tr><tr><td>極めて活発な活動 (Extremely active)</td><td>1000+ kcal</td></tr></tbody></table><p><em>数値は体の大きさ、年齢、活動の種類によって大きく異なります。</em></p><h3 id="limitations-of-calorie-tracking">カロリー追跡の限界</h3><p>アクティブエネルギーの推定には、固有の不正確さが伴います：</p><ul><li><strong>ウェアラブルデバイス：</strong> 個別のアクティビティに対して、通常 ±20〜30% の誤差があります</li><li><strong>筋力トレーニング：</strong> 有酸素運動に比べて正確に記録されにくいです</li><li><strong>個人の差：</strong> 同じ活動でも、人によって消費カロリーは異なります</li><li><strong>NEAT の変動：</strong> 日常的な「運動以外の動き」には大きな個人差があります</li><li><strong>アルゴリズムの限界：</strong> モデルはすべての変数を考慮できているわけではありません</li></ul><p><strong>ベストプラクティス：</strong> 絶対的な数値よりも、<strong>相対的なトレンド</strong>（先週に比べて今週はより活動的か？）に焦点を当ててください。</p><h2 id="recommendations">推奨事項</h2><h3 id="activity-guidelines">活動ガイドライン</h3><p><strong>アメリカ心臓協会 (AHA)</strong> および <strong>WHO</strong> の推奨：</p><table class="clinical-table"><thead><tr><th>ガイドライン</th><th>量</th></tr></thead><tbody><tr><td>中強度の有酸素活動</td><td>週 150-300 分</td></tr><tr><td>高強度の有酸素活動</td><td>週 75-150 分</td></tr><tr><td>筋力強化（レジスタンストレーニング）</td><td>週 2日以上</td></tr><tr><td>座っている時間を減らす</td><td>わずかな増加でもメリットがあります</td></tr></tbody></table><h3 id="using-active-energy-effectively">アクティブエネルギーを効果的に活用する</h3><ol><li><strong>自分の基準を知る：</strong> 行動を変えずに2週間追跡してみましょう</li><li><strong>段階的な目標を設定する：</strong> 週に 10〜20% ずつ増やしていきましょう</li><li><strong>継続性を重視する：</strong> たまに行う激しい運動よりも、毎日の動きの方が重要です</li><li><strong>絶対視せずフィードバックとして使う：</strong> 1日の数値よりもトレンドが重要です</li><li><strong>他の指標と組み合わせる：</strong> 歩数、エクササイズ時間、心拍数ゾーンなど</li></ol><h3 id="healthy-relationship-with-numbers">数値との健康的な向き合い方</h3><p>過度な追跡を避けるために：</p><ul><li><strong>消費カロリーに基づいて食事をしない：</strong> 運動による空腹感は正常で健康的です</li><li><strong>必要な時は休む：</strong> 回復もフィットネスの一部です</li><li><strong>量より質：</strong> 活動の強度や種類も重要です</li><li><strong>自分の体の声を聞く：</strong> 数値はツールであり、命令ではありません</li></ul><h2 id="when-to-seek-medical-attention">医師に相談すべき場合</h2><p>以下のような症状がある場合は、医療提供者に相談してください：</p><ul><li>活動能力に説明のつかない大きな変化があった</li><li>活動レベルで説明できない極度の疲労感</li><li>運動不耐症（これまで簡単だった活動が困難になる）</li><li>活動中の痛み、息切れ、またはめまい</li><li>カロリー消費や運動に対する強迫観念</li></ul><h2 id="references">参考文献</h2><ol><li>Pontzer H, et al. (2016) Constrained Total Energy Expenditure and Metabolic Adaptation to Physical
-                Activity in Adult Humans. <em>Current Biology</em>, 26(3), 410-417.</li><li>Thomas DM, et al. (2012) Why do individuals not lose more weight from an exercise intervention at a
-                defined dose? <em>Obesity Reviews</em>, 13(10), 835-847.</li><li>Melanson EL, et al. (2013) Resistance to exercise-induced weight loss: compensatory behavioral
-                adaptations. <em>Medicine & Science in Sports & Exercise</em>, 45(8), 1600-1609.</li><li>Hall KD, et al. (2012) Energy balance and its components: implications for body weight regulation.
-                <em>American Journal of Clinical Nutrition</em>, 95(4), 989-994.</li><li>Westerterp KR. (2017) Control of energy expenditure in humans. <em>European Journal of Clinical
-                    Nutrition</em>, 71(3), 340-344.</li><li>Willis EA, et al. (2014) Nonexercise energy expenditure and physical activity in the Midwest Exercise
-                Trial 2. <em>Medicine & Science in Sports & Exercise</em>, 46(12), 2286-2294.</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>医療情報</strong></div><p>このコンテンツは教育目的のみを目的としており、専門的な医学的アドバイスに代わるものではありません。医学的な決定については、常に医療提供者に相談してください。</p></aside><div class="metric-footer"><hr><p><em>最終更新：2026年1月</em></p></div></article></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
+            - 全死亡率</p>
+        <h2 id="clinical-significance">臨床上の重要性</h2>
+        <h3 id="why-track-active-energy">なぜアクティブエネルギーを追跡するのか？</h3>
+        <p>カロリー計算には限界がありますが、アクティブエネルギーの追跡は以下を提供します：</p>
+        <ol>
+            <li><strong>活動への意識：</strong> 1日の動きの客観的な尺度</li>
+            <li><strong>トレンドの監視：</strong> 活動レベルの週ごとの変化</li>
+            <li><strong>目標設定：</strong> 身体活動を増やすための目標値</li>
+            <li><strong>ワークアウトの強度：</strong> カロリー消費が高いほど、より高い負荷がかかっていることを示します</li>
+            <li><strong>回復の状況：</strong> 消費が極端に高い場合は、休息が必要な指標となります</li>
+        </ol>
+        <h3 id="understanding-your-numbers">数値の理解</h3>
+        <p><strong>一般的なアクティブエネルギーの範囲：</strong></p>
+        <table class="clinical-table">
+            <thead>
+                <tr>
+                    <th>活動レベル</th>
+                    <th>1日のアクティブカロリー</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ほとんど動かない (Sedentary)</td>
+                    <td>100-200 kcal</td>
+                </tr>
+                <tr>
+                    <td>軽い活動 (Lightly active)</td>
+                    <td>200-400 kcal</td>
+                </tr>
+                <tr>
+                    <td>中程度の活動 (Moderately active)</td>
+                    <td>400-700 kcal</td>
+                </tr>
+                <tr>
+                    <td>活発な活動 (Very active)</td>
+                    <td>700-1000 kcal</td>
+                </tr>
+                <tr>
+                    <td>極めて活発な活動 (Extremely active)</td>
+                    <td>1000+ kcal</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><em>数値は体の大きさ、年齢、活動の種類によって大きく異なります。</em></p>
+        <h3 id="limitations-of-calorie-tracking">カロリー追跡の限界</h3>
+        <p>アクティブエネルギーの推定には、固有の不正確さが伴います：</p>
+        <ul>
+            <li><strong>ウェアラブルデバイス：</strong> 個別のアクティビティに対して、通常 ±20〜30% の誤差があります</li>
+            <li><strong>筋力トレーニング：</strong> 有酸素運動に比べて正確に記録されにくいです</li>
+            <li><strong>個人の差：</strong> 同じ活動でも、人によって消費カロリーは異なります</li>
+            <li><strong>NEAT の変動：</strong> 日常的な「運動以外の動き」には大きな個人差があります</li>
+            <li><strong>アルゴリズムの限界：</strong> モデルはすべての変数を考慮できているわけではありません</li>
+        </ul>
+        <p><strong>ベストプラクティス：</strong> 絶対的な数値よりも、<strong>相対的なトレンド</strong>（先週に比べて今週はより活動的か？）に焦点を当ててください。</p>
+        <h2 id="recommendations">推奨事項</h2>
+        <h3 id="activity-guidelines">活動ガイドライン</h3>
+        <p><strong>アメリカ心臓協会 (AHA)</strong> および <strong>WHO</strong> の推奨：</p>
+        <table class="clinical-table">
+            <thead>
+                <tr>
+                    <th>ガイドライン</th>
+                    <th>量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>中強度の有酸素活動</td>
+                    <td>週 150-300 分</td>
+                </tr>
+                <tr>
+                    <td>高強度の有酸素活動</td>
+                    <td>週 75-150 分</td>
+                </tr>
+                <tr>
+                    <td>筋力強化（レジスタンストレーニング）</td>
+                    <td>週 2日以上</td>
+                </tr>
+                <tr>
+                    <td>座っている時間を減らす</td>
+                    <td>わずかな増加でもメリットがあります</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="using-active-energy-effectively">アクティブエネルギーを効果的に活用する</h3>
+        <ol>
+            <li><strong>自分の基準を知る：</strong> 行動を変えずに2週間追跡してみましょう</li>
+            <li><strong>段階的な目標を設定する：</strong> 週に 10〜20% ずつ増やしていきましょう</li>
+            <li><strong>継続性を重視する：</strong> たまに行う激しい運動よりも、毎日の動きの方が重要です</li>
+            <li><strong>絶対視せずフィードバックとして使う：</strong> 1日の数値よりもトレンドが重要です</li>
+            <li><strong>他の指標と組み合わせる：</strong> 歩数、エクササイズ時間、心拍数ゾーンなど</li>
+        </ol>
+        <h3 id="healthy-relationship-with-numbers">数値との健康的な向き合い方</h3>
+        <p>過度な追跡を避けるために：</p>
+        <ul>
+            <li><strong>消費カロリーに基づいて食事をしない：</strong> 運動による空腹感は正常で健康的です</li>
+            <li><strong>必要な時は休む：</strong> 回復もフィットネスの一部です</li>
+            <li><strong>量より質：</strong> 活動の強度や種類も重要です</li>
+            <li><strong>自分の体の声を聞く：</strong> 数値はツールであり、命令ではありません</li>
+        </ul>
+        <h2 id="when-to-seek-medical-attention">医師に相談すべき場合</h2>
+        <p>以下のような症状がある場合は、医療提供者に相談してください：</p>
+        <ul>
+            <li>活動能力に説明のつかない大きな変化があった</li>
+            <li>活動レベルで説明できない極度の疲労感</li>
+            <li>運動不耐症（これまで簡単だった活動が困難になる）</li>
+            <li>活動中の痛み、息切れ、またはめまい</li>
+            <li>カロリー消費や運動に対する強迫観念</li>
+        </ul>
+        <h2 id="references">参考文献</h2>
+        <ol>
+            <li>Pontzer H, et al. (2016) Constrained Total Energy Expenditure and Metabolic Adaptation to Physical
+                Activity in Adult Humans. <em>Current Biology</em>, 26(3), 410-417.</li>
+            <li>Thomas DM, et al. (2012) Why do individuals not lose more weight from an exercise intervention at a
+                defined dose? <em>Obesity Reviews</em>, 13(10), 835-847.</li>
+            <li>Melanson EL, et al. (2013) Resistance to exercise-induced weight loss: compensatory behavioral
+                adaptations. <em>Medicine & Science in Sports & Exercise</em>, 45(8), 1600-1609.</li>
+            <li>Hall KD, et al. (2012) Energy balance and its components: implications for body weight regulation.
+                <em>American Journal of Clinical Nutrition</em>, 95(4), 989-994.</li>
+            <li>Westerterp KR. (2017) Control of energy expenditure in humans. <em>European Journal of Clinical
+                    Nutrition</em>, 71(3), 340-344.</li>
+            <li>Willis EA, et al. (2014) Nonexercise energy expenditure and physical activity in the Midwest Exercise
+                Trial 2. <em>Medicine & Science in Sports & Exercise</em>, 46(12), 2286-2294.</li>
+        </ol>
+    </div>
+
+    <aside class="medical-disclaimer">
+        <div class="disclaimer-icon">⚠️ <strong>医療情報</strong></div>
+        <p>このコンテンツは教育目的のみを目的としており、専門的な医学的アドバイスに代わるものではありません。医学的な決定については、常に医療提供者に相談してください。</p>
+    </aside>
+
+    <div class="metric-footer">
+        <hr>
+        <p><em>最終更新：2026年1月</em></p>
+    </div>
+</article>
+    
+
+    
+    
+<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
+  <div class="container container-narrow">
+    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
+      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
+      <div class="eeat-details">
+        
+        
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+          Expertly Reviewed by 
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Arno Health</span>
+          </span>
+        </h3>
+        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+    
+<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/movement-fitness/active-energy-burned">
+  <div class="container ai-citation-shell">
+    <h2 class="ai-citation-title">アクティブエネルギー - Apple 健康データを CSV、PDF、JSON にエクスポート |...</h2>
+    <p class="ai-citation-answer">アクティブエネルギー（アクティブカロリーやエクササイズカロリーとも呼ばれます）は、安静時の代謝率を超えて、身体活動を通じて消費されたエネルギーを表します。キロカロリー（一般的に「カロリー」と呼ばれます）またはキロジュールで測定されます。</p>
+
+    <ul class="ai-citation-facts" role="list">
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">📅</span>
+        <span>2026-03-31</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact ai-citation-keywords">
+        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
+        <span>アクティブエネルギー · Export · Apple · Health</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
+        <a href="../../../../ja/bibliography/">
+          
+          参考文献
+          
+        </a>
+      </li>
+      
+    </ul>
+
+    
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Health Analytics</h2>
+                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store">
+                        <img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Available in</h3>
+            <div class="lang-grid">
+                
+                <a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a><a href="/am/" class="lang-link"
+                </a>
+                
+                <a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a><a href="/ar/" class="lang-link"
+                </a>
+                
+                <a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a><a href="/bg/" class="lang-link"
+                </a>
+                
+                <a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a><a href="/bn/" class="lang-link"
+                </a>
+                
+                <a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a><a href="/ca/" class="lang-link"
+                </a>
+                
+                <a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a><a href="/cs/" class="lang-link"
+                </a>
+                
+                <a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a><a href="/da/" class="lang-link"
+                </a>
+                
+                <a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a><a href="/de/" class="lang-link"
+                </a>
+                
+                <a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a><a href="/el/" class="lang-link"
+                </a>
+                
+                <a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a><a href="/en/" class="lang-link"
+                </a>
+                
+                <a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a><a href="/es/" class="lang-link"
+                </a>
+                
+                <a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a><a href="/et/" class="lang-link"
+                </a>
+                
+                <a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a><a href="/fa/" class="lang-link"
+                </a>
+                
+                <a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a><a href="/fi/" class="lang-link"
+                </a>
+                
+                <a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a><a href="/fr/" class="lang-link"
+                </a>
+                
+                <a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a><a href="/gu/" class="lang-link"
+                </a>
+                
+                <a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a><a href="/ha/" class="lang-link"
+                </a>
+                
+                <a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a><a href="/he/" class="lang-link"
+                </a>
+                
+                <a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a><a href="/hi/" class="lang-link"
+                </a>
+                
+                <a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a><a href="/hr/" class="lang-link"
+                </a>
+                
+                <a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a><a href="/hu/" class="lang-link"
+                </a>
+                
+                <a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a><a href="/id/" class="lang-link"
+                </a>
+                
+                <a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a><a href="/is/" class="lang-link"
+                </a>
+                
+                <a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a><a href="/it/" class="lang-link"
+                </a>
+                
+                <a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a><a href="/ja/" class="lang-link active"
+                </a>
+                
+                <a href="/ja/" class="lang-link active"
                     hreflang="ja" >
                     日本語
-                </a><a href="/km/" class="lang-link"
+                </a>
+                
+                <a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a><a href="/kn/" class="lang-link"
+                </a>
+                
+                <a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a><a href="/ko/" class="lang-link"
+                </a>
+                
+                <a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a><a href="/lt/" class="lang-link"
+                </a>
+                
+                <a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a><a href="/lv/" class="lang-link"
+                </a>
+                
+                <a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a><a href="/ms/" class="lang-link"
+                </a>
+                
+                <a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a><a href="/my/" class="lang-link"
+                </a>
+                
+                <a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a><a href="/nb/" class="lang-link"
+                </a>
+                
+                <a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a><a href="/nl/" class="lang-link"
+                </a>
+                
+                <a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a><a href="/pl/" class="lang-link"
+                </a>
+                
+                <a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a><a href="/pt/" class="lang-link"
+                </a>
+                
+                <a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a><a href="/pt-br/" class="lang-link"
+                </a>
+                
+                <a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a><a href="/ro/" class="lang-link"
+                </a>
+                
+                <a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a><a href="/ru/" class="lang-link"
+                </a>
+                
+                <a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a><a href="/sk/" class="lang-link"
+                </a>
+                
+                <a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a><a href="/sl/" class="lang-link"
+                </a>
+                
+                <a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a><a href="/sr/" class="lang-link"
+                </a>
+                
+                <a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a><a href="/sv/" class="lang-link"
+                </a>
+                
+                <a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a><a href="/sw/" class="lang-link"
+                </a>
+                
+                <a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a><a href="/ta/" class="lang-link"
+                </a>
+                
+                <a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a><a href="/te/" class="lang-link"
+                </a>
+                
+                <a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a><a href="/th/" class="lang-link"
+                </a>
+                
+                <a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a><a href="/tl/" class="lang-link"
+                </a>
+                
+                <a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a><a href="/tr/" class="lang-link"
+                </a>
+                
+                <a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a><a href="/uk/" class="lang-link"
+                </a>
+                
+                <a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a><a href="/ur/" class="lang-link"
+                </a>
+                
+                <a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a><a href="/vi/" class="lang-link"
+                </a>
+                
+                <a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a><a href="/yo/" class="lang-link"
+                </a>
+                
+                <a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a><a href="/zh/" class="lang-link"
+                </a>
+                
+                <a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
                 &copy; 2026 Health Analytics. 全著作権所有
-            </p><ul class="footer-legal"><li><a href="/ja/privacy/">プライバシー</a></li><li><a href="/ja/terms/">規約</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>このウェブサイトは、ユーザー体験を向上させるためにクッキーを使用しています。</p><a href="/ja/privacy/" class="text-sm">詳細を見る</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">拒否する</button><button id="cookie-accept" class="btn btn-primary btn-small">同意する</button></div></div></div><script src="../../../../assets/js/core.min.js?v=635348535bde" defer></script><script src="../../../../assets/js/search.min.js?v=635348535bde" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/ja/privacy/">プライバシー</a></li>
+                <li><a href="/ja/terms/">規約</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>このウェブサイトは、ユーザー体験を向上させるためにクッキーを使用しています。</p>
+            <a href="/ja/privacy/" class="text-sm">詳細を見る</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">拒否する</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">同意する</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../../../assets/js/core.min.js?v=19fdca55b3da" defer></script>
+  <script src="../../../../assets/js/search.min.js?v=19fdca55b3da" defer></script>
+  
+
+  
+  
+  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
+</body>
+
+</html>
