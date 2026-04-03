@@ -1,477 +1,61 @@
-<!DOCTYPE html>
-<html lang="is" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON</title>
-  <meta name="description" content="Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína.">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Virk orka, hreyfi-fitness, heilsumælingar, heilsusett">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-24T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/">
-  <meta property="og:title" content="Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON">
-  <meta property="og:description" content="Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína.">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="is_IS">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/">
-  <meta name="twitter:title" content="Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON">
-  <meta name="twitter:description" content="Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína.">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/movement-fitness/active-energy-burned/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/movement-fitness/active-energy-burned/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="is" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON</title><meta name="description" content="Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína."><meta name="author" content="Arno Health"><meta name="keywords" content="Virk orka, hreyfi-fitness, heilsumælingar, heilsusett"><link rel="canonical" href="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/"><meta property="og:title" content="Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON"><meta property="og:description" content="Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="is_IS"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/"><meta name="twitter:title" content="Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON"><meta name="twitter:description" content="Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/movement-fitness/active-energy-burned/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/active-energy-burned/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -730,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -774,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -786,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "is"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -805,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -850,14 +407,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -882,17 +432,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/is/metrics/movement-fitness/active-energy-burned/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -906,1140 +446,332 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Fara beint í efni</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/is/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/is/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Fara beint í efni</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/is/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/is/features/" 
                                 aria-current="">
                                 Eiginleikar
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/is/metrics/" 
+                            </a></li><li><a href="/is/metrics/" 
                                 aria-current="">
                                 Mælingasafn
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/is/pricing/" 
+                            </a></li><li><a href="/is/pricing/" 
                                 aria-current="">
                                 Verðskrá
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/is/about/" 
+                            </a></li><li><a href="/is/about/" 
                                 aria-current="">
                                 Um okkur
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Velja tungumál">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Velja tungumál"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" selected>
+                        </option><option value="is" selected>
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Opna/loka valmynd"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    
-<article class="metric-article">
-<nav aria-label="Breadcrumb" class="metric-breadcrumb">
-<ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/is/metrics/" itemprop="item">
-<span itemprop="name">Metric Library</span>
-</a>
-<meta content="1" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/is/metrics/movement-fitness/" itemprop="item">
-<span itemprop="name">Hreyfing og líkamsrækt</span>
-</a>
-<meta content="2" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<span aria-current="page" itemprop="name">Virk orka</span>
-<meta content="3" itemprop="position"/>
-</li>
-</ol>
-</nav>
-<header class="metric-article-header">
-<span class="metric-category-badge">
-<span>🏃</span>Hreyfing og líkamsrækt</span></header>
-<nav class="article-toc">
-<h4>Á þessari síðu</h4>
-<div class="toc">
-<ul>
-<li><a href="#active-energy">Virk orka</a><ul>
-<li><a href="#what-is-active-energy">Hvað er virk orka?</a><ul>
-<li><a href="#how-healthkit-measures-active-energy">Hvernig HealthKit mælir virka orku</a></li>
-</ul>
-</li>
-<li><a href="#scientific-background">Vísindalegur bakgrunnur</a><ul>
-<li><a href="#the-energy-balance-debate">Orkujafnvægisumræðan</a><ul>
-<li><a href="#the-constrained-energy-model">The Constrained Energy Model</a></li>
-<li><a href="#recent-research-exercise-does-increase-energy-expenditure">Nýlegar rannsóknir: Hreyfing eykur orkuútgjöld</a></li>
-<li><a href="#practical-implications">Hagnýtar afleiðingar</a></li>
-</ul>
-</li>
-<li><a href="#exercise-and-mortality-beyond-calories">Hreyfing og dánartíðni: Beyond Calories</a></li>
-</ul>
-</li>
-<li><a href="#clinical-significance">Klínísk þýðing</a><ul>
-<li><a href="#why-track-active-energy">Af hverju að fylgjast með virkri orku?</a></li>
-<li><a href="#understanding-your-numbers">Að skilja tölurnar þínar</a></li>
-<li><a href="#limitations-of-calorie-tracking">Takmarkanir á kaloríumælingu</a></li>
-</ul>
-</li>
-<li><a href="#recommendations">Tilmæli</a><ul>
-<li><a href="#activity-guidelines">Leiðbeiningar um starfsemi</a></li>
-<li><a href="#using-active-energy-effectively">Notaðu virka orku á áhrifaríkan hátt</a></li>
-<li><a href="#healthy-relationship-with-numbers">Heilbrigt samband við tölur</a></li>
-</ul>
-</li>
-<li><a href="#when-to-seek-medical-attention">Hvenær á að leita læknishjálpar</a></li>
-<li><a href="#references">Heimildir</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-<div class="metric-content">
-<h1 id="active-energy">Virk orka</h1>
-<h2 id="what-is-active-energy">Hvað er virk orka?</h2>
-<p>Virk orka (einnig kölluð virkar hitaeiningar eða æfingahitaeiningar) táknar þá orku sem eytt er með líkamlegri virkni yfir efnaskiptahraða í hvíld. Það er mælt í kílókaloríum (almennt kallað „kaloríur“) eða kílójólum.</p>
-<p><strong>Heildarorkuútgjöld á dag (TDEE)</strong>sundrast sem:</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Hluti</th>
-<th>Skammstöfun</th>
-<th>% af TDEE</th>
-<th>Lýsing</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Grunnefnaskiptahraði</td>
-<td>BMR</td>
-<td>60-75%</td>
-<td>Orka fyrir helstu lífsaðgerðir í algjörri hvíld</td>
-</tr>
-<tr>
-<td>Hitaáhrif matvæla</td>
-<td>TEF</td>
-<td>8-12%</td>
-<td>Orka til að melta, gleypa og vinna mat</td>
-</tr>
-<tr>
-<td>Hitamyndun án hreyfingar</td>
-<td>SNILLD</td>
-<td>10-15%</td>
-<td>Fitla, standa, ganga um húsið</td>
-</tr>
-<tr>
-<td>Hreyfivirkni varmamyndun</td>
-<td>BORÐA</td>
-<td>5-10%</td>
-<td>Viljandi æfingar og æfingar</td>
-</tr>
-</tbody>
-</table>
-<h3 id="how-healthkit-measures-active-energy">Hvernig HealthKit mælir virka orku</h3>
-<p>Apple tæki reikna út virka orku með því að nota:</p>
-<ul>
-<li><strong>Hreyfiskynjarar:</strong>Hröðunarmælir og gyroscope fylgjast með hreyfistyrk</li>
-<li><strong>Hjartsláttur:</strong>Hærri hjartsláttur gefur til kynna meiri orkunotkun</li>
-<li><strong>GPS gögn:</strong>Vegalengd sem farið er í útivist</li>
-<li><strong>Persónulegar mælingar:</strong>Aldur, þyngd, hæð og kyn hafa áhrif á kaloríuútreikninga</li>
-<li><strong>Vélnám:</strong>Líkön þjálfuð á gögnum um orkunotkun á rannsóknarstofu</li>
-</ul>
-<p>HealthKit gerir greinarmun á:
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Opna/loka valmynd"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav aria-label="Breadcrumb" class="metric-breadcrumb"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/is/metrics/" itemprop="item"><span itemprop="name">Metric Library</span></a><meta content="1" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/is/metrics/movement-fitness/" itemprop="item"><span itemprop="name">Hreyfing og líkamsrækt</span></a><meta content="2" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span aria-current="page" itemprop="name">Virk orka</span><meta content="3" itemprop="position"/></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>🏃</span>Hreyfing og líkamsrækt</span></header><nav class="article-toc"><h4>Á þessari síðu</h4><div class="toc"><ul><li><a href="#active-energy">Virk orka</a><ul><li><a href="#what-is-active-energy">Hvað er virk orka?</a><ul><li><a href="#how-healthkit-measures-active-energy">Hvernig HealthKit mælir virka orku</a></li></ul></li><li><a href="#scientific-background">Vísindalegur bakgrunnur</a><ul><li><a href="#the-energy-balance-debate">Orkujafnvægisumræðan</a><ul><li><a href="#the-constrained-energy-model">The Constrained Energy Model</a></li><li><a href="#recent-research-exercise-does-increase-energy-expenditure">Nýlegar rannsóknir: Hreyfing eykur orkuútgjöld</a></li><li><a href="#practical-implications">Hagnýtar afleiðingar</a></li></ul></li><li><a href="#exercise-and-mortality-beyond-calories">Hreyfing og dánartíðni: Beyond Calories</a></li></ul></li><li><a href="#clinical-significance">Klínísk þýðing</a><ul><li><a href="#why-track-active-energy">Af hverju að fylgjast með virkri orku?</a></li><li><a href="#understanding-your-numbers">Að skilja tölurnar þínar</a></li><li><a href="#limitations-of-calorie-tracking">Takmarkanir á kaloríumælingu</a></li></ul></li><li><a href="#recommendations">Tilmæli</a><ul><li><a href="#activity-guidelines">Leiðbeiningar um starfsemi</a></li><li><a href="#using-active-energy-effectively">Notaðu virka orku á áhrifaríkan hátt</a></li><li><a href="#healthy-relationship-with-numbers">Heilbrigt samband við tölur</a></li></ul></li><li><a href="#when-to-seek-medical-attention">Hvenær á að leita læknishjálpar</a></li><li><a href="#references">Heimildir</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="active-energy">Virk orka</h1><h2 id="what-is-active-energy">Hvað er virk orka?</h2><p>Virk orka (einnig kölluð virkar hitaeiningar eða æfingahitaeiningar) táknar þá orku sem eytt er með líkamlegri virkni yfir efnaskiptahraða í hvíld. Það er mælt í kílókaloríum (almennt kallað „kaloríur“) eða kílójólum.</p><p><strong>Heildarorkuútgjöld á dag (TDEE)</strong>sundrast sem:</p><table class="clinical-table"><thead><tr><th>Hluti</th><th>Skammstöfun</th><th>% af TDEE</th><th>Lýsing</th></tr></thead><tbody><tr><td>Grunnefnaskiptahraði</td><td>BMR</td><td>60-75%</td><td>Orka fyrir helstu lífsaðgerðir í algjörri hvíld</td></tr><tr><td>Hitaáhrif matvæla</td><td>TEF</td><td>8-12%</td><td>Orka til að melta, gleypa og vinna mat</td></tr><tr><td>Hitamyndun án hreyfingar</td><td>SNILLD</td><td>10-15%</td><td>Fitla, standa, ganga um húsið</td></tr><tr><td>Hreyfivirkni varmamyndun</td><td>BORÐA</td><td>5-10%</td><td>Viljandi æfingar og æfingar</td></tr></tbody></table><h3 id="how-healthkit-measures-active-energy">Hvernig HealthKit mælir virka orku</h3><p>Apple tæki reikna út virka orku með því að nota:</p><ul><li><strong>Hreyfiskynjarar:</strong>Hröðunarmælir og gyroscope fylgjast með hreyfistyrk</li><li><strong>Hjartsláttur:</strong>Hærri hjartsláttur gefur til kynna meiri orkunotkun</li><li><strong>GPS gögn:</strong>Vegalengd sem farið er í útivist</li><li><strong>Persónulegar mælingar:</strong>Aldur, þyngd, hæð og kyn hafa áhrif á kaloríuútreikninga</li><li><strong>Vélnám:</strong>Líkön þjálfuð á gögnum um orkunotkun á rannsóknarstofu</li></ul><p>HealthKit gerir greinarmun á:
 -<strong>Virk orka:</strong>Kaloríur frá hreyfingu og hreyfingu
 -<strong>Hvíldarorka:</strong>Áætlaður grunnefnaskiptahraði
--<strong>Heildarorka:</strong>Summa af virkum + hvíld</p>
-<h2 id="scientific-background">Vísindalegur bakgrunnur</h2>
-<h3 id="the-energy-balance-debate">Orkujafnvægisumræðan</h3>
-<p>Mikil vísindaleg umræða snýst um hvort hreyfing eykur raunverulega heildarorkunotkun dagsins eða hvort líkaminn bæti það upp með því að draga úr orkunotkun annars staðar.</p>
-<h4 id="the-constrained-energy-model">The Constrained Energy Model</h4>
-<p>Þróunarmannfræðingur<strong>Herman Pontzer</strong>lagði til árið 2016 að menn þróuðust til að halda heildarorkueyðslu innan þröngra marka óháð virknistigi:</p>
-<p><strong>Lykilkrafa:</strong>- Líkaminn lagar sig að aukinni hreyfingu með því að minnka orku sem fer í önnur ferli
+-<strong>Heildarorka:</strong>Summa af virkum + hvíld</p><h2 id="scientific-background">Vísindalegur bakgrunnur</h2><h3 id="the-energy-balance-debate">Orkujafnvægisumræðan</h3><p>Mikil vísindaleg umræða snýst um hvort hreyfing eykur raunverulega heildarorkunotkun dagsins eða hvort líkaminn bæti það upp með því að draga úr orkunotkun annars staðar.</p><h4 id="the-constrained-energy-model">The Constrained Energy Model</h4><p>Þróunarmannfræðingur<strong>Herman Pontzer</strong>lagði til árið 2016 að menn þróuðust til að halda heildarorkueyðslu innan þröngra marka óháð virknistigi:</p><p><strong>Lykilkrafa:</strong>- Líkaminn lagar sig að aukinni hreyfingu með því að minnka orku sem fer í önnur ferli
 - Þetta „þvingaða“ líkan bendir til þess að hreyfing auki ekki heildarorkueyðslu eins og búist var við
-- Vísbendingar komu frá rannsóknum á stofnum veiðimanna og safnara</p>
-<h4 id="recent-research-exercise-does-increase-energy-expenditure">Nýlegar rannsóknir: Hreyfing eykur orkuútgjöld</h4>
-<p>A<strong>2025 Virginia Tech rannsókn</strong>birt í<em>PNAS</em>prófaði þessa tilgátu beint með stýrðum rannsóknum:</p>
-<p><strong>Helstu niðurstöður:</strong>- Líkamleg virkni<strong>eykst</strong>heildarorkunotkun á dag
+- Vísbendingar komu frá rannsóknum á stofnum veiðimanna og safnara</p><h4 id="recent-research-exercise-does-increase-energy-expenditure">Nýlegar rannsóknir: Hreyfing eykur orkuútgjöld</h4><p>A<strong>2025 Virginia Tech rannsókn</strong>birt í<em>PNAS</em>prófaði þessa tilgátu beint með stýrðum rannsóknum:</p><p><strong>Helstu niðurstöður:</strong>- Líkamleg virkni<strong>eykst</strong>heildarorkunotkun á dag
 - Bætur eru til en eru<strong>að hluta</strong>, ekki lokið
-- Þvingaða líkanið ofeinfaldaði sambandið</p>
-<blockquote>
-<p>"Þessar rannsóknir sýna greinilega að hreyfing eykur hversu mörgum hitaeiningum þú brennir á hverjum degi. Það er mikilvægt að hafa í huga að aukning á daglegri orkunotkun var ekki alltaf eins mikil og búist var við - en hófleg aukning er langt frá því að halda því fram að hreyfing auki ekki daglega orkunotkun yfirleitt."
-— 2025 Virginia Tech Study</p>
-</blockquote>
-<h4 id="practical-implications">Hagnýtar afleiðingar</h4>
-<ul>
-<li><strong>Hreyfing brennir auka kaloríum</strong>, en kannski 50-80% af fræðilegu magni</li>
-<li><strong>Þyngdartap með hreyfingu eingöngu</strong>er erfitt vegna þess að bætur eiga sér stað</li>
-<li><strong>Samsett mataræði og hreyfing</strong>enn áhrifaríkust til þyngdarstjórnunar</li>
-<li><strong>Ávinningur af æfingum nær langt út fyrir kaloríur:</strong>hjarta- og æðaheilbrigði, geðheilsa, varðveislu vöðva, efnaskiptaheilbrigði</li>
-</ul>
-<h3 id="exercise-and-mortality-beyond-calories">Hreyfing og dánartíðni: Beyond Calories</h3>
-<p>Burtséð frá þyngdartapsáhrifum dregur líkamleg virkni sjálfstætt úr dánartíðni:</p>
-<p><strong>Úr meta-greiningum:</strong>-<strong>150 mín/viku hófleg hreyfing:</strong>22% lægri dánartíðni af öllum orsökum
+- Þvingaða líkanið ofeinfaldaði sambandið</p><blockquote><p>"Þessar rannsóknir sýna greinilega að hreyfing eykur hversu mörgum hitaeiningum þú brennir á hverjum degi. Það er mikilvægt að hafa í huga að aukning á daglegri orkunotkun var ekki alltaf eins mikil og búist var við - en hófleg aukning er langt frá því að halda því fram að hreyfing auki ekki daglega orkunotkun yfirleitt."
+— 2025 Virginia Tech Study</p></blockquote><h4 id="practical-implications">Hagnýtar afleiðingar</h4><ul><li><strong>Hreyfing brennir auka kaloríum</strong>, en kannski 50-80% af fræðilegu magni</li><li><strong>Þyngdartap með hreyfingu eingöngu</strong>er erfitt vegna þess að bætur eiga sér stað</li><li><strong>Samsett mataræði og hreyfing</strong>enn áhrifaríkust til þyngdarstjórnunar</li><li><strong>Ávinningur af æfingum nær langt út fyrir kaloríur:</strong>hjarta- og æðaheilbrigði, geðheilsa, varðveislu vöðva, efnaskiptaheilbrigði</li></ul><h3 id="exercise-and-mortality-beyond-calories">Hreyfing og dánartíðni: Beyond Calories</h3><p>Burtséð frá þyngdartapsáhrifum dregur líkamleg virkni sjálfstætt úr dánartíðni:</p><p><strong>Úr meta-greiningum:</strong>-<strong>150 mín/viku hófleg hreyfing:</strong>22% lægri dánartíðni af öllum orsökum
 -<strong>300 mín/viku hófleg hreyfing:</strong>35% lægri dánartíðni af öllum orsökum
-- Hagnast á hálendi en snúast ekki við við mjög mikla virkni</p>
-<p><strong>Líkamleg hreyfing dregur úr:</strong>- Hætta á hjarta- og æðasjúkdómum
+- Hagnast á hálendi en snúast ekki við við mjög mikla virkni</p><p><strong>Líkamleg hreyfing dregur úr:</strong>- Hætta á hjarta- og æðasjúkdómum
 - Hætta á sykursýki af tegund 2
 - Nokkrar krabbameinsgerðir
 - Þunglyndi og kvíði
 - Vitsmunaleg hnignun
-- Dánartíðni af öllum orsökum</p>
-<h2 id="clinical-significance">Klínísk þýðing</h2>
-<h3 id="why-track-active-energy">Af hverju að fylgjast með virkri orku?</h3>
-<p>Þó að kaloríutalning hafi takmarkanir, veitir mælingar á virkri orku:</p>
-<ol>
-<li><strong>Starfsvitund:</strong>Hlutlægur mælikvarði á daglega hreyfingu</li>
-<li><strong>Þróunarvöktun:</strong>Breytingar á virkni frá viku til viku</li>
-<li><strong>Markmiðssetning:</strong>Markmið um að auka hreyfingu</li>
-<li><strong>Æfingastyrkur:</strong>Hærri kaloríubrennsla gefur til kynna erfiðari áreynslu</li>
-<li><strong>Batasamhengi:</strong>Mjög mikil útgjöld geta bent til hvíldarþörf</li>
-</ol>
-<h3 id="understanding-your-numbers">Að skilja tölurnar þínar</h3>
-<p><strong>Dæmigert virk orkusvið:</strong></p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Athafnastig</th>
-<th>Virkar hitaeiningar/dag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Kyrrsetu</td>
-<td>100-200 kcal</td>
-</tr>
-<tr>
-<td>Létt virkur</td>
-<td>200-400 kcal</td>
-</tr>
-<tr>
-<td>Miðlungs virkur</td>
-<td>400-700 kcal</td>
-</tr>
-<tr>
-<td>Mjög virkur</td>
-<td>700-1000 kcal</td>
-</tr>
-<tr>
-<td>Einstaklega virk</td>
-<td>1000+ kcal</td>
-</tr>
-</tbody>
-</table>
-<p><em>Gildi eru verulega mismunandi eftir líkamsstærð, aldri og virkni.</em></p>
-<h3 id="limitations-of-calorie-tracking">Takmarkanir á kaloríumælingu</h3>
-<p>Virk orkumat hefur meðfædda ónákvæmni:</p>
-<ul>
-<li><strong>Nothæf tæki:</strong>Venjulega ±20-30% skekkju fyrir einstakar athafnir</li>
-<li><strong>Styrktarþjálfun:</strong>Illa tekinn miðað við hjartalínurit</li>
-<li><strong>Einstök afbrigði:</strong>Sama virkni brennir mismunandi hitaeiningum fyrir mismunandi fólk</li>
-<li><strong>SNILLD afbrigði:</strong>Dagleg hreyfing án æfinga er mjög mismunandi</li>
-<li><strong>Takmarkanir reiknirit:</strong>Líkön gera ekki grein fyrir öllum breytum</li>
-</ul>
-<p><strong>Bestu starfshættir:</strong>Einbeittu þér að<strong>hlutfallsleg þróun</strong>(er ég virkari í þessari viku samanborið við síðustu?) frekar en algjörar tölur.</p>
-<h2 id="recommendations">Tilmæli</h2>
-<h3 id="activity-guidelines">Leiðbeiningar um starfsemi</h3>
-<p>The<strong>American Heart Association</strong>og<strong>HVER</strong>mæli með:</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Leiðbeiningar</th>
-<th>Upphæð</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Miðlungs loftháð virkni</td>
-<td>150-300 mín/viku</td>
-</tr>
-<tr>
-<td>Öflug þolþjálfun</td>
-<td>75-150 mín/viku</td>
-</tr>
-<tr>
-<td>Vöðvastyrking</td>
-<td>2+ dagar/viku</td>
-</tr>
-<tr>
-<td>Draga úr kyrrsetutíma</td>
-<td>Öll hækkun er til bóta</td>
-</tr>
-</tbody>
-</table>
-<h3 id="using-active-energy-effectively">Notaðu virka orku á áhrifaríkan hátt</h3>
-<ol>
-<li><strong>Settu grunnlínuna þína:</strong>Fylgstu með í 2 vikur án þess að breyta hegðun</li>
-<li><strong>Settu framsækin markmið:</strong>Hækkun um 10-20% á viku</li>
-<li><strong>Leggðu áherslu á samræmi:</strong>Dagleg hreyfing skiptir meira máli en einstaka ákafar æfingar</li>
-<li><strong>Notaðu sem endurgjöf, ekki fagnaðarerindi:</strong>Stefna skipta meira máli en daglegar tölur</li>
-<li><strong>Sameina með öðrum mæligildum:</strong>Skref, æfingar mínútur, hjartsláttarsvæði</li>
-</ol>
-<h3 id="healthy-relationship-with-numbers">Heilbrigt samband við tölur</h3>
-<p>Til að forðast þráhyggjumælingar:</p>
-<ul>
-<li><strong>Ekki borða byggt á kaloríubrennslu:</strong>Hungur af völdum hreyfingar er eðlilegt og heilbrigt</li>
-<li><strong>Hvíldu þegar þörf krefur:</strong>Bati er hluti af líkamsrækt</li>
-<li><strong>Gæði fram yfir magn:</strong>Styrkur og tegund starfsemi skipta máli</li>
-<li><strong>Hlustaðu á líkama þinn:</strong>Tölur eru verkfæri, ekki skipanir</li>
-</ul>
-<h2 id="when-to-seek-medical-attention">Hvenær á að leita læknishjálpar</h2>
-<p>Hafðu samband við heilbrigðisstarfsmann ef þú finnur fyrir:</p>
-<ul>
-<li>Verulegar óútskýrðar breytingar á starfsgetu</li>
-<li>Mikil þreyta skýrist ekki af virkni</li>
-<li>Áreynsluóþol (erfiðleikar við að framkvæma áður auðveldar athafnir)</li>
-<li>Verkur, mæði eða svimi meðan á virkni stendur</li>
-<li>Þráhyggjuhugsanir um kaloríubrennslu eða hreyfingu</li>
-</ul>
-<h2 id="references">Heimildir</h2>
-<ol>
-<li>Pontzer H, o.fl. (2016) Takmörkuð heildarorkuútgjöld og efnaskiptaaðlögun að líkamlegri hreyfingu hjá fullorðnum mönnum.<em>Núverandi líffræði</em>, 26(3), 410-417.</li>
-<li>Thomas DM, o.fl. (2012) Hvers vegna léttast einstaklingar ekki meira af áreynsluíhlutun í ákveðnum skammti?<em>Umsagnir um offitu</em>13(10), 835-847.</li>
-<li>Melanson EL, o.fl. (2013) Viðnám gegn þyngdartapi af völdum áreynslu: uppbótarhegðunaraðlögun.<em>Læknisfræði og vísindi í íþróttum og hreyfingu</em>, 45(8), 1600-1609.</li>
-<li>Hall KD, o.fl. (2012) Orkujafnvægi og íhlutir þess: áhrif á líkamsþyngdarstjórnun.<em>American Journal of Clinical Nutrition</em>95(4), 989-994.</li>
-<li>Westerterp KR. (2017) Eftirlit með orkueyðslu hjá mönnum.<em>European Journal of Clinical Nutrition</em>, 71(3), 340-344.</li>
-<li>Willis EA, o.fl. (2014) Orkueyðsla og hreyfing án æfinga í Midwest Exercise Trial 2.<em>Læknisfræði og vísindi í íþróttum og hreyfingu</em>46(12), 2286-2294.</li>
-</ol>
-</div>
-<aside class="medical-disclaimer">
-<div class="disclaimer-icon">⚠️<strong>Læknisfræðilegar upplýsingar</strong></div>
-<p>Þetta efni er eingöngu ætlað til fræðslu og ætti ekki að koma í staðinn
+- Dánartíðni af öllum orsökum</p><h2 id="clinical-significance">Klínísk þýðing</h2><h3 id="why-track-active-energy">Af hverju að fylgjast með virkri orku?</h3><p>Þó að kaloríutalning hafi takmarkanir, veitir mælingar á virkri orku:</p><ol><li><strong>Starfsvitund:</strong>Hlutlægur mælikvarði á daglega hreyfingu</li><li><strong>Þróunarvöktun:</strong>Breytingar á virkni frá viku til viku</li><li><strong>Markmiðssetning:</strong>Markmið um að auka hreyfingu</li><li><strong>Æfingastyrkur:</strong>Hærri kaloríubrennsla gefur til kynna erfiðari áreynslu</li><li><strong>Batasamhengi:</strong>Mjög mikil útgjöld geta bent til hvíldarþörf</li></ol><h3 id="understanding-your-numbers">Að skilja tölurnar þínar</h3><p><strong>Dæmigert virk orkusvið:</strong></p><table class="clinical-table"><thead><tr><th>Athafnastig</th><th>Virkar hitaeiningar/dag</th></tr></thead><tbody><tr><td>Kyrrsetu</td><td>100-200 kcal</td></tr><tr><td>Létt virkur</td><td>200-400 kcal</td></tr><tr><td>Miðlungs virkur</td><td>400-700 kcal</td></tr><tr><td>Mjög virkur</td><td>700-1000 kcal</td></tr><tr><td>Einstaklega virk</td><td>1000+ kcal</td></tr></tbody></table><p><em>Gildi eru verulega mismunandi eftir líkamsstærð, aldri og virkni.</em></p><h3 id="limitations-of-calorie-tracking">Takmarkanir á kaloríumælingu</h3><p>Virk orkumat hefur meðfædda ónákvæmni:</p><ul><li><strong>Nothæf tæki:</strong>Venjulega ±20-30% skekkju fyrir einstakar athafnir</li><li><strong>Styrktarþjálfun:</strong>Illa tekinn miðað við hjartalínurit</li><li><strong>Einstök afbrigði:</strong>Sama virkni brennir mismunandi hitaeiningum fyrir mismunandi fólk</li><li><strong>SNILLD afbrigði:</strong>Dagleg hreyfing án æfinga er mjög mismunandi</li><li><strong>Takmarkanir reiknirit:</strong>Líkön gera ekki grein fyrir öllum breytum</li></ul><p><strong>Bestu starfshættir:</strong>Einbeittu þér að<strong>hlutfallsleg þróun</strong>(er ég virkari í þessari viku samanborið við síðustu?) frekar en algjörar tölur.</p><h2 id="recommendations">Tilmæli</h2><h3 id="activity-guidelines">Leiðbeiningar um starfsemi</h3><p>The<strong>American Heart Association</strong>og<strong>HVER</strong>mæli með:</p><table class="clinical-table"><thead><tr><th>Leiðbeiningar</th><th>Upphæð</th></tr></thead><tbody><tr><td>Miðlungs loftháð virkni</td><td>150-300 mín/viku</td></tr><tr><td>Öflug þolþjálfun</td><td>75-150 mín/viku</td></tr><tr><td>Vöðvastyrking</td><td>2+ dagar/viku</td></tr><tr><td>Draga úr kyrrsetutíma</td><td>Öll hækkun er til bóta</td></tr></tbody></table><h3 id="using-active-energy-effectively">Notaðu virka orku á áhrifaríkan hátt</h3><ol><li><strong>Settu grunnlínuna þína:</strong>Fylgstu með í 2 vikur án þess að breyta hegðun</li><li><strong>Settu framsækin markmið:</strong>Hækkun um 10-20% á viku</li><li><strong>Leggðu áherslu á samræmi:</strong>Dagleg hreyfing skiptir meira máli en einstaka ákafar æfingar</li><li><strong>Notaðu sem endurgjöf, ekki fagnaðarerindi:</strong>Stefna skipta meira máli en daglegar tölur</li><li><strong>Sameina með öðrum mæligildum:</strong>Skref, æfingar mínútur, hjartsláttarsvæði</li></ol><h3 id="healthy-relationship-with-numbers">Heilbrigt samband við tölur</h3><p>Til að forðast þráhyggjumælingar:</p><ul><li><strong>Ekki borða byggt á kaloríubrennslu:</strong>Hungur af völdum hreyfingar er eðlilegt og heilbrigt</li><li><strong>Hvíldu þegar þörf krefur:</strong>Bati er hluti af líkamsrækt</li><li><strong>Gæði fram yfir magn:</strong>Styrkur og tegund starfsemi skipta máli</li><li><strong>Hlustaðu á líkama þinn:</strong>Tölur eru verkfæri, ekki skipanir</li></ul><h2 id="when-to-seek-medical-attention">Hvenær á að leita læknishjálpar</h2><p>Hafðu samband við heilbrigðisstarfsmann ef þú finnur fyrir:</p><ul><li>Verulegar óútskýrðar breytingar á starfsgetu</li><li>Mikil þreyta skýrist ekki af virkni</li><li>Áreynsluóþol (erfiðleikar við að framkvæma áður auðveldar athafnir)</li><li>Verkur, mæði eða svimi meðan á virkni stendur</li><li>Þráhyggjuhugsanir um kaloríubrennslu eða hreyfingu</li></ul><h2 id="references">Heimildir</h2><ol><li>Pontzer H, o.fl. (2016) Takmörkuð heildarorkuútgjöld og efnaskiptaaðlögun að líkamlegri hreyfingu hjá fullorðnum mönnum.<em>Núverandi líffræði</em>, 26(3), 410-417.</li><li>Thomas DM, o.fl. (2012) Hvers vegna léttast einstaklingar ekki meira af áreynsluíhlutun í ákveðnum skammti?<em>Umsagnir um offitu</em>13(10), 835-847.</li><li>Melanson EL, o.fl. (2013) Viðnám gegn þyngdartapi af völdum áreynslu: uppbótarhegðunaraðlögun.<em>Læknisfræði og vísindi í íþróttum og hreyfingu</em>, 45(8), 1600-1609.</li><li>Hall KD, o.fl. (2012) Orkujafnvægi og íhlutir þess: áhrif á líkamsþyngdarstjórnun.<em>American Journal of Clinical Nutrition</em>95(4), 989-994.</li><li>Westerterp KR. (2017) Eftirlit með orkueyðslu hjá mönnum.<em>European Journal of Clinical Nutrition</em>, 71(3), 340-344.</li><li>Willis EA, o.fl. (2014) Orkueyðsla og hreyfing án æfinga í Midwest Exercise Trial 2.<em>Læknisfræði og vísindi í íþróttum og hreyfingu</em>46(12), 2286-2294.</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️<strong>Læknisfræðilegar upplýsingar</strong></div><p>Þetta efni er eingöngu ætlað til fræðslu og ætti ekki að koma í staðinn
     faglega læknisráðgjöf. Hafðu alltaf samband við heilbrigðisstarfsmann fyrir
-    læknisfræðilegar ákvarðanir.</p>
-</aside>
-<div class="metric-footer">
-<hr/>
-<p><em>Síðast uppfært: janúar 2026</em></p>
-</div>
-</article>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+    læknisfræðilegar ákvarðanir.</p></aside><div class="metric-footer"><hr/><p><em>Síðast uppfært: janúar 2026</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">Arno Health</span>
-          </span>
-          
-        </h3>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/movement-fitness/active-energy-burned">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON</h2>
-    <p class="ai-citation-answer">Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-24</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>Virk orka · hreyfi-fitness · heilsumælingar · heilsusett</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../../../is/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/movement-fitness/active-energy-burned"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Virk orka - Flyttu út Apple heilsugögn í CSV, PDF og JSON</h2><p class="ai-citation-answer">Virk orka (einnig kallað virkar kaloríur eða æfingakaloríur) táknar orkuna sem eytt er við hreyfingu umfram grunnorkubrennslu þína.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>Virk orka · hreyfi-fitness · heilsumælingar · heilsusett</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../is/bibliography/">
           
           Heimildaskrá
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link active"
+                </a><a href="/is/" class="lang-link active"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Allur réttur áskilinn
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/is/privacy/">Persónuvernd</a></li>
-                <li><a href="/is/terms/">Skilmálar</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Þessi vefsíða notar vafrakökur til að bæta upplifun þína.</p>
-            <a href="/is/privacy/" class="text-sm">Fræðast meira</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Hafna</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Samþykkja</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/is/privacy/">Persónuvernd</a></li><li><a href="/is/terms/">Skilmálar</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Þessi vefsíða notar vafrakökur til að bæta upplifun þína.</p><a href="/is/privacy/" class="text-sm">Fræðast meira</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Hafna</button><button id="cookie-accept" class="btn btn-primary btn-small">Samþykkja</button></div></div></div><script src="../../../../assets/js/core.min.js?v=87724973" defer></script><script src="../../../../assets/js/search.min.js?v=87724973" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

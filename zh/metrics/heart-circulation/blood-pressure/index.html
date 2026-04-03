@@ -1,477 +1,61 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |...</title>
-  <meta name="description" content="血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="血压, 心脏, 健康, 监测">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-24T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/">
-  <meta property="og:title" content="血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |...">
-  <meta property="og:description" content="血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/">
-  <meta name="twitter:title" content="血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |...">
-  <meta name="twitter:description" content="血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="zh" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |...</title><meta name="description" content="血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。"><meta name="author" content="Arno Health"><meta name="keywords" content="血压, 心脏, 健康, 监测"><link rel="canonical" href="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/"><meta property="og:title" content="血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |..."><meta property="og:description" content="血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。"><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/"><meta name="twitter:title" content="血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |..."><meta name="twitter:description" content="血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。"><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -730,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -774,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -786,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "zh"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -805,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -850,14 +407,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -882,17 +432,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -906,1167 +446,355 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">跳转到内容</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/zh/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/zh/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">跳转到内容</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/zh/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/zh/features/" 
                                 aria-current="">
                                 功能
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/zh/metrics/" 
+                            </a></li><li><a href="/zh/metrics/" 
                                 aria-current="">
                                 指标库
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/zh/pricing/" 
+                            </a></li><li><a href="/zh/pricing/" 
                                 aria-current="">
                                 价格
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/zh/about/" 
+                            </a></li><li><a href="/zh/about/" 
                                 aria-current="">
                                 关于我们
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="选择语言">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="选择语言"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" selected>
+                        </option><option value="zh" selected>
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="切换菜单"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    
-<article class="metric-article">
-<nav aria-label="Breadcrumb" class="metric-breadcrumb">
-<ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/zh/metrics/" itemprop="item">
-<span itemprop="name">指标库</span>
-</a>
-<meta content="1" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/zh/metrics/heart-circulation/" itemprop="item">
-<span itemprop="name">心脏与循环</span>
-</a>
-<meta content="2" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<span aria-current="page" itemprop="name">血压</span>
-<meta content="3" itemprop="position"/>
-</li>
-</ol>
-</nav>
-<header class="metric-article-header">
-<span class="metric-category-badge">
-<span>❤️</span>心脏与循环</span></header>
-<nav class="article-toc">
-<h4>在此页上</h4>
-<div class="toc">
-<ul>
-<li><a href="#blood-pressure">血压</a><ul>
-<li><a href="#what-is-blood-pressure">什么是血压？</a><ul>
-<li><a href="#how-healthkit-stores-blood-pressure">HealthKit 如何存储血压</a></li>
-</ul>
-</li>
-<li><a href="#scientific-background">科学背景</a><ul>
-<li><a href="#hypertension-the-silent-killer">高血压：“沉默的杀手”</a></li>
-<li><a href="#classification-guidelines-accaha-2017">分类指南 (ACC/AHA 2017)</a></li>
-<li><a href="#landmark-research-findings">里程碑式的研究成果</a><ul>
-<li><a href="#sprint-trial-2015">SPRINT 试验（2015）</a></li>
-<li><a href="#prospective-studies-collaboration-lancet-2002">前瞻性研究合作（柳叶刀 2002 年）</a></li>
-</ul>
-</li>
-<li><a href="#home-blood-pressure-monitoring">家庭血压监测</a></li>
-</ul>
-</li>
-<li><a href="#clinical-significance">临床意义</a><ul>
-<li><a href="#cardiovascular-risk-assessment">心血管风险评估</a></li>
-<li><a href="#factors-that-influence-blood-pressure">影响血压的因素</a></li>
-</ul>
-</li>
-<li><a href="#recommendations">建议</a><ul>
-<li><a href="#evidence-based-guidelines">循证指南</a></li>
-<li><a href="#lifestyle-modifications">改变生活方式</a></li>
-</ul>
-</li>
-<li><a href="#when-to-seek-medical-attention">何时就医</a></li>
-<li><a href="#references">参考文献</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-<div class="metric-content">
-<h1 id="blood-pressure">血压</h1>
-<h2 id="what-is-blood-pressure">什么是血压？</h2>
-<p>血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示：</p>
-<ul>
-<li><strong>收缩压（顶部数字）：</strong>心脏跳动和泵血时的压力</li>
-<li><strong>舒张压（底部数字）：</strong>心脏在两次跳动之间休息时的压力</li>
-</ul>
-<p>读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。</p>
-<h3 id="how-healthkit-stores-blood-pressure">HealthKit 如何存储血压</h3>
-<p>HealthKit 可以从以下位置接收血压数据：</p>
-<ul>
-<li><strong>连接设备：</strong>与Apple Health同步的蓝牙血压计</li>
-<li><strong>手动输入：</strong>用户通过任何经过验证的设备记录的测量结果</li>
-<li><strong>医疗保健应用程序：</strong>写入 HealthKit 的第三方应用程序</li>
-</ul>
-<p>与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。</p>
-<h2 id="scientific-background">科学背景</h2>
-<h3 id="hypertension-the-silent-killer">高血压：“沉默的杀手”</h3>
-<p>高血压通常被称为“无声杀手”，因为它通常不会引起任何症状，但会逐渐损害血管和器官。根据世界卫生组织的数据，高血压大约影响<strong>全球13亿人</strong>是心血管疾病的主要可改变危险因素。</p>
-<p><strong>为什么血压很重要：</strong></p>
-<p>血压升高会增加心脏的工作负荷，并随着时间的推移损害动脉壁，从而导致：
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="切换菜单"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav aria-label="Breadcrumb" class="metric-breadcrumb"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/zh/metrics/" itemprop="item"><span itemprop="name">指标库</span></a><meta content="1" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/zh/metrics/heart-circulation/" itemprop="item"><span itemprop="name">心脏与循环</span></a><meta content="2" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span aria-current="page" itemprop="name">血压</span><meta content="3" itemprop="position"/></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>❤️</span>心脏与循环</span></header><nav class="article-toc"><h4>在此页上</h4><div class="toc"><ul><li><a href="#blood-pressure">血压</a><ul><li><a href="#what-is-blood-pressure">什么是血压？</a><ul><li><a href="#how-healthkit-stores-blood-pressure">HealthKit 如何存储血压</a></li></ul></li><li><a href="#scientific-background">科学背景</a><ul><li><a href="#hypertension-the-silent-killer">高血压：“沉默的杀手”</a></li><li><a href="#classification-guidelines-accaha-2017">分类指南 (ACC/AHA 2017)</a></li><li><a href="#landmark-research-findings">里程碑式的研究成果</a><ul><li><a href="#sprint-trial-2015">SPRINT 试验（2015）</a></li><li><a href="#prospective-studies-collaboration-lancet-2002">前瞻性研究合作（柳叶刀 2002 年）</a></li></ul></li><li><a href="#home-blood-pressure-monitoring">家庭血压监测</a></li></ul></li><li><a href="#clinical-significance">临床意义</a><ul><li><a href="#cardiovascular-risk-assessment">心血管风险评估</a></li><li><a href="#factors-that-influence-blood-pressure">影响血压的因素</a></li></ul></li><li><a href="#recommendations">建议</a><ul><li><a href="#evidence-based-guidelines">循证指南</a></li><li><a href="#lifestyle-modifications">改变生活方式</a></li></ul></li><li><a href="#when-to-seek-medical-attention">何时就医</a></li><li><a href="#references">参考文献</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="blood-pressure">血压</h1><h2 id="what-is-blood-pressure">什么是血压？</h2><p>血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示：</p><ul><li><strong>收缩压（顶部数字）：</strong>心脏跳动和泵血时的压力</li><li><strong>舒张压（底部数字）：</strong>心脏在两次跳动之间休息时的压力</li></ul><p>读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。</p><h3 id="how-healthkit-stores-blood-pressure">HealthKit 如何存储血压</h3><p>HealthKit 可以从以下位置接收血压数据：</p><ul><li><strong>连接设备：</strong>与Apple Health同步的蓝牙血压计</li><li><strong>手动输入：</strong>用户通过任何经过验证的设备记录的测量结果</li><li><strong>医疗保健应用程序：</strong>写入 HealthKit 的第三方应用程序</li></ul><p>与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。</p><h2 id="scientific-background">科学背景</h2><h3 id="hypertension-the-silent-killer">高血压：“沉默的杀手”</h3><p>高血压通常被称为“无声杀手”，因为它通常不会引起任何症状，但会逐渐损害血管和器官。根据世界卫生组织的数据，高血压大约影响<strong>全球13亿人</strong>是心血管疾病的主要可改变危险因素。</p><p><strong>为什么血压很重要：</strong></p><p>血压升高会增加心脏的工作负荷，并随着时间的推移损害动脉壁，从而导致：
 - 动脉粥样硬化（动脉斑块堆积）
 - 心脏病发作和心力衰竭
 - 中风
 - 肾脏疾病
 - 视力丧失
-- 认知能力下降</p>
-<h3 id="classification-guidelines-accaha-2017">分类指南 (ACC/AHA 2017)</h3>
-<p>美国心脏病学会和美国心脏协会2017年更新了血压类别：</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>类别</th>
-<th>收缩压</th>
-<th></th>
-<th>舒张压</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>正常</strong></td>
-<td>&lt;120</td>
-<td>和</td>
-<td>&lt;80</td>
-</tr>
-<tr>
-<td><strong>高架</strong></td>
-<td>120-129</td>
-<td>和</td>
-<td>&lt;80</td>
-</tr>
-<tr>
-<td><strong>第一阶段高血压</strong></td>
-<td>130-139</td>
-<td>或</td>
-<td>80-89</td>
-</tr>
-<tr>
-<td><strong>2 期高血压</strong></td>
-<td>≥140</td>
-<td>或</td>
-<td>≥90</td>
-</tr>
-<tr>
-<td><strong>高血压危象</strong></td>
-<td>&gt; 180</td>
-<td>和/或</td>
-<td>&gt; 120</td>
-</tr>
-</tbody>
-</table>
-<p><em>基于心血管风险在较低水平下增加的证据，这些指南将高血压的阈值从 140/90 降低至 130/80。</em></p>
-<h3 id="landmark-research-findings">里程碑式的研究成果</h3>
-<h4 id="sprint-trial-2015">SPRINT 试验（2015）</h4>
-<p>的<strong>收缩压干预试验</strong>这是一项由 NIH 资助的具有里程碑意义的研究，研究对象为 9,361 名患有高心血管风险的成年人。</p>
-<p><strong>主要发现：</strong>- 强化治疗（目标 &lt; 120 mmHg）与标准治疗（目标 &lt; 140 mmHg）
+- 认知能力下降</p><h3 id="classification-guidelines-accaha-2017">分类指南 (ACC/AHA 2017)</h3><p>美国心脏病学会和美国心脏协会2017年更新了血压类别：</p><table class="clinical-table"><thead><tr><th>类别</th><th>收缩压</th><th></th><th>舒张压</th></tr></thead><tbody><tr><td><strong>正常</strong></td><td>&lt;120</td><td>和</td><td>&lt;80</td></tr><tr><td><strong>高架</strong></td><td>120-129</td><td>和</td><td>&lt;80</td></tr><tr><td><strong>第一阶段高血压</strong></td><td>130-139</td><td>或</td><td>80-89</td></tr><tr><td><strong>2 期高血压</strong></td><td>≥140</td><td>或</td><td>≥90</td></tr><tr><td><strong>高血压危象</strong></td><td>&gt; 180</td><td>和/或</td><td>&gt; 120</td></tr></tbody></table><p><em>基于心血管风险在较低水平下增加的证据，这些指南将高血压的阈值从 140/90 降低至 130/80。</em></p><h3 id="landmark-research-findings">里程碑式的研究成果</h3><h4 id="sprint-trial-2015">SPRINT 试验（2015）</h4><p>的<strong>收缩压干预试验</strong>这是一项由 NIH 资助的具有里程碑意义的研究，研究对象为 9,361 名患有高心血管风险的成年人。</p><p><strong>主要发现：</strong>- 强化治疗（目标 &lt; 120 mmHg）与标准治疗（目标 &lt; 140 mmHg）
 -<strong>减少 25%</strong>接受强化治疗的心血管事件
 -<strong>减少 27%</strong>全因死亡率
-- 由于强化控制的明显好处，试验提前停止</p>
-<blockquote>
-<p>“与低于 140 毫米汞柱相比，将收缩压控制在低于 120 毫米汞柱可以降低致命和非致命的主要心血管事件以及全因死亡的发生率。”
-— SPRINT 研究小组，NEJM，2015 年</p>
-</blockquote>
-<h4 id="prospective-studies-collaboration-lancet-2002">前瞻性研究合作（柳叶刀 2002 年）</h4>
-<p>荟萃分析<strong>61 项前瞻性研究</strong>对 100 万成年人的研究证明了血压与心血管风险之间的持续关系：</p>
-<p><strong>主要发现：</strong>- 血压和 CVD 风险之间的关系持续下降至至少 115/75 mmHg
+- 由于强化控制的明显好处，试验提前停止</p><blockquote><p>“与低于 140 毫米汞柱相比，将收缩压控制在低于 120 毫米汞柱可以降低致命和非致命的主要心血管事件以及全因死亡的发生率。”
+— SPRINT 研究小组，NEJM，2015 年</p></blockquote><h4 id="prospective-studies-collaboration-lancet-2002">前瞻性研究合作（柳叶刀 2002 年）</h4><p>荟萃分析<strong>61 项前瞻性研究</strong>对 100 万成年人的研究证明了血压与心血管风险之间的持续关系：</p><p><strong>主要发现：</strong>- 血压和 CVD 风险之间的关系持续下降至至少 115/75 mmHg
 - 每个<strong>增加 20 毫米汞柱</strong>收缩压使心血管死亡风险增加一倍
 - 每个<strong>增加 10 毫米汞柱</strong>舒张压使心血管死亡风险增加一倍
-- 这种关系在 40 岁至 89 岁的所有年龄段中都存在</p>
-<h3 id="home-blood-pressure-monitoring">家庭血压监测</h3>
-<p>联合政策声明<strong>美国心脏协会和美国医学会</strong>(2020) 认可家庭血压监测优于办公室测量：</p>
-<p><strong>临床益处：</strong>- 更多自然环境下的测量
+- 这种关系在 40 岁至 89 岁的所有年龄段中都存在</p><h3 id="home-blood-pressure-monitoring">家庭血压监测</h3><p>联合政策声明<strong>美国心脏协会和美国医学会</strong>(2020) 认可家庭血压监测优于办公室测量：</p><p><strong>临床益处：</strong>- 更多自然环境下的测量
 - 识别“白大衣高血压”（仅在医疗环境中升高）
 - 识别“隐匿性高血压”（在办公室正常，但在家里升高）
 - 比诊室血压更好地预测心血管结果
-- 提高药物依从性和血压控制</p>
-<p><strong>推荐协议：</strong>- 每天同一时间测量（早上和晚上理想）
+- 提高药物依从性和血压控制</p><p><strong>推荐协议：</strong>- 每天同一时间测量（早上和晚上理想）
 - 测量前安静坐 5 分钟
 - 读取 2-3 次读数，间隔 1 分钟
-- 记录所有读数以供医疗保健提供者审查</p>
-<h2 id="clinical-significance">临床意义</h2>
-<h3 id="cardiovascular-risk-assessment">心血管风险评估</h3>
-<p>血压是最重要的可改变危险因素之一：</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>条件</th>
-<th>高血压风险增加</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>行程</td>
-<td>风险高 4-6 倍</td>
-</tr>
-<tr>
-<td>心力衰竭</td>
-<td>风险高 2-3 倍</td>
-</tr>
-<tr>
-<td>冠状动脉疾病</td>
-<td>风险高 2-3 倍</td>
-</tr>
-<tr>
-<td>慢性肾脏病</td>
-<td>逐步增加</td>
-</tr>
-<tr>
-<td>心房颤动</td>
-<td>风险高 1.5-2 倍</td>
-</tr>
-</tbody>
-</table>
-<h3 id="factors-that-influence-blood-pressure">影响血压的因素</h3>
-<p><strong>可修改因素：</strong>- 饮食（尤其是钠的摄入量）
+- 记录所有读数以供医疗保健提供者审查</p><h2 id="clinical-significance">临床意义</h2><h3 id="cardiovascular-risk-assessment">心血管风险评估</h3><p>血压是最重要的可改变危险因素之一：</p><table class="clinical-table"><thead><tr><th>条件</th><th>高血压风险增加</th></tr></thead><tbody><tr><td>行程</td><td>风险高 4-6 倍</td></tr><tr><td>心力衰竭</td><td>风险高 2-3 倍</td></tr><tr><td>冠状动脉疾病</td><td>风险高 2-3 倍</td></tr><tr><td>慢性肾脏病</td><td>逐步增加</td></tr><tr><td>心房颤动</td><td>风险高 1.5-2 倍</td></tr></tbody></table><h3 id="factors-that-influence-blood-pressure">影响血压的因素</h3><p><strong>可修改因素：</strong>- 饮食（尤其是钠的摄入量）
 - 身体活动水平
 - 体重
 - 饮酒量
 - 压力
-- 睡眠质量</p>
-<p><strong>不可改变的因素：</strong>- 年龄（血压通常随着年龄的增长而增加）
+- 睡眠质量</p><p><strong>不可改变的因素：</strong>- 年龄（血压通常随着年龄的增长而增加）
 - 家族史
 - 种族/族裔（黑人人群中患病率较高）
-- 肾脏疾病</p>
-<h2 id="recommendations">建议</h2>
-<h3 id="evidence-based-guidelines">循证指南</h3>
-<p>2017 年 ACC/AHA 指南建议：</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>类别</th>
-<th>生活方式的改变</th>
-<th>药物治疗</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>正常</strong></td>
-<td>维护</td>
-<td>未注明</td>
-</tr>
-<tr>
-<td><strong>高架</strong></td>
-<td>是的</td>
-<td>未注明</td>
-</tr>
-<tr>
-<td><strong>第一阶段 HTN</strong></td>
-<td>是的</td>
-<td>如果 CVD 风险 &gt; 10% 或现有 CVD</td>
-</tr>
-<tr>
-<td><strong>第 2 阶段 HTN</strong></td>
-<td>是的</td>
-<td>是的，通常有 2 种药物</td>
-</tr>
-</tbody>
-</table>
-<h3 id="lifestyle-modifications">改变生活方式</h3>
-<p>每次干预可将收缩压降低约：</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>干预</th>
-<th>预期收缩压降低</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DASH饮食</td>
-<td>8-14毫米汞柱</td>
-</tr>
-<tr>
-<td>减重（10公斤）</td>
-<td>5-20毫米汞柱</td>
-</tr>
-<tr>
-<td>减少钠含量</td>
-<td>2-8毫米汞柱</td>
-</tr>
-<tr>
-<td>体力活动</td>
-<td>4-9毫米汞柱</td>
-</tr>
-<tr>
-<td>适量饮酒</td>
-<td>2-4毫米汞柱</td>
-</tr>
-</tbody>
-</table>
-<h2 id="when-to-seek-medical-attention">何时就医</h2>
-<p><strong>立即寻求护理</strong>如果血压超过 180/120 mmHg，尤其是：
+- 肾脏疾病</p><h2 id="recommendations">建议</h2><h3 id="evidence-based-guidelines">循证指南</h3><p>2017 年 ACC/AHA 指南建议：</p><table class="clinical-table"><thead><tr><th>类别</th><th>生活方式的改变</th><th>药物治疗</th></tr></thead><tbody><tr><td><strong>正常</strong></td><td>维护</td><td>未注明</td></tr><tr><td><strong>高架</strong></td><td>是的</td><td>未注明</td></tr><tr><td><strong>第一阶段 HTN</strong></td><td>是的</td><td>如果 CVD 风险 &gt; 10% 或现有 CVD</td></tr><tr><td><strong>第 2 阶段 HTN</strong></td><td>是的</td><td>是的，通常有 2 种药物</td></tr></tbody></table><h3 id="lifestyle-modifications">改变生活方式</h3><p>每次干预可将收缩压降低约：</p><table class="clinical-table"><thead><tr><th>干预</th><th>预期收缩压降低</th></tr></thead><tbody><tr><td>DASH饮食</td><td>8-14毫米汞柱</td></tr><tr><td>减重（10公斤）</td><td>5-20毫米汞柱</td></tr><tr><td>减少钠含量</td><td>2-8毫米汞柱</td></tr><tr><td>体力活动</td><td>4-9毫米汞柱</td></tr><tr><td>适量饮酒</td><td>2-4毫米汞柱</td></tr></tbody></table><h2 id="when-to-seek-medical-attention">何时就医</h2><p><strong>立即寻求护理</strong>如果血压超过 180/120 mmHg，尤其是：
 - 剧烈头痛
 - 胸痛
 - 呼吸困难
 - 麻木或虚弱
 - 视力改变
-- 说话困难</p>
-<p><strong>安排医疗评估</strong>对于：
+- 说话困难</p><p><strong>安排医疗评估</strong>对于：
 - 家庭监测读数持续升高（&gt; 130/80 mmHg）
 - 血压读数差异很大
 - 头痛、流鼻血或呼吸急促等症状
-- 药物问题或副作用</p>
-<h2 id="references">参考文献</h2>
-<ol>
-<li>惠尔顿 PK 等人。 (2018) 2017 ACC/AHA 成人高血压预防、检测、评估和管理指南。<em>高血压</em>，71(6)，e13-e115。</li>
-<li>SPRINT 研究小组。 (2015) 强化血压控制与标准血压控制的随机试验。<em>新英格兰医学杂志</em>，373（22），2103-2116。</li>
-<li>莱温顿 S 等人。 (2002) 日常血压与血管死亡率的年龄相关性。<em>柳叶刀</em>，360（9349），1903-1913。</li>
-<li>Shimbo D 等人。 (2020) 家庭自测血压监测：AHA/AMA 联合政策声明。<em>流通量</em>，142(4)，e42-e63。</li>
-<li>非传染性疾病风险因素协作。 (2021) 全球高血压患病率趋势以及治疗和控制进展。<em>柳叶刀</em>、398(10304)、957-980。</li>
-<li>斯塔森 JA 等人。 (2005)立即与延迟抗高血压治疗的效果。<em>高血压杂志</em>，23（6），1213-1220。</li>
-</ol>
-</div>
-<aside class="medical-disclaimer">
-<div class="disclaimer-icon">⚠️<strong>医疗信息</strong></div>
-<p>此内容仅用于教育目的，不应取代
+- 药物问题或副作用</p><h2 id="references">参考文献</h2><ol><li>惠尔顿 PK 等人。 (2018) 2017 ACC/AHA 成人高血压预防、检测、评估和管理指南。<em>高血压</em>，71(6)，e13-e115。</li><li>SPRINT 研究小组。 (2015) 强化血压控制与标准血压控制的随机试验。<em>新英格兰医学杂志</em>，373（22），2103-2116。</li><li>莱温顿 S 等人。 (2002) 日常血压与血管死亡率的年龄相关性。<em>柳叶刀</em>，360（9349），1903-1913。</li><li>Shimbo D 等人。 (2020) 家庭自测血压监测：AHA/AMA 联合政策声明。<em>流通量</em>，142(4)，e42-e63。</li><li>非传染性疾病风险因素协作。 (2021) 全球高血压患病率趋势以及治疗和控制进展。<em>柳叶刀</em>、398(10304)、957-980。</li><li>斯塔森 JA 等人。 (2005)立即与延迟抗高血压治疗的效果。<em>高血压杂志</em>，23（6），1213-1220。</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️<strong>医疗信息</strong></div><p>此内容仅用于教育目的，不应取代
     专业的医疗建议。请务必咨询医疗保健提供者
-    医疗决定。</p>
-</aside>
-<div class="metric-footer">
-<hr/>
-<p><em>最后更新时间：2026 年 1 月</em></p>
-</div>
-</article>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+    医疗决定。</p></aside><div class="metric-footer"><hr/><p><em>最后更新时间：2026 年 1 月</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">Arno Health</span>
-          </span>
-          
-        </h3>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/blood-pressure">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |...</h2>
-    <p class="ai-citation-answer">血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-24</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>血压 · 心脏 · 健康 · 监测</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../../../zh/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/blood-pressure"><div class="container ai-citation-shell"><h2 class="ai-citation-title">血压 - 将 Apple Health 数据导出至 CSV、PDF 和 JSON |...</h2><p class="ai-citation-answer">血压是心脏跳动时血液推压动脉壁的力量。它用两个数字表示： 读数“120/80 mmHg”表示收缩压为 120 毫米汞柱，舒张压为 80 毫米汞柱。 HealthKit 可以从以下位置接收血压数据： 与心率不同，血压目前无法通过 Apple Watch 直接测量，需要单独的袖带设备才能准确读数。</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>血压 · 心脏 · 健康 · 监测</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../zh/bibliography/">
           
           参考书目
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link active"
+                </a><a href="/zh/" class="lang-link active"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. 版权所有
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/zh/privacy/">隐私</a></li>
-                <li><a href="/zh/terms/">条款</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>本网站使用 cookie 以改善您的体验。</p>
-            <a href="/zh/privacy/" class="text-sm">了解更多</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">拒绝</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">接受</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/zh/privacy/">隐私</a></li><li><a href="/zh/terms/">条款</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>本网站使用 cookie 以改善您的体验。</p><a href="/zh/privacy/" class="text-sm">了解更多</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">拒绝</button><button id="cookie-accept" class="btn btn-primary btn-small">接受</button></div></div></div><script src="../../../../assets/js/core.min.js?v=87724973" defer></script><script src="../../../../assets/js/search.min.js?v=87724973" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

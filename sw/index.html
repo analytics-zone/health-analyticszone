@@ -1,473 +1,61 @@
-<!DOCTYPE html>
-<html lang="sw" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Hamisha na Uchambue Data Yako ya Apple Health - Hamisha</title>
-  <meta name="description" content="Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari.">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="data ya afya, hamisha apple health, uchambuzi wa afya, kifuatiliaji cha siha, ripoti za matibabu">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/sw/">
-
-  
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://health.analyticszone.app/sw/">
-  <meta property="og:title" content="Hamisha na Uchambue Data Yako ya Apple Health - Hamisha">
-  <meta property="og:description" content="Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari.">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="sw_KE">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/sw/">
-  <meta name="twitter:title" content="Hamisha na Uchambue Data Yako ya Apple Health - Hamisha">
-  <meta name="twitter:description" content="Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari.">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="sw" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>Hamisha na Uchambue Data Yako ya Apple Health - Hamisha</title><meta name="description" content="Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari."><meta name="author" content="Arno Health"><meta name="keywords" content="data ya afya, hamisha apple health, uchambuzi wa afya, kifuatiliaji cha siha, ripoti za matibabu"><link rel="canonical" href="https://health.analyticszone.app/sw/"><meta property="og:type" content="website"><meta property="og:url" content="https://health.analyticszone.app/sw/"><meta property="og:title" content="Hamisha na Uchambue Data Yako ya Apple Health - Hamisha"><meta property="og:description" content="Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="sw_KE"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/sw/"><meta name="twitter:title" content="Hamisha na Uchambue Data Yako ya Apple Health - Hamisha"><meta name="twitter:description" content="Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -726,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -770,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -782,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "sw"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -801,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -851,22 +412,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -880,1316 +426,421 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Rukia kwenye maudhui</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/sw/" class="site-logo">
-                <picture>
-                    <source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/sw/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Rukia kwenye maudhui</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/sw/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/sw/features/" 
                                 aria-current="">
                                 Vipengele
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/sw/metrics/" 
+                            </a></li><li><a href="/sw/metrics/" 
                                 aria-current="">
                                 Maktaba ya Vipimo
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/sw/pricing/" 
+                            </a></li><li><a href="/sw/pricing/" 
                                 aria-current="">
                                 Bei
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/sw/about/" 
+                            </a></li><li><a href="/sw/about/" 
                                 aria-current="">
                                 Kutuhusu
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Chagua lugha">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Chagua lugha"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" selected>
+                        </option><option value="sw" selected>
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Washa/zima menyu"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <section class="page-hero">
-    <div class="container">
-        <h1>Hamisha na Uchambue Data Yako ya Apple Health</h1>
-        <p class="lead">Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Washa/zima menyu"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><section class="page-hero"><div class="container"><h1>Hamisha na Uchambue Data Yako ya Apple Health</h1><p class="lead">Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza
             kushirikiwa. Hamisha kwenda CSV, JSON, na
             PDF. Shiriki na madaktari. Fuatilia alama za afya kwa ajili ya kuishi muda mrefu. 100% ya Ndani. Inazingatia
-            Sayansi.</p>
-        <div class="mt-md">
-            <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary">Pakua Bure</a>
-            <a href="#science" class="btn btn-text">Angalia Sayansi ↓</a>
-        </div>
-    </div>
-</section>
-
-<section id="science" class="section section-light">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Sayansi ya Afya Yako</h2>
-            <p class="lead">Hatuonyeshi tu data. Tunatafsiri biometriska yako kulingana na utafiti wa kliniki na
-                masomo yaliyopitiwa na wataalamu.</p>
-        </div>
-
-        <div class="grid grid-2">
-            <div class="card">
-                <h3 class="card-title">Siha ya Moyo na Mapafu (VO₂ Max)</h3>
-                <div class="card-content">
-                    <p>Mara nyingi huchukuliwa kama utabiri pekee wenye nguvu zaidi wa muda wa maisha. Uchambuzi wetu
+            Sayansi.</p><div class="mt-md"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary">Pakua Bure</a><a href="#science" class="btn btn-text">Angalia Sayansi ↓</a></div></div></section><section id="science" class="section section-light"><div class="container"><div class="text-center mb-xl"><h2>Sayansi ya Afya Yako</h2><p class="lead">Hatuonyeshi tu data. Tunatafsiri biometriska yako kulingana na utafiti wa kliniki na
+                masomo yaliyopitiwa na wataalamu.</p></div><div class="grid grid-2"><div class="card"><h3 class="card-title">Siha ya Moyo na Mapafu (VO₂ Max)</h3><div class="card-content"><p>Mara nyingi huchukuliwa kama utabiri pekee wenye nguvu zaidi wa muda wa maisha. Uchambuzi wetu
                         unatathmini
                         makadirio ya VO₂ Max yako dhidi ya kanuni za idadi ya watu ili kukadiria umri wako wa kifiolojia
                         na
-                        hatari ya vifo ya muda mrefu.</p>
-                    <div class="callout callout-tip mt-md">
-                        <strong>Kwa nini ni muhimu:</strong> Utafiti muhimu wa wagonjwa 122,007 uligundua kuwa siha ya
+                        hatari ya vifo ya muda mrefu.</p><div class="callout callout-tip mt-md"><strong>Kwa nini ni muhimu:</strong> Utafiti muhimu wa wagonjwa 122,007 uligundua kuwa siha ya
                         "wasomi"
                         ya moyo na mapafu ilihusishwa na kupungua kwa 80% kwa hatari ya vifo ikilinganishwa na siha ya
                         chini.
-                    </div>
-                    <p class="text-sm text-secondary mt-sm">
-                        <strong>Chanzo:</strong> Mandsager K, et al. (JAMA Network Open, 2018).
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Usawa wa Neva (HRV)</h3>
-                <div class="card-content">
-                    <p>Tunachanganua Ubadilikaji wa Mapigo ya Moyo (haswa rMSSD) ili kupima usawa kati ya mfumo wako wa
-                        neva wa huruma (pambana-au-kimbia) na parasympathetic (pumzika-na-uyeyushe chakula).</p>
-                    <div class="callout callout-info mt-md">
-                        <strong>Sayansi:</strong> HRV ya juu kwa ujumla inahusishwa na afya bora ya moyo na mishipa na
+                    </div><p class="text-sm text-secondary mt-sm"><strong>Chanzo:</strong> Mandsager K, et al. (JAMA Network Open, 2018).
+                    </p></div></div><div class="card"><h3 class="card-title">Usawa wa Neva (HRV)</h3><div class="card-content"><p>Tunachanganua Ubadilikaji wa Mapigo ya Moyo (haswa rMSSD) ili kupima usawa kati ya mfumo wako wa
+                        neva wa huruma (pambana-au-kimbia) na parasympathetic (pumzika-na-uyeyushe chakula).</p><div class="callout callout-info mt-md"><strong>Sayansi:</strong> HRV ya juu kwa ujumla inahusishwa na afya bora ya moyo na mishipa na
                         ustahimilivu wa msongo wa mawazo. Inatumika kama alama nyeti kwa uvimbe wa kimfumo na hali ya
                         kupona.
-                    </div>
-                    <p class="text-sm text-secondary mt-sm">
-                        <strong>Chanzo:</strong> Kikosi Kazi cha Chama cha Ulaya cha Kadiolojia (1996); Shaffer &
+                    </div><p class="text-sm text-secondary mt-sm"><strong>Chanzo:</strong> Kikosi Kazi cha Chama cha Ulaya cha Kadiolojia (1996); Shaffer &
                         Ginsberg (2017).
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Uwezo wa Kutembea (Kasi ya Mwendo)</h3>
-                <div class="card-content">
-                    <p>Kasi ya kutembea mara nyingi huitwa "ishara muhimu ya sita" katika mazingira ya kliniki.
+                    </p></div></div><div class="card"><h3 class="card-title">Uwezo wa Kutembea (Kasi ya Mwendo)</h3><div class="card-content"><p>Kasi ya kutembea mara nyingi huitwa "ishara muhimu ya sita" katika mazingira ya kliniki.
                         Tunafuatilia
                         mielekeo ya kasi ya mwendo wako ili kugundua dalili za mapema za upungufu wa uwezo au mabadiliko
-                        ya mfumo wa neva.</p>
-                    <div class="callout callout-warning mt-md">
-                        <strong>Umuhimu wa Kliniki:</strong> Uchambuzi wa watu wazima wenye umri mkubwa 34,485
+                        ya mfumo wa neva.</p><div class="callout callout-warning mt-md"><strong>Umuhimu wa Kliniki:</strong> Uchambuzi wa watu wazima wenye umri mkubwa 34,485
                         ulionyesha kuwa kasi ya
                         mwendo inahusiana moja kwa moja na viwango vya kuishi vya miaka 5 na miaka 10 katika vikundi
                         vyote vya umri.
-                    </div>
-                    <p class="text-sm text-secondary mt-sm">
-                        <strong>Chanzo:</strong> Studenski S, et al. (JAMA, 2011).
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Usingizi na Usafishaji wa Glymphatic</h3>
-                <div class="card-content">
-                    <p>Hatufuatilii tu saa ulizolala; tunatathmini muda wa Usingizi Mzito (NREM Hatua ya 3). Hii ni
+                    </div><p class="text-sm text-secondary mt-sm"><strong>Chanzo:</strong> Studenski S, et al. (JAMA, 2011).
+                    </p></div></div><div class="card"><h3 class="card-title">Usingizi na Usafishaji wa Glymphatic</h3><div class="card-content"><p>Hatufuatilii tu saa ulizolala; tunatathmini muda wa Usingizi Mzito (NREM Hatua ya 3). Hii ni
                         muhimu
-                        kwa "mfumo wa glymphatic," utaratibu wa ubongo wa kusafisha taka.</p>
-                    <div class="callout callout-tip mt-md">
-                        <strong>Utaratibu:</strong> Wakati wa usingizi mzito, mfumo wa glymphatic huanza kufanya kazi,
+                        kwa "mfumo wa glymphatic," utaratibu wa ubongo wa kusafisha taka.</p><div class="callout callout-tip mt-md"><strong>Utaratibu:</strong> Wakati wa usingizi mzito, mfumo wa glymphatic huanza kufanya kazi,
                         ukisafisha
                         taka zenye sumu kwa neva kama beta-amyloid ambazo hujilimbikiza wakati wa kuwa macho.
-                    </div>
-                    <p class="text-sm text-secondary mt-sm">
-                        <strong>Chanzo:</strong> Xie L, et al. (Science, 2013); Reddy & van der Werf (2020).
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Afya ya Metaboli (Udhibiti wa Sukari)</h3>
-                <div class="card-content">
-                    <p>Tunafuatilia mifumo ya sukari na ubadilikaji wake ili kutathmini afya ya metaboli zaidi ya
+                    </div><p class="text-sm text-secondary mt-sm"><strong>Chanzo:</strong> Xie L, et al. (Science, 2013); Reddy & van der Werf (2020).
+                    </p></div></div><div class="card"><h3 class="card-title">Afya ya Metaboli (Udhibiti wa Sukari)</h3><div class="card-content"><p>Tunafuatilia mifumo ya sukari na ubadilikaji wake ili kutathmini afya ya metaboli zaidi ya
                         wastani rahisi.
                         Viwango thabiti vya sukari vinahusishwa na kupungua kwa uvimbe na matokeo bora ya afya ya
-                        muda mrefu.</p>
-                    <div class="callout callout-info mt-md">
-                        <strong>Maarifa Muhimu:</strong> Ubadilikaji wa sukari (sio tu viwango vya wastani) ni utabiri
+                        muda mrefu.</p><div class="callout callout-info mt-md"><strong>Maarifa Muhimu:</strong> Ubadilikaji wa sukari (sio tu viwango vya wastani) ni utabiri
                         huru
                         wa matukio ya moyo na mishipa na vifo vya sababu zote, hata kwa watu wasio na ugonjwa wa sukari.
-                    </div>
-                    <p class="text-sm text-secondary mt-sm">
-                        <strong>Chanzo:</strong> Ceriello A, et al. (Diabetes Care, 2008); Hirsch IB (Clinical Diabetes,
+                    </div><p class="text-sm text-secondary mt-sm"><strong>Chanzo:</strong> Ceriello A, et al. (Diabetes Care, 2008); Hirsch IB (Clinical Diabetes,
                         2015).
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Muundo wa Mwili (Uzito Bila Mafuta)</h3>
-                <div class="card-content">
-                    <p>Uzito wa misuli ni alama muhimu ya afya ya kuishi muda mrefu. Tunafuatilia mielekeo ya uzito bila
+                    </p></div></div><div class="card"><h3 class="card-title">Muundo wa Mwili (Uzito Bila Mafuta)</h3><div class="card-content"><p>Uzito wa misuli ni alama muhimu ya afya ya kuishi muda mrefu. Tunafuatilia mielekeo ya uzito bila
                         mafuta ili kugundua
                         sarcopenia (kupoteza misuli kuhusiana na umri), ambayo huathiri nguvu, uwezo wa kutembea, na
                         afya ya metaboli.
-                    </p>
-                    <div class="callout callout-warning mt-md">
-                        <strong>Kiungo cha Maisha Marefu:</strong> Uzito mkubwa wa misuli unahusishwa na vifo vya chini
+                    </p><div class="callout callout-warning mt-md"><strong>Kiungo cha Maisha Marefu:</strong> Uzito mkubwa wa misuli unahusishwa na vifo vya chini
                         vya sababu
                         zote. Kila ongezeko la 10% la faharisi ya uzito wa misuli huendana na kupungua kwa 12% kwa
                         hatari
                         ya vifo.
-                    </div>
-                    <p class="text-sm text-secondary mt-sm">
-                        <strong>Chanzo:</strong> Srikanthan P, et al. (American Journal of Medicine, 2014); Cruz-Jentoft
+                    </div><p class="text-sm text-secondary mt-sm"><strong>Chanzo:</strong> Srikanthan P, et al. (American Journal of Medicine, 2014); Cruz-Jentoft
                         AJ, et al. (Age and Ageing, 2019).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Kwa nini Utumie Health Analytics?</h2>
-        </div>
-        <div class="grid grid-3">
-            <div class="card text-center">
-                <div class="card-title">Jaribio la bure la siku 7</div>
-                <div class="card-content">Jaribu kabla ya kujitolea</div>
-            </div>
-            <div class="card text-center">
-                <div class="card-title">Hakuna akaunti inayohitajika</div>
-                <div class="card-content">Anza mara moja</div>
-            </div>
-            <div class="card text-center">
-                <div class="card-title">Usindikaji wa 100% wa ndani</div>
-                <div class="card-content">Data yako haitoki kamwe kwenye kifaa chako</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section section-light">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Hamisha Data Yako ya Afya katika Muundo Wowote</h2>
-            <p class="lead">Hamisha asili ya Apple inakupa faili changamani za XML. Sisi tunakupa muundo ambao unaweza
+                    </p></div></div></div></div></section><section class="section"><div class="container"><div class="text-center mb-xl"><h2>Kwa nini Utumie Health Analytics?</h2></div><div class="grid grid-3"><div class="card text-center"><div class="card-title">Jaribio la bure la siku 7</div><div class="card-content">Jaribu kabla ya kujitolea</div></div><div class="card text-center"><div class="card-title">Hakuna akaunti inayohitajika</div><div class="card-content">Anza mara moja</div></div><div class="card text-center"><div class="card-title">Usindikaji wa 100% wa ndani</div><div class="card-content">Data yako haitoki kamwe kwenye kifaa chako</div></div></div></div></section><section class="section section-light"><div class="container"><div class="text-center mb-xl"><h2>Hamisha Data Yako ya Afya katika Muundo Wowote</h2><p class="lead">Hamisha asili ya Apple inakupa faili changamani za XML. Sisi tunakupa muundo ambao unaweza
                 kutumia kweli.
-            </p>
-        </div>
-        <div class="grid grid-3">
-            <div class="card text-center">
-                <div class="card-title">📊 Hamisha ya CSV</div>
-                <div class="card-content">
-                    <p>Inafaa kwa lahajedwali na uchambuzi wa data. Fungua katika Excel, Google Sheets, au zana yoyote
+            </p></div><div class="grid grid-3"><div class="card text-center"><div class="card-title">📊 Hamisha ya CSV</div><div class="card-content"><p>Inafaa kwa lahajedwali na uchambuzi wa data. Fungua katika Excel, Google Sheets, au zana yoyote
                         ya uchambuzi.
-                    </p>
-                    <ul class="text-left mt-sm">
-                        <li>Chagua vipimo mahususi</li>
-                        <li>Chagua masafa ya tarehe</li>
-                        <li>Tayari kwa meza za maelezo</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-title">📄 Ripoti za PDF</div>
-                <div class="card-content">
-                    <p>Ripoti za kitaalamu za matibabu kwa ajili ya miadi ya daktari. Mpangilio mzuri wenye chati na
+                    </p><ul class="text-left mt-sm"><li>Chagua vipimo mahususi</li><li>Chagua masafa ya tarehe</li><li>Tayari kwa meza za maelezo</li></ul></div></div><div class="card text-center"><div class="card-title">📄 Ripoti za PDF</div><div class="card-content"><p>Ripoti za kitaalamu za matibabu kwa ajili ya miadi ya daktari. Mpangilio mzuri wenye chati na
                         masafa
-                        ya marejeleo.</p>
-                    <ul class="text-left mt-sm">
-                        <li>Muundo tayari kwa uchapishaji</li>
-                        <li>Taswira za mielekeo</li>
-                        <li>Muktadha wa kliniki umejumuishwa</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-title">💻 Hamisha ya JSON</div>
-                <div class="card-content">
-                    <p>Muundo rahisi kwa wasanidi programu kwa ajili ya ujumuishaji na zana maalum za uchambuzi.</p>
-                    <ul class="text-left mt-sm">
-                        <li>Muundo wa data uliopangwa</li>
-                        <li>Tayari kwa API</li>
-                        <li>Rahisi kufafanua</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section section-light">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Kwa Mtazamo</h2>
-        </div>
-        <div class="grid grid-2">
-            
-
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <svg class="icon" aria-hidden="true">
-            <use href="../assets/images/icons-sprite.svg#icon-chart"></use>
-        </svg>
-        
-    </div>
-    <h3>Dashibodi Iliyounganishwa</h3>
-    <p>
+                        ya marejeleo.</p><ul class="text-left mt-sm"><li>Muundo tayari kwa uchapishaji</li><li>Taswira za mielekeo</li><li>Muktadha wa kliniki umejumuishwa</li></ul></div></div><div class="card text-center"><div class="card-title">💻 Hamisha ya JSON</div><div class="card-content"><p>Muundo rahisi kwa wasanidi programu kwa ajili ya ujumuishaji na zana maalum za uchambuzi.</p><ul class="text-left mt-sm"><li>Muundo wa data uliopangwa</li><li>Tayari kwa API</li><li>Rahisi kufafanua</li></ul></div></div></div></div></section><section class="section section-light"><div class="container"><div class="text-center mb-xl"><h2>Kwa Mtazamo</h2></div><div class="grid grid-2"><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>Dashibodi Iliyounganishwa</h3><p>
         
         Angalia vipimo vyako muhimu zaidi kwa mtazamo mmoja kwa taswira
             safi
             na takwimu za muhtasari.
-    </p>
-</div>
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <svg class="icon" aria-hidden="true">
-            <use href="../assets/images/icons-sprite.svg#icon-layers"></use>
-        </svg>
-        
-    </div>
-    <h3>Ushughulikiaji Mpana wa HealthKit</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-layers"></use></svg></div><h3>Ushughulikiaji Mpana wa HealthKit</h3><p>
         
         Shughuli, alama muhimu, usingizi, muundo wa mwili,
             lishe, na
             zaidi—zimepangwa kwa kategoria na zinaweza kutafutwa.
-    </p>
-</div>
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <svg class="icon" aria-hidden="true">
-            <use href="../assets/images/icons-sprite.svg#icon-book"></use>
-        </svg>
-        
-    </div>
-    <h3>Muktadha wa Kisayansi</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-book"></use></svg></div><h3>Muktadha wa Kisayansi</h3><p>
         
         Kwa kila kipimo, elewa kile kinachopima, kwa nini ni muhimu, na
             masafa ya kawaida ya marejeleo yenye dondoo.
-    </p>
-</div>
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <svg class="icon" aria-hidden="true">
-            <use href="../assets/images/icons-sprite.svg#icon-export"></use>
-        </svg>
-        
-    </div>
-    <h3>Hamisha Inayonyumbulika</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-export"></use></svg></div><h3>Hamisha Inayonyumbulika</h3><p>
         
         Hamisha tu kile unachohitaji, katika muundo unaopendelea: CSV,
             JSON, PDF,
             HTML, Markdown, au maandishi rahisi.
-    </p>
-</div>
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <svg class="icon" aria-hidden="true">
-            <use href="../assets/images/icons-sprite.svg#icon-shield"></use>
-        </svg>
-        
-    </div>
-    <h3>Faragha Kamili</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="../assets/images/icons-sprite.svg#icon-shield"></use></svg></div><h3>Faragha Kamili</h3><p>
         
         Hakuna akaunti, hakuna kufungiwa kwenye wingu, hakuna ufuatiliaji.
             Usindikaji unafanyika kabisa
             kwenye kifaa chako.
-    </p>
-</div>
-            
-            
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Vipimo vya HealthKit Vinavyoshughulikiwa</h2>
-            <p class="lead">Health Analytics hupanga HealthKit katika nyanja za vitendo:</p>
-        </div>
-        <div class="grid grid-3">
-            
-
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <div style="font-size: 24px;">🏃</div>
-        
-    </div>
-    <h3>Lihali na Mazoezi</h3>
-    <p>
+    </p></div></div></div></section><section class="section"><div class="container"><div class="text-center mb-xl"><h2>Vipimo vya HealthKit Vinavyoshughulikiwa</h2><p class="lead">Health Analytics hupanga HealthKit katika nyanja za vitendo:</p></div><div class="grid grid-3"><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">🏃</div></div><h3>Lihali na Mazoezi</h3><p>
         
         Hatua, umbali, nishati, mazoezi, siha ya moyo na mapafu
-    </p>
-</div>
-            
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <div style="font-size: 24px;">❤️</div>
-        
-    </div>
-    <h3>Moyo na Alama Muhimu</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">❤️</div></div><h3>Moyo na Alama Muhimu</h3><p>
         
         Mapigo ya moyo, HRV, ECG (inapopatikana), shinikizo la damu, kasi ya
             kupumua
-    </p>
-</div>
-            
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <div style="font-size: 24px;">😴</div>
-        
-    </div>
-    <h3>Usingizi na Kupona</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">😴</div></div><h3>Usingizi na Kupona</h3><p>
         
         Muda/hatua za usingizi, vipimo vya kupumua (inapopatikana)
-    </p>
-</div>
-            
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <div style="font-size: 24px;">⚖️</div>
-        
-    </div>
-    <h3>Mwili na Muundo</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">⚖️</div></div><h3>Mwili na Muundo</h3><p>
         
         Uzito, BMI, asilimia ya mafuta mwilini, mzunguko wa kiuno
-    </p>
-</div>
-            
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <div style="font-size: 24px;">🍎</div>
-        
-    </div>
-    <h3>Lishe na Unywaji Maji</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">🍎</div></div><h3>Lishe na Unywaji Maji</h3><p>
         
         Uingizaji wa nishati, virutubishi vikuu/vidogo, maji
-    </p>
-</div>
-            
-            
-            
-            
-            <div class="feature-card ">
-    <div class="feature-icon">
-        
-        <div style="font-size: 24px;">🧠</div>
-        
-    </div>
-    <h3>Afya ya Akili na Kuzingatia</h3>
-    <p>
+    </p></div><div class="feature-card "><div class="feature-icon"><div style="font-size: 24px;">🧠</div></div><h3>Afya ya Akili na Kuzingatia</h3><p>
         
         Dakika za kuzingatia, hali ya akili/hisia (inapopatikana)
-    </p>
-</div>
-            
-            
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="grid grid-2">
-            <div>
-                <h2>Shiriki Data ya Afya na Daktari Wako</h2>
-                <p class="lead">Jiandae kwa miadi ya matibabu na ripoti kamili za afya ambazo mtoa huduma wako wa
-                    afya anaweza kuzitumia kweli.</p>
-                <p>Badala ya kujaribu kuonyesha daktari wako data kwenye kioo cha simu yako, tengeneza ripoti za
+    </p></div></div></div></section><section class="section"><div class="container"><div class="grid grid-2"><div><h2>Shiriki Data ya Afya na Daktari Wako</h2><p class="lead">Jiandae kwa miadi ya matibabu na ripoti kamili za afya ambazo mtoa huduma wako wa
+                    afya anaweza kuzitumia kweli.</p><p>Badala ya kujaribu kuonyesha daktari wako data kwenye kioo cha simu yako, tengeneza ripoti za
                     kitaalamu za PDF
-                    zinazojumuisha:</p>
-                <ul>
-                    <li><strong>Vipimo muhimu vilivyoangaziwa</strong> — Lenga kile ambacho ni muhimu kwa ushauri wako
-                    </li>
-                    <li><strong>Taswira za mielekeo</strong> — Angalia mabadiliko baada ya muda kwa mtazamo mmoja</li>
-                    <li><strong>Masafa ya marejeleo</strong> — Muktadha wa ufafanuzi wa kliniki</li>
-                    <li><strong>Asili ya data</strong> — Jua ni kifaa gani kilirekodi kila kipimo</li>
-                </ul>
-                <p class="mt-md">Hamisha data unayohitaji tu kwa muda unaofaa. Itume kwa barua pepe kabla ya
-                    miadi yako au lete nakala iliyochapishwa.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title">Mifano ya Kawaida ya Matumizi ya Matibabu</h3>
-                <div class="card-content">
-                    <ul>
-                        <li><strong>Miadi ya kadiolojia</strong> — Mapigo ya moyo, HRV, shinikizo la damu, data ya ECG
-                        </li>
-                        <li><strong>Ushauri wa usingizi</strong> — Hatua za usingizi, muda, vipimo vya kupumua</li>
-                        <li><strong>Udhibiti wa ugonjwa wa sukari</strong> — Sukari kwenye damu, insulini, uingizaji wa
-                            kabohaidreti</li>
-                        <li><strong>Udhibiti wa uzito</strong> — Uzito wa mwili, BMI, shughuli, lishe</li>
-                        <li><strong>Tathmini ya siha</strong> — VO₂ Max, muda wa mazoezi, vipimo vya kupona</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="page-hero">
-    <div class="container">
-        <h2>Anza Jaribio Lako la Bure</h2>
-        <p class="lead">Geuza historia yako ya afya kuwa maarifa unayoweza kutumia.</p>
-        <div class="mt-md">
-            <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary btn-large">Pakua kwenye App Store</a>
-        </div>
-        <p class="text-sm text-secondary mt-md">Jaribio la bure la siku 7 | Hakuna akaunti inayohitajika | Data yako
+                    zinazojumuisha:</p><ul><li><strong>Vipimo muhimu vilivyoangaziwa</strong> — Lenga kile ambacho ni muhimu kwa ushauri wako
+                    </li><li><strong>Taswira za mielekeo</strong> — Angalia mabadiliko baada ya muda kwa mtazamo mmoja</li><li><strong>Masafa ya marejeleo</strong> — Muktadha wa ufafanuzi wa kliniki</li><li><strong>Asili ya data</strong> — Jua ni kifaa gani kilirekodi kila kipimo</li></ul><p class="mt-md">Hamisha data unayohitaji tu kwa muda unaofaa. Itume kwa barua pepe kabla ya
+                    miadi yako au lete nakala iliyochapishwa.</p></div><div class="card"><h3 class="card-title">Mifano ya Kawaida ya Matumizi ya Matibabu</h3><div class="card-content"><ul><li><strong>Miadi ya kadiolojia</strong> — Mapigo ya moyo, HRV, shinikizo la damu, data ya ECG
+                        </li><li><strong>Ushauri wa usingizi</strong> — Hatua za usingizi, muda, vipimo vya kupumua</li><li><strong>Udhibiti wa ugonjwa wa sukari</strong> — Sukari kwenye damu, insulini, uingizaji wa
+                            kabohaidreti</li><li><strong>Udhibiti wa uzito</strong> — Uzito wa mwili, BMI, shughuli, lishe</li><li><strong>Tathmini ya siha</strong> — VO₂ Max, muda wa mazoezi, vipimo vya kupona</li></ul></div></div></div></div></section><section class="page-hero"><div class="container"><h2>Anza Jaribio Lako la Bure</h2><p class="lead">Geuza historia yako ya afya kuwa maarifa unayoweza kutumia.</p><div class="mt-md"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="btn btn-primary btn-large">Pakua kwenye App Store</a></div><p class="text-sm text-secondary mt-md">Jaribio la bure la siku 7 | Hakuna akaunti inayohitajika | Data yako
             inabaki kwenye kifaa chako
-        </p>
-    </div>
-</section>
-    
-
-    
-    
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Hamisha na Uchambue Data Yako ya Apple Health - Hamisha</h2>
-    <p class="ai-citation-answer">Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-01-28</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>data ya afya · hamisha apple health · uchambuzi wa afya · kifuatiliaji cha siha · ripoti za matibabu</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../sw/bibliography/">
+        </p></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Hamisha na Uchambue Data Yako ya Apple Health - Hamisha</h2><p class="ai-citation-answer">Geuza data ghafi ya HealthKit kuwa maarifa yanayoweza kutekelezeka na ripoti zinazoweza kushirikiwa. Hamisha kwenda CSV, JSON, na PDF. Shiriki na madaktari.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-01-28</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>data ya afya · hamisha apple health · uchambuzi wa afya · kifuatiliaji cha siha · ripoti za matibabu</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../sw/bibliography/">
           
           Bibliografia
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link active"
+                </a><a href="/sw/" class="lang-link active"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Haki zote zimehifadhiwa
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/sw/privacy/">Faragha</a></li>
-                <li><a href="/sw/terms/">Vigezo</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Tovuti hii inatumia kuki ili kuboresha hali yako ya matumizi.</p>
-            <a href="/sw/privacy/" class="text-sm">Jifunze zaidi</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Kataa</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Kubali</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/sw/privacy/">Faragha</a></li><li><a href="/sw/terms/">Vigezo</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Tovuti hii inatumia kuki ili kuboresha hali yako ya matumizi.</p><a href="/sw/privacy/" class="text-sm">Jifunze zaidi</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Kataa</button><button id="cookie-accept" class="btn btn-primary btn-small">Kubali</button></div></div></div><script src="../assets/js/core.min.js?v=87724973" defer></script><script src="../assets/js/search.min.js?v=87724973" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>

@@ -1,477 +1,61 @@
-<!DOCTYPE html>
-<html lang="yo" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |...</title>
-  <meta name="description" content="Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Blood, Pressure, Export, Apple">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-24T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/">
-  <meta property="og:title" content="Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |...">
-  <meta property="og:description" content="Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="yo_NG">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/">
-  <meta name="twitter:title" content="Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |...">
-  <meta name="twitter:description" content="Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="yo" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |...</title><meta name="description" content="Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:"><meta name="author" content="Arno Health"><meta name="keywords" content="Blood, Pressure, Export, Apple"><link rel="canonical" href="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/"><meta property="og:title" content="Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |..."><meta property="og:description" content="Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:"><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="yo_NG"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/"><meta name="twitter:title" content="Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |..."><meta name="twitter:description" content="Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:"><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/heart-circulation/blood-pressure/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/blood-pressure/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -730,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -774,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -786,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "yo"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -805,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -850,14 +407,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -882,17 +432,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/yo/metrics/heart-circulation/blood-pressure/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -906,1167 +446,355 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Fo sí àkóónú</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/yo/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/yo/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Fo sí àkóónú</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/yo/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/yo/features/" 
                                 aria-current="">
                                 Àwọn Ẹ̀yà
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/yo/metrics/" 
+                            </a></li><li><a href="/yo/metrics/" 
                                 aria-current="">
                                 Ilé-ìkàwé Ìwọ̀n
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/yo/pricing/" 
+                            </a></li><li><a href="/yo/pricing/" 
                                 aria-current="">
                                 Ìdíyelé
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/yo/about/" 
+                            </a></li><li><a href="/yo/about/" 
                                 aria-current="">
                                 Nípa Wa
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Yan èdè">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Yan èdè"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" selected>
+                        </option><option value="yo" selected>
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Yípadà àkójọ"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    
-<article class="metric-article">
-<nav aria-label="Breadcrumb" class="metric-breadcrumb">
-<ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/yo/metrics/" itemprop="item">
-<span itemprop="name">Metrics Library</span>
-</a>
-<meta content="1" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/yo/metrics/heart-circulation/" itemprop="item">
-<span itemprop="name">Okan &amp; Circulation</span>
-</a>
-<meta content="2" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<span aria-current="page" itemprop="name">Iwọn Ẹjẹ</span>
-<meta content="3" itemprop="position"/>
-</li>
-</ol>
-</nav>
-<header class="metric-article-header">
-<span class="metric-category-badge">
-<span>❤️</span>Okan &amp; Circulation</span></header>
-<nav class="article-toc">
-<h4>Lori Oju-iwe yii</h4>
-<div class="toc">
-<ul>
-<li><a href="#blood-pressure">Iwọn Ẹjẹ</a><ul>
-<li><a href="#what-is-blood-pressure">Kini Ipa Ẹjẹ?</a><ul>
-<li><a href="#how-healthkit-stores-blood-pressure">Bii HealthKit ṣe tọju Ipa Ẹjẹ</a></li>
-</ul>
-</li>
-<li><a href="#scientific-background">Imọ abẹlẹ</a><ul>
-<li><a href="#hypertension-the-silent-killer">Haipatensonu: "Apaniyan ipalọlọ"</a></li>
-<li><a href="#classification-guidelines-accaha-2017">Awọn Itọsọna Isọri (ACC/AHA 2017)</a></li>
-<li><a href="#landmark-research-findings">Awọn awari Iwadi Ala-ilẹ</a><ul>
-<li><a href="#sprint-trial-2015">Idanwo SPRINT (2015)</a></li>
-<li><a href="#prospective-studies-collaboration-lancet-2002">Ifowosowopo Awọn Ikẹkọ Ireti (Lancet 2002)</a></li>
-</ul>
-</li>
-<li><a href="#home-blood-pressure-monitoring">Abojuto Ipa Ẹjẹ Ile</a></li>
-</ul>
-</li>
-<li><a href="#clinical-significance">Isẹgun Pataki</a><ul>
-<li><a href="#cardiovascular-risk-assessment">Igbelewọn Ewu Ẹjẹ ọkan</a></li>
-<li><a href="#factors-that-influence-blood-pressure">Awọn Okunfa Ti Nfa Ipa Ẹjẹ</a></li>
-</ul>
-</li>
-<li><a href="#recommendations">Awọn iṣeduro</a><ul>
-<li><a href="#evidence-based-guidelines">Awọn Itọsọna orisun Ẹri</a></li>
-<li><a href="#lifestyle-modifications">Awọn iyipada Igbesi aye</a></li>
-</ul>
-</li>
-<li><a href="#when-to-seek-medical-attention">Nigbawo Lati Wa Ifojusi Iṣoogun</a></li>
-<li><a href="#references">Awọn itọkasi</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-<div class="metric-content">
-<h1 id="blood-pressure">Iwọn Ẹjẹ</h1>
-<h2 id="what-is-blood-pressure">Kini Ipa Ẹjẹ?</h2>
-<p>Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:</p>
-<ul>
-<li><strong>Iwọn systolic (nọmba oke):</strong>Iwọn titẹ nigbati ọkan rẹ ba lu ati fifun ẹjẹ</li>
-<li><strong>Iwọn diastolic (nọmba isalẹ):</strong>Awọn titẹ nigbati ọkàn rẹ simi laarin lilu</li>
-</ul>
-<p>Kika “120/80 mmHg” tumo si titẹ systolic ti 120 millimeters ti makiuri ati titẹ diastolic ti 80 mmHg.</p>
-<h3 id="how-healthkit-stores-blood-pressure">Bii HealthKit ṣe tọju Ipa Ẹjẹ</h3>
-<p>HealthKit le gba data titẹ ẹjẹ lati:</p>
-<ul>
-<li><strong>Awọn ẹrọ ti a ti sopọ:</strong>Awọn abojuto titẹ ẹjẹ ti o ṣiṣẹ Bluetooth ti o muṣiṣẹpọ pẹlu Apple Health</li>
-<li><strong>Iwọle pẹlu ọwọ:</strong>Awọn wiwọn ti olumulo gba silẹ lati eyikeyi ẹrọ ti a fọwọsi</li>
-<li><strong>Awọn ohun elo ilera:</strong>Awọn ohun elo ẹnikẹta ti o kọ si HealthKit</li>
-</ul>
-<p>Ko dabi oṣuwọn ọkan, titẹ ẹjẹ ko le ṣe iwọn lọwọlọwọ taara nipasẹ Apple Watch ati pe o nilo ohun elo ti o da lori kọfi fun awọn kika deede.</p>
-<h2 id="scientific-background">Imọ abẹlẹ</h2>
-<h3 id="hypertension-the-silent-killer">Haipatensonu: "Apaniyan ipalọlọ"</h3>
-<p>Iwọn ẹjẹ ti o ga (haipatensonu) nigbagbogbo ni a npe ni "apaniyan ipalọlọ" nitori pe o maa n fa awọn aami aisan lakoko ti o n ba awọn ohun elo ẹjẹ jẹ ati awọn ara. Gẹgẹbi data WHO, haipatensonu yoo ni ipa lori isunmọ<strong>1.3 bilionu eniyan agbaye</strong>ati pe o jẹ asiwaju eewu iyipada iyipada fun arun inu ọkan ati ẹjẹ.</p>
-<p><strong>Kini idi ti titẹ ẹjẹ ṣe pataki:</strong></p>
-<p>Iwọn ẹjẹ ti o ga julọ mu ki iṣẹ ṣiṣe ṣiṣẹ lori ọkan ati ba awọn odi iṣan jẹ ni akoko pupọ, eyiti o yori si:
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Yípadà àkójọ"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav aria-label="Breadcrumb" class="metric-breadcrumb"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/yo/metrics/" itemprop="item"><span itemprop="name">Metrics Library</span></a><meta content="1" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/yo/metrics/heart-circulation/" itemprop="item"><span itemprop="name">Okan &amp; Circulation</span></a><meta content="2" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span aria-current="page" itemprop="name">Iwọn Ẹjẹ</span><meta content="3" itemprop="position"/></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>❤️</span>Okan &amp; Circulation</span></header><nav class="article-toc"><h4>Lori Oju-iwe yii</h4><div class="toc"><ul><li><a href="#blood-pressure">Iwọn Ẹjẹ</a><ul><li><a href="#what-is-blood-pressure">Kini Ipa Ẹjẹ?</a><ul><li><a href="#how-healthkit-stores-blood-pressure">Bii HealthKit ṣe tọju Ipa Ẹjẹ</a></li></ul></li><li><a href="#scientific-background">Imọ abẹlẹ</a><ul><li><a href="#hypertension-the-silent-killer">Haipatensonu: "Apaniyan ipalọlọ"</a></li><li><a href="#classification-guidelines-accaha-2017">Awọn Itọsọna Isọri (ACC/AHA 2017)</a></li><li><a href="#landmark-research-findings">Awọn awari Iwadi Ala-ilẹ</a><ul><li><a href="#sprint-trial-2015">Idanwo SPRINT (2015)</a></li><li><a href="#prospective-studies-collaboration-lancet-2002">Ifowosowopo Awọn Ikẹkọ Ireti (Lancet 2002)</a></li></ul></li><li><a href="#home-blood-pressure-monitoring">Abojuto Ipa Ẹjẹ Ile</a></li></ul></li><li><a href="#clinical-significance">Isẹgun Pataki</a><ul><li><a href="#cardiovascular-risk-assessment">Igbelewọn Ewu Ẹjẹ ọkan</a></li><li><a href="#factors-that-influence-blood-pressure">Awọn Okunfa Ti Nfa Ipa Ẹjẹ</a></li></ul></li><li><a href="#recommendations">Awọn iṣeduro</a><ul><li><a href="#evidence-based-guidelines">Awọn Itọsọna orisun Ẹri</a></li><li><a href="#lifestyle-modifications">Awọn iyipada Igbesi aye</a></li></ul></li><li><a href="#when-to-seek-medical-attention">Nigbawo Lati Wa Ifojusi Iṣoogun</a></li><li><a href="#references">Awọn itọkasi</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="blood-pressure">Iwọn Ẹjẹ</h1><h2 id="what-is-blood-pressure">Kini Ipa Ẹjẹ?</h2><p>Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:</p><ul><li><strong>Iwọn systolic (nọmba oke):</strong>Iwọn titẹ nigbati ọkan rẹ ba lu ati fifun ẹjẹ</li><li><strong>Iwọn diastolic (nọmba isalẹ):</strong>Awọn titẹ nigbati ọkàn rẹ simi laarin lilu</li></ul><p>Kika “120/80 mmHg” tumo si titẹ systolic ti 120 millimeters ti makiuri ati titẹ diastolic ti 80 mmHg.</p><h3 id="how-healthkit-stores-blood-pressure">Bii HealthKit ṣe tọju Ipa Ẹjẹ</h3><p>HealthKit le gba data titẹ ẹjẹ lati:</p><ul><li><strong>Awọn ẹrọ ti a ti sopọ:</strong>Awọn abojuto titẹ ẹjẹ ti o ṣiṣẹ Bluetooth ti o muṣiṣẹpọ pẹlu Apple Health</li><li><strong>Iwọle pẹlu ọwọ:</strong>Awọn wiwọn ti olumulo gba silẹ lati eyikeyi ẹrọ ti a fọwọsi</li><li><strong>Awọn ohun elo ilera:</strong>Awọn ohun elo ẹnikẹta ti o kọ si HealthKit</li></ul><p>Ko dabi oṣuwọn ọkan, titẹ ẹjẹ ko le ṣe iwọn lọwọlọwọ taara nipasẹ Apple Watch ati pe o nilo ohun elo ti o da lori kọfi fun awọn kika deede.</p><h2 id="scientific-background">Imọ abẹlẹ</h2><h3 id="hypertension-the-silent-killer">Haipatensonu: "Apaniyan ipalọlọ"</h3><p>Iwọn ẹjẹ ti o ga (haipatensonu) nigbagbogbo ni a npe ni "apaniyan ipalọlọ" nitori pe o maa n fa awọn aami aisan lakoko ti o n ba awọn ohun elo ẹjẹ jẹ ati awọn ara. Gẹgẹbi data WHO, haipatensonu yoo ni ipa lori isunmọ<strong>1.3 bilionu eniyan agbaye</strong>ati pe o jẹ asiwaju eewu iyipada iyipada fun arun inu ọkan ati ẹjẹ.</p><p><strong>Kini idi ti titẹ ẹjẹ ṣe pataki:</strong></p><p>Iwọn ẹjẹ ti o ga julọ mu ki iṣẹ ṣiṣe ṣiṣẹ lori ọkan ati ba awọn odi iṣan jẹ ni akoko pupọ, eyiti o yori si:
 Atherosclerosis (ikọsilẹ plaque iṣan ẹjẹ)
 - Ikọlu ọkan ati ikuna ọkan
 - Ọpọlọ
 - Àrùn arun
 - Iran pipadanu
-- Idinku imọ</p>
-<h3 id="classification-guidelines-accaha-2017">Awọn Itọsọna Isọri (ACC/AHA 2017)</h3>
-<p>Ile-ẹkọ giga ti Ilu Amẹrika ti Ẹkọ ọkan ati Ẹgbẹ ọkan ọkan Amẹrika ṣe imudojuiwọn awọn ẹka titẹ ẹjẹ ni ọdun 2017:</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Ẹka</th>
-<th>Systolic</th>
-<th></th>
-<th>Diastolic</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Deede</strong></td>
-<td>&lt; 120</td>
-<td>ati</td>
-<td>&lt;80</td>
-</tr>
-<tr>
-<td><strong>Ti o ga</strong></td>
-<td>120-129</td>
-<td>ati</td>
-<td>&lt;80</td>
-</tr>
-<tr>
-<td><strong>Ipele 1 Haipatensonu</strong></td>
-<td>130-139</td>
-<td>tabi</td>
-<td>80-89</td>
-</tr>
-<tr>
-<td><strong>Ipele 2 Haipatensonu</strong></td>
-<td>≥ 140</td>
-<td>tabi</td>
-<td>≥ 90</td>
-</tr>
-<tr>
-<td><strong>Ẹjẹ Haipatensonu</strong></td>
-<td>&gt; 180</td>
-<td>ati/tabi</td>
-<td>&gt; 120</td>
-</tr>
-</tbody>
-</table>
-<p><em>Awọn itọsona wọnyi dinku ala fun haipatensonu lati 140/90 si 130/80 ti o da lori ẹri pe eewu ọkan ati ẹjẹ pọ si ni awọn ipele kekere.</em></p>
-<h3 id="landmark-research-findings">Awọn awari Iwadi Ala-ilẹ</h3>
-<h4 id="sprint-trial-2015">Idanwo SPRINT (2015)</h4>
-<p>Awọn<strong>Idanwo Idasi Ipa Ẹjẹ Systolic</strong>jẹ iwadi ile-iṣẹ NIH ti o ni agbateru ti awọn agbalagba 9,361 ni eewu ọkan ati ẹjẹ giga.</p>
-<p><strong>Awọn awari bọtini:</strong>- Itọju aladanla (afojusun &lt;120 mmHg) lodi si boṣewa (afojusun &lt;140 mmHg)
+- Idinku imọ</p><h3 id="classification-guidelines-accaha-2017">Awọn Itọsọna Isọri (ACC/AHA 2017)</h3><p>Ile-ẹkọ giga ti Ilu Amẹrika ti Ẹkọ ọkan ati Ẹgbẹ ọkan ọkan Amẹrika ṣe imudojuiwọn awọn ẹka titẹ ẹjẹ ni ọdun 2017:</p><table class="clinical-table"><thead><tr><th>Ẹka</th><th>Systolic</th><th></th><th>Diastolic</th></tr></thead><tbody><tr><td><strong>Deede</strong></td><td>&lt; 120</td><td>ati</td><td>&lt;80</td></tr><tr><td><strong>Ti o ga</strong></td><td>120-129</td><td>ati</td><td>&lt;80</td></tr><tr><td><strong>Ipele 1 Haipatensonu</strong></td><td>130-139</td><td>tabi</td><td>80-89</td></tr><tr><td><strong>Ipele 2 Haipatensonu</strong></td><td>≥ 140</td><td>tabi</td><td>≥ 90</td></tr><tr><td><strong>Ẹjẹ Haipatensonu</strong></td><td>&gt; 180</td><td>ati/tabi</td><td>&gt; 120</td></tr></tbody></table><p><em>Awọn itọsona wọnyi dinku ala fun haipatensonu lati 140/90 si 130/80 ti o da lori ẹri pe eewu ọkan ati ẹjẹ pọ si ni awọn ipele kekere.</em></p><h3 id="landmark-research-findings">Awọn awari Iwadi Ala-ilẹ</h3><h4 id="sprint-trial-2015">Idanwo SPRINT (2015)</h4><p>Awọn<strong>Idanwo Idasi Ipa Ẹjẹ Systolic</strong>jẹ iwadi ile-iṣẹ NIH ti o ni agbateru ti awọn agbalagba 9,361 ni eewu ọkan ati ẹjẹ giga.</p><p><strong>Awọn awari bọtini:</strong>- Itọju aladanla (afojusun &lt;120 mmHg) lodi si boṣewa (afojusun &lt;140 mmHg)
 -<strong>25% idinku</strong>ni awọn iṣẹlẹ inu ọkan ati ẹjẹ pẹlu itọju to lekoko
 -<strong>27% idinku</strong>ni gbogbo-okunfa iku
-- Idanwo duro ni kutukutu nitori anfani ti ko o ti iṣakoso aladanla</p>
-<blockquote>
-<p>"Ifojusi titẹ ẹjẹ systolic ti o kere ju 120 mm Hg, bi a ṣe afiwe pẹlu kere ju 140 mm Hg, yorisi awọn iwọn kekere ti apaniyan ati awọn iṣẹlẹ inu ọkan ati ẹjẹ pataki ti kii ṣe iku ati iku lati eyikeyi idi.”
-- Ẹgbẹ Iwadi SPRINT, NEJM, 2015</p>
-</blockquote>
-<h4 id="prospective-studies-collaboration-lancet-2002">Ifowosowopo Awọn Ikẹkọ Ireti (Lancet 2002)</h4>
-<p>A awon orisirisi-onínọmbà ti<strong>61 ti ifojusọna iwadi</strong>pẹlu awọn agbalagba miliọnu 1 ṣe afihan ibatan lemọlemọfún laarin titẹ ẹjẹ ati eewu inu ọkan ati ẹjẹ:</p>
-<p><strong>Awọn awari bọtini:</strong>Ibasepo laarin BP ati CVD ewu jẹ ilọsiwaju si o kere ju 115/75 mmHg
+- Idanwo duro ni kutukutu nitori anfani ti ko o ti iṣakoso aladanla</p><blockquote><p>"Ifojusi titẹ ẹjẹ systolic ti o kere ju 120 mm Hg, bi a ṣe afiwe pẹlu kere ju 140 mm Hg, yorisi awọn iwọn kekere ti apaniyan ati awọn iṣẹlẹ inu ọkan ati ẹjẹ pataki ti kii ṣe iku ati iku lati eyikeyi idi.”
+- Ẹgbẹ Iwadi SPRINT, NEJM, 2015</p></blockquote><h4 id="prospective-studies-collaboration-lancet-2002">Ifowosowopo Awọn Ikẹkọ Ireti (Lancet 2002)</h4><p>A awon orisirisi-onínọmbà ti<strong>61 ti ifojusọna iwadi</strong>pẹlu awọn agbalagba miliọnu 1 ṣe afihan ibatan lemọlemọfún laarin titẹ ẹjẹ ati eewu inu ọkan ati ẹjẹ:</p><p><strong>Awọn awari bọtini:</strong>Ibasepo laarin BP ati CVD ewu jẹ ilọsiwaju si o kere ju 115/75 mmHg
 - Kọọkan<strong>20 mmHg ilosoke</strong>ni systolic BP ni ilọpo meji eewu iku iku inu ọkan
 - Kọọkan<strong>10 mmHg ilosoke</strong>ni diastolic BP ni ilọpo meji eewu iku iku inu ọkan
-- Ibasepo yii waye ni gbogbo awọn ẹgbẹ ọjọ-ori lati ọdun 40-89</p>
-<h3 id="home-blood-pressure-monitoring">Abojuto Ipa Ẹjẹ Ile</h3>
-<p>A apapọ imulo gbólóhùn lati awọn<strong>American Heart Association ati American Medical Association</strong>(2020) ṣe atilẹyin ibojuwo titẹ ẹjẹ ile bi o ga si awọn wiwọn ọfiisi fun:</p>
-<p><strong>Awọn anfani ile-iwosan:</strong>- Awọn wiwọn diẹ sii ni agbegbe adayeba
+- Ibasepo yii waye ni gbogbo awọn ẹgbẹ ọjọ-ori lati ọdun 40-89</p><h3 id="home-blood-pressure-monitoring">Abojuto Ipa Ẹjẹ Ile</h3><p>A apapọ imulo gbólóhùn lati awọn<strong>American Heart Association ati American Medical Association</strong>(2020) ṣe atilẹyin ibojuwo titẹ ẹjẹ ile bi o ga si awọn wiwọn ọfiisi fun:</p><p><strong>Awọn anfani ile-iwosan:</strong>- Awọn wiwọn diẹ sii ni agbegbe adayeba
 - Ṣe idanimọ “haipatensonu ẹwu funfun” (ti o ga ni awọn eto iṣoogun nikan)
 - Ṣe idanimọ “haipatensonu boju” (deede ni ọfiisi ṣugbọn ti o ga ni ile)
 - Dara julọ asọtẹlẹ awọn abajade inu ọkan ati ẹjẹ ju ọfiisi BP
-- Ṣe ilọsiwaju ifaramọ oogun ati iṣakoso BP</p>
-<p><strong>Ilana Iṣeduro:</strong>- Wiwọn ni akoko kanna lojoojumọ (owurọ ati irọlẹ bojumu)
+- Ṣe ilọsiwaju ifaramọ oogun ati iṣakoso BP</p><p><strong>Ilana Iṣeduro:</strong>- Wiwọn ni akoko kanna lojoojumọ (owurọ ati irọlẹ bojumu)
 - Joko ni idakẹjẹ fun awọn iṣẹju 5 ṣaaju wiwọn
 - Ya awọn kika 2-3, iṣẹju 1 lọtọ
-- Ṣe igbasilẹ gbogbo awọn kika fun atunyẹwo olupese ilera</p>
-<h2 id="clinical-significance">Isẹgun Pataki</h2>
-<h3 id="cardiovascular-risk-assessment">Igbelewọn Ewu Ẹjẹ ọkan</h3>
-<p>Iwọn ẹjẹ jẹ ọkan ninu awọn okunfa eewu ti o ṣe pataki julọ fun:</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Ipo</th>
-<th>Ilọsi eewu pẹlu Haipatensonu</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ọpọlọ</td>
-<td>4-6x ti o ga ewu</td>
-</tr>
-<tr>
-<td>Ikuna okan</td>
-<td>2-3x ti o ga ewu</td>
-</tr>
-<tr>
-<td>Arun iṣọn-alọ ọkan</td>
-<td>2-3x ti o ga ewu</td>
-</tr>
-<tr>
-<td>Arun kidinrin onibaje</td>
-<td>Ilọsiwaju ilọsiwaju</td>
-</tr>
-<tr>
-<td>Àrùn fibrillation</td>
-<td>1.5-2x ti o ga ewu</td>
-</tr>
-</tbody>
-</table>
-<h3 id="factors-that-influence-blood-pressure">Awọn Okunfa Ti Nfa Ipa Ẹjẹ</h3>
-<p><strong>Awọn okunfa ti o le ṣe atunṣe:</strong>Ounjẹ (paapaa gbigbemi soda)
+- Ṣe igbasilẹ gbogbo awọn kika fun atunyẹwo olupese ilera</p><h2 id="clinical-significance">Isẹgun Pataki</h2><h3 id="cardiovascular-risk-assessment">Igbelewọn Ewu Ẹjẹ ọkan</h3><p>Iwọn ẹjẹ jẹ ọkan ninu awọn okunfa eewu ti o ṣe pataki julọ fun:</p><table class="clinical-table"><thead><tr><th>Ipo</th><th>Ilọsi eewu pẹlu Haipatensonu</th></tr></thead><tbody><tr><td>Ọpọlọ</td><td>4-6x ti o ga ewu</td></tr><tr><td>Ikuna okan</td><td>2-3x ti o ga ewu</td></tr><tr><td>Arun iṣọn-alọ ọkan</td><td>2-3x ti o ga ewu</td></tr><tr><td>Arun kidinrin onibaje</td><td>Ilọsiwaju ilọsiwaju</td></tr><tr><td>Àrùn fibrillation</td><td>1.5-2x ti o ga ewu</td></tr></tbody></table><h3 id="factors-that-influence-blood-pressure">Awọn Okunfa Ti Nfa Ipa Ẹjẹ</h3><p><strong>Awọn okunfa ti o le ṣe atunṣe:</strong>Ounjẹ (paapaa gbigbemi soda)
 - Ti ara aṣayan iṣẹ-ṣiṣe ipele
 - iwuwo ara
 - Oti mimu
 - Wahala
-- Didara orun</p>
-<p><strong>Awọn okunfa ti kii ṣe atunṣe:</strong>- Ọjọ ori (BP maa n pọ si pẹlu ọjọ ori)
+- Didara orun</p><p><strong>Awọn okunfa ti kii ṣe atunṣe:</strong>- Ọjọ ori (BP maa n pọ si pẹlu ọjọ ori)
 - Ìdílé itan
 - Eya/ẹya (itankalẹ ti o ga julọ ni awọn olugbe Dudu)
-- Àrùn arun</p>
-<h2 id="recommendations">Awọn iṣeduro</h2>
-<h3 id="evidence-based-guidelines">Awọn Itọsọna orisun Ẹri</h3>
-<p>Awọn itọnisọna ACC/AHA 2017 ṣe iṣeduro:</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Ẹka</th>
-<th>Awọn iyipada Igbesi aye</th>
-<th>Oogun</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Deede</strong></td>
-<td>Ṣe itọju</td>
-<td>Ko ṣe itọkasi</td>
-</tr>
-<tr>
-<td><strong>Ti o ga</strong></td>
-<td>Bẹẹni</td>
-<td>Ko ṣe itọkasi</td>
-</tr>
-<tr>
-<td><strong>Ipele 1 HTTP</strong></td>
-<td>Bẹẹni</td>
-<td>Ti CVD ba jẹ ewu&gt; 10% tabi CVD ti o wa tẹlẹ</td>
-</tr>
-<tr>
-<td><strong>Ipele 2 HTTP</strong></td>
-<td>Bẹẹni</td>
-<td>Bẹẹni, ni igbagbogbo awọn oogun 2</td>
-</tr>
-</tbody>
-</table>
-<h3 id="lifestyle-modifications">Awọn iyipada Igbesi aye</h3>
-<p>Idawọle kọọkan le dinku systolic BP nipa isunmọ:</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>Idasi</th>
-<th>O ti ṣe yẹ SBP Idinku</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DASH onje</td>
-<td>8-14 mmHg</td>
-</tr>
-<tr>
-<td>Pipadanu iwuwo (10 kg)</td>
-<td>5-20 mmHg</td>
-</tr>
-<tr>
-<td>Idinku iṣuu soda</td>
-<td>2-8 mmHg</td>
-</tr>
-<tr>
-<td>Iṣẹ ṣiṣe ti ara</td>
-<td>4-9 mmHg</td>
-</tr>
-<tr>
-<td>Oti iwọntunwọnsi</td>
-<td>2-4 mmHg</td>
-</tr>
-</tbody>
-</table>
-<h2 id="when-to-seek-medical-attention">Nigbawo Lati Wa Ifojusi Iṣoogun</h2>
-<p><strong>Wa itọju lẹsẹkẹsẹ</strong>Ti titẹ ẹjẹ ba kọja 180/120 mmHg, paapaa pẹlu:
+- Àrùn arun</p><h2 id="recommendations">Awọn iṣeduro</h2><h3 id="evidence-based-guidelines">Awọn Itọsọna orisun Ẹri</h3><p>Awọn itọnisọna ACC/AHA 2017 ṣe iṣeduro:</p><table class="clinical-table"><thead><tr><th>Ẹka</th><th>Awọn iyipada Igbesi aye</th><th>Oogun</th></tr></thead><tbody><tr><td><strong>Deede</strong></td><td>Ṣe itọju</td><td>Ko ṣe itọkasi</td></tr><tr><td><strong>Ti o ga</strong></td><td>Bẹẹni</td><td>Ko ṣe itọkasi</td></tr><tr><td><strong>Ipele 1 HTTP</strong></td><td>Bẹẹni</td><td>Ti CVD ba jẹ ewu&gt; 10% tabi CVD ti o wa tẹlẹ</td></tr><tr><td><strong>Ipele 2 HTTP</strong></td><td>Bẹẹni</td><td>Bẹẹni, ni igbagbogbo awọn oogun 2</td></tr></tbody></table><h3 id="lifestyle-modifications">Awọn iyipada Igbesi aye</h3><p>Idawọle kọọkan le dinku systolic BP nipa isunmọ:</p><table class="clinical-table"><thead><tr><th>Idasi</th><th>O ti ṣe yẹ SBP Idinku</th></tr></thead><tbody><tr><td>DASH onje</td><td>8-14 mmHg</td></tr><tr><td>Pipadanu iwuwo (10 kg)</td><td>5-20 mmHg</td></tr><tr><td>Idinku iṣuu soda</td><td>2-8 mmHg</td></tr><tr><td>Iṣẹ ṣiṣe ti ara</td><td>4-9 mmHg</td></tr><tr><td>Oti iwọntunwọnsi</td><td>2-4 mmHg</td></tr></tbody></table><h2 id="when-to-seek-medical-attention">Nigbawo Lati Wa Ifojusi Iṣoogun</h2><p><strong>Wa itọju lẹsẹkẹsẹ</strong>Ti titẹ ẹjẹ ba kọja 180/120 mmHg, paapaa pẹlu:
 - orififo nla
 - Ìrora àyà
 - Iṣoro mimi
 - Numbness tabi ailera
 - Iran ayipada
-- Isoro soro</p>
-<p><strong>Iṣeto oogun igbelewọn</strong>fun:
+- Isoro soro</p><p><strong>Iṣeto oogun igbelewọn</strong>fun:
 - Awọn kika kika igbagbogbo (&gt; 130/80 mmHg) lori ibojuwo ile
 - Awọn iyatọ nla ni awọn kika titẹ ẹjẹ
 - Awọn aami aisan bi orififo, ẹjẹ imu, tabi kuru ẹmi
-- Awọn ibeere oogun tabi awọn ipa ẹgbẹ</p>
-<h2 id="references">Awọn itọkasi</h2>
-<ol>
-<li>Whelton PK, et al. (2018) 2017 ACC / AHA Itọnisọna fun Idena, Iwari, Igbelewọn, ati Ṣiṣakoṣo ti Iwọn Ẹjẹ giga ni Awọn agbalagba.<em>Haipatensonu</em>, 71 (6), e13-e115.</li>
-<li>Ẹgbẹ Iwadi SPRINT. (2015) Idanwo Laileto ti Aladanla dipo Iṣakoso Irẹjẹ Ẹjẹ Standard.<em>NEJM</em>, 373 (22), 2103-2116.</li>
-<li>Lewington S, et al. (2002) Ibaramu ọjọ-ori kan pato ti titẹ ẹjẹ deede si iku ti iṣan.<em>Lancet</em>, 360 (9349), 1903-1913.</li>
-<li>Shimbo D, et al. (2020) Abojuto Ipa Ẹjẹ Ti Ara-ẹni ni Ile: Gbólóhùn Ilana Ijọpọ AHA/AMA.<em>Yiyipo</em>, 142 (4), e42-e63.</li>
-<li>NCD Ewu ifosiwewe Ifowosowopo. (2021) Awọn aṣa agbaye ni itankalẹ haipatensonu ati ilọsiwaju ninu itọju ati iṣakoso.<em>Lancet</em>, 398 (10304), 957-980.</li>
-<li>Staessen JA, et al. (2005) Awọn ipa ti lẹsẹkẹsẹ dipo itọju ailera antihypertensive idaduro.<em>Iwe akosile ti Haipatensonu</em>, 23 (6), 1213-1220.</li>
-</ol>
-</div>
-<aside class="medical-disclaimer">
-<div class="disclaimer-icon">⚠️<strong>Alaye iṣoogun</strong></div>
-<p>Akoonu yii wa fun awọn idi eto-ẹkọ nikan ko yẹ ki o rọpo
+- Awọn ibeere oogun tabi awọn ipa ẹgbẹ</p><h2 id="references">Awọn itọkasi</h2><ol><li>Whelton PK, et al. (2018) 2017 ACC / AHA Itọnisọna fun Idena, Iwari, Igbelewọn, ati Ṣiṣakoṣo ti Iwọn Ẹjẹ giga ni Awọn agbalagba.<em>Haipatensonu</em>, 71 (6), e13-e115.</li><li>Ẹgbẹ Iwadi SPRINT. (2015) Idanwo Laileto ti Aladanla dipo Iṣakoso Irẹjẹ Ẹjẹ Standard.<em>NEJM</em>, 373 (22), 2103-2116.</li><li>Lewington S, et al. (2002) Ibaramu ọjọ-ori kan pato ti titẹ ẹjẹ deede si iku ti iṣan.<em>Lancet</em>, 360 (9349), 1903-1913.</li><li>Shimbo D, et al. (2020) Abojuto Ipa Ẹjẹ Ti Ara-ẹni ni Ile: Gbólóhùn Ilana Ijọpọ AHA/AMA.<em>Yiyipo</em>, 142 (4), e42-e63.</li><li>NCD Ewu ifosiwewe Ifowosowopo. (2021) Awọn aṣa agbaye ni itankalẹ haipatensonu ati ilọsiwaju ninu itọju ati iṣakoso.<em>Lancet</em>, 398 (10304), 957-980.</li><li>Staessen JA, et al. (2005) Awọn ipa ti lẹsẹkẹsẹ dipo itọju ailera antihypertensive idaduro.<em>Iwe akosile ti Haipatensonu</em>, 23 (6), 1213-1220.</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️<strong>Alaye iṣoogun</strong></div><p>Akoonu yii wa fun awọn idi eto-ẹkọ nikan ko yẹ ki o rọpo
     ọjọgbọn egbogi imọran. Nigbagbogbo kan si olupese ilera fun
-    egbogi ipinu.</p>
-</aside>
-<div class="metric-footer">
-<hr/>
-<p><em>Imudojuiwọn to kẹhin: Oṣu Kini ọdun 2026</em></p>
-</div>
-</article>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+    egbogi ipinu.</p></aside><div class="metric-footer"><hr/><p><em>Imudojuiwọn to kẹhin: Oṣu Kini ọdun 2026</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">Arno Health</span>
-          </span>
-          
-        </h3>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/blood-pressure">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |...</h2>
-    <p class="ai-citation-answer">Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-24</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>Blood · Pressure · Export · Apple</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../../../yo/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/blood-pressure"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Ipa Ẹjẹ - Rajade Apple Health Data si CSV, PDF &amp; JSON |...</h2><p class="ai-citation-answer">Iwọn ẹjẹ jẹ agbara ti ẹjẹ titari si awọn odi ti awọn iṣọn-alọ rẹ bi ọkan rẹ ṣe n jade. O ṣe afihan bi awọn nọmba meji:</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>Blood · Pressure · Export · Apple</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../yo/bibliography/">
           
           Àkójọ Ìwé
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link active"
+                </a><a href="/yo/" class="lang-link active"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Gbogbo àwọn ẹ̀tọ́ ni a tọ́jú
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/yo/privacy/">Ikọ̀kọ̀</a></li>
-                <li><a href="/yo/terms/">Àwọn Òfin</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Ojú-ìwé yìí ń lò àwọn kúkì láti mú ìrírí rẹ dára sí i.</p>
-            <a href="/yo/privacy/" class="text-sm">Kọ́ sí i</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Kọ̀</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Gba</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/yo/privacy/">Ikọ̀kọ̀</a></li><li><a href="/yo/terms/">Àwọn Òfin</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Ojú-ìwé yìí ń lò àwọn kúkì láti mú ìrírí rẹ dára sí i.</p><a href="/yo/privacy/" class="text-sm">Kọ́ sí i</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Kọ̀</button><button id="cookie-accept" class="btn btn-primary btn-small">Gba</button></div></div></div><script src="../../../../assets/js/core.min.js?v=87724973" defer></script><script src="../../../../assets/js/search.min.js?v=87724973" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

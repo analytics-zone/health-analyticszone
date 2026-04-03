@@ -1,477 +1,61 @@
-<!DOCTYPE html>
-<html lang="ur" dir="rtl">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں</title>
-  <meta name="description" content="The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),.">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Distance, Walking, Running, Export">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-24T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/">
-  <meta property="og:title" content="Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں">
-  <meta property="og:description" content="The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),.">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="ur_PK">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/">
-  <meta name="twitter:title" content="Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں">
-  <meta name="twitter:description" content="The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),.">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/movement-fitness/distance-walking-running/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/movement-fitness/distance-walking-running/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/movement-fitness/distance-walking-running/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="ur" dir="rtl"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں</title><meta name="description" content="The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),."><meta name="author" content="Arno Health"><meta name="keywords" content="Distance, Walking, Running, Export"><link rel="canonical" href="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/"><meta property="og:title" content="Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں"><meta property="og:description" content="The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ur_PK"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/"><meta name="twitter:title" content="Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں"><meta name="twitter:description" content="The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/movement-fitness/distance-walking-running/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/movement-fitness/distance-walking-running/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -730,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -774,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -786,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "ur"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -805,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -850,14 +407,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -882,17 +432,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/ur/metrics/movement-fitness/distance-walking-running/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -906,1025 +446,328 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">مواد پر جائیں</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/ur/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/ur/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">مواد پر جائیں</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ur/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ur/features/" 
                                 aria-current="">
                                 خصوصیات
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ur/metrics/" 
+                            </a></li><li><a href="/ur/metrics/" 
                                 aria-current="">
                                 میٹرکس لائبریری
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ur/pricing/" 
+                            </a></li><li><a href="/ur/pricing/" 
                                 aria-current="">
                                 قیمتیں
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ur/about/" 
+                            </a></li><li><a href="/ur/about/" 
                                 aria-current="">
                                 ہمارے بارے میں
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="زبان منتخب کریں">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="زبان منتخب کریں"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" selected>
+                        </option><option value="ur" selected>
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="مینو ٹوگل کریں"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    
-<article class="metric-article">
-<nav aria-label="Breadcrumb" class="metric-breadcrumb">
-<ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/ur/metrics/" itemprop="item">
-<span itemprop="name">میٹرکس لائبریری</span>
-</a>
-<meta content="1" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/ur/metrics/movement-fitness/" itemprop="item">
-<span itemprop="name">حرکت اور تندرستی</span>
-</a>
-<meta content="2" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<span aria-current="page" itemprop="name">فاصلہ (چلنا + دوڑنا)</span>
-<meta content="3" itemprop="position"/>
-</li>
-</ol>
-</nav>
-<header class="metric-article-header">
-<span class="metric-category-badge">
-<span>🏃</span>حرکت اور تندرستی</span></header>
-<nav class="article-toc">
-<h4>اس پیج پر</h4>
-<div class="toc">
-<ul>
-<li><a href="#distance-walking-running">فاصلہ (چلنا + دوڑنا)</a><ul>
-<li><a href="#what-is-distance">فاصلہ کیا ہے؟</a><ul>
-<li><a href="#how-healthkit-measures-distance">HealthKit فاصلے کی پیمائش کیسے کرتی ہے۔</a></li>
-</ul>
-</li>
-<li><a href="#scientific-background">سائنسی پس منظر</a><ul>
-<li><a href="#distance-vs-steps-which-matters-more">فاصلہ بمقابلہ مراحل: کون سا زیادہ اہمیت رکھتا ہے؟</a><ul>
-<li><a href="#stride-length-as-a-biomarker">بائیو مارکر کے طور پر سٹرائیڈ لینتھ</a></li>
-<li><a href="#the-tudor-locke-classifications">ٹیوڈر لاک کی درجہ بندی</a></li>
-</ul>
-</li>
-<li><a href="#energy-cost-of-distance">فاصلے کی توانائی کی قیمت</a></li>
-</ul>
-</li>
-<li><a href="#clinical-significance">طبی اہمیت</a><ul>
-<li><a href="#gait-quality-indicator">گیٹ کوالٹی انڈیکیٹر</a></li>
-<li><a href="#training-load">ٹریننگ لوڈ</a></li>
-</ul>
-</li>
-<li><a href="#recommendations">سفارشات</a><ul>
-<li><a href="#for-general-health">عام صحت کے لیے</a></li>
-<li><a href="#for-walkersrunners">واکرز/رنرز کے لیے</a></li>
-</ul>
-</li>
-<li><a href="#references">حوالہ جات</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-<div class="metric-content">
-<h1 id="distance-walking-running">فاصلہ (چلنا + دوڑنا)</h1>
-<h2 id="what-is-distance">فاصلہ کیا ہے؟</h2>
-<p>"فاصلہ چلنا + دوڑنا" میٹرک 24 گھنٹے کی مدت کے دوران پیدل چلنے والی کل زمین کو پکڑتا ہے۔ قدموں کی گنتی کے برعکس (جو تعدد کی پیمائش کرتا ہے)، فاصلہ کی مقدار درست کرنے میں مدد کرتا ہے۔<strong>حجم اور قدم کی لمبائی</strong>آپ کی تحریک کی.</p>
-<h3 id="how-healthkit-measures-distance">HealthKit فاصلے کی پیمائش کیسے کرتی ہے۔</h3>
-<p>ایپل کے آلات سینسرز کے سمارٹ درجہ بندی کا استعمال کرتے ہوئے فاصلے کا حساب لگاتے ہیں:</p>
-<ol>
-<li><strong>GPS (بیرونی ورزش):</strong>سب سے زیادہ درست۔ اس وقت استعمال کیا جاتا ہے جب ورزش فعال ہو اور GPS دستیاب ہو۔</li>
-<li><strong>کیلیبریٹڈ سٹرائیڈ (انڈور/کوئی GPS نہیں):</strong>روزمرہ کی زندگی کے دوران، آلہ آپ کے قدموں کی گنتی کو آپ کی متوقع سٹرائیڈ لینتھ سے ضرب دے کر فاصلے کا تخمینہ لگاتا ہے۔<ul>
-<li><em>نوٹ:</em>جب آپ GPS کے ساتھ باہر چہل قدمی کرتے ہیں، وقت کے ساتھ ساتھ اندرونی تخمینے کو بہتر بناتے ہوئے ڈیوائس آپ کی رفتار کی لمبائی کو "سیکھتا" ہے۔</li>
-</ul>
-</li>
-<li><strong>تھرڈ پارٹی ایپس:</strong>فاصلاتی ڈیٹا منسلک ایپس (رنکیپر، اسٹراوا، وغیرہ) سے بھی آسکتا ہے۔</li>
-</ol>
-<h2 id="scientific-background">سائنسی پس منظر</h2>
-<h3 id="distance-vs-steps-which-matters-more">فاصلہ بمقابلہ مراحل: کون سا زیادہ اہمیت رکھتا ہے؟</h3>
-<p>اگرچہ قدموں کی تعداد صحت عامہ کا سب سے عام میٹرک ہے، فاصلہ اضافی سیاق و سباق فراہم کرتا ہے۔</p>
-<h4 id="stride-length-as-a-biomarker">بائیو مارکر کے طور پر سٹرائیڈ لینتھ</h4>
-<p>فاصلہ کا ایک فعل ہے۔<code>Steps × Stride Length</code>. روزانہ فاصلے میں کمی<em>باوجود</em>مستحکم قدم شمار a کی نشاندہی کر سکتے ہیں۔<strong>مختصر کرنے کی راہ</strong>، جو طبی لحاظ سے اہم مارکر ہے:
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="مینو ٹوگل کریں"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav aria-label="Breadcrumb" class="metric-breadcrumb"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/ur/metrics/" itemprop="item"><span itemprop="name">میٹرکس لائبریری</span></a><meta content="1" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/ur/metrics/movement-fitness/" itemprop="item"><span itemprop="name">حرکت اور تندرستی</span></a><meta content="2" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span aria-current="page" itemprop="name">فاصلہ (چلنا + دوڑنا)</span><meta content="3" itemprop="position"/></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>🏃</span>حرکت اور تندرستی</span></header><nav class="article-toc"><h4>اس پیج پر</h4><div class="toc"><ul><li><a href="#distance-walking-running">فاصلہ (چلنا + دوڑنا)</a><ul><li><a href="#what-is-distance">فاصلہ کیا ہے؟</a><ul><li><a href="#how-healthkit-measures-distance">HealthKit فاصلے کی پیمائش کیسے کرتی ہے۔</a></li></ul></li><li><a href="#scientific-background">سائنسی پس منظر</a><ul><li><a href="#distance-vs-steps-which-matters-more">فاصلہ بمقابلہ مراحل: کون سا زیادہ اہمیت رکھتا ہے؟</a><ul><li><a href="#stride-length-as-a-biomarker">بائیو مارکر کے طور پر سٹرائیڈ لینتھ</a></li><li><a href="#the-tudor-locke-classifications">ٹیوڈر لاک کی درجہ بندی</a></li></ul></li><li><a href="#energy-cost-of-distance">فاصلے کی توانائی کی قیمت</a></li></ul></li><li><a href="#clinical-significance">طبی اہمیت</a><ul><li><a href="#gait-quality-indicator">گیٹ کوالٹی انڈیکیٹر</a></li><li><a href="#training-load">ٹریننگ لوڈ</a></li></ul></li><li><a href="#recommendations">سفارشات</a><ul><li><a href="#for-general-health">عام صحت کے لیے</a></li><li><a href="#for-walkersrunners">واکرز/رنرز کے لیے</a></li></ul></li><li><a href="#references">حوالہ جات</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="distance-walking-running">فاصلہ (چلنا + دوڑنا)</h1><h2 id="what-is-distance">فاصلہ کیا ہے؟</h2><p>"فاصلہ چلنا + دوڑنا" میٹرک 24 گھنٹے کی مدت کے دوران پیدل چلنے والی کل زمین کو پکڑتا ہے۔ قدموں کی گنتی کے برعکس (جو تعدد کی پیمائش کرتا ہے)، فاصلہ کی مقدار درست کرنے میں مدد کرتا ہے۔<strong>حجم اور قدم کی لمبائی</strong>آپ کی تحریک کی.</p><h3 id="how-healthkit-measures-distance">HealthKit فاصلے کی پیمائش کیسے کرتی ہے۔</h3><p>ایپل کے آلات سینسرز کے سمارٹ درجہ بندی کا استعمال کرتے ہوئے فاصلے کا حساب لگاتے ہیں:</p><ol><li><strong>GPS (بیرونی ورزش):</strong>سب سے زیادہ درست۔ اس وقت استعمال کیا جاتا ہے جب ورزش فعال ہو اور GPS دستیاب ہو۔</li><li><strong>کیلیبریٹڈ سٹرائیڈ (انڈور/کوئی GPS نہیں):</strong>روزمرہ کی زندگی کے دوران، آلہ آپ کے قدموں کی گنتی کو آپ کی متوقع سٹرائیڈ لینتھ سے ضرب دے کر فاصلے کا تخمینہ لگاتا ہے۔<ul><li><em>نوٹ:</em>جب آپ GPS کے ساتھ باہر چہل قدمی کرتے ہیں، وقت کے ساتھ ساتھ اندرونی تخمینے کو بہتر بناتے ہوئے ڈیوائس آپ کی رفتار کی لمبائی کو "سیکھتا" ہے۔</li></ul></li><li><strong>تھرڈ پارٹی ایپس:</strong>فاصلاتی ڈیٹا منسلک ایپس (رنکیپر، اسٹراوا، وغیرہ) سے بھی آسکتا ہے۔</li></ol><h2 id="scientific-background">سائنسی پس منظر</h2><h3 id="distance-vs-steps-which-matters-more">فاصلہ بمقابلہ مراحل: کون سا زیادہ اہمیت رکھتا ہے؟</h3><p>اگرچہ قدموں کی تعداد صحت عامہ کا سب سے عام میٹرک ہے، فاصلہ اضافی سیاق و سباق فراہم کرتا ہے۔</p><h4 id="stride-length-as-a-biomarker">بائیو مارکر کے طور پر سٹرائیڈ لینتھ</h4><p>فاصلہ کا ایک فعل ہے۔<code>Steps × Stride Length</code>. روزانہ فاصلے میں کمی<em>باوجود</em>مستحکم قدم شمار a کی نشاندہی کر سکتے ہیں۔<strong>مختصر کرنے کی راہ</strong>، جو طبی لحاظ سے اہم مارکر ہے:
 * نقل و حرکت میں کمی
 * اعصابی تبدیلیاں
 * بوڑھے بالغوں میں گرنے کا خطرہ
-* پٹھوں کی طاقت میں کمی</p>
-<h4 id="the-tudor-locke-classifications">ٹیوڈر لاک کی درجہ بندی</h4>
-<p>محقق Catrine Tudor-Loke, Ph.D. نے حجم (قدموں/فاصلے) کی بنیاد پر سرگرمی کے لیے وسیع پیمانے پر درج کردہ درجہ بندی تیار کی۔ قدموں کو فاصلے میں تبدیل کرنا (اوسط پیش قدمی فرض کرتے ہوئے):</p>
-<table class="clinical-table">
-<thead>
-<tr>
-<th style="text-align: left;">سرگرمی کی سطح</th>
-<th style="text-align: left;">تقریبا فاصلہ (کلومیٹر)</th>
-<th style="text-align: left;">تقریبا فاصلہ (میل)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>بیہودہ</strong></td>
-<td style="text-align: left;">&lt;4 کلومیٹر</td>
-<td style="text-align: left;">&lt;2.5 میل</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>کم فعال</strong></td>
-<td style="text-align: left;">4 - 6 کلومیٹر</td>
-<td style="text-align: left;">2.5 - 3.7 میل</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>کسی حد تک ایکٹو</strong></td>
-<td style="text-align: left;">6 - 8 کلومیٹر</td>
-<td style="text-align: left;">3.7 - 5 میل</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>فعال</strong></td>
-<td style="text-align: left;">8 - 10 کلومیٹر</td>
-<td style="text-align: left;">5 - 6.2 میل</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>انتہائی متحرک</strong></td>
-<td style="text-align: left;">&gt; 10 کلومیٹر</td>
-<td style="text-align: left;">&gt; 6.2 میل</td>
-</tr>
-</tbody>
-</table>
-<p><em>&gt; نوٹ: یہ کھردرے اندازے ہیں۔ اونچائی اور قدم کی لمبائی انفرادی تغیر کا سبب بنتی ہے۔</em></p>
-<h3 id="energy-cost-of-distance">فاصلے کی توانائی کی قیمت</h3>
-<p>طبیعیات یہ بتاتی ہے کہ بڑے پیمانے پر فاصلے پر حرکت کرنے کے لیے کام کی ضرورت ہوتی ہے۔
+* پٹھوں کی طاقت میں کمی</p><h4 id="the-tudor-locke-classifications">ٹیوڈر لاک کی درجہ بندی</h4><p>محقق Catrine Tudor-Loke, Ph.D. نے حجم (قدموں/فاصلے) کی بنیاد پر سرگرمی کے لیے وسیع پیمانے پر درج کردہ درجہ بندی تیار کی۔ قدموں کو فاصلے میں تبدیل کرنا (اوسط پیش قدمی فرض کرتے ہوئے):</p><table class="clinical-table"><thead><tr><th style="text-align: left;">سرگرمی کی سطح</th><th style="text-align: left;">تقریبا فاصلہ (کلومیٹر)</th><th style="text-align: left;">تقریبا فاصلہ (میل)</th></tr></thead><tbody><tr><td style="text-align: left;"><strong>بیہودہ</strong></td><td style="text-align: left;">&lt;4 کلومیٹر</td><td style="text-align: left;">&lt;2.5 میل</td></tr><tr><td style="text-align: left;"><strong>کم فعال</strong></td><td style="text-align: left;">4 - 6 کلومیٹر</td><td style="text-align: left;">2.5 - 3.7 میل</td></tr><tr><td style="text-align: left;"><strong>کسی حد تک ایکٹو</strong></td><td style="text-align: left;">6 - 8 کلومیٹر</td><td style="text-align: left;">3.7 - 5 میل</td></tr><tr><td style="text-align: left;"><strong>فعال</strong></td><td style="text-align: left;">8 - 10 کلومیٹر</td><td style="text-align: left;">5 - 6.2 میل</td></tr><tr><td style="text-align: left;"><strong>انتہائی متحرک</strong></td><td style="text-align: left;">&gt; 10 کلومیٹر</td><td style="text-align: left;">&gt; 6.2 میل</td></tr></tbody></table><p><em>&gt; نوٹ: یہ کھردرے اندازے ہیں۔ اونچائی اور قدم کی لمبائی انفرادی تغیر کا سبب بنتی ہے۔</em></p><h3 id="energy-cost-of-distance">فاصلے کی توانائی کی قیمت</h3><p>طبیعیات یہ بتاتی ہے کہ بڑے پیمانے پر فاصلے پر حرکت کرنے کے لیے کام کی ضرورت ہوتی ہے۔
 *<strong>1 میل پیدل چلنا</strong>~ 80-100 کیلوری جلاتا ہے۔
 *<strong>1 میل چل رہا ہے۔</strong>~ 110-130 کیلوری جلاتا ہے۔
-* دلچسپ بات یہ ہے کہ چلنے کی رفتار سے قطع نظر فی میل توانائی کی لاگت نسبتاً مستحکم ہے (عام حدود میں)، "کل فاصلہ" کو مکمل کام کے لیے ایک قابل اعتماد پراکسی بناتی ہے۔</p>
-<h2 id="clinical-significance">طبی اہمیت</h2>
-<h3 id="gait-quality-indicator">گیٹ کوالٹی انڈیکیٹر</h3>
-<p>کے تناسب کی نگرانی<strong>فی قدم فاصلہ</strong>(فاصلہ ÷ قدم) مہینوں/سالوں میں ایک خام "اوسط سٹرائڈ لینتھ" مانیٹر کے طور پر کام کرتا ہے۔
+* دلچسپ بات یہ ہے کہ چلنے کی رفتار سے قطع نظر فی میل توانائی کی لاگت نسبتاً مستحکم ہے (عام حدود میں)، "کل فاصلہ" کو مکمل کام کے لیے ایک قابل اعتماد پراکسی بناتی ہے۔</p><h2 id="clinical-significance">طبی اہمیت</h2><h3 id="gait-quality-indicator">گیٹ کوالٹی انڈیکیٹر</h3><p>کے تناسب کی نگرانی<strong>فی قدم فاصلہ</strong>(فاصلہ ÷ قدم) مہینوں/سالوں میں ایک خام "اوسط سٹرائڈ لینتھ" مانیٹر کے طور پر کام کرتا ہے۔
 *<strong>مستحکم تناسب:</strong>چال کی صحت مند دیکھ بھال۔
-*<strong>گھٹتا ہوا تناسب:</strong>آپ اسی فاصلے کو طے کرنے کے لیے مزید اقدامات کر رہے ہیں۔ یہ "شفلنگ" پیٹرن اکثر کولہے/گھٹنے کے مسائل یا اعصابی حالات کے لیے طبی تشخیص کی ضمانت دیتا ہے۔</p>
-<h3 id="training-load">ٹریننگ لوڈ</h3>
-<p>دوڑنے والوں اور ہائیکرز کے لیے، کل ہفتہ وار فاصلہ بنیادی میٹرک ہے۔<strong>ٹریننگ لوڈ مینجمنٹ</strong>.
+*<strong>گھٹتا ہوا تناسب:</strong>آپ اسی فاصلے کو طے کرنے کے لیے مزید اقدامات کر رہے ہیں۔ یہ "شفلنگ" پیٹرن اکثر کولہے/گھٹنے کے مسائل یا اعصابی حالات کے لیے طبی تشخیص کی ضمانت دیتا ہے۔</p><h3 id="training-load">ٹریننگ لوڈ</h3><p>دوڑنے والوں اور ہائیکرز کے لیے، کل ہفتہ وار فاصلہ بنیادی میٹرک ہے۔<strong>ٹریننگ لوڈ مینجمنٹ</strong>.
 *<strong>10% اصول:</strong>چوٹ سے بچنے کے لیے، ہفتہ وار فاصلہ 10% سے زیادہ ہفتہ وار نہ بڑھائیں۔
-* کثرت سے لگنے والی عام چوٹیں (پنڈلی کے ٹکڑے، تناؤ کے فریکچر) فاصلے میں تیز رفتاری کے ساتھ مضبوطی سے تعلق رکھتے ہیں۔</p>
-<h2 id="recommendations">سفارشات</h2>
-<h3 id="for-general-health">عام صحت کے لیے</h3>
-<ul>
-<li>کے لئے مقصد<strong>5-8 کلومیٹر (3-5 میل)</strong>روزانہ کل جمع.</li>
-<li>پر توجہ مرکوز کریں<strong>جمع</strong>صرف ایک ورزش کے بجائے دن بھر (مزید دور پارکنگ، تھوڑی سی واک کرنا)۔</li>
-</ul>
-<h3 id="for-walkersrunners">واکرز/رنرز کے لیے</h3>
-<ul>
-<li><strong>آہستہ سے تعمیر کریں:</strong>کنڈرا اور ہڈی کے موافقت کی حیاتیاتی حدود کا احترام کریں۔</li>
-<li><strong>زمین کو مختلف کریں:</strong>فلیٹ کنکریٹ ٹیکس پر ایک ہی فاصلے پر چلنے سے بار بار ایک ہی ٹشوز ہوتے ہیں۔ پگڈنڈیاں یا پہاڑیاں بوجھ کو مختلف طریقے سے تقسیم کرتی ہیں۔</li>
-</ul>
-<h2 id="references">حوالہ جات</h2>
-<ol>
-<li>Tudor-Loke C، et al. (2011) کتنے قدم/دن کافی ہیں؟ بالغوں کے لئے.<em>بین الاقوامی جرنل آف ہیویورل نیوٹریشن اینڈ فزیکل ایکٹیویٹی</em>، 8:79۔</li>
-<li>لیون جے اے۔ (2014) غیر ورزشی سرگرمی تھرموجنسیس (NEAT)۔<em>غذائیت کے جائزے</em>، 62(7)۔</li>
-<li>CDC۔ (2020) امریکیوں کے لیے جسمانی سرگرمی کے رہنما خطوط، دوسرا ایڈیشن۔</li>
-<li>شمپل ایم، وغیرہ۔ (2011) صحت مند، آزاد رہنے والے افراد میں چلنے کی رفتار اور عمر کے درمیان تعلق۔<em>چال اور کرنسی</em>، 34(3)، 381-384۔</li>
-</ol>
-</div>
-<aside class="medical-disclaimer">
-<div class="disclaimer-icon">⚠️<strong>طبی معلومات</strong></div>
-<p>یہ مواد صرف تعلیمی مقاصد کے لیے ہے اور اسے تبدیل نہیں کرنا چاہیے۔
+* کثرت سے لگنے والی عام چوٹیں (پنڈلی کے ٹکڑے، تناؤ کے فریکچر) فاصلے میں تیز رفتاری کے ساتھ مضبوطی سے تعلق رکھتے ہیں۔</p><h2 id="recommendations">سفارشات</h2><h3 id="for-general-health">عام صحت کے لیے</h3><ul><li>کے لئے مقصد<strong>5-8 کلومیٹر (3-5 میل)</strong>روزانہ کل جمع.</li><li>پر توجہ مرکوز کریں<strong>جمع</strong>صرف ایک ورزش کے بجائے دن بھر (مزید دور پارکنگ، تھوڑی سی واک کرنا)۔</li></ul><h3 id="for-walkersrunners">واکرز/رنرز کے لیے</h3><ul><li><strong>آہستہ سے تعمیر کریں:</strong>کنڈرا اور ہڈی کے موافقت کی حیاتیاتی حدود کا احترام کریں۔</li><li><strong>زمین کو مختلف کریں:</strong>فلیٹ کنکریٹ ٹیکس پر ایک ہی فاصلے پر چلنے سے بار بار ایک ہی ٹشوز ہوتے ہیں۔ پگڈنڈیاں یا پہاڑیاں بوجھ کو مختلف طریقے سے تقسیم کرتی ہیں۔</li></ul><h2 id="references">حوالہ جات</h2><ol><li>Tudor-Loke C، et al. (2011) کتنے قدم/دن کافی ہیں؟ بالغوں کے لئے.<em>بین الاقوامی جرنل آف ہیویورل نیوٹریشن اینڈ فزیکل ایکٹیویٹی</em>، 8:79۔</li><li>لیون جے اے۔ (2014) غیر ورزشی سرگرمی تھرموجنسیس (NEAT)۔<em>غذائیت کے جائزے</em>، 62(7)۔</li><li>CDC۔ (2020) امریکیوں کے لیے جسمانی سرگرمی کے رہنما خطوط، دوسرا ایڈیشن۔</li><li>شمپل ایم، وغیرہ۔ (2011) صحت مند، آزاد رہنے والے افراد میں چلنے کی رفتار اور عمر کے درمیان تعلق۔<em>چال اور کرنسی</em>، 34(3)، 381-384۔</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️<strong>طبی معلومات</strong></div><p>یہ مواد صرف تعلیمی مقاصد کے لیے ہے اور اسے تبدیل نہیں کرنا چاہیے۔
     پیشہ ورانہ طبی مشورہ. ہمیشہ صحت کی دیکھ بھال کرنے والے سے مشورہ کریں۔
-    طبی فیصلے.</p>
-</aside>
-<div class="metric-footer">
-<hr/>
-<p><em>آخری بار اپ ڈیٹ کیا گیا: جنوری 2026</em></p>
-</div>
-</article>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+    طبی فیصلے.</p></aside><div class="metric-footer"><hr/><p><em>آخری بار اپ ڈیٹ کیا گیا: جنوری 2026</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">Arno Health</span>
-          </span>
-          
-        </h3>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/movement-fitness/distance-walking-running">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں</h2>
-    <p class="ai-citation-answer">The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-24</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>Distance · Walking · Running · Export</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../../../ur/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/movement-fitness/distance-walking-running"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Distance (Walking + Running) - ایپل ہیلتھ ڈیٹا کو CSV میں</h2><p class="ai-citation-answer">The &#34;Distance Walking + Running&#34; metric captures the total ground covered on foot during a 24-hour period. Unlike step count (which measures frequency),.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>Distance · Walking · Running · Export</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../ur/bibliography/">
           
           حوالہ جات
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link active"
+                </a><a href="/ur/" class="lang-link active"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. جملہ حقوق محفوظ ہیں
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/ur/privacy/">رازداری</a></li>
-                <li><a href="/ur/terms/">شرائط</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>یہ ویب سائٹ آپ کے تجربے کو بہتر بنانے کے لیے کوکیز استعمال کرتی ہے۔</p>
-            <a href="/ur/privacy/" class="text-sm">مزید جانیں</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">مسترد کریں</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">قبول کریں</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/ur/privacy/">رازداری</a></li><li><a href="/ur/terms/">شرائط</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>یہ ویب سائٹ آپ کے تجربے کو بہتر بنانے کے لیے کوکیز استعمال کرتی ہے۔</p><a href="/ur/privacy/" class="text-sm">مزید جانیں</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">مسترد کریں</button><button id="cookie-accept" class="btn btn-primary btn-small">قبول کریں</button></div></div></div><script src="../../../../assets/js/core.min.js?v=87724973" defer></script><script src="../../../../assets/js/search.min.js?v=87724973" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

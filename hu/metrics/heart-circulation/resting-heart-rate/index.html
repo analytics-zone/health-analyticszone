@@ -1,477 +1,61 @@
-<!DOCTYPE html>
-<html lang="hu" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,</title>
-  <meta name="description" content="A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve.">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="Nyugalmi Pulzusszám, szív-keringés, egészségügyi metrikák, egészségkészlet">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-01-26T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/">
-  <meta property="og:title" content="Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,">
-  <meta property="og:description" content="A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve.">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="hu_HU">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/">
-  <meta name="twitter:title" content="Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,">
-  <meta name="twitter:description" content="A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve.">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/heart-circulation/resting-heart-rate/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="hu" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,</title><meta name="description" content="A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve."><meta name="author" content="Arno Health"><meta name="keywords" content="Nyugalmi Pulzusszám, szív-keringés, egészségügyi metrikák, egészségkészlet"><link rel="canonical" href="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-01-26T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/"><meta property="og:title" content="Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,"><meta property="og:description" content="A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="hu_HU"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/"><meta name="twitter:title" content="Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,"><meta name="twitter:description" content="A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -730,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -774,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -786,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "hu"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -805,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -850,14 +407,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -882,17 +432,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -906,647 +446,180 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/hu/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/hu/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">Ugrás a tartalomra</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/hu/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/hu/features/" 
                                 aria-current="">
                                 Funkciók
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/hu/metrics/" 
+                            </a></li><li><a href="/hu/metrics/" 
                                 aria-current="">
                                 Metrikák Könyvtára
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/hu/pricing/" 
+                            </a></li><li><a href="/hu/pricing/" 
                                 aria-current="">
                                 Árazás
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/hu/about/" 
+                            </a></li><li><a href="/hu/about/" 
                                 aria-current="">
                                 Rólunk
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Nyelv választása">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Nyelv választása"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" selected>
+                        </option><option value="hu" selected>
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Menü váltása"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <article class="metric-article">
-
-  <nav class="metric-breadcrumb" aria-label="Breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList"
-      style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/hu/metrics/">
-          <span itemprop="name">Metrikák Könyvtára</span>
-        </a>
-        <meta itemprop="position" content="1" />
-      </li>
-      <span>/</span>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/hu/metrics/heart-circulation/">
-          <span itemprop="name">Szív és Keringés</span>
-        </a>
-        <meta itemprop="position" content="2" />
-      </li>
-      <span>/</span>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <span itemprop="name" aria-current="page">Nyugalmi pulzusszám</span>
-        <meta itemprop="position" content="3" />
-      </li>
-    </ol>
-  </nav>
-
-
-  <header class="metric-article-header">
-    <span class="metric-category-badge">
-      <span>❤️</span> Szív és Keringés
-    </span>
-  </header>
-
-
-  <nav class="article-toc">
-    <h4>Tartalom</h4>
-    <div class="toc">
-      <ul>
-        <li><a href="#resting-heart-rate">Nyugalmi pulzusszám</a>
-          <ul>
-            <li><a href="#what-is-resting-heart-rate">Mi a nyugalmi pulzusszám?</a>
-              <ul>
-                <li><a href="#how-healthkit-measures-resting-heart-rate">Hogyan méri a HealthKit a nyugalmi
-                    pulzusszámot?</a></li>
-              </ul>
-            </li>
-            <li><a href="#scientific-background">Tudományos háttér</a>
-              <ul>
-                <li><a href="#resting-heart-rate-as-a-vital-sign">A nyugalmi pulzusszám mint életjel</a></li>
-                <li><a href="#landmark-research-findings">Mérföldkőnek számító kutatási eredmények</a>
-                  <ul>
-                    <li><a href="#cmaj-meta-analysis-2016">CMAJ meta-analízis (2016)</a></li>
-                    <li><a href="#framingham-heart-study-30-year-analysis">Framingham szívtanulmány (30 éves
-                        elemzés)</a></li>
-                    <li><a href="#european-cardiovascular-research">Európai szív- és érrendszeri kutatások</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#clinical-significance">Klinikai jelentőség</a>
-              <ul>
-                <li><a href="#why-resting-heart-rate-matters">Miért fontos a nyugalmi pulzusszám?</a></li>
-                <li><a href="#reference-ranges">Referencia tartományok</a></li>
-                <li><a href="#what-influences-resting-heart-rate">Mi befolyásolja a nyugalmi pulzusszámot?</a></li>
-              </ul>
-            </li>
-            <li><a href="#trends-vs-single-measurements">Trendek vs. egyszeri mérések</a>
-              <ul>
-                <li><a href="#the-value-of-continuous-monitoring">A folyamatos monitorozás értéke</a></li>
-                <li><a href="#understanding-your-baseline">Saját alapértékének megismerése</a></li>
-              </ul>
-            </li>
-            <li><a href="#recommendations">Ajánlások</a>
-              <ul>
-                <li><a href="#evidence-based-guidelines">Bizonyítékokon alapuló irányelvek</a></li>
-                <li><a href="#improving-resting-heart-rate">A nyugalmi pulzusszám javítása</a></li>
-              </ul>
-            </li>
-            <li><a href="#when-to-seek-medical-attention">Mikor forduljunk orvoshoz?</a></li>
-            <li><a href="#references">Hivatkozások</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-
-
-  <div class="metric-content">
-    <h1 id="resting-heart-rate">Nyugalmi pulzusszám</h1>
-    <h2 id="what-is-resting-heart-rate">Mi a nyugalmi pulzusszám?</h2>
-    <p>A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel,
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Menü váltása"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav class="metric-breadcrumb" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"
+      style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/hu/metrics/"><span itemprop="name">Metrikák Könyvtára</span></a><meta itemprop="position" content="1" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/hu/metrics/heart-circulation/"><span itemprop="name">Szív és Keringés</span></a><meta itemprop="position" content="2" /></li><span>/</span><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Nyugalmi pulzusszám</span><meta itemprop="position" content="3" /></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>❤️</span> Szív és Keringés
+    </span></header><nav class="article-toc"><h4>Tartalom</h4><div class="toc"><ul><li><a href="#resting-heart-rate">Nyugalmi pulzusszám</a><ul><li><a href="#what-is-resting-heart-rate">Mi a nyugalmi pulzusszám?</a><ul><li><a href="#how-healthkit-measures-resting-heart-rate">Hogyan méri a HealthKit a nyugalmi
+                    pulzusszámot?</a></li></ul></li><li><a href="#scientific-background">Tudományos háttér</a><ul><li><a href="#resting-heart-rate-as-a-vital-sign">A nyugalmi pulzusszám mint életjel</a></li><li><a href="#landmark-research-findings">Mérföldkőnek számító kutatási eredmények</a><ul><li><a href="#cmaj-meta-analysis-2016">CMAJ meta-analízis (2016)</a></li><li><a href="#framingham-heart-study-30-year-analysis">Framingham szívtanulmány (30 éves
+                        elemzés)</a></li><li><a href="#european-cardiovascular-research">Európai szív- és érrendszeri kutatások</a></li></ul></li></ul></li><li><a href="#clinical-significance">Klinikai jelentőség</a><ul><li><a href="#why-resting-heart-rate-matters">Miért fontos a nyugalmi pulzusszám?</a></li><li><a href="#reference-ranges">Referencia tartományok</a></li><li><a href="#what-influences-resting-heart-rate">Mi befolyásolja a nyugalmi pulzusszámot?</a></li></ul></li><li><a href="#trends-vs-single-measurements">Trendek vs. egyszeri mérések</a><ul><li><a href="#the-value-of-continuous-monitoring">A folyamatos monitorozás értéke</a></li><li><a href="#understanding-your-baseline">Saját alapértékének megismerése</a></li></ul></li><li><a href="#recommendations">Ajánlások</a><ul><li><a href="#evidence-based-guidelines">Bizonyítékokon alapuló irányelvek</a></li><li><a href="#improving-resting-heart-rate">A nyugalmi pulzusszám javítása</a></li></ul></li><li><a href="#when-to-seek-medical-attention">Mikor forduljunk orvoshoz?</a></li><li><a href="#references">Hivatkozások</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="resting-heart-rate">Nyugalmi pulzusszám</h1><h2 id="what-is-resting-heart-rate">Mi a nyugalmi pulzusszám?</h2><p>A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel,
       az ágyból való kikelés előtt mérve. A szív- és érrendszer hatékonyságát tükrözi: az alacsonyabb nyugalmi
-      pulzusszám általában erősebb szívet jelez, amely kevesebb veréssel több vért képes pumpálni.</p>
-    <h3 id="how-healthkit-measures-resting-heart-rate">Hogyan méri a HealthKit a nyugalmi pulzusszámot?</h3>
-    <p>Az Apple Watch fotopletizmográfiát (PPG) használ a pulzus mérésére:</p>
-    <ul>
-      <li><strong>Zöld LED-lámpák</strong> villannak fel másodpercenként több százszor a bőrön</li>
-      <li><strong>Fotodiódák</strong> érzékelik a vér által elnyelt fény mennyiségét</li>
-      <li><strong>Algoritmusok</strong> számítják ki a pulzust a szívverések közötti vérvolumen-változásokból</li>
-      <li><strong>Gépi tanulás</strong> választja el a nyugalmi méréseket az aktív állapotoktól</li>
-    </ul>
-    <p>A HealthKit kifejezetten úgy azonosítja a <strong>nyugalmi pulzusszámot</strong>, hogy a hosszabb ideig tartó
-      mozdulatlanság (jellemzően alvás vagy tartós ülés) során végzett méréseket elemzi.</p>
-    <h2 id="scientific-background">Tudományos háttér</h2>
-    <h3 id="resting-heart-rate-as-a-vital-sign">A nyugalmi pulzusszám mint életjel</h3>
-    <p>A nyugalmi pulzusszámot több mint 30 éve elismerik szív- és érrendszeri kockázati markernek. Sok más egészségügyi
+      pulzusszám általában erősebb szívet jelez, amely kevesebb veréssel több vért képes pumpálni.</p><h3 id="how-healthkit-measures-resting-heart-rate">Hogyan méri a HealthKit a nyugalmi pulzusszámot?</h3><p>Az Apple Watch fotopletizmográfiát (PPG) használ a pulzus mérésére:</p><ul><li><strong>Zöld LED-lámpák</strong> villannak fel másodpercenként több százszor a bőrön</li><li><strong>Fotodiódák</strong> érzékelik a vér által elnyelt fény mennyiségét</li><li><strong>Algoritmusok</strong> számítják ki a pulzust a szívverések közötti vérvolumen-változásokból</li><li><strong>Gépi tanulás</strong> választja el a nyugalmi méréseket az aktív állapotoktól</li></ul><p>A HealthKit kifejezetten úgy azonosítja a <strong>nyugalmi pulzusszámot</strong>, hogy a hosszabb ideig tartó
+      mozdulatlanság (jellemzően alvás vagy tartós ülés) során végzett méréseket elemzi.</p><h2 id="scientific-background">Tudományos háttér</h2><h3 id="resting-heart-rate-as-a-vital-sign">A nyugalmi pulzusszám mint életjel</h3><p>A nyugalmi pulzusszámot több mint 30 éve elismerik szív- és érrendszeri kockázati markernek. Sok más egészségügyi
       metrikával ellentétben, amelyek laboratóriumi vizsgálatot igényelnek, a pulzusszám könnyen mérhető, és fontos
-      betekintést nyújt a szívműködésbe.</p>
-    <p><strong>Élettani alapok:</strong></p>
-    <p>A nyugalmi pulzusszám az alábbiak közötti egyensúlyt tükrözi:
+      betekintést nyújt a szívműködésbe.</p><p><strong>Élettani alapok:</strong></p><p>A nyugalmi pulzusszám az alábbiak közötti egyensúlyt tükrözi:
       - <strong>Szimpatikus idegrendszer</strong> (üss vagy fuss): emeli a pulzusszámot
-      - <strong>Paraszimpatikus idegrendszer</strong> (pihenj és eméssz): csökkenti a pulzusszámot</p>
-    <p>Az alacsonyabb nyugalmi pulzusszám jellemzően <strong>paraszimpatikus dominanciát</strong> és jobb
+      - <strong>Paraszimpatikus idegrendszer</strong> (pihenj és eméssz): csökkenti a pulzusszámot</p><p>Az alacsonyabb nyugalmi pulzusszám jellemzően <strong>paraszimpatikus dominanciát</strong> és jobb
       szív-érrendszeri fittséget jelez, mivel a szív túlzott erőfeszítés nélkül, hatékonyan képes oxigént szállítani.
-    </p>
-    <h3 id="landmark-research-findings">Mérföldkőnek számító kutatási eredmények</h3>
-    <h4 id="cmaj-meta-analysis-2016">CMAJ meta-analízis (2016)</h4>
-    <p>A <strong>Canadian Medical Association Journal</strong> folyóiratban megjelent átfogó meta-analízis <strong>46
-        kohorszvizsgálatot</strong> elemzett, több mint <strong>1,2 millió résztvevővel</strong>.</p>
-    <p><strong>Főbb megállapítások:</strong>
+    </p><h3 id="landmark-research-findings">Mérföldkőnek számító kutatási eredmények</h3><h4 id="cmaj-meta-analysis-2016">CMAJ meta-analízis (2016)</h4><p>A <strong>Canadian Medical Association Journal</strong> folyóiratban megjelent átfogó meta-analízis <strong>46
+        kohorszvizsgálatot</strong> elemzett, több mint <strong>1,2 millió résztvevővel</strong>.</p><p><strong>Főbb megállapítások:</strong>
       - A nyugalmi pulzusszám minden <strong>10 bpm-es növekedése</strong> = <strong>9%-kal magasabb
         összhalálozás</strong>
       - Minden <strong>10 bpm-es növekedés</strong> = <strong>8%-kal magasabb szív- és érrendszeri halálozás</strong>
       - A kockázat növekedése <strong>60-65 bpm feletti</strong> nyugalmi pulzusnál kezdődik
-      - Az összefüggés a fizikai aktivitás, a vérnyomás és egyéb tényezők szerinti korrekció után is jelentős maradt</p>
-    <blockquote>
-      <p>"A megemelkedett nyugalmi pulzusszám az összhalálozás és a szív- és érrendszeri halálozás független
+      - Az összefüggés a fizikai aktivitás, a vérnyomás és egyéb tényezők szerinti korrekció után is jelentős maradt</p><blockquote><p>"A megemelkedett nyugalmi pulzusszám az összhalálozás és a szív- és érrendszeri halálozás független
         előrejelzője az általános népesség körében."
-        — Zhang et al., CMAJ, 2016</p>
-    </blockquote>
-    <h4 id="framingham-heart-study-30-year-analysis">Framingham szívtanulmány (30 éves elemzés)</h4>
-    <p>A mérföldkőnek számító Framingham-vizsgálat magas vérnyomásban szenvedő résztvevőket követett nyomon 30 éven
-      keresztül, hogy felmérje a pulzusszám halálozásra gyakorolt hatását.</p>
-    <p><strong>Főbb megállapítások:</strong>
+        — Zhang et al., CMAJ, 2016</p></blockquote><h4 id="framingham-heart-study-30-year-analysis">Framingham szívtanulmány (30 éves elemzés)</h4><p>A mérföldkőnek számító Framingham-vizsgálat magas vérnyomásban szenvedő résztvevőket követett nyomon 30 éven
+      keresztül, hogy felmérje a pulzusszám halálozásra gyakorolt hatását.</p><p><strong>Főbb megállapítások:</strong>
       - A halálozás fokozatos növekedése a magasabb nyugalmi pulzus-kvartilisekkel
       - A <strong>84 bpm feletti</strong> nyugalmi pulzus jelentősen megnövekedett szív- és érrendszeri eseményekkel
       járt együtt
       - Az összefüggés a vérnyomáskezelés kontrollálása után is fennmaradt
-      - Férfiaknál és nőknél is hasonló eredményeket mutattak ki</p>
-    <h4 id="european-cardiovascular-research">Európai szív- és érrendszeri kutatások</h4>
-    <p>Számos európai tanulmány megerősítette a nyugalmi pulzus és a halálozás közötti kapcsolatot:</p>
-    <ul>
-      <li><strong>Copenhagen City Heart Study:</strong> Az alapértékhez képest 12-24 bpm-es emelkedés 50%-kal magasabb
-        halálozáshoz kötődik.</li>
-      <li><strong>MONICA/KORA Augsburg:</strong> A 80 bpm feletti nyugalmi pulzus megduplázta a szív- és érrendszeri
-        halálozás kockázatát.</li>
-      <li><strong>Paris Prospective Study I:</strong> A nyugalmi pulzus összefüggésbe hozható a hirtelen szívhalál
-        kockázatával.</li>
-    </ul>
-    <h2 id="clinical-significance">Klinikai jelentőség</h2>
-    <h3 id="why-resting-heart-rate-matters">Miért fontos a nyugalmi pulzusszám?</h3>
-    <p>A nyugalmi pulzusszám több élettani rendszerbe is betekintést nyújt:</p>
-    <ol>
-      <li><strong>Szív-érrendszeri hatékonyság:</strong> Az alacsonyabb nyugalmi pulzus azt jelzi, hogy a szív
-        ütésenként több vért pumpál (nagyobb verőtérfogat).</li>
-      <li><strong>Autonóm egyensúly:</strong> Tükrözi a stressz- és a regenerációs rendszerek közötti kölcsönhatást.
-      </li>
-      <li><strong>Fittségi szint:</strong> Az állóképességi edzés jellemzően csökkenti a nyugalmi pulzusszámot a
-        szívizom erősítése révén.</li>
-      <li><strong>Regenerációs állapot:</strong> A megemelkedett nyugalmi pulzus jelezhet hiányos regenerációt, stresszt
-        vagy betegséget.</li>
-      <li><strong>Betegségkockázat:</strong> A tartósan emelkedett nyugalmi pulzus jelzi a szív- és érrendszeri
-        események és a halálozás kockázatát.</li>
-    </ol>
-    <h3 id="reference-ranges">Referencia tartományok</h3>
-    <table class="clinical-table">
-      <thead>
-        <tr>
-          <th>Kategória</th>
-          <th>RHR tartomány</th>
-          <th>Értelmezés</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Sportolók</strong></td>
-          <td>40-50 bpm</td>
-          <td>Jól kondicionált szív-érrendszer</td>
-        </tr>
-        <tr>
-          <td><strong>Kiváló</strong></td>
-          <td>50-60 bpm</td>
-          <td>Átlag feletti fittség</td>
-        </tr>
-        <tr>
-          <td><strong>Normál</strong></td>
-          <td>60-80 bpm</td>
-          <td>Egészséges tartomány a legtöbb felnőtt számára</td>
-        </tr>
-        <tr>
-          <td><strong>Emelkedett</strong></td>
-          <td>80-90 bpm</td>
-          <td>Kondícióvesztést vagy stresszt jelezhet</td>
-        </tr>
-        <tr>
-          <td><strong>Magas</strong></td>
-          <td>&gt; 90 bpm</td>
-          <td>Orvosi kivizsgálást igényel</td>
-        </tr>
-      </tbody>
-    </table>
-    <p><em>Megjegyzés: Egyéni variációk léteznek. Személyre szabott értékelésért forduljon egészségügyi
-        szolgáltatóhoz.</em></p>
-    <h3 id="what-influences-resting-heart-rate">Mi befolyásolja a nyugalmi pulzusszámot?</h3>
-    <p><strong>Tényezők, amelyek csökkentik a nyugalmi pulzust:</strong>
+      - Férfiaknál és nőknél is hasonló eredményeket mutattak ki</p><h4 id="european-cardiovascular-research">Európai szív- és érrendszeri kutatások</h4><p>Számos európai tanulmány megerősítette a nyugalmi pulzus és a halálozás közötti kapcsolatot:</p><ul><li><strong>Copenhagen City Heart Study:</strong> Az alapértékhez képest 12-24 bpm-es emelkedés 50%-kal magasabb
+        halálozáshoz kötődik.</li><li><strong>MONICA/KORA Augsburg:</strong> A 80 bpm feletti nyugalmi pulzus megduplázta a szív- és érrendszeri
+        halálozás kockázatát.</li><li><strong>Paris Prospective Study I:</strong> A nyugalmi pulzus összefüggésbe hozható a hirtelen szívhalál
+        kockázatával.</li></ul><h2 id="clinical-significance">Klinikai jelentőség</h2><h3 id="why-resting-heart-rate-matters">Miért fontos a nyugalmi pulzusszám?</h3><p>A nyugalmi pulzusszám több élettani rendszerbe is betekintést nyújt:</p><ol><li><strong>Szív-érrendszeri hatékonyság:</strong> Az alacsonyabb nyugalmi pulzus azt jelzi, hogy a szív
+        ütésenként több vért pumpál (nagyobb verőtérfogat).</li><li><strong>Autonóm egyensúly:</strong> Tükrözi a stressz- és a regenerációs rendszerek közötti kölcsönhatást.
+      </li><li><strong>Fittségi szint:</strong> Az állóképességi edzés jellemzően csökkenti a nyugalmi pulzusszámot a
+        szívizom erősítése révén.</li><li><strong>Regenerációs állapot:</strong> A megemelkedett nyugalmi pulzus jelezhet hiányos regenerációt, stresszt
+        vagy betegséget.</li><li><strong>Betegségkockázat:</strong> A tartósan emelkedett nyugalmi pulzus jelzi a szív- és érrendszeri
+        események és a halálozás kockázatát.</li></ol><h3 id="reference-ranges">Referencia tartományok</h3><table class="clinical-table"><thead><tr><th>Kategória</th><th>RHR tartomány</th><th>Értelmezés</th></tr></thead><tbody><tr><td><strong>Sportolók</strong></td><td>40-50 bpm</td><td>Jól kondicionált szív-érrendszer</td></tr><tr><td><strong>Kiváló</strong></td><td>50-60 bpm</td><td>Átlag feletti fittség</td></tr><tr><td><strong>Normál</strong></td><td>60-80 bpm</td><td>Egészséges tartomány a legtöbb felnőtt számára</td></tr><tr><td><strong>Emelkedett</strong></td><td>80-90 bpm</td><td>Kondícióvesztést vagy stresszt jelezhet</td></tr><tr><td><strong>Magas</strong></td><td>&gt; 90 bpm</td><td>Orvosi kivizsgálást igényel</td></tr></tbody></table><p><em>Megjegyzés: Egyéni variációk léteznek. Személyre szabott értékelésért forduljon egészségügyi
+        szolgáltatóhoz.</em></p><h3 id="what-influences-resting-heart-rate">Mi befolyásolja a nyugalmi pulzusszámot?</h3><p><strong>Tényezők, amelyek csökkentik a nyugalmi pulzust:</strong>
       - Kardió edzés (különösen az állóképességi edzés)
       - Megfelelő alvás és regenerálódás
       - Relaxáció és stresszkezelés
-      - Bétablokkoló gyógyszerek</p>
-    <p><strong>Tényezők, amelyek emelik a nyugalmi pulzust:</strong>
+      - Bétablokkoló gyógyszerek</p><p><strong>Tényezők, amelyek emelik a nyugalmi pulzust:</strong>
       - Fizikai kondícióvesztés
       - Krónikus stressz és szorongás
       - Alváshiány
@@ -1554,506 +627,194 @@ img[width][height] {
       - Kiszáradás
       - Koffein és stimulánsok
       - Bizonyos gyógyszerek (pl. nyálkahártya-lohasztók, stimulánsok)
-      - Pajzsmirigy-túlműködés</p>
-    <h2 id="trends-vs-single-measurements">Trendek vs. egyszeri mérések</h2>
-    <h3 id="the-value-of-continuous-monitoring">A folyamatos monitorozás értéke</h3>
-    <p>Bár egyetlen nyugalmi pulzusmérés korlátozott információt nyújt, a trendek időbeli követése felfedi az
-      alábbiakat:</p>
-    <ul>
-      <li><strong>Edzésadaptáció:</strong> A nyugalmi pulzus általában csökken a fittség javulásával.</li>
-      <li><strong>Regeneráció figyelése:</strong> A megemelkedett nyugalmi pulzus pihenési igényt jelez.</li>
-      <li><strong>Betegség észlelése:</strong> A nyugalmi pulzus gyakran 1-2 nappal a tünetek megjelenése előtt
-        megemelkedik.</li>
-      <li><strong>Életmódbeli hatások:</strong> Az alvásminőség, a stressz és az étrend is befolyásolja a mintázatokat.
-      </li>
-    </ul>
-    <h3 id="understanding-your-baseline">Saját alapértékének megismerése</h3>
-    <p>Kövesse a nyugalmi pulzusát legalább 2-4 hétig, hogy meghatározza személyes alapértékét. A több napon át tartó
-      <strong>5+ bpm-es</strong> változás az alábbiakat jelezheti:</p>
-    <ul>
-      <li>Túledzettség vagy nem megfelelő regeneráció</li>
-      <li>Betegség kezdete</li>
-      <li>Jelentős stressz vagy életmódbeli változások</li>
-      <li>Gyógyszerhatások</li>
-      <li>Olyan egészségügyi változások, amelyeket érdemes megbeszélni orvosával</li>
-    </ul>
-    <h2 id="recommendations">Ajánlások</h2>
-    <h3 id="evidence-based-guidelines">Bizonyítékokon alapuló irányelvek</h3>
-    <ul>
-      <li><strong>Ismerje meg alapértékét:</strong> Kövesse nyugalmi pulzusát következetesen több héten át.</li>
-      <li><strong>Reggeli mérés:</strong> A legpontosabb eredményért ellenőrizze az ágyból való kikelés előtt.</li>
-      <li><strong>Vegye figyelembe a kontextust:</strong> A betegség, a stressz és a rossz alvás ideiglenesen megemeli
-        az értéket.</li>
-      <li><strong>Forduljon orvoshoz:</strong> A tartósan 100 bpm feletti (tachikardia) vagy 40 bpm alatti (bradikardia)
-        érték orvosi felülvizsgálatot igényel.</li>
-    </ul>
-    <h3 id="improving-resting-heart-rate">A nyugalmi pulzusszám javítása</h3>
-    <p>A kutatások az alábbi beavatkozásokat támogatják a nyugalmi pulzus csökkentésére:</p>
-    <ol>
-      <li><strong>Aerob edzés:</strong> Hetente 150+ perc mérsékelt intenzitású kardió.</li>
-      <li><strong>Alvás optimalizálása:</strong> 7-9 óra minőségi alvás.</li>
-      <li><strong>Stresszkezelés:</strong> Meditáció, légzőgyakorlatok, jóga.</li>
-      <li><strong>Hidratáltság:</strong> Megfelelő folyadékbevitel.</li>
-      <li><strong>Stimulánsok korlátozása:</strong> Csökkentse a koffeint, és kerülje a nikotint.</li>
-    </ol>
-    <h2 id="when-to-seek-medical-attention">Mikor forduljunk orvoshoz?</h2>
-    <p>Forduljon egészségügyi szolgáltatóhoz, ha az alábbiakat tapasztalja:</p>
-    <ul>
-      <li>A nyugalmi pulzusszám tartósan 100 bpm felett van.</li>
-      <li>A nyugalmi pulzusszám tartósan 40 bpm alatt van (ha nem edzett sportoló).</li>
-      <li>Hirtelen, jelentős változás a nyugalmi pulzusban egyértelmű ok nélkül.</li>
-      <li>Szívdobogásérzés, kihagyott ütések vagy szabálytalan ritmus.</li>
-      <li>Szédülés, ájulás vagy légszomj nyugalmi állapotban.</li>
-    </ul>
-    <h2 id="references">Hivatkozások</h2>
-    <ol>
-      <li>Zhang D, et al. (2016) Resting heart rate and all-cause and cardiovascular mortality in the general
-        population: a meta-analysis. <em>CMAJ</em>, 188(3), E53-E63.</li>
-      <li>Gillman MW, et al. (1993) Influence of heart rate on mortality among persons with hypertension: the Framingham
-        Study. <em>American Heart Journal</em>, 125(4), 1148-1154.</li>
-      <li>Fox K, et al. (2007) Resting heart rate in cardiovascular disease. <em>Journal of the American College of
-          Cardiology</em>, 50(9), 823-830.</li>
-      <li>Cooney MT, et al. (2010) Elevated resting heart rate is an independent risk factor for cardiovascular disease.
-        <em>American Heart Journal</em>, 159(4), 612-619.</li>
-      <li>Arnold JM, et al. (2008) Resting heart rate: a modifiable prognostic indicator of cardiovascular risk.
-        <em>Canadian Journal of Cardiology</em>, 24 Suppl A, 3A-8A.</li>
-    </ol>
-  </div>
-
-  <aside class="medical-disclaimer">
-    <div class="disclaimer-icon">⚠️ <strong>Orvosi Információ</strong></div>
-    <p>Ez a tartalom kizárólag oktatási célokat szolgál, és nem helyettesíti a szakszerű orvosi tanácsadást. Az orvosi
-      döntésekhez mindig konzultáljon egészségügyi szolgáltatóval.</p>
-  </aside>
-
-  <div class="metric-footer">
-    <hr>
-    <p><em>Utolsó frissítés: 2026. január</em></p>
-  </div>
-</article>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+      - Pajzsmirigy-túlműködés</p><h2 id="trends-vs-single-measurements">Trendek vs. egyszeri mérések</h2><h3 id="the-value-of-continuous-monitoring">A folyamatos monitorozás értéke</h3><p>Bár egyetlen nyugalmi pulzusmérés korlátozott információt nyújt, a trendek időbeli követése felfedi az
+      alábbiakat:</p><ul><li><strong>Edzésadaptáció:</strong> A nyugalmi pulzus általában csökken a fittség javulásával.</li><li><strong>Regeneráció figyelése:</strong> A megemelkedett nyugalmi pulzus pihenési igényt jelez.</li><li><strong>Betegség észlelése:</strong> A nyugalmi pulzus gyakran 1-2 nappal a tünetek megjelenése előtt
+        megemelkedik.</li><li><strong>Életmódbeli hatások:</strong> Az alvásminőség, a stressz és az étrend is befolyásolja a mintázatokat.
+      </li></ul><h3 id="understanding-your-baseline">Saját alapértékének megismerése</h3><p>Kövesse a nyugalmi pulzusát legalább 2-4 hétig, hogy meghatározza személyes alapértékét. A több napon át tartó
+      <strong>5+ bpm-es</strong> változás az alábbiakat jelezheti:</p><ul><li>Túledzettség vagy nem megfelelő regeneráció</li><li>Betegség kezdete</li><li>Jelentős stressz vagy életmódbeli változások</li><li>Gyógyszerhatások</li><li>Olyan egészségügyi változások, amelyeket érdemes megbeszélni orvosával</li></ul><h2 id="recommendations">Ajánlások</h2><h3 id="evidence-based-guidelines">Bizonyítékokon alapuló irányelvek</h3><ul><li><strong>Ismerje meg alapértékét:</strong> Kövesse nyugalmi pulzusát következetesen több héten át.</li><li><strong>Reggeli mérés:</strong> A legpontosabb eredményért ellenőrizze az ágyból való kikelés előtt.</li><li><strong>Vegye figyelembe a kontextust:</strong> A betegség, a stressz és a rossz alvás ideiglenesen megemeli
+        az értéket.</li><li><strong>Forduljon orvoshoz:</strong> A tartósan 100 bpm feletti (tachikardia) vagy 40 bpm alatti (bradikardia)
+        érték orvosi felülvizsgálatot igényel.</li></ul><h3 id="improving-resting-heart-rate">A nyugalmi pulzusszám javítása</h3><p>A kutatások az alábbi beavatkozásokat támogatják a nyugalmi pulzus csökkentésére:</p><ol><li><strong>Aerob edzés:</strong> Hetente 150+ perc mérsékelt intenzitású kardió.</li><li><strong>Alvás optimalizálása:</strong> 7-9 óra minőségi alvás.</li><li><strong>Stresszkezelés:</strong> Meditáció, légzőgyakorlatok, jóga.</li><li><strong>Hidratáltság:</strong> Megfelelő folyadékbevitel.</li><li><strong>Stimulánsok korlátozása:</strong> Csökkentse a koffeint, és kerülje a nikotint.</li></ol><h2 id="when-to-seek-medical-attention">Mikor forduljunk orvoshoz?</h2><p>Forduljon egészségügyi szolgáltatóhoz, ha az alábbiakat tapasztalja:</p><ul><li>A nyugalmi pulzusszám tartósan 100 bpm felett van.</li><li>A nyugalmi pulzusszám tartósan 40 bpm alatt van (ha nem edzett sportoló).</li><li>Hirtelen, jelentős változás a nyugalmi pulzusban egyértelmű ok nélkül.</li><li>Szívdobogásérzés, kihagyott ütések vagy szabálytalan ritmus.</li><li>Szédülés, ájulás vagy légszomj nyugalmi állapotban.</li></ul><h2 id="references">Hivatkozások</h2><ol><li>Zhang D, et al. (2016) Resting heart rate and all-cause and cardiovascular mortality in the general
+        population: a meta-analysis. <em>CMAJ</em>, 188(3), E53-E63.</li><li>Gillman MW, et al. (1993) Influence of heart rate on mortality among persons with hypertension: the Framingham
+        Study. <em>American Heart Journal</em>, 125(4), 1148-1154.</li><li>Fox K, et al. (2007) Resting heart rate in cardiovascular disease. <em>Journal of the American College of
+          Cardiology</em>, 50(9), 823-830.</li><li>Cooney MT, et al. (2010) Elevated resting heart rate is an independent risk factor for cardiovascular disease.
+        <em>American Heart Journal</em>, 159(4), 612-619.</li><li>Arnold JM, et al. (2008) Resting heart rate: a modifiable prognostic indicator of cardiovascular risk.
+        <em>Canadian Journal of Cardiology</em>, 24 Suppl A, 3A-8A.</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️ <strong>Orvosi Információ</strong></div><p>Ez a tartalom kizárólag oktatási célokat szolgál, és nem helyettesíti a szakszerű orvosi tanácsadást. Az orvosi
+      döntésekhez mindig konzultáljon egészségügyi szolgáltatóval.</p></aside><div class="metric-footer"><hr><p><em>Utolsó frissítés: 2026. január</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">Arno Health</span>
-          </span>
-          
-        </h3>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/resting-heart-rate">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,</h2>
-    <p class="ai-citation-answer">A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-01-26</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>Nyugalmi Pulzusszám · szív-keringés · egészségügyi metrikák · egészségkészlet</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../../../hu/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/resting-heart-rate"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Nyugalmi pulzusszám – Apple Health adatok exportálása CSV,</h2><p class="ai-citation-answer">A nyugalmi pulzusszám (RHR) a szív percenkénti veréseinek száma teljes nyugalmi állapotban — jellemzően reggel, az ágyból való kikelés előtt mérve.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-01-26</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>Nyugalmi Pulzusszám · szív-keringés · egészségügyi metrikák · egészségkészlet</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../hu/bibliography/">
           
           Bibliográfia
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link active"
+                </a><a href="/hu/" class="lang-link active"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. Minden jog fenntartva
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/hu/privacy/">Adatvédelem</a></li>
-                <li><a href="/hu/terms/">Feltételek</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Ez a weboldal sütiket használ az élmény javítása érdekében.</p>
-            <a href="/hu/privacy/" class="text-sm">Tudjon meg többet</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Elutasít</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Elfogad</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/hu/privacy/">Adatvédelem</a></li><li><a href="/hu/terms/">Feltételek</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Ez a weboldal sütiket használ az élmény javítása érdekében.</p><a href="/hu/privacy/" class="text-sm">Tudjon meg többet</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Elutasít</button><button id="cookie-accept" class="btn btn-primary btn-small">Elfogad</button></div></div></div><script src="../../../../assets/js/core.min.js?v=87724973" defer></script><script src="../../../../assets/js/search.min.js?v=87724973" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>

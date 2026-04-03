@@ -1,477 +1,61 @@
-<!DOCTYPE html>
-<html lang="hi" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON</title>
-  <meta name="description" content="Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning.">
-  <meta name="author" content="Arno Health">
-
-  
-  
-  <meta name="keywords" content="आर, म, ह, दय">
-  
-
-  
-  <link rel="canonical" href="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-24T14:30:00Z">
-  <meta property="article:author" content="Arno Health">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/">
-  <meta property="og:title" content="आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON">
-  <meta property="og:description" content="Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning.">
-  <meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="hi_IN">
-  <meta property="og:site_name" content="Health Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/">
-  <meta name="twitter:title" content="आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON">
-  <meta name="twitter:description" content="Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning.">
-  <meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@HealthAnalytics">
-  <meta name="twitter:creator" content="@HealthAnalytics">
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://health.analyticszone.app/af/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://health.analyticszone.app/am/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://health.analyticszone.app/ar/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://health.analyticszone.app/bg/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://health.analyticszone.app/bn/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://health.analyticszone.app/ca/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://health.analyticszone.app/cs/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://health.analyticszone.app/da/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://health.analyticszone.app/de/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://health.analyticszone.app/el/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://health.analyticszone.app/es/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://health.analyticszone.app/et/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://health.analyticszone.app/fa/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://health.analyticszone.app/fi/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://health.analyticszone.app/fr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://health.analyticszone.app/gu/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://health.analyticszone.app/ha/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://health.analyticszone.app/he/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://health.analyticszone.app/hr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://health.analyticszone.app/id/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://health.analyticszone.app/is/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://health.analyticszone.app/it/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://health.analyticszone.app/ja/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://health.analyticszone.app/km/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://health.analyticszone.app/kn/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://health.analyticszone.app/ko/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://health.analyticszone.app/lt/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://health.analyticszone.app/lv/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://health.analyticszone.app/ms/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://health.analyticszone.app/my/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://health.analyticszone.app/nb/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://health.analyticszone.app/nl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://health.analyticszone.app/pl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://health.analyticszone.app/pt/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://health.analyticszone.app/ro/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://health.analyticszone.app/ru/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://health.analyticszone.app/sk/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://health.analyticszone.app/sl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://health.analyticszone.app/sr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://health.analyticszone.app/sv/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://health.analyticszone.app/sw/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://health.analyticszone.app/ta/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://health.analyticszone.app/te/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://health.analyticszone.app/th/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://health.analyticszone.app/tl/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://health.analyticszone.app/tr/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://health.analyticszone.app/uk/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://health.analyticszone.app/ur/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://health.analyticszone.app/vi/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://health.analyticszone.app/yo/metrics/heart-circulation/resting-heart-rate/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://health.analyticszone.app/zh/metrics/heart-circulation/resting-heart-rate/">
-  
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/">
-  
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6757945914">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="hi" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"><title>आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON</title><meta name="description" content="Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning."><meta name="author" content="Arno Health"><meta name="keywords" content="आर, म, ह, दय"><link rel="canonical" href="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/"><meta property="og:title" content="आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON"><meta property="og:description" content="Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning."><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="hi_IN"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/"><meta name="twitter:title" content="आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON"><meta name="twitter:description" content="Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning."><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/heart-circulation/resting-heart-rate/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/heart-circulation/resting-heart-rate/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -730,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../../../assets/css/main.min.css?v=58537628e32e">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=87724973"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -774,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -786,11 +354,7 @@ img[width][height] {
   "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
   "inLanguage": "hi"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -805,14 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -850,14 +407,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -882,17 +432,7 @@ img[width][height] {
     "@id": "https://health.analyticszone.app/hi/metrics/heart-circulation/resting-heart-rate/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -906,1094 +446,333 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">मुख्य सामग्री पर जाएँ</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/hi/" class="site-logo">
-                <picture>
-                    <source srcset="../../../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56">
-                </picture>
-                <span class="logo-text">Health Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/hi/features/" 
+  </script></head><body><a href="#main-content" class="skip-link">मुख्य सामग्री पर जाएँ</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/hi/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/hi/features/" 
                                 aria-current="">
                                 विशेषताएँ
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/hi/metrics/" 
+                            </a></li><li><a href="/hi/metrics/" 
                                 aria-current="">
                                 मेट्रिक्स लाइब्रेरी
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/hi/pricing/" 
+                            </a></li><li><a href="/hi/pricing/" 
                                 aria-current="">
                                 मूल्य निर्धारण
-                            </a>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/hi/about/" 
+                            </a></li><li><a href="/hi/about/" 
                                 aria-current="">
                                 हमारे बारे में
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="भाषा चुनें">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="भाषा चुनें"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" selected>
+                        </option><option value="hi" selected>
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             Khmer
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Srpski
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="मेनू टॉगल करें"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    
-<article class="metric-article">
-<nav aria-label="Breadcrumb" class="metric-breadcrumb">
-<ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;">
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/hi/metrics/" itemprop="item">
-<span itemprop="name">मेट्रिक्स लाइब्रेरी</span>
-</a>
-<meta content="1" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/hi/metrics/heart-circulation/" itemprop="item">
-<span itemprop="name">हृदय एवं परिसंचरण</span>
-</a>
-<meta content="2" itemprop="position"/>
-</li>
-<span>/</span>
-<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<span aria-current="page" itemprop="name">आराम दिल की दर</span>
-<meta content="3" itemprop="position"/>
-</li>
-</ol>
-</nav>
-<header class="metric-article-header">
-<span class="metric-category-badge">
-<span>❤️</span>हृदय एवं परिसंचरण</span></header>
-<nav class="article-toc">
-<h4>इस पेज पर</h4>
-<div class="toc">
-<ul>
-<li><a href="#resting-heart-rate">आराम दिल की दर</a><ul>
-<li><a href="#what-is-resting-heart-rate">आराम दिल की दर क्या है?</a><ul>
-<li><a href="#how-healthkit-measures-resting-heart-rate">हेल्थकिट विश्राम हृदय गति को कैसे मापता है</a></li>
-</ul>
-</li>
-<li><a href="#scientific-background">वैज्ञानिक पृष्ठभूमि</a><ul>
-<li><a href="#resting-heart-rate-as-a-vital-sign">विश्राम हृदय गति एक महत्वपूर्ण संकेत के रूप में</a></li>
-<li><a href="#landmark-research-findings">ऐतिहासिक अनुसंधान निष्कर्ष</a><ul>
-<li><a href="#cmaj-meta-analysis-2016">सीएमएजे मेटा-विश्लेषण (2016)</a></li>
-<li><a href="#framingham-heart-study-30-year-analysis">फ्रामिंघम हृदय अध्ययन (30-वर्षीय विश्लेषण)</a></li>
-<li><a href="#european-cardiovascular-research">यूरोपीय हृदय अनुसंधान</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#clinical-significance">नैदानिक महत्व</a><ul>
-<li><a href="#why-resting-heart-rate-matters">आराम दिल की दर क्यों मायने रखती है</a></li>
-<li><a href="#reference-ranges">संदर्भ श्रेणियाँ</a></li>
-<li><a href="#what-influences-resting-heart-rate">विश्राम हृदय गति को क्या प्रभावित करता है?</a></li>
-</ul>
-</li>
-<li><a href="#trends-vs-single-measurements">रुझान बनाम एकल माप</a><ul>
-<li><a href="#the-value-of-continuous-monitoring">सतत निगरानी का मूल्य</a></li>
-<li><a href="#understanding-your-baseline">अपनी आधार रेखा को समझना</a></li>
-</ul>
-</li>
-<li><a href="#recommendations">सिफ़ारिशें</a><ul>
-<li><a href="#evidence-based-guidelines">साक्ष्य-आधारित दिशानिर्देश</a></li>
-<li><a href="#improving-resting-heart-rate">आराम दिल की दर में सुधार</a></li>
-</ul>
-</li>
-<li><a href="#when-to-seek-medical-attention">चिकित्सीय सहायता कब लेनी चाहिए</a></li>
-<li><a href="#references">सन्दर्भ</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-<div class="metric-content">
-<h1 id="resting-heart-rate">आराम दिल की दर</h1>
-<h2 id="what-is-resting-heart-rate">आराम दिल की दर क्या है?</h2>
-<p>आराम दिल की दर (आरएचआर) वह संख्या है जो आपका दिल प्रति मिनट धड़कता है जब आप पूरी तरह से आराम कर रहे होते हैं - आमतौर पर बिस्तर से बाहर निकलने से पहले सुबह सबसे पहले मापा जाता है। यह आपके कार्डियोवास्कुलर सिस्टम की दक्षता को दर्शाता है: कम आरएचआर आम तौर पर एक मजबूत दिल को इंगित करता है जो कम धड़कन के साथ अधिक रक्त पंप कर सकता है।</p>
-<h3 id="how-healthkit-measures-resting-heart-rate">हेल्थकिट विश्राम हृदय गति को कैसे मापता है</h3>
-<p>हृदय गति मापने के लिए Apple वॉच फोटोप्लेथिस्मोग्राफी (PPG) का उपयोग करता है:</p>
-<ul>
-<li><strong>हरी एलईडी लाइटें</strong>आपकी त्वचा पर प्रति सेकंड सैकड़ों बार स्पंदन करता है</li>
-<li><strong>फोटोडायोड</strong>आपके रक्त द्वारा अवशोषित प्रकाश की मात्रा का पता लगाएं</li>
-<li><strong>एल्गोरिदम</strong>दिल की धड़कनों के बीच रक्त की मात्रा में परिवर्तन से हृदय गति की गणना करें</li>
-<li><strong>मशीन लर्निंग</strong>विश्राम माप को सक्रिय अवस्था से अलग करता है</li>
-</ul>
-<p>हेल्थकिट विशेष रूप से पहचान करता है<strong>आराम दिल की दर</strong>जब आप लंबे समय तक स्थिर रहते हैं, आमतौर पर नींद के दौरान या लंबे समय तक बैठे रहने पर लिए गए मापों का विश्लेषण करके।</p>
-<h2 id="scientific-background">वैज्ञानिक पृष्ठभूमि</h2>
-<h3 id="resting-heart-rate-as-a-vital-sign">विश्राम हृदय गति एक महत्वपूर्ण संकेत के रूप में</h3>
-<p>आरएचआर को 30 वर्षों से अधिक समय से हृदय संबंधी जोखिम मार्कर के रूप में मान्यता दी गई है। कई स्वास्थ्य मेट्रिक्स के विपरीत, जिन्हें प्रयोगशाला परीक्षण की आवश्यकता होती है, हृदय गति को आसानी से मापा जाता है और हृदय संबंधी कार्य में सार्थक अंतर्दृष्टि प्रदान करता है।</p>
-<p><strong>शारीरिक आधार:</strong></p>
-<p>आपकी विश्राम हृदय गति इनके बीच संतुलन को दर्शाती है:
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="मेनू टॉगल करें"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav aria-label="Breadcrumb" class="metric-breadcrumb"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/hi/metrics/" itemprop="item"><span itemprop="name">मेट्रिक्स लाइब्रेरी</span></a><meta content="1" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/hi/metrics/heart-circulation/" itemprop="item"><span itemprop="name">हृदय एवं परिसंचरण</span></a><meta content="2" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span aria-current="page" itemprop="name">आराम दिल की दर</span><meta content="3" itemprop="position"/></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>❤️</span>हृदय एवं परिसंचरण</span></header><nav class="article-toc"><h4>इस पेज पर</h4><div class="toc"><ul><li><a href="#resting-heart-rate">आराम दिल की दर</a><ul><li><a href="#what-is-resting-heart-rate">आराम दिल की दर क्या है?</a><ul><li><a href="#how-healthkit-measures-resting-heart-rate">हेल्थकिट विश्राम हृदय गति को कैसे मापता है</a></li></ul></li><li><a href="#scientific-background">वैज्ञानिक पृष्ठभूमि</a><ul><li><a href="#resting-heart-rate-as-a-vital-sign">विश्राम हृदय गति एक महत्वपूर्ण संकेत के रूप में</a></li><li><a href="#landmark-research-findings">ऐतिहासिक अनुसंधान निष्कर्ष</a><ul><li><a href="#cmaj-meta-analysis-2016">सीएमएजे मेटा-विश्लेषण (2016)</a></li><li><a href="#framingham-heart-study-30-year-analysis">फ्रामिंघम हृदय अध्ययन (30-वर्षीय विश्लेषण)</a></li><li><a href="#european-cardiovascular-research">यूरोपीय हृदय अनुसंधान</a></li></ul></li></ul></li><li><a href="#clinical-significance">नैदानिक महत्व</a><ul><li><a href="#why-resting-heart-rate-matters">आराम दिल की दर क्यों मायने रखती है</a></li><li><a href="#reference-ranges">संदर्भ श्रेणियाँ</a></li><li><a href="#what-influences-resting-heart-rate">विश्राम हृदय गति को क्या प्रभावित करता है?</a></li></ul></li><li><a href="#trends-vs-single-measurements">रुझान बनाम एकल माप</a><ul><li><a href="#the-value-of-continuous-monitoring">सतत निगरानी का मूल्य</a></li><li><a href="#understanding-your-baseline">अपनी आधार रेखा को समझना</a></li></ul></li><li><a href="#recommendations">सिफ़ारिशें</a><ul><li><a href="#evidence-based-guidelines">साक्ष्य-आधारित दिशानिर्देश</a></li><li><a href="#improving-resting-heart-rate">आराम दिल की दर में सुधार</a></li></ul></li><li><a href="#when-to-seek-medical-attention">चिकित्सीय सहायता कब लेनी चाहिए</a></li><li><a href="#references">सन्दर्भ</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="resting-heart-rate">आराम दिल की दर</h1><h2 id="what-is-resting-heart-rate">आराम दिल की दर क्या है?</h2><p>आराम दिल की दर (आरएचआर) वह संख्या है जो आपका दिल प्रति मिनट धड़कता है जब आप पूरी तरह से आराम कर रहे होते हैं - आमतौर पर बिस्तर से बाहर निकलने से पहले सुबह सबसे पहले मापा जाता है। यह आपके कार्डियोवास्कुलर सिस्टम की दक्षता को दर्शाता है: कम आरएचआर आम तौर पर एक मजबूत दिल को इंगित करता है जो कम धड़कन के साथ अधिक रक्त पंप कर सकता है।</p><h3 id="how-healthkit-measures-resting-heart-rate">हेल्थकिट विश्राम हृदय गति को कैसे मापता है</h3><p>हृदय गति मापने के लिए Apple वॉच फोटोप्लेथिस्मोग्राफी (PPG) का उपयोग करता है:</p><ul><li><strong>हरी एलईडी लाइटें</strong>आपकी त्वचा पर प्रति सेकंड सैकड़ों बार स्पंदन करता है</li><li><strong>फोटोडायोड</strong>आपके रक्त द्वारा अवशोषित प्रकाश की मात्रा का पता लगाएं</li><li><strong>एल्गोरिदम</strong>दिल की धड़कनों के बीच रक्त की मात्रा में परिवर्तन से हृदय गति की गणना करें</li><li><strong>मशीन लर्निंग</strong>विश्राम माप को सक्रिय अवस्था से अलग करता है</li></ul><p>हेल्थकिट विशेष रूप से पहचान करता है<strong>आराम दिल की दर</strong>जब आप लंबे समय तक स्थिर रहते हैं, आमतौर पर नींद के दौरान या लंबे समय तक बैठे रहने पर लिए गए मापों का विश्लेषण करके।</p><h2 id="scientific-background">वैज्ञानिक पृष्ठभूमि</h2><h3 id="resting-heart-rate-as-a-vital-sign">विश्राम हृदय गति एक महत्वपूर्ण संकेत के रूप में</h3><p>आरएचआर को 30 वर्षों से अधिक समय से हृदय संबंधी जोखिम मार्कर के रूप में मान्यता दी गई है। कई स्वास्थ्य मेट्रिक्स के विपरीत, जिन्हें प्रयोगशाला परीक्षण की आवश्यकता होती है, हृदय गति को आसानी से मापा जाता है और हृदय संबंधी कार्य में सार्थक अंतर्दृष्टि प्रदान करता है।</p><p><strong>शारीरिक आधार:</strong></p><p>आपकी विश्राम हृदय गति इनके बीच संतुलन को दर्शाती है:
 -<strong>सहानुभूति तंत्रिका तंत्र</strong>(लड़ो-या-उड़ाओ): हृदय गति बढ़ जाती है
--<strong>पैरासिम्पेथेटिक तंत्रिका तंत्र</strong>(आराम-और-पाचन): हृदय गति कम हो जाती है</p>
-<p>कम आरएचआर आम तौर पर इंगित करता है<strong>परानुकंपी प्रभुत्व</strong>और बेहतर हृदय संबंधी फिटनेस, क्योंकि हृदय अत्यधिक प्रयास के बिना कुशलतापूर्वक ऑक्सीजन पहुंचा सकता है।</p>
-<h3 id="landmark-research-findings">ऐतिहासिक अनुसंधान निष्कर्ष</h3>
-<h4 id="cmaj-meta-analysis-2016">सीएमएजे मेटा-विश्लेषण (2016)</h4>
-<p>में प्रकाशित एक व्यापक मेटा-विश्लेषण<strong>कैनेडियन मेडिकल एसोसिएशन जर्नल</strong>विश्लेषण किया गया<strong>46 समूह अध्ययन</strong>ओवर के साथ<strong>1.2 मिलियन प्रतिभागी</strong>.</p>
-<p><strong>मुख्य निष्कर्ष:</strong>- प्रत्येक<strong>10 बीपीएम की बढ़ोतरी</strong>आरएचआर में =<strong>9% अधिक सर्व-कारण मृत्यु दर</strong>- प्रत्येक<strong>10 बीपीएम की बढ़ोतरी</strong>=<strong>हृदय संबंधी मृत्यु दर 8% अधिक</strong>- जोखिम बढ़ना आरएचआर से शुरू होता है<strong>60-65 बीपीएम से ऊपर</strong>- शारीरिक गतिविधि, रक्तचाप और अन्य कारकों के समायोजन के बाद भी संबंध महत्वपूर्ण बना रहा</p>
-<blockquote>
-<p>"उन्नत आराम दिल की दर सामान्य आबादी में सभी कारणों और हृदय संबंधी मृत्यु दर का एक स्वतंत्र भविष्यवक्ता है।"
-- झांग एट अल., सीएमएजे, 2016</p>
-</blockquote>
-<h4 id="framingham-heart-study-30-year-analysis">फ्रामिंघम हृदय अध्ययन (30-वर्षीय विश्लेषण)</h4>
-<p>ऐतिहासिक फ्रेमिंघम अध्ययन ने मृत्यु दर पर हृदय गति के प्रभाव का आकलन करने के लिए 30 वर्षों से अधिक समय तक उच्च रक्तचाप से पीड़ित प्रतिभागियों का अनुसरण किया।</p>
-<p><strong>मुख्य निष्कर्ष:</strong>- उच्च आरएचआर चतुर्थक के साथ मृत्यु दर में प्रगतिशील वृद्धि
+-<strong>पैरासिम्पेथेटिक तंत्रिका तंत्र</strong>(आराम-और-पाचन): हृदय गति कम हो जाती है</p><p>कम आरएचआर आम तौर पर इंगित करता है<strong>परानुकंपी प्रभुत्व</strong>और बेहतर हृदय संबंधी फिटनेस, क्योंकि हृदय अत्यधिक प्रयास के बिना कुशलतापूर्वक ऑक्सीजन पहुंचा सकता है।</p><h3 id="landmark-research-findings">ऐतिहासिक अनुसंधान निष्कर्ष</h3><h4 id="cmaj-meta-analysis-2016">सीएमएजे मेटा-विश्लेषण (2016)</h4><p>में प्रकाशित एक व्यापक मेटा-विश्लेषण<strong>कैनेडियन मेडिकल एसोसिएशन जर्नल</strong>विश्लेषण किया गया<strong>46 समूह अध्ययन</strong>ओवर के साथ<strong>1.2 मिलियन प्रतिभागी</strong>.</p><p><strong>मुख्य निष्कर्ष:</strong>- प्रत्येक<strong>10 बीपीएम की बढ़ोतरी</strong>आरएचआर में =<strong>9% अधिक सर्व-कारण मृत्यु दर</strong>- प्रत्येक<strong>10 बीपीएम की बढ़ोतरी</strong>=<strong>हृदय संबंधी मृत्यु दर 8% अधिक</strong>- जोखिम बढ़ना आरएचआर से शुरू होता है<strong>60-65 बीपीएम से ऊपर</strong>- शारीरिक गतिविधि, रक्तचाप और अन्य कारकों के समायोजन के बाद भी संबंध महत्वपूर्ण बना रहा</p><blockquote><p>"उन्नत आराम दिल की दर सामान्य आबादी में सभी कारणों और हृदय संबंधी मृत्यु दर का एक स्वतंत्र भविष्यवक्ता है।"
+- झांग एट अल., सीएमएजे, 2016</p></blockquote><h4 id="framingham-heart-study-30-year-analysis">फ्रामिंघम हृदय अध्ययन (30-वर्षीय विश्लेषण)</h4><p>ऐतिहासिक फ्रेमिंघम अध्ययन ने मृत्यु दर पर हृदय गति के प्रभाव का आकलन करने के लिए 30 वर्षों से अधिक समय तक उच्च रक्तचाप से पीड़ित प्रतिभागियों का अनुसरण किया।</p><p><strong>मुख्य निष्कर्ष:</strong>- उच्च आरएचआर चतुर्थक के साथ मृत्यु दर में प्रगतिशील वृद्धि
 - आरएचआर<strong>&gt; 84 बीपीएम</strong>हृदय संबंधी घटनाओं में उल्लेखनीय वृद्धि के साथ जुड़ा हुआ है
 - ब्लड प्रेशर के इलाज के लिए नियंत्रण के बाद भी रिश्ता कायम रहा
-- पुरुषों और महिलाओं दोनों ने समान जुड़ाव दिखाया</p>
-<h4 id="european-cardiovascular-research">यूरोपीय हृदय अनुसंधान</h4>
-<p>कई यूरोपीय अध्ययनों ने आरएचआर-मृत्यु दर संबंध की पुष्टि की है:</p>
-<ul>
-<li><strong>कोपेनहेगन सिटी हार्ट अध्ययन:</strong>बेसलाइन पर 12-24 बीपीएम की आरएचआर वृद्धि 50% अधिक मृत्यु दर से जुड़ी है</li>
-<li><strong>मोनिका/कोरा ऑग्सबर्ग:</strong>आरएचआर &gt; 80 बीपीएम ने हृदय संबंधी मृत्यु दर को दोगुना कर दिया</li>
-<li><strong>पेरिस संभावित अध्ययन I:</strong>आरएचआर अचानक हृदय मृत्यु के जोखिम से जुड़ा है</li>
-</ul>
-<h2 id="clinical-significance">नैदानिक महत्व</h2>
-<h3 id="why-resting-heart-rate-matters">आराम दिल की दर क्यों मायने रखती है</h3>
-<p>आरएचआर कई शारीरिक प्रणालियों में अंतर्दृष्टि प्रदान करता है:</p>
-<ol>
-<li><strong>हृदय संबंधी दक्षता:</strong>कम आरएचआर इंगित करता है कि हृदय प्रति धड़कन अधिक रक्त पंप करता है (उच्च स्ट्रोक मात्रा)</li>
-<li><strong>स्वायत्त संतुलन:</strong>तनाव और पुनर्प्राप्ति प्रणालियों के बीच परस्पर क्रिया को दर्शाता है</li>
-<li><strong>फिटनेस स्तर:</strong>सहनशक्ति प्रशिक्षण आमतौर पर हृदय की मांसपेशियों को मजबूत करके आरएचआर को कम करता है</li>
-<li><strong>पुनर्प्राप्ति स्थिति:</strong>ऊंचा आरएचआर अपूर्ण पुनर्प्राप्ति, तनाव या बीमारी का संकेत दे सकता है</li>
-<li><strong>रोग का खतरा:</strong>लगातार ऊंचा आरएचआर हृदय संबंधी घटनाओं और मृत्यु दर की भविष्यवाणी करता है</li>
-</ol>
-<h3 id="reference-ranges">संदर्भ श्रेणियाँ</h3>
-<table class="clinical-table">
-<thead>
-<tr>
-<th>श्रेणी</th>
-<th>आरएचआर रेंज</th>
-<th>व्याख्या</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>एथलीट</strong></td>
-<td>40-50 बीपीएम</td>
-<td>सुव्यवस्थित हृदय प्रणाली</td>
-</tr>
-<tr>
-<td><strong>बहुत बढ़िया</strong></td>
-<td>50-60 बीपीएम</td>
-<td>औसत से ऊपर फिटनेस</td>
-</tr>
-<tr>
-<td><strong>सामान्य</strong></td>
-<td>60-80 बीपीएम</td>
-<td>अधिकांश वयस्कों के लिए स्वस्थ रेंज</td>
-</tr>
-<tr>
-<td><strong>ऊंचा</strong></td>
-<td>80-90 बीपीएम</td>
-<td>डिकंडीशनिंग या तनाव का संकेत दे सकता है</td>
-</tr>
-<tr>
-<td><strong>ऊँचा</strong></td>
-<td>&gt; 90 बीपीएम</td>
-<td>चिकित्सीय मूल्यांकन की गारंटी देता है</td>
-</tr>
-</tbody>
-</table>
-<p><em>नोट: व्यक्तिगत भिन्नता मौजूद है। वैयक्तिकृत मूल्यांकन के लिए किसी स्वास्थ्य सेवा प्रदाता से परामर्श लें।</em></p>
-<h3 id="what-influences-resting-heart-rate">विश्राम हृदय गति को क्या प्रभावित करता है?</h3>
-<p><strong>आरएचआर को कम करने वाले कारक:</strong>- हृदय व्यायाम (विशेषकर सहनशक्ति प्रशिक्षण)
+- पुरुषों और महिलाओं दोनों ने समान जुड़ाव दिखाया</p><h4 id="european-cardiovascular-research">यूरोपीय हृदय अनुसंधान</h4><p>कई यूरोपीय अध्ययनों ने आरएचआर-मृत्यु दर संबंध की पुष्टि की है:</p><ul><li><strong>कोपेनहेगन सिटी हार्ट अध्ययन:</strong>बेसलाइन पर 12-24 बीपीएम की आरएचआर वृद्धि 50% अधिक मृत्यु दर से जुड़ी है</li><li><strong>मोनिका/कोरा ऑग्सबर्ग:</strong>आरएचआर &gt; 80 बीपीएम ने हृदय संबंधी मृत्यु दर को दोगुना कर दिया</li><li><strong>पेरिस संभावित अध्ययन I:</strong>आरएचआर अचानक हृदय मृत्यु के जोखिम से जुड़ा है</li></ul><h2 id="clinical-significance">नैदानिक महत्व</h2><h3 id="why-resting-heart-rate-matters">आराम दिल की दर क्यों मायने रखती है</h3><p>आरएचआर कई शारीरिक प्रणालियों में अंतर्दृष्टि प्रदान करता है:</p><ol><li><strong>हृदय संबंधी दक्षता:</strong>कम आरएचआर इंगित करता है कि हृदय प्रति धड़कन अधिक रक्त पंप करता है (उच्च स्ट्रोक मात्रा)</li><li><strong>स्वायत्त संतुलन:</strong>तनाव और पुनर्प्राप्ति प्रणालियों के बीच परस्पर क्रिया को दर्शाता है</li><li><strong>फिटनेस स्तर:</strong>सहनशक्ति प्रशिक्षण आमतौर पर हृदय की मांसपेशियों को मजबूत करके आरएचआर को कम करता है</li><li><strong>पुनर्प्राप्ति स्थिति:</strong>ऊंचा आरएचआर अपूर्ण पुनर्प्राप्ति, तनाव या बीमारी का संकेत दे सकता है</li><li><strong>रोग का खतरा:</strong>लगातार ऊंचा आरएचआर हृदय संबंधी घटनाओं और मृत्यु दर की भविष्यवाणी करता है</li></ol><h3 id="reference-ranges">संदर्भ श्रेणियाँ</h3><table class="clinical-table"><thead><tr><th>श्रेणी</th><th>आरएचआर रेंज</th><th>व्याख्या</th></tr></thead><tbody><tr><td><strong>एथलीट</strong></td><td>40-50 बीपीएम</td><td>सुव्यवस्थित हृदय प्रणाली</td></tr><tr><td><strong>बहुत बढ़िया</strong></td><td>50-60 बीपीएम</td><td>औसत से ऊपर फिटनेस</td></tr><tr><td><strong>सामान्य</strong></td><td>60-80 बीपीएम</td><td>अधिकांश वयस्कों के लिए स्वस्थ रेंज</td></tr><tr><td><strong>ऊंचा</strong></td><td>80-90 बीपीएम</td><td>डिकंडीशनिंग या तनाव का संकेत दे सकता है</td></tr><tr><td><strong>ऊँचा</strong></td><td>&gt; 90 बीपीएम</td><td>चिकित्सीय मूल्यांकन की गारंटी देता है</td></tr></tbody></table><p><em>नोट: व्यक्तिगत भिन्नता मौजूद है। वैयक्तिकृत मूल्यांकन के लिए किसी स्वास्थ्य सेवा प्रदाता से परामर्श लें।</em></p><h3 id="what-influences-resting-heart-rate">विश्राम हृदय गति को क्या प्रभावित करता है?</h3><p><strong>आरएचआर को कम करने वाले कारक:</strong>- हृदय व्यायाम (विशेषकर सहनशक्ति प्रशिक्षण)
 - पर्याप्त नींद और स्वास्थ्य लाभ
 - आराम और तनाव प्रबंधन
-- बीटा-ब्लॉकर दवाएं</p>
-<p><strong>आरएचआर को बढ़ाने वाले कारक:</strong>- शारीरिक डीकंडीशनिंग
+- बीटा-ब्लॉकर दवाएं</p><p><strong>आरएचआर को बढ़ाने वाले कारक:</strong>- शारीरिक डीकंडीशनिंग
 - दीर्घकालिक तनाव और चिंता
 - नींद की कमी
 - बुखार, संक्रमण या बीमारी
 - निर्जलीकरण
 - कैफीन और उत्तेजक
 - कुछ दवाएं (डीकॉन्गेस्टेंट, उत्तेजक)
-- अतिगलग्रंथिता</p>
-<h2 id="trends-vs-single-measurements">रुझान बनाम एकल माप</h2>
-<h3 id="the-value-of-continuous-monitoring">सतत निगरानी का मूल्य</h3>
-<p>जबकि एक एकल आरएचआर माप सीमित जानकारी प्रदान करता है, समय के साथ रुझानों पर नज़र रखने से पता चलता है:</p>
-<ul>
-<li><strong>प्रशिक्षण अनुकूलन:</strong>आरएचआर आमतौर पर बेहतर फिटनेस के साथ घटता है</li>
-<li><strong>पुनर्प्राप्ति निगरानी:</strong>ऊंचा आरएचआर आराम की आवश्यकता को इंगित करता है</li>
-<li><strong>बीमारी का पता लगाना:</strong>आरएचआर अक्सर लक्षण प्रकट होने से 1-2 दिन पहले बढ़ जाता है</li>
-<li><strong>जीवनशैली पर प्रभाव:</strong>नींद की गुणवत्ता, तनाव और आहार आरएचआर पैटर्न को प्रभावित करते हैं</li>
-</ul>
-<h3 id="understanding-your-baseline">अपनी आधार रेखा को समझना</h3>
-<p>अपनी व्यक्तिगत आधार रेखा स्थापित करने के लिए कम से कम 2-4 सप्ताह के लिए अपने आरएचआर को ट्रैक करें। का एक बदलाव<strong>5+ बीपीएम</strong>कई दिनों तक बने रहने से यह संकेत मिल सकता है:</p>
-<ul>
-<li>अत्यधिक प्रशिक्षण या अपर्याप्त पुनर्प्राप्ति</li>
-<li>बीमारी की शुरुआत</li>
-<li>महत्वपूर्ण तनाव या जीवन में परिवर्तन</li>
-<li>दवा का असर</li>
-<li>आपके डॉक्टर से चर्चा करने लायक अंतर्निहित स्वास्थ्य परिवर्तन</li>
-</ul>
-<h2 id="recommendations">सिफ़ारिशें</h2>
-<h3 id="evidence-based-guidelines">साक्ष्य-आधारित दिशानिर्देश</h3>
-<ul>
-<li><strong>अपनी आधार रेखा जानें:</strong>कई हफ्तों तक लगातार आरएचआर को ट्रैक करें</li>
-<li><strong>सुबह माप:</strong>सबसे सटीक पढ़ने के लिए बिस्तर से उठने से पहले जाँच करें</li>
-<li><strong>संदर्भ पर विचार करें:</strong>बीमारी, तनाव और ख़राब नींद अस्थायी रूप से आरएचआर को बढ़ा देती है</li>
-<li><strong>मूल्यांकन की तलाश करें:</strong>लगातार आरएचआर &gt; 100 बीपीएम (टैचीकार्डिया) या &lt;40 बीपीएम (ब्रैडीकार्डिया) चिकित्सा समीक्षा की गारंटी देता है</li>
-</ul>
-<h3 id="improving-resting-heart-rate">आराम दिल की दर में सुधार</h3>
-<p>साक्ष्य आरएचआर को कम करने के लिए इन हस्तक्षेपों का समर्थन करते हैं:</p>
-<ol>
-<li><strong>एरोबिक व्यायाम:</strong>150+ मिनट/सप्ताह मध्यम कार्डियो</li>
-<li><strong>नींद अनुकूलन:</strong>7-9 घंटे की गुणवत्तापूर्ण नींद</li>
-<li><strong>तनाव प्रबंधन:</strong>ध्यान, श्वास व्यायाम, योग</li>
-<li><strong>जलयोजन:</strong>पर्याप्त तरल पदार्थ का सेवन</li>
-<li><strong>उत्तेजक पदार्थ सीमित करें:</strong>कैफीन कम करें और निकोटीन से बचें</li>
-</ol>
-<h2 id="when-to-seek-medical-attention">चिकित्सीय सहायता कब लेनी चाहिए</h2>
-<p>यदि आपको अनुभव हो तो स्वास्थ्य सेवा प्रदाता से परामर्श लें:</p>
-<ul>
-<li>आराम दिल की दर लगातार 100 बीपीएम से ऊपर</li>
-<li>आराम दिल की दर लगातार 40 बीपीएम से नीचे (यदि प्रशिक्षित एथलीट नहीं है)</li>
-<li>बिना किसी स्पष्ट कारण के आरएचआर में अचानक महत्वपूर्ण परिवर्तन</li>
-<li>धड़कन, रुकी हुई धड़कन या अनियमित लय</li>
-<li>आराम करने पर चक्कर आना, बेहोशी या सांस लेने में तकलीफ होना</li>
-</ul>
-<h2 id="references">सन्दर्भ</h2>
-<ol>
-<li>झांग डी, एट अल। (2016) आराम दिल की दर और सामान्य आबादी में सभी कारण और हृदय मृत्यु दर: एक मेटा-विश्लेषण।<em>सीएमएजे</em>, 188(3), ई53-ई63।</li>
-<li>गिलमैन मेगावाट, एट अल। (1993) उच्च रक्तचाप वाले व्यक्तियों में मृत्यु दर पर हृदय गति का प्रभाव: फ्रेमिंघम अध्ययन।<em>अमेरिकन हार्ट जर्नल</em>, 125(4), 1148-1154.</li>
-<li>फॉक्स के, एट अल। (2007) हृदय रोग में विश्राम हृदय गति।<em>अमेरिकन कॉलेज ऑफ कार्डियोलॉजी का जर्नल</em>, 50(9), 823-830.</li>
-<li>कूनी एमटी, एट अल। (2010) बढ़ी हुई विश्राम हृदय गति हृदय रोग के लिए एक स्वतंत्र जोखिम कारक है।<em>अमेरिकन हार्ट जर्नल</em>, 159(4), 612-619.</li>
-<li>अर्नोल्ड जेएम, एट अल। (2008) आराम दिल की दर: हृदय संबंधी जोखिम का एक परिवर्तनीय पूर्वानुमान सूचक।<em>कैनेडियन जर्नल ऑफ कार्डियोलॉजी</em>, 24 सप्ल ए, 3ए-8ए।</li>
-</ol>
-</div>
-<aside class="medical-disclaimer">
-<div class="disclaimer-icon">⚠️<strong>चिकित्सा संबंधी जानकारी</strong></div>
-<p>यह सामग्री केवल शैक्षिक उद्देश्यों के लिए है और इसे प्रतिस्थापित नहीं किया जाना चाहिए
+- अतिगलग्रंथिता</p><h2 id="trends-vs-single-measurements">रुझान बनाम एकल माप</h2><h3 id="the-value-of-continuous-monitoring">सतत निगरानी का मूल्य</h3><p>जबकि एक एकल आरएचआर माप सीमित जानकारी प्रदान करता है, समय के साथ रुझानों पर नज़र रखने से पता चलता है:</p><ul><li><strong>प्रशिक्षण अनुकूलन:</strong>आरएचआर आमतौर पर बेहतर फिटनेस के साथ घटता है</li><li><strong>पुनर्प्राप्ति निगरानी:</strong>ऊंचा आरएचआर आराम की आवश्यकता को इंगित करता है</li><li><strong>बीमारी का पता लगाना:</strong>आरएचआर अक्सर लक्षण प्रकट होने से 1-2 दिन पहले बढ़ जाता है</li><li><strong>जीवनशैली पर प्रभाव:</strong>नींद की गुणवत्ता, तनाव और आहार आरएचआर पैटर्न को प्रभावित करते हैं</li></ul><h3 id="understanding-your-baseline">अपनी आधार रेखा को समझना</h3><p>अपनी व्यक्तिगत आधार रेखा स्थापित करने के लिए कम से कम 2-4 सप्ताह के लिए अपने आरएचआर को ट्रैक करें। का एक बदलाव<strong>5+ बीपीएम</strong>कई दिनों तक बने रहने से यह संकेत मिल सकता है:</p><ul><li>अत्यधिक प्रशिक्षण या अपर्याप्त पुनर्प्राप्ति</li><li>बीमारी की शुरुआत</li><li>महत्वपूर्ण तनाव या जीवन में परिवर्तन</li><li>दवा का असर</li><li>आपके डॉक्टर से चर्चा करने लायक अंतर्निहित स्वास्थ्य परिवर्तन</li></ul><h2 id="recommendations">सिफ़ारिशें</h2><h3 id="evidence-based-guidelines">साक्ष्य-आधारित दिशानिर्देश</h3><ul><li><strong>अपनी आधार रेखा जानें:</strong>कई हफ्तों तक लगातार आरएचआर को ट्रैक करें</li><li><strong>सुबह माप:</strong>सबसे सटीक पढ़ने के लिए बिस्तर से उठने से पहले जाँच करें</li><li><strong>संदर्भ पर विचार करें:</strong>बीमारी, तनाव और ख़राब नींद अस्थायी रूप से आरएचआर को बढ़ा देती है</li><li><strong>मूल्यांकन की तलाश करें:</strong>लगातार आरएचआर &gt; 100 बीपीएम (टैचीकार्डिया) या &lt;40 बीपीएम (ब्रैडीकार्डिया) चिकित्सा समीक्षा की गारंटी देता है</li></ul><h3 id="improving-resting-heart-rate">आराम दिल की दर में सुधार</h3><p>साक्ष्य आरएचआर को कम करने के लिए इन हस्तक्षेपों का समर्थन करते हैं:</p><ol><li><strong>एरोबिक व्यायाम:</strong>150+ मिनट/सप्ताह मध्यम कार्डियो</li><li><strong>नींद अनुकूलन:</strong>7-9 घंटे की गुणवत्तापूर्ण नींद</li><li><strong>तनाव प्रबंधन:</strong>ध्यान, श्वास व्यायाम, योग</li><li><strong>जलयोजन:</strong>पर्याप्त तरल पदार्थ का सेवन</li><li><strong>उत्तेजक पदार्थ सीमित करें:</strong>कैफीन कम करें और निकोटीन से बचें</li></ol><h2 id="when-to-seek-medical-attention">चिकित्सीय सहायता कब लेनी चाहिए</h2><p>यदि आपको अनुभव हो तो स्वास्थ्य सेवा प्रदाता से परामर्श लें:</p><ul><li>आराम दिल की दर लगातार 100 बीपीएम से ऊपर</li><li>आराम दिल की दर लगातार 40 बीपीएम से नीचे (यदि प्रशिक्षित एथलीट नहीं है)</li><li>बिना किसी स्पष्ट कारण के आरएचआर में अचानक महत्वपूर्ण परिवर्तन</li><li>धड़कन, रुकी हुई धड़कन या अनियमित लय</li><li>आराम करने पर चक्कर आना, बेहोशी या सांस लेने में तकलीफ होना</li></ul><h2 id="references">सन्दर्भ</h2><ol><li>झांग डी, एट अल। (2016) आराम दिल की दर और सामान्य आबादी में सभी कारण और हृदय मृत्यु दर: एक मेटा-विश्लेषण।<em>सीएमएजे</em>, 188(3), ई53-ई63।</li><li>गिलमैन मेगावाट, एट अल। (1993) उच्च रक्तचाप वाले व्यक्तियों में मृत्यु दर पर हृदय गति का प्रभाव: फ्रेमिंघम अध्ययन।<em>अमेरिकन हार्ट जर्नल</em>, 125(4), 1148-1154.</li><li>फॉक्स के, एट अल। (2007) हृदय रोग में विश्राम हृदय गति।<em>अमेरिकन कॉलेज ऑफ कार्डियोलॉजी का जर्नल</em>, 50(9), 823-830.</li><li>कूनी एमटी, एट अल। (2010) बढ़ी हुई विश्राम हृदय गति हृदय रोग के लिए एक स्वतंत्र जोखिम कारक है।<em>अमेरिकन हार्ट जर्नल</em>, 159(4), 612-619.</li><li>अर्नोल्ड जेएम, एट अल। (2008) आराम दिल की दर: हृदय संबंधी जोखिम का एक परिवर्तनीय पूर्वानुमान सूचक।<em>कैनेडियन जर्नल ऑफ कार्डियोलॉजी</em>, 24 सप्ल ए, 3ए-8ए।</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️<strong>चिकित्सा संबंधी जानकारी</strong></div><p>यह सामग्री केवल शैक्षिक उद्देश्यों के लिए है और इसे प्रतिस्थापित नहीं किया जाना चाहिए
     पेशेवर चिकित्सा सलाह. इसके लिए हमेशा किसी स्वास्थ्य सेवा प्रदाता से परामर्श लें
-    चिकित्सा निर्णय.</p>
-</aside>
-<div class="metric-footer">
-<hr/>
-<p><em>अंतिम अद्यतन: जनवरी 2026</em></p>
-</div>
-</article>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+    चिकित्सा निर्णय.</p></aside><div class="metric-footer"><hr/><p><em>अंतिम अद्यतन: जनवरी 2026</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">Arno Health</span>
-          </span>
-          
-        </h3>
-        <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/resting-heart-rate">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON</h2>
-    <p class="ai-citation-answer">Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-24</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>आर · म · ह · दय</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../../../hi/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/heart-circulation/resting-heart-rate"><div class="container ai-citation-shell"><h2 class="ai-citation-title">आराम हृदय गति - Apple स्वास्थ्य डेटा को CSV, PDF और JSON</h2><p class="ai-citation-answer">Resting heart rate (RHR) is the number of times your heart beats per minute while you are at complete rest—typically measured first thing in the morning.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>आर · म · ह · दय</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../hi/bibliography/">
           
           संदर्भ सूची
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Health Analytics</h2>
-                <p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link active"
+                </a><a href="/hi/" class="lang-link active"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     Khmer
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Srpski
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Health Analytics. सर्वाधिकार सुरक्षित
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/hi/privacy/">गोपनीयता</a></li>
-                <li><a href="/hi/terms/">शर्तें</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>यह वेबसाइट आपके अनुभव को बेहतर बनाने के लिए कुकीज़ का उपयोग करती है।</p>
-            <a href="/hi/privacy/" class="text-sm">अधिक जानें</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">अस्वीकार करें</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">स्वीकार करें</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../../../assets/js/core.min.js?v=58537628e32e" defer></script>
-  <script src="../../../../assets/js/search.min.js?v=58537628e32e" defer></script>
-  
-
-  
-  
-  <script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/hi/privacy/">गोपनीयता</a></li><li><a href="/hi/terms/">शर्तें</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>यह वेबसाइट आपके अनुभव को बेहतर बनाने के लिए कुकीज़ का उपयोग करती है।</p><a href="/hi/privacy/" class="text-sm">अधिक जानें</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">अस्वीकार करें</button><button id="cookie-accept" class="btn btn-primary btn-small">स्वीकार करें</button></div></div></div><script src="../../../../assets/js/core.min.js?v=87724973" defer></script><script src="../../../../assets/js/search.min.js?v=87724973" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>
