@@ -1,0 +1,785 @@
+<!DOCTYPE html><html lang="hi" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>वज़न एवं BMI - ऐप्पल हेल्थ डेटा को सीएसवी, पीडीएफ और...</title><meta name="description" content="बॉडी मास इंडेक्स (बीएमआई) यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है: $$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$"><meta name="author" content="Arno Health"><meta name="keywords" content="वज, न, एव, BMI"><link rel="canonical" href="https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="Arno Health"><meta property="og:type" content="article"><meta property="og:url" content="https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/"><meta property="og:title" content="वज़न एवं BMI - ऐप्पल हेल्थ डेटा को सीएसवी, पीडीएफ और..."><meta property="og:description" content="बॉडी मास इंडेक्स (बीएमआई) यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है: $$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$"><meta property="og:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="hi_IN"><meta property="og:site_name" content="Health Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/"><meta name="twitter:title" content="वज़न एवं BMI - ऐप्पल हेल्थ डेटा को सीएसवी, पीडीएफ और..."><meta name="twitter:description" content="बॉडी मास इंडेक्स (बीएमआई) यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है: $$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$"><meta name="twitter:image" content="https://health.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@HealthAnalytics"><meta name="twitter:creator" content="@HealthAnalytics"><link rel="alternate" hreflang="af"
+    href="https://health.analyticszone.app/af/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="am"
+    href="https://health.analyticszone.app/am/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ar"
+    href="https://health.analyticszone.app/ar/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="bg"
+    href="https://health.analyticszone.app/bg/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="bn"
+    href="https://health.analyticszone.app/bn/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ca"
+    href="https://health.analyticszone.app/ca/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="cs"
+    href="https://health.analyticszone.app/cs/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="da"
+    href="https://health.analyticszone.app/da/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="de"
+    href="https://health.analyticszone.app/de/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="el"
+    href="https://health.analyticszone.app/el/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="en"
+    href="https://health.analyticszone.app/en/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="es"
+    href="https://health.analyticszone.app/es/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="et"
+    href="https://health.analyticszone.app/et/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="fa"
+    href="https://health.analyticszone.app/fa/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="fi"
+    href="https://health.analyticszone.app/fi/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="fr"
+    href="https://health.analyticszone.app/fr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="gu"
+    href="https://health.analyticszone.app/gu/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ha"
+    href="https://health.analyticszone.app/ha/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="he"
+    href="https://health.analyticszone.app/he/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="hi"
+    href="https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="hr"
+    href="https://health.analyticszone.app/hr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="hu"
+    href="https://health.analyticszone.app/hu/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="id"
+    href="https://health.analyticszone.app/id/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="is"
+    href="https://health.analyticszone.app/is/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="it"
+    href="https://health.analyticszone.app/it/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ja"
+    href="https://health.analyticszone.app/ja/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="km"
+    href="https://health.analyticszone.app/km/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="kn"
+    href="https://health.analyticszone.app/kn/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ko"
+    href="https://health.analyticszone.app/ko/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="lt"
+    href="https://health.analyticszone.app/lt/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="lv"
+    href="https://health.analyticszone.app/lv/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ms"
+    href="https://health.analyticszone.app/ms/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="my"
+    href="https://health.analyticszone.app/my/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="nb"
+    href="https://health.analyticszone.app/nb/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="nl"
+    href="https://health.analyticszone.app/nl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="pl"
+    href="https://health.analyticszone.app/pl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="pt"
+    href="https://health.analyticszone.app/pt/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="pt-br"
+    href="https://health.analyticszone.app/pt-br/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ro"
+    href="https://health.analyticszone.app/ro/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ru"
+    href="https://health.analyticszone.app/ru/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sk"
+    href="https://health.analyticszone.app/sk/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sl"
+    href="https://health.analyticszone.app/sl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sr"
+    href="https://health.analyticszone.app/sr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sv"
+    href="https://health.analyticszone.app/sv/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="sw"
+    href="https://health.analyticszone.app/sw/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ta"
+    href="https://health.analyticszone.app/ta/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="te"
+    href="https://health.analyticszone.app/te/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="th"
+    href="https://health.analyticszone.app/th/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="tl"
+    href="https://health.analyticszone.app/tl/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="tr"
+    href="https://health.analyticszone.app/tr/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="uk"
+    href="https://health.analyticszone.app/uk/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="ur"
+    href="https://health.analyticszone.app/ur/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="vi"
+    href="https://health.analyticszone.app/vi/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="yo"
+    href="https://health.analyticszone.app/yo/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="zh"
+    href="https://health.analyticszone.app/zh/metrics/body-measurements/body-mass-index-bmi/"><link rel="alternate" hreflang="x-default"
+    href="https://health.analyticszone.app/en/metrics/body-measurements/body-mass-index-bmi/"><link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6757945914"><style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+main.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../../../assets/css/main.min.css?v=3c6d85d6"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "logo": "https://health.analyticszone.app/assets/images/logo.png",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "analyticszone+health@onmedic.org"
+  },
+  
+  "sameAs": [
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    "https://twitter.com/HealthAnalytics",
+    
+    "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+    
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Analytics",
+  "url": "https://health.analyticszone.app",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "inLanguage": "hi"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Health Analytics",
+  "description": "Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.",
+  "url": "https://health.analyticszone.app",
+  "applicationCategory": ["HealthApplication", "FitnessApplication"],
+  "operatingSystem": "iOS",
+  "author": {
+    "@type": "Organization",
+    "name": "Arno Health"
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/health-analytics-export/id6757945914"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "वज़न एवं BMI - ऐप्पल हेल्थ डेटा को सीएसवी, पीडीएफ और...",
+  "description": "बॉडी मास इंडेक्स (बीएमआई) यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है: $$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$",
+  "url": "https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/",
+  "inLanguage": "hi",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Health Analytics",
+    "url": "https://health.analyticszone.app"
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-03-24",
+  "keywords": ["वज", "न", "एव", "BMI"],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "वज"
+    }, 
+  
+    {
+      "@type": "Thing",
+      "name": "न"
+    }, 
+  
+    {
+      "@type": "Thing",
+      "name": "एव"
+    }, 
+  
+    {
+      "@type": "Thing",
+      "name": "BMI"
+    }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "वज़न एवं BMI - ऐप्पल हेल्थ डेटा को सीएसवी, पीडीएफ और...",
+  "description": "बॉडी मास इंडेक्स (बीएमआई) यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है: $$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$",
+  "author": {
+    "@type": "Person",
+    "name": "Arno Health"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://health.analyticszone.app/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-03-24",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://health.analyticszone.app/hi/metrics/body-measurements/body-mass-index-bmi/"
+  }
+}
+</script><script>
+    (function () {
+      let theme = localStorage.getItem('theme');
+      // Older builds could persist a per-subdomain `theme=light` value without a UI
+      // to keep it consistent across apps. Treat it as stale and fall back to the OS.
+      if (theme === 'light') {
+        try { localStorage.removeItem('theme'); } catch (e) { /* ignore */ }
+        theme = null;
+      }
+
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script></head><body><a href="#main-content" class="skip-link">मुख्य सामग्री पर जाएँ</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/hi/" class="site-logo"><picture><source srcset="../../../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../../../assets/images/logo.png" alt="Export Apple Health Data to CSV, PDF &amp; JSON | Health Analytics" width="56" height="56"></picture><span class="logo-text">Health Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/hi/features/" 
+                                aria-current="">
+                                विशेषताएँ
+                            </a></li><li><a href="/hi/metrics/" 
+                                aria-current="">
+                                मेट्रिक्स लाइब्रेरी
+                            </a></li><li><a href="/hi/pricing/" 
+                                aria-current="">
+                                मूल्य निर्धारण
+                            </a></li><li><a href="/hi/about/" 
+                                aria-current="">
+                                हमारे बारे में
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="भाषा चुनें"><option value="af" >
+                            Afrikaans
+                        </option><option value="am" >
+                            አማርኛ
+                        </option><option value="ar" >
+                            العربية
+                        </option><option value="bg" >
+                            Български
+                        </option><option value="bn" >
+                            বাংলা
+                        </option><option value="ca" >
+                            Català
+                        </option><option value="cs" >
+                            Čeština
+                        </option><option value="da" >
+                            Dansk
+                        </option><option value="de" >
+                            Deutsch
+                        </option><option value="el" >
+                            Ελληνικά
+                        </option><option value="en" >
+                            English
+                        </option><option value="es" >
+                            Español
+                        </option><option value="et" >
+                            Eesti
+                        </option><option value="fa" >
+                            فارسی
+                        </option><option value="fi" >
+                            Suomi
+                        </option><option value="fr" >
+                            Français
+                        </option><option value="gu" >
+                            ગુજરાતી
+                        </option><option value="ha" >
+                            Hausa
+                        </option><option value="he" >
+                            עברית
+                        </option><option value="hi" selected>
+                            हिन्दी
+                        </option><option value="hr" >
+                            Hrvatski
+                        </option><option value="hu" >
+                            Magyar
+                        </option><option value="id" >
+                            Bahasa Indonesia
+                        </option><option value="is" >
+                            Íslenska
+                        </option><option value="it" >
+                            Italiano
+                        </option><option value="ja" >
+                            日本語
+                        </option><option value="km" >
+                            Khmer
+                        </option><option value="kn" >
+                            ಕನ್ನಡ
+                        </option><option value="ko" >
+                            한국어
+                        </option><option value="lt" >
+                            Lietuvių
+                        </option><option value="lv" >
+                            Latviešu
+                        </option><option value="ms" >
+                            Bahasa Melayu
+                        </option><option value="my" >
+                            မြန်မာဘာသာ
+                        </option><option value="nb" >
+                            Norsk
+                        </option><option value="nl" >
+                            Nederlands
+                        </option><option value="pl" >
+                            Polski
+                        </option><option value="pt" >
+                            Português
+                        </option><option value="pt-br" >
+                            Português (Brasil)
+                        </option><option value="ro" >
+                            Română
+                        </option><option value="ru" >
+                            Русский
+                        </option><option value="sk" >
+                            Slovenčina
+                        </option><option value="sl" >
+                            Slovenščina
+                        </option><option value="sr" >
+                            Srpski
+                        </option><option value="sv" >
+                            Svenska
+                        </option><option value="sw" >
+                            Kiswahili
+                        </option><option value="ta" >
+                            தமிழ்
+                        </option><option value="te" >
+                            తెలుగు
+                        </option><option value="th" >
+                            ไทย
+                        </option><option value="tl" >
+                            Tagalog
+                        </option><option value="tr" >
+                            Türkçe
+                        </option><option value="uk" >
+                            Українська
+                        </option><option value="ur" >
+                            اردو
+                        </option><option value="vi" >
+                            Tiếng Việt
+                        </option><option value="yo" >
+                            Yorùbá
+                        </option><option value="zh" >
+                            中文
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://hike.analyticszone.app" class="suite-app-link">Hike Analytics</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="मेनू टॉगल करें"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content"><article class="metric-article"><nav aria-label="Breadcrumb" class="metric-breadcrumb"><ol itemscope="" itemtype="https://schema.org/BreadcrumbList" style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem;"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/hi/metrics/" itemprop="item"><span itemprop="name">मेट्रिक्स लाइब्रेरी</span></a><meta content="1" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/hi/metrics/body-measurements/" itemprop="item"><span itemprop="name">शारीरिक माप</span></a><meta content="2" itemprop="position"/></li><span>/</span><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span aria-current="page" itemprop="name">वजन और बीएमआई</span><meta content="3" itemprop="position"/></li></ol></nav><header class="metric-article-header"><span class="metric-category-badge"><span>📏</span>शारीरिक माप</span></header><nav class="article-toc"><h4>इस पेज पर</h4><div class="toc"><ul><li><a href="#weight-bmi">वजन और बीएमआई</a><ul><li><a href="#what-is-bmi">बीएमआई क्या है?</a><ul><li><a href="#how-healthkit-stores-weight-bmi">हेल्थकिट वजन और बीएमआई को कैसे स्टोर करता है</a></li></ul></li><li><a href="#scientific-background">वैज्ञानिक पृष्ठभूमि</a><ul><li><a href="#bmi-a-controversial-metric">बीएमआई: एक विवादास्पद मीट्रिक</a></li><li><a href="#standard-bmi-categories-who">मानक बीएमआई श्रेणियाँ (डब्ल्यूएचओ)</a></li><li><a href="#landmark-research-findings">ऐतिहासिक अनुसंधान निष्कर्ष</a><ul><li><a href="#nejm-study-bmi-and-mortality-2010">एनईजेएम अध्ययन: बीएमआई और मृत्यु दर (2010)</a></li><li><a href="#the-obesity-paradox-jama-2013">मोटापा विरोधाभास (JAMA 2013)</a></li><li><a href="#beyond-bmi-waist-circumference">बीएमआई से परे: कमर की परिधि</a></li></ul></li><li><a href="#the-fit-but-fat-evidence">"फ़िट लेकिन मोटा" साक्ष्य</a></li></ul></li><li><a href="#clinical-significance">नैदानिक महत्व</a><ul><li><a href="#why-weight-tracking-matters">वज़न ट्रैकिंग क्यों मायने रखती है?</a></li><li><a href="#what-affects-weight">वजन पर क्या प्रभाव पड़ता है</a></li><li><a href="#daily-weight-fluctuations">दैनिक वजन में उतार-चढ़ाव</a></li></ul></li><li><a href="#recommendations">सिफ़ारिशें</a><ul><li><a href="#evidence-based-guidelines">साक्ष्य-आधारित दिशानिर्देश</a></li><li><a href="#healthy-weight-management">स्वस्थ वजन प्रबंधन</a></li></ul></li><li><a href="#when-to-seek-medical-attention">चिकित्सीय सहायता कब लेनी चाहिए</a></li><li><a href="#references">सन्दर्भ</a></li></ul></li></ul></div></nav><div class="metric-content"><h1 id="weight-bmi">वजन और बीएमआई</h1><h2 id="what-is-bmi">बीएमआई क्या है?</h2><p><strong>बॉडी मास इंडेक्स (बीएमआई)</strong>यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है:</p><p>$$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$</p><p>या शाही इकाइयों में:</p><p>$$बीएमआई = \frac{वजन (पौंड) × 703}{ऊंचाई (इंच)^2}$$</p><p>बीएमआई को 1830 के दशक में बेल्जियम के गणितज्ञ एडोल्फ क्वेटलेट द्वारा जनसंख्या-स्तर के मोटापे के आकलन के लिए एक सरल स्क्रीनिंग उपकरण के रूप में विकसित किया गया था - व्यक्तिगत स्वास्थ्य उपाय के रूप में नहीं।</p><h3 id="how-healthkit-stores-weight-bmi">हेल्थकिट वजन और बीएमआई को कैसे स्टोर करता है</h3><p>हेल्थकिट रिकॉर्ड:</p><ul><li><strong>शारीरिक द्रव्यमान (वजन):</strong>कनेक्टेड स्मार्ट स्केल, Apple वॉच (अनुमानित), या मैन्युअल प्रविष्टि से</li><li><strong>बॉडी मास इंडेक्स:</strong>वजन और ऊंचाई से स्वचालित रूप से गणना की जाती है</li><li><strong>शारीरिक वसा प्रतिशत:</strong>बायोइलेक्ट्रिकल प्रतिबाधा का उपयोग करके संगत स्मार्ट स्केल से</li><li><strong>दुबला शरीर द्रव्यमान:</strong>संगत तराजू या मैन्युअल प्रविष्टि से</li></ul><h2 id="scientific-background">वैज्ञानिक पृष्ठभूमि</h2><h3 id="bmi-a-controversial-metric">बीएमआई: एक विवादास्पद मीट्रिक</h3><p>अपनी सादगी के कारण बीएमआई का व्यापक रूप से उपयोग किया जाता है, लेकिन इसकी महत्वपूर्ण सीमाएँ हैं जिन्हें आधुनिक शोध ने उजागर किया है:</p><p><strong>बीएमआई क्या करता है:</strong>- एक त्वरित जनसंख्या-स्तरीय स्क्रीनिंग उपकरण प्रदान करता है
+- चरम सीमा पर कुछ स्वास्थ्य परिणामों से संबंधित है
+- सभी अध्ययनों में मानकीकृत तुलना की अनुमति देता है</p><p><strong>बीएमआई क्या नहीं करता:</strong>- मांसपेशी और वसा द्रव्यमान के बीच अंतर करें
+- वसा वितरण के लिए खाता (आंत बनाम चमड़े के नीचे)
+- उम्र, लिंग या जातीयता भिन्नता के अनुसार समायोजित करें
+- व्यक्तिगत स्वास्थ्य परिणामों की सटीक भविष्यवाणी करें</p><h3 id="standard-bmi-categories-who">मानक बीएमआई श्रेणियाँ (डब्ल्यूएचओ)</h3><table class="clinical-table"><thead><tr><th>श्रेणी</th><th>बीएमआई रेंज</th></tr></thead><tbody><tr><td>कम वजन वाला</td><td>&lt;18.5</td></tr><tr><td>सामान्य</td><td>18.5-24.9</td></tr><tr><td>अधिक वजन</td><td>25.0-29.9</td></tr><tr><td>मोटापा वर्ग I</td><td>30.0-34.9</td></tr><tr><td>मोटापा वर्ग II</td><td>35.0-39.9</td></tr><tr><td>मोटापा वर्ग III</td><td>≥ 40.0</td></tr></tbody></table><p><em>नोट: ये सीमाएँ मुख्य रूप से यूरोपीय आबादी के अध्ययन से विकसित की गई थीं और सभी जातियों पर समान रूप से लागू नहीं हो सकती हैं।</em></p><h3 id="landmark-research-findings">ऐतिहासिक अनुसंधान निष्कर्ष</h3><h4 id="nejm-study-bmi-and-mortality-2010">एनईजेएम अध्ययन: बीएमआई और मृत्यु दर (2010)</h4><p>का एक व्यापक विश्लेषण<strong>1.46 मिलियन श्वेत वयस्क</strong>19 संभावित अध्ययनों से बीएमआई और मृत्यु दर के बीच संबंधों की जांच की गई।</p><p><strong>मुख्य निष्कर्ष:</strong>-<strong>इष्टतम बीएमआई रेंज:</strong>कभी धूम्रपान न करने वालों के लिए 22.5-24.9
+- बीएमआई स्पेक्ट्रम के दोनों सिरों पर मृत्यु जोखिम बढ़ गया
+-<strong>कम वजन (बीएमआई &lt;18.5):</strong>47% अधिक मृत्यु दर
+-<strong>मोटापा वर्ग I (30-35):</strong>44% अधिक मृत्यु दर
+-<strong>मोटापा वर्ग III (≥ 40):</strong>2.5 गुना अधिक मृत्यु दर</p><blockquote><p>"धूम्रपान न करने वाले स्वस्थ लोगों में, 20.0 से 24.9 के बीएमआई पर मृत्यु का सबसे कम जोखिम देखा गया।"
+- बेरिंगटन डी गोंजालेज एट अल., एनईजेएम, 2010</p></blockquote><h4 id="the-obesity-paradox-jama-2013">मोटापा विरोधाभास (JAMA 2013)</h4><p>का एक विवादास्पद मेटा-विश्लेषण<strong>97 अध्ययन</strong>के साथ<strong>2.88 मिलियन व्यक्ति</strong>अप्रत्याशित परिणाम मिले:</p><p><strong>मुख्य निष्कर्ष:</strong>-<strong>अधिक वजन (बीएमआई 25-30):</strong>6%<strong>निचला</strong>सामान्य वजन की तुलना में सर्व-कारण मृत्यु दर
+-<strong>मोटापा वर्ग I (30-35):</strong>मृत्यु दर में कोई खास अंतर नहीं
+-<strong>मोटापा वर्ग II-III (≥ 35):</strong>29% अधिक मृत्यु दर</p><p>इस "मोटापा विरोधाभास" ने इस बात पर बहस छेड़ दी कि क्या बीएमआई कटऑफ इष्टतम हैं और क्या चयापचय रूप से स्वस्थ मोटापा मौजूद है।</p><h4 id="beyond-bmi-waist-circumference">बीएमआई से परे: कमर की परिधि</h4><p>इंटरनेशनल एथेरोस्क्लेरोसिस सोसाइटी के 2020 के सर्वसम्मति बयान में एक बेहतर भविष्यवक्ता के रूप में कमर की परिधि पर जोर दिया गया:</p><p><strong>कमर का घेरा क्यों मायने रखता है:</strong>- सीधे पेट (आंत) की चर्बी को मापता है
+- आंत की वसा चयापचय रूप से सक्रिय होती है और सूजन को बढ़ाती है
+- बीएमआई की तुलना में हृदय रोग का बेहतर भविष्यवक्ता
+- बीएमआई के समायोजन के बाद स्वतंत्र जोखिम कारक</p><p><strong>जोखिम सीमाएँ (IAS/ICCR आम सहमति):</strong></p><table class="clinical-table"><thead><tr><th>जोखिम स्तर</th><th>पुरुष</th><th>महिला</th></tr></thead><tbody><tr><td>कम जोखिम</td><td>&lt;94 सेमी (37")</td><td>&lt;80 सेमी (31.5")</td></tr><tr><td>खतरा बढ़ गया</td><td>94-102 सेमी (37-40")</td><td>80-88 सेमी (31.5-34.5")</td></tr><tr><td>उच्च जोखिम</td><td>&gt; 102 सेमी (40")</td><td>&gt; 88 सेमी (34.5")</td></tr></tbody></table><h3 id="the-fit-but-fat-evidence">"फ़िट लेकिन मोटा" साक्ष्य</h3><p>अनुसंधान तेजी से यह दर्शाता है<strong>फिटनेस स्तर</strong>वज़न से अधिक महत्वपूर्ण हो सकता है:</p><ul><li>2016 का मेटा-विश्लेषण<em>हृदय रोगों में प्रगति</em>पाया गया कि मोटे व्यक्ति फिट थे<strong>समान मृत्यु दर</strong>सामान्य वजन वाले व्यक्तियों के लिए उपयुक्त</li><li>अनफिट सामान्य वजन वाले व्यक्तियों के पास था<strong>उच्च मृत्यु दर</strong>मोटे व्यक्तियों के लिए उपयुक्त</li><li>कार्डियोरेस्पिरेटरी फिटनेस (सीआरएफ) मृत्यु दर का एक शक्तिशाली स्वतंत्र भविष्यवक्ता है</li></ul><h2 id="clinical-significance">नैदानिक महत्व</h2><h3 id="why-weight-tracking-matters">वज़न ट्रैकिंग क्यों मायने रखती है?</h3><p>बीएमआई सीमाओं के बावजूद, समय के साथ वजन पर नज़र रखने से मूल्य मिलता है:</p><ol><li><strong>रुझान का पता लगाना:</strong>धीरे-धीरे वजन में बदलाव स्वास्थ्य बदलाव का संकेत दे सकता है</li><li><strong>उपचार की निगरानी:</strong>कई स्थितियों के लिए वजन एक महत्वपूर्ण परिणाम है</li><li><strong>व्यवहार संबंधी प्रतिक्रिया:</strong>जीवनशैली में हस्तक्षेप की प्रभावशीलता का आकलन करने में मदद करता है</li><li><strong>चिकित्सा दस्तावेज़ीकरण:</strong>दवा की खुराक, शल्य चिकित्सा योजना के लिए आवश्यक</li></ol><h3 id="what-affects-weight">वजन पर क्या प्रभाव पड़ता है</h3><p><strong>शारीरिक कारक:</strong>- ऊर्जा संतुलन (कैलोरी अंदर बनाम बाहर)
+- बेसल चयापचय दर
+- हार्मोनल विनियमन (थायराइड, इंसुलिन, कोर्टिसोल)
+- आंत माइक्रोबायोम संरचना
+- आनुवंशिक प्रवृत्ति</p><p><strong>बाहरी कारक:</strong>- आहार संरचना और गुणवत्ता
+- शारीरिक गतिविधि स्तर
+- नींद की गुणवत्ता और अवधि
+- दवाएँ (कई कारण वजन बढ़ने/घटने का कारण बनते हैं)
+- तनाव और मनोवैज्ञानिक कारक</p><h3 id="daily-weight-fluctuations">दैनिक वजन में उतार-चढ़ाव</h3><p>वज़न में उतार-चढ़ाव हो सकता है<strong>प्रतिदिन 1-3 किग्रा (2-6 पाउंड)।</strong>के कारण:</p><ul><li>जलयोजन स्थिति</li><li>सोडियम का सेवन</li><li>आंत्र सामग्री</li><li>मासिक धर्म चक्र चरण</li><li>हाल का व्यायाम (द्रव प्रतिधारण)</li></ul><p><strong>सर्वोत्तम अभ्यास:</strong>प्रतिदिन एक ही समय पर वजन करें (सुबह, बाथरूम के बाद, खाने से पहले) और ट्रैक करें<strong>साप्ताहिक औसत</strong>दैनिक मूल्यों के बजाय।</p><h2 id="recommendations">सिफ़ारिशें</h2><h3 id="evidence-based-guidelines">साक्ष्य-आधारित दिशानिर्देश</h3><p>बीएमआई सीमाओं को देखते हुए, एक व्यापक दृष्टिकोण पर विचार करें:</p><table class="clinical-table"><thead><tr><th>मैट्रिक</th><th>यह आपको क्या बताता है</th></tr></thead><tbody><tr><td><strong>बीएमआई</strong></td><td>सामान्य जनसंख्या स्क्रीनिंग; चरम मूल्य ध्यान आकर्षित करते हैं</td></tr><tr><td><strong>कमर की परिधि</strong></td><td>पेट की चर्बी; हृदय संबंधी जोखिम</td></tr><tr><td><strong>वजन की प्रवृत्ति</strong></td><td>सप्ताहों/महीनों में परिवर्तन की दिशा</td></tr><tr><td><strong>शारीरिक वसा%</strong></td><td>संरचना (यदि पैमाने से उपलब्ध हो)</td></tr><tr><td><strong>फिटनेस स्तर</strong></td><td>शारीरिक गतिविधि और हृदय स्वास्थ्य</td></tr></tbody></table><h3 id="healthy-weight-management">स्वस्थ वजन प्रबंधन</h3><p>साक्ष्य-आधारित दृष्टिकोण:</p><ol><li><strong>केवल पैमाने पर नहीं, बल्कि स्वास्थ्य व्यवहार पर ध्यान दें</strong></li><li>नियमित शारीरिक गतिविधि (150+ मिनट/सप्ताह मध्यम)</li><li>संतुलित पोषण संपूर्ण खाद्य पदार्थों पर जोर देता है</li><li>पर्याप्त नींद (7-9 घंटे)</li><li><p>तनाव प्रबंधन</p></li><li><p><strong>यथार्थवादी अपेक्षाएँ निर्धारित करें</strong></p></li><li>प्रति सप्ताह 0.5-1 किलोग्राम (1-2 पाउंड) वजन घटाना स्थायी है</li><li>वजन के रखरखाव के लिए निरंतर प्रयास की आवश्यकता होती है</li><li><p>शारीरिक संरचना में परिवर्तन पैमाने पर प्रतिबिंबित नहीं हो सकता है</p></li><li><p><strong>बड़ी तस्वीर पर विचार करें</strong></p></li><li>रक्तचाप, लिपिड, ग्लूकोज नियंत्रण केवल बीएमआई से अधिक मायने रखता है</li><li>फिटनेस में सुधार वजन से स्वतंत्र मृत्यु दर के जोखिम को कम करता है</li><li>मानसिक स्वास्थ्य शारीरिक स्वास्थ्य पर प्रभाव डालता है</li></ol><h2 id="when-to-seek-medical-attention">चिकित्सीय सहायता कब लेनी चाहिए</h2><p>यदि आपको अनुभव हो तो स्वास्थ्य सेवा प्रदाता से परामर्श लें:</p><ul><li>6-12 महीनों में अनजाने वजन में 5% से अधिक की कमी</li><li>तेजी से, अस्पष्टीकृत वजन बढ़ना</li><li>बीएमआई &lt;18.5 या &gt; 40</li><li>वजन दैनिक गतिविधियों या गतिशीलता में हस्तक्षेप करता है</li><li>खाने का अव्यवस्थित पैटर्न या जुनूनी वजन</li><li>अन्य लक्षणों के साथ वजन में बदलाव (थकान, मूड में बदलाव, आदि)</li></ul><h2 id="references">सन्दर्भ</h2><ol><li>बेरिंगटन डी गोंजालेज ए, एट अल। (2010) 1.46 मिलियन श्वेत वयस्कों के बीच बॉडी-मास इंडेक्स और मृत्यु दर।<em>एनईजेएम</em>, 363(23), 2211-2219।</li><li>फ्लेगल केएम, एट अल। (2013) मानक बीएमआई श्रेणियों का उपयोग करके अधिक वजन और मोटापे के साथ सर्व-कारण मृत्यु दर का संघ।<em>जामा</em>, 309(1), 71-82.</li><li>औने डी, एट अल। (2016) बीएमआई और सभी कारण मृत्यु दर: व्यवस्थित समीक्षा और गैर-रेखीय खुराक-प्रतिक्रिया मेटा-विश्लेषण।<em>बीएमजे</em>, 353, आई2156।</li><li>रॉस आर, एट अल। (2020) नैदानिक ​​​​अभ्यास में एक महत्वपूर्ण संकेत के रूप में कमर की परिधि: एक आम सहमति वक्तव्य।<em>प्रकृति समीक्षाएं एंडोक्रिनोलॉजी</em>, 16(3), 177-189.</li><li>ओर्टेगा एफबी, एट अल। (2016) बॉडी मास इंडेक्स: क्या कुल शारीरिक वसा का एक मानदंड मानक माप एक बेहतर भविष्यवक्ता होगा?<em>मेयो क्लिनिक कार्यवाही</em>, 91(4), 443-455.</li><li>विश्व स्वास्थ्य संगठन। (2024) मोटापा और अधिक वजन: मुख्य तथ्य। डब्ल्यूएचओ तथ्य पत्रक।</li></ol></div><aside class="medical-disclaimer"><div class="disclaimer-icon">⚠️<strong>चिकित्सा संबंधी जानकारी</strong></div><p>यह सामग्री केवल शैक्षिक उद्देश्यों के लिए है और इसे प्रतिस्थापित नहीं किया जाना चाहिए
+    पेशेवर चिकित्सा सलाह. इसके लिए हमेशा किसी स्वास्थ्य सेवा प्रदाता से परामर्श लें
+    चिकित्सा निर्णय.</p></aside><div class="metric-footer"><hr/><p><em>अंतिम अद्यतन: जनवरी 2026</em></p></div></article><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+          Expertly Reviewed by 
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Arno Health</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="metrics/body-measurements/body-mass-index-bmi"><div class="container ai-citation-shell"><h2 class="ai-citation-title">वज़न एवं BMI - ऐप्पल हेल्थ डेटा को सीएसवी, पीडीएफ और...</h2><p class="ai-citation-answer">बॉडी मास इंडेक्स (बीएमआई) यह आपके वजन और ऊंचाई से गणना किया गया एक संख्यात्मक मान है: $$BMI = \frac{वजन (किग्रा)}{ऊंचाई (एम)^2}$$</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>वज · न · एव · BMI</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../../../hi/bibliography/">
+          
+          संदर्भ सूची
+          
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Health Analytics</h2><p>Export your Apple Health &amp; HealthKit data to CSV, JSON, and PDF. Share medical reports with doctors, analyze trends, and backup your health history. 100% private, local processing on iOS.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/health-analytics-export/id6757945914" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../../../assets/images/badge-app-store.svg"
+                            alt="Download on the App Store" width="135"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                    hreflang="af" >
+                    Afrikaans
+                </a><a href="/am/" class="lang-link"
+                    hreflang="am" >
+                    አማርኛ
+                </a><a href="/ar/" class="lang-link"
+                    hreflang="ar" dir="rtl" >
+                    العربية
+                </a><a href="/bg/" class="lang-link"
+                    hreflang="bg" >
+                    Български
+                </a><a href="/bn/" class="lang-link"
+                    hreflang="bn" >
+                    বাংলা
+                </a><a href="/ca/" class="lang-link"
+                    hreflang="ca" >
+                    Català
+                </a><a href="/cs/" class="lang-link"
+                    hreflang="cs" >
+                    Čeština
+                </a><a href="/da/" class="lang-link"
+                    hreflang="da" >
+                    Dansk
+                </a><a href="/de/" class="lang-link"
+                    hreflang="de" >
+                    Deutsch
+                </a><a href="/el/" class="lang-link"
+                    hreflang="el" >
+                    Ελληνικά
+                </a><a href="/en/" class="lang-link"
+                    hreflang="en" >
+                    English
+                </a><a href="/es/" class="lang-link"
+                    hreflang="es" >
+                    Español
+                </a><a href="/et/" class="lang-link"
+                    hreflang="et" >
+                    Eesti
+                </a><a href="/fa/" class="lang-link"
+                    hreflang="fa" dir="rtl" >
+                    فارسی
+                </a><a href="/fi/" class="lang-link"
+                    hreflang="fi" >
+                    Suomi
+                </a><a href="/fr/" class="lang-link"
+                    hreflang="fr" >
+                    Français
+                </a><a href="/gu/" class="lang-link"
+                    hreflang="gu" >
+                    ગુજરાતી
+                </a><a href="/ha/" class="lang-link"
+                    hreflang="ha" >
+                    Hausa
+                </a><a href="/he/" class="lang-link"
+                    hreflang="he" dir="rtl" >
+                    עברית
+                </a><a href="/hi/" class="lang-link active"
+                    hreflang="hi" >
+                    हिन्दी
+                </a><a href="/hr/" class="lang-link"
+                    hreflang="hr" >
+                    Hrvatski
+                </a><a href="/hu/" class="lang-link"
+                    hreflang="hu" >
+                    Magyar
+                </a><a href="/id/" class="lang-link"
+                    hreflang="id" >
+                    Bahasa Indonesia
+                </a><a href="/is/" class="lang-link"
+                    hreflang="is" >
+                    Íslenska
+                </a><a href="/it/" class="lang-link"
+                    hreflang="it" >
+                    Italiano
+                </a><a href="/ja/" class="lang-link"
+                    hreflang="ja" >
+                    日本語
+                </a><a href="/km/" class="lang-link"
+                    hreflang="km" >
+                    Khmer
+                </a><a href="/kn/" class="lang-link"
+                    hreflang="kn" >
+                    ಕನ್ನಡ
+                </a><a href="/ko/" class="lang-link"
+                    hreflang="ko" >
+                    한국어
+                </a><a href="/lt/" class="lang-link"
+                    hreflang="lt" >
+                    Lietuvių
+                </a><a href="/lv/" class="lang-link"
+                    hreflang="lv" >
+                    Latviešu
+                </a><a href="/ms/" class="lang-link"
+                    hreflang="ms" >
+                    Bahasa Melayu
+                </a><a href="/my/" class="lang-link"
+                    hreflang="my" >
+                    မြန်မာဘာသာ
+                </a><a href="/nb/" class="lang-link"
+                    hreflang="nb" >
+                    Norsk
+                </a><a href="/nl/" class="lang-link"
+                    hreflang="nl" >
+                    Nederlands
+                </a><a href="/pl/" class="lang-link"
+                    hreflang="pl" >
+                    Polski
+                </a><a href="/pt/" class="lang-link"
+                    hreflang="pt" >
+                    Português
+                </a><a href="/pt-br/" class="lang-link"
+                    hreflang="pt-br" >
+                    Português (Brasil)
+                </a><a href="/ro/" class="lang-link"
+                    hreflang="ro" >
+                    Română
+                </a><a href="/ru/" class="lang-link"
+                    hreflang="ru" >
+                    Русский
+                </a><a href="/sk/" class="lang-link"
+                    hreflang="sk" >
+                    Slovenčina
+                </a><a href="/sl/" class="lang-link"
+                    hreflang="sl" >
+                    Slovenščina
+                </a><a href="/sr/" class="lang-link"
+                    hreflang="sr" >
+                    Srpski
+                </a><a href="/sv/" class="lang-link"
+                    hreflang="sv" >
+                    Svenska
+                </a><a href="/sw/" class="lang-link"
+                    hreflang="sw" >
+                    Kiswahili
+                </a><a href="/ta/" class="lang-link"
+                    hreflang="ta" >
+                    தமிழ்
+                </a><a href="/te/" class="lang-link"
+                    hreflang="te" >
+                    తెలుగు
+                </a><a href="/th/" class="lang-link"
+                    hreflang="th" >
+                    ไทย
+                </a><a href="/tl/" class="lang-link"
+                    hreflang="tl" >
+                    Tagalog
+                </a><a href="/tr/" class="lang-link"
+                    hreflang="tr" >
+                    Türkçe
+                </a><a href="/uk/" class="lang-link"
+                    hreflang="uk" >
+                    Українська
+                </a><a href="/ur/" class="lang-link"
+                    hreflang="ur" dir="rtl" >
+                    اردو
+                </a><a href="/vi/" class="lang-link"
+                    hreflang="vi" >
+                    Tiếng Việt
+                </a><a href="/yo/" class="lang-link"
+                    hreflang="yo" >
+                    Yorùbá
+                </a><a href="/zh/" class="lang-link"
+                    hreflang="zh" >
+                    中文
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                &copy; 2026 Health Analytics. सर्वाधिकार सुरक्षित
+            </p><ul class="footer-legal"><li><a href="/hi/privacy/">गोपनीयता</a></li><li><a href="/hi/terms/">शर्तें</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>यह वेबसाइट आपके अनुभव को बेहतर बनाने के लिए कुकीज़ का उपयोग करती है।</p><a href="/hi/privacy/" class="text-sm">अधिक जानें</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">अस्वीकार करें</button><button id="cookie-accept" class="btn btn-primary btn-small">स्वीकार करें</button></div></div></div><script src="../../../../assets/js/core.min.js?v=3c6d85d6" defer></script><script src="../../../../assets/js/search.min.js?v=3c6d85d6" defer></script><script src="../../../../assets/js/analytics.min.js" data-ga-id="G-ZMD3P2BT5Q" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../../../sw.js') }</script></body></html>
