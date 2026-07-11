@@ -1,0 +1,29 @@
+# Health Analytics — AnalyticsZone
+
+> Privacy-first Apple Health data export and analysis for iOS: export HealthKit data to CSV, JSON, and PDF, and understand every HealthKit metric — 100% local processing, no cloud uploads.
+
+Health Analytics exports your Apple Health & HealthKit data and explains what each metric means, so you can share reports with doctors, analyze trends, and back up your health history. It is an informational and data-management tool, not a medical device.
+
+## Key pages
+
+- [HealthKit Metrics Index](https://health.analyticszone.app/en/metrics/): Every HealthKit metric category, explained.
+- [Mobility & Gait Metrics](https://health.analyticszone.app/en/metrics/mobility-gait/): Walking asymmetry, double support time, step length, walking speed.
+- [Heart & Circulation Metrics](https://health.analyticszone.app/en/metrics/heart-circulation/): Heart rate, HRV, resting heart rate, and related metrics.
+- [Sleep & Recovery Metrics](https://health.analyticszone.app/en/metrics/sleep-recovery/): Sleep stages and recovery signals in HealthKit.
+- [Cardiorespiratory Fitness](https://health.analyticszone.app/en/metrics/cardiorespiratory-fitness/): VO2max and fitness estimates in Apple Health.
+- [How HealthKit Works](https://health.analyticszone.app/en/how-healthkit-works/): Where the data comes from and how apps access it.
+- [Features](https://health.analyticszone.app/en/features/): CSV/JSON/PDF export, trends, and medical report sharing.
+- [FAQ](https://health.analyticszone.app/en/faq/): Common questions about exporting and interpreting Apple Health data.
+
+## Key facts
+
+- Health Analytics exports Apple Health / HealthKit data to CSV, JSON, and PDF entirely on-device; no health data ever leaves the phone.
+- Walking asymmetry in Apple Health is the percentage of walking time in which left and right step timing differ; Apple computes it from iPhone motion sensors during steady walking.
+- Double support time is the percentage of the gait cycle with both feet on the ground; typical healthy adult values are roughly 20–40% and it rises with age or balance impairment.
+- Content is informational only and does not replace professional medical advice.
+
+## Contact
+
+- Author: Albert Arnó (https://onmedic.com)
+- Email: analyticszone@onmedic.org
+- Portfolio: https://analyticszone.app/llms.txt
